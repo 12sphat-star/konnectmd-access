@@ -1,0 +1,76 @@
+export const plans = [
+  {
+    name: "Silver",
+    price: "$59.99/mo",
+    featured: false,
+    description: "Basic concierge healthcare access for the family.",
+    subtext: "Per family / month",
+    highlights: [
+      "Complimentary virtual visits",
+      "24/7 white-glove concierge doctor access",
+      "Free acute meds formulary",
+    ],
+    features: [
+      "Up to 80% off other meds",
+      "Discounts on dental, vision, labs & chiropractic",
+      "Family coverage included",
+      "Immediate access after enrollment",
+    ],
+  },
+  {
+    name: "Gold",
+    price: "$79.99/mo",
+    featured: true,
+    description: "Wellness-focused access with counseling support.",
+    subtext: "Per family / month",
+    highlights: [
+      "Complimentary visits",
+      "Great choice for counseling support",
+      "Message a specialist for advice",
+    ],
+    features: [
+      "24/7 white-glove concierge doctor access",
+      "Free acute meds & discounts on retail meds",
+      "Complimentary visits for counseling services",
+      "Exclusive discounts on psych services",
+      "Discounts on dental, vision, labs & chiropractic",
+    ],
+  },
+  {
+    name: "Platinum",
+    price: "$99.99/mo",
+    featured: false,
+    description: "Premium comprehensive care with stronger preventive value.",
+    subtext: "Per family / month",
+    highlights: [
+      "Everything in Gold",
+      "Access to 4,000+ board-certified physicians",
+      "1000 of the nation’s top meds are free",
+    ],
+    features: [
+      "Concierge access to dermatology",
+      "Annual CMP blood test & well check",
+      "Preventive care",
+      "Chronic care management",
+      "Broader all-around healthcare support",
+    ],
+  },
+  {
+    name: "Titanium",
+    price: "$149.99/mo",
+    featured: false,
+    description: "Most exclusive bundled option with healthcare plus added lifestyle value.",
+    subtext: "Per family / month",
+    highlights: [
+      "Complimentary visits on all healthcare services",
+      "All healthcare services + free pet services",
+      "Top travel & lifestyle benefits included",
+    ],
+    features: [
+      "Medical debt advocate services",
+      "Discounts on dental, vision, labs & chiropractic",
+      "Thousands of meds for pickup & home delivery",
+      "Strongest bundled value on the site",
+    ],
+  },
+];
