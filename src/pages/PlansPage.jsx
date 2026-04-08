@@ -12,6 +12,21 @@ export default function PlansPage() {
           support, there is a membership level designed to meet you where you are.
         </p>
 
+        <div className="plans-top-actions">
+          <a
+            href="https://www.konnectmdagency.com/index.aspx?ReferringDealerID=817595"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-join-large"
+          >
+            Join Now
+          </a>
+
+          <Link to="/get-details" className="btn btn-secondary">
+            Get Plan Details First
+          </Link>
+        </div>
+
         <div className="plans-grid four" style={{ marginTop: "2rem" }}>
           {plans.map((plan) => (
             <div

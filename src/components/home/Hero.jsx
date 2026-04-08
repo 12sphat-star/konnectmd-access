@@ -14,10 +14,21 @@ export default function Hero() {
             small business owners to look for a more practical option.
           </p>
 
-          <div className="hero-badges">
-            <span>Up to 7 Household Members</span>
-            <span>Use Benefits Fast</span>
-            <span>Cancel Anytime</span>
+          <div className="hero-facts">
+            <div className="hero-fact">
+              <strong>Up to 7 Members</strong>
+              <span>One household plan</span>
+            </div>
+
+            <div className="hero-fact">
+              <strong>Fast Access</strong>
+              <span>Use benefits quickly</span>
+            </div>
+
+            <div className="hero-fact">
+              <strong>Flexible</strong>
+              <span>Cancel anytime</span>
+            </div>
           </div>
 
           <div className="hero-actions">
@@ -28,15 +39,6 @@ export default function Hero() {
             <Link to="/get-details" className="btn btn-secondary">
               Get Plan Details
             </Link>
-
-            <a
-              href="https://www.konnectmdagency.com/index.aspx?ReferringDealerID=817595"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-secondary"
-            >
-              Join Now
-            </a>
           </div>
         </div>
 
