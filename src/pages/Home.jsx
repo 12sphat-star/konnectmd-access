@@ -25,12 +25,11 @@ export default function Home() {
       <WhoItsFor />
       <HowItWorks />
       <PlansPreview />
+      <AddOnsSection />
+      <BusinessSection />
       <Disclaimer />
       <LaunchSection />
       <CTASection />
-            <PlansPreview />
-      <AddOnsSection />
-      <BusinessSection />
     </>
   );
 }
