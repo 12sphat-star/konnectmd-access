@@ -39,11 +39,11 @@ export default function LaunchSection() {
         </div>
 
         <div>
-          <img
-            src="/images/business-owner.jpg"
-            alt="Business owner reviewing healthcare access options"
-            className="section-image"
-          />
+       <img
+  src="/images/now-available.jpg"
+  alt="Business owner reviewing healthcare access options"
+  className="section-image"
+/>
         </div>
       </div>
     </section>
