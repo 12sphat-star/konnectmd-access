@@ -1,6 +1,6 @@
 export default function BusinessSection() {
   return (
-    <section className="section section-dark">
+    <section className="section section-dark mobile-hide">
       <div className="container two-col">
         <div>
           <div className="section-heading">

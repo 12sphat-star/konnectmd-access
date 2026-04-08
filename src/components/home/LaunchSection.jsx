@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function LaunchSection() {
   return (
-    <section className="section">
+    <section className="section mobile-hide">
       <div className="container two-col">
         <div>
           <SectionHeading
