@@ -18,6 +18,7 @@ export default function ContactPage() {
     loading: false,
     success: false,
     error: "",
+    responseText: "",
   });
 
   const handleChange = (e) => {
@@ -35,7 +36,22 @@ export default function ContactPage() {
       loading: true,
       success: false,
       error: "",
+      responseText: "",
     });
+
+    const payload = {
+      source: "KonnectMD Access Website",
+      submittedAt: new Date().toISOString(),
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      interestType: formData.interestType,
+      membershipInterest: formData.membershipInterest,
+      householdSize: formData.householdSize,
+      state: formData.state,
+      message: formData.message,
+    };
 
     try {
       const response = await fetch(import.meta.env.VITE_GHL_WEBHOOK_URL, {
@@ -43,31 +59,31 @@ export default function ContactPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          source: "KonnectMD Access Website",
-          submittedAt: new Date().toISOString(),
-          ...formData,
-        }),
+        body: JSON.stringify(payload),
       });
 
+      const text = await response.text();
+
       if (!response.ok) {
-        throw new Error("Failed to submit form");
+        throw new Error(text || "Failed to submit form");
       }
 
       setStatus({
         loading: false,
         success: true,
         error: "",
+        responseText: text || "Webhook sent successfully.",
       });
 
       setFormData(initialForm);
     } catch (error) {
-      console.error(error);
+      console.error("Webhook error:", error);
 
       setStatus({
         loading: false,
         success: false,
-        error: "Something went wrong. Please try again.",
+        error: error.message || "Something went wrong. Please try again.",
+        responseText: "",
       });
     }
   };
@@ -226,6 +242,12 @@ export default function ContactPage() {
             )}
 
             {status.error && <p className="form-error">{status.error}</p>}
+
+            {status.responseText && (
+              <p style={{ marginTop: "0.75rem", color: "#bfd0e4" }}>
+                Response: {status.responseText}
+              </p>
+            )}
           </form>
         </div>
       </div>

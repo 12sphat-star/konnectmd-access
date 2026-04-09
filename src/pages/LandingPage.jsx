@@ -6,42 +6,44 @@ export default function LandingPage() {
       <div className="container landing-wrap">
         <p className="eyebrow">Affordable Healthcare Access</p>
 
-        <h1 className="landing-title">
-          Can’t afford traditional health insurance? You still have options.
-        </h1>
+       <h1 className="landing-title">
+  Healthcare access that actually fits real life
+</h1>
 
-        <p className="landing-sub">
-          Rising healthcare costs are putting pressure on self-employed families,
-          households, and small business owners. KonnectMD Access offers a
-          practical path to care with flexible membership options, household
-          value, and nationwide access.
-        </p>
+<p>
+  Many people today are either paying more than they expected for coverage,
+  or still trying to find something that fits.
 
-        <div className="landing-points">
-          <div className="landing-point">Up to 7 members on one plan</div>
-          <div className="landing-point">4 membership tiers</div>
-          <div className="landing-point">Services available nationwide</div>
-          <div className="landing-point">Use benefits fast</div>
-        </div>
+  This gives individuals and households another option to explore —
+  especially when traditional routes feel out of reach or incomplete.
+</p>
 
-        <div className="landing-actions">
-          <Link to="/plans" className="btn btn-primary">
-            Explore Memberships
-          </Link>
+     <div className="landing-points">
+  <div className="landing-point">Up to 7 people on one plan</div>
+  <div className="landing-point">Nationwide access</div>
+  <div className="landing-point">Multiple membership levels</div>
+  <div className="landing-point">Use benefits quickly</div>
+</div>
 
-          <Link to="/get-details" className="btn btn-secondary">
-            Get Plan Details
-          </Link>
-        </div>
+       <div className="landing-actions">
+  <Link to="/get-details" className="btn btn-primary">
+    Get Plan Details
+  </Link>
+
+  <Link to="/plans" className="btn btn-secondary">
+    View Membership Options
+  </Link>
+</div>
 
         <div className="landing-card">
           <h2>Why people are taking a closer look</h2>
-          <p>
-            One urgent care visit, one prescription, or one unexpected need can
-            cost more than people expect. This gives households and business
-            owners another way to stay connected to care without the full weight
-            of traditional insurance pricing.
-          </p>
+       <h2>Choose a membership level that fits your situation</h2>
+
+<p>
+  Whether you need a simple starting point or more complete support for your
+  household, each level is designed to give you access without the complexity
+  of traditional plans.
+</p>
 
           <div className="landing-mini-grid">
             <div className="landing-mini-card">
@@ -65,26 +67,33 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="landing-card-actions">
-            <a
-              href="https://www.konnectmdagency.com/index.aspx?ReferringDealerID=817595"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              Join Now
-            </a>
+         <h2>Take a closer look at your options</h2>
 
-            <Link to="/book-call" className="btn btn-secondary">
-              Book a Call
-            </Link>
-          </div>
-        </div>
+<p>
+  The best way to understand if this fits your situation is to review the
+  details or schedule a quick call.
+</p>
 
-        <p className="landing-note">
-          KonnectMD Access is not health insurance. It is a healthcare savings
-          and access membership.
-        </p>
+<div className="landing-actions">
+  <Link to="/get-details" className="btn btn-primary">
+    Get Plan Details
+  </Link>
+
+  <a
+    href="https://www.konnectmdagency.com/index.aspx?ReferringDealerID=817595"
+    target="_blank"
+    rel="noreferrer"
+    className="btn btn-secondary"
+  >
+    Join Now
+  </a>
+</div>
+</div>
+       
+
+       <p className="landing-note">
+  KonnectMD Access is not health insurance. It is a healthcare access and savings membership.
+</p>
       </div>
     </section>
   );
