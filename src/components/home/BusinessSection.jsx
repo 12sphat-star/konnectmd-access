@@ -19,8 +19,8 @@ export default function BusinessSection() {
           </p>
 
           <p className="body-copy">
-            Business pricing on the official page starts at $24.99 per employee
-            each month.
+            Business pricing starts at $24.99 per employee
+            each month and first month is free.
           </p>
 
           <a
