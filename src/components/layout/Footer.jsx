@@ -38,12 +38,8 @@ export default function Footer() {
             <p>© 2026 12 Stone Agency. All rights reserved.</p>
           </div>
 
-          <div className="footer-bottom-center">
-            <p>Created by 12 Stone Smart Website Solutions</p>
-          </div>
-
           <div className="footer-bottom-right">
-            <p>Powered by the MSTA framework</p>
+            <p>Powered by  12 Stone Smart Website Solutions</p>
           </div>
         </div>
       </div>

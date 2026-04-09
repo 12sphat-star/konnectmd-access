@@ -2,98 +2,100 @@ import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   return (
-    <section className="landing-page landing-page-clean">
-      <div className="container landing-wrap">
-        <p className="eyebrow">Affordable Healthcare Access</p>
+    <section className="section landing-section">
+      <div className="container landing-container">
+        <div className="landing-hero">
+          <p className="eyebrow">Healthcare Access Option</p>
 
-       <h1 className="landing-title">
-  Healthcare access that actually fits real life
-</h1>
+          <h1>
+            If traditional healthcare isn’t working for you, this may be worth
+            a look.
+          </h1>
 
-<p>
-  Many people today are either paying more than they expected for coverage,
-  or still trying to find something that fits.
+          <p className="landing-sub">
+            Rising costs have made it harder for many individuals, families, and
+            business owners to find something that fits. KonnectMD Access is a
+            healthcare access membership designed to help people stay connected
+            to care in a simpler way.
+          </p>
 
-  This gives individuals and households another option to explore —
-  especially when traditional routes feel out of reach or incomplete.
-</p>
+          <div className="landing-actions">
+            <Link to="/get-details" className="btn btn-primary">
+              Get Plan Details
+            </Link>
 
-     <div className="landing-points">
-  <div className="landing-point">Up to 7 people on one plan</div>
-  <div className="landing-point">Nationwide access</div>
-  <div className="landing-point">Multiple membership levels</div>
-  <div className="landing-point">Use benefits quickly</div>
-</div>
-
-       <div className="landing-actions">
-  <Link to="/get-details" className="btn btn-primary">
-    Get Plan Details
-  </Link>
-
-  <Link to="/plans" className="btn btn-secondary">
-    View Membership Options
-  </Link>
-</div>
-
-        <div className="landing-card">
-          <h2>Why people are taking a closer look</h2>
-       <h2>Choose a membership level that fits your situation</h2>
-
-<p>
-  Whether you need a simple starting point or more complete support for your
-  household, each level is designed to give you access without the complexity
-  of traditional plans.
-</p>
-
-          <div className="landing-mini-grid">
-            <div className="landing-mini-card">
-              <h3>Silver</h3>
-              <p>Simple family-focused access</p>
-            </div>
-
-            <div className="landing-mini-card">
-              <h3>Gold</h3>
-              <p>Expanded value with wellness support</p>
-            </div>
-
-            <div className="landing-mini-card">
-              <h3>Platinum</h3>
-              <p>Broader care and preventive value</p>
-            </div>
-
-            <div className="landing-mini-card">
-              <h3>Titanium</h3>
-              <p>Premium bundled membership value</p>
-            </div>
+            <Link to="/book-call" className="btn btn-secondary">
+              Schedule a Call
+            </Link>
           </div>
+        </div>
 
-         <h2>Take a closer look at your options</h2>
+        <div className="landing-points">
+          <div className="landing-point">Up to 7 members on one plan</div>
+          <div className="landing-point">Nationwide access</div>
+          <div className="landing-point">Multiple membership levels</div>
+          <div className="landing-point">Fast access to care</div>
+        </div>
 
-<p>
-  The best way to understand if this fits your situation is to review the
-  details or schedule a quick call.
-</p>
+        <div className="landing-block">
+          <h2>What this is</h2>
+          <p>
+            KonnectMD Access is a healthcare access and savings membership. It
+            is designed to help individuals, families, and business owners stay
+            connected to care without the complexity of traditional systems.
+          </p>
+          <p>
+            Depending on the membership level, access may include virtual care,
+            prescriptions, wellness support, mental health services, specialist
+            access, and more.
+          </p>
+          <p className="note">
+            This is not health insurance.
+          </p>
+        </div>
 
-<div className="landing-actions">
-  <Link to="/get-details" className="btn btn-primary">
-    Get Plan Details
-  </Link>
+        <div className="landing-block">
+          <h2>Why people are taking a closer look</h2>
+          <ul>
+            <li>Healthcare costs continue to rise</li>
+            <li>Many people feel priced out of traditional options</li>
+            <li>Families want simpler access to care</li>
+            <li>Business owners need flexible solutions</li>
+          </ul>
+        </div>
 
-  <a
-    href="https://www.konnectmdagency.com/index.aspx?ReferringDealerID=817595"
-    target="_blank"
-    rel="noreferrer"
-    className="btn btn-secondary"
-  >
-    Join Now
-  </a>
-</div>
-</div>
-       
+        <div className="landing-block">
+          <h2>How it works</h2>
+          <ul>
+            <li>Choose a membership level</li>
+            <li>Complete enrollment</li>
+            <li>Get onboarded and access your portal</li>
+            <li>Start using services nationwide</li>
+          </ul>
+        </div>
 
-       <p className="landing-note">
-  KonnectMD Access is not health insurance. It is a healthcare access and savings membership.
-</p>
+        <div className="landing-cta">
+          <h2>Take the next step</h2>
+          <p>
+            The best way to see if this fits your situation is to review the
+            details or schedule a quick call.
+          </p>
+
+          <div className="landing-actions">
+            <Link to="/get-details" className="btn btn-primary">
+              Get Plan Details
+            </Link>
+
+            <a
+              href="https://www.konnectmdagency.com/12stone"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-outline"
+            >
+              Go to Enrollment
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
