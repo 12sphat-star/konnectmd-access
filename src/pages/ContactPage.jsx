@@ -38,23 +38,20 @@ export default function ContactPage() {
     });
 
     try {
-      const response = await fetch(
-        import.meta.env.VITE_GHL_WEBHOOK_URL || "https://your-webhook-url-here.com",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            source: "KonnectMD Access Website",
-            submittedAt: new Date().toISOString(),
-            ...formData,
-          }),
-        }
-      );
+      const response = await fetch(import.meta.env.VITE_GHL_WEBHOOK_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          source: "KonnectMD Access Website",
+          submittedAt: new Date().toISOString(),
+          ...formData,
+        }),
+      });
 
       if (!response.ok) {
-        throw new Error("Form submission failed.");
+        throw new Error("Failed to submit form");
       }
 
       setStatus({
@@ -65,6 +62,8 @@ export default function ContactPage() {
 
       setFormData(initialForm);
     } catch (error) {
+      console.error(error);
+
       setStatus({
         loading: false,
         success: false,
