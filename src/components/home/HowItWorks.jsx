@@ -5,22 +5,22 @@ export default function HowItWorks() {
     {
       number: "01",
       title: "Choose a membership",
-      text: "Review the plan options and choose the level of access that best fits your household, budget, or business.",
+      text: "Review the membership options and choose the level that best fits your household, budget, or business.",
     },
     {
       number: "02",
-      title: "Enroll",
-      text: "Complete enrollment and get started quickly with a simple setup process.",
+      title: "Complete enrollment",
+      text: "Enroll in the membership and get set up with a simple onboarding process.",
     },
     {
       number: "03",
       title: "Get onboarded",
-      text: "After enrollment, clients are guided through their membership details so they understand what they have, how to use it, and where to access their client portal and benefits.",
+      text: "After enrollment, members are shown how to understand their benefits, access their portal, and use the membership with less confusion.",
     },
     {
       number: "04",
-      title: "Use your benefits",
-      text: "Once set up, members can access services with less confusion and less stress, wherever they are in the U.S.",
+      title: "Use services nationwide",
+      text: "Once setup is complete, members can begin using services and accessing benefits across the U.S.",
     },
   ];
 
@@ -29,8 +29,8 @@ export default function HowItWorks() {
       <div className="container">
         <SectionHeading
           eyebrow="How It Works"
-          title="A simple path from enrollment to using your benefits"
-          text="The process is built to make getting started feel clear, guided, and easy to use."
+          title="A clear path from enrollment to using your benefits"
+          text="The process is designed to feel simple, guided, and easy to understand."
         />
 
         <div className="steps-grid four-steps">

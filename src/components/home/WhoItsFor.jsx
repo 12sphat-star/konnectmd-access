@@ -3,11 +3,11 @@ import SectionHeading from "../shared/SectionHeading";
 export default function WhoItsFor() {
   const items = [
     "Self-employed individuals and families",
-    "Small business owners looking for a practical option",
+    "Small business owners exploring flexible options",
     "Households that want up to 7 members on one plan",
-    "People priced out of traditional health insurance",
-    "Families who want access while traveling or living anywhere in the U.S.",
+    "People looking for nationwide access to services",
     "Those who want a simpler way to stay connected to care",
+    "People reviewing additional healthcare access options",
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function WhoItsFor() {
           <SectionHeading
             eyebrow="Who It Helps"
             title="Built for households, business owners, and people who need another option"
-            text="This membership is designed for real-life use — with nationwide access and room for up to 7 members on one plan."
+            text="KonnectMD Access is designed for real-life use, with nationwide access and room for up to 7 members on one plan."
           />
           <ul className="check-list">
             {items.map((item) => (

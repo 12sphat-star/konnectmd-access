@@ -14,18 +14,19 @@ export default function FastAccess() {
 
         <div>
           <SectionHeading
-            eyebrow="Get Started Fast"
-            title="Use your benefits quickly after enrollment"
-            text="For many people, speed matters just as much as affordability."
+            eyebrow="What You Get"
+            title="Practical access to care, support, and everyday value"
+            text="KonnectMD Access is built to give members a simpler way to stay connected to services that matter."
           />
           <p className="body-copy">
-            This solution is designed to help you get started fast, without the
-            delays people often expect from traditional insurance processes.
+            Depending on the membership level, access may include virtual urgent
+            care, primary care, prescriptions, wellness support, mental health
+            services, specialist access, and more.
           </p>
           <p className="body-copy">
-            It also gives people confidence knowing they can explore an option
-            that is not built around pre-existing condition exclusions in the
-            same way many traditional insurance conversations are.
+            Members can also access added value through discounts and services
+            that help make healthcare support feel more usable and less
+            stressful.
           </p>
         </div>
       </div>

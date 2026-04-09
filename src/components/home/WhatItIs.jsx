@@ -7,17 +7,19 @@ export default function WhatItIs() {
         <div>
           <SectionHeading
             eyebrow="What This Is"
-            title="This is not health insurance"
-            text="KonnectMD Access is a healthcare savings and virtual care solution designed to help people access care in a simpler and more affordable way."
+            title="What is KonnectMD Access?"
+            text="KonnectMD Access is a healthcare access and savings membership designed to help individuals, families, and business owners stay connected to care in a simpler way."
           />
           <p className="body-copy">
-            This is for people who may not be able to afford traditional health
-            insurance right now but still want a practical option for staying
-            connected to care.
+            It provides access to virtual care, prescriptions, wellness services,
+            and more through a structured membership with nationwide access.
           </p>
           <p className="body-copy">
-            It is designed to support individuals, households, and businesses
-            looking for more accessible healthcare support.
+            This can be helpful for people exploring practical healthcare access
+            options for themselves, their household, or their business.
+          </p>
+          <p className="body-copy note">
+            This is not health insurance.
           </p>
         </div>
 

@@ -6,10 +6,10 @@ export default function CTASection() {
       <div className="container">
         <div className="cta-box premium-cta">
           <p className="eyebrow">Next Step</p>
-          <h2>Review the right membership for your household or business</h2>
+          <h2>Take a closer look at the membership options</h2>
           <p>
-            Get plan details, compare options, and take the next step with a
-            quick form or a scheduled call.
+            The best next step is to review the plan details or schedule a quick
+            call to see what may fit your situation best.
           </p>
 
           <div className="hero-actions">
@@ -18,7 +18,7 @@ export default function CTASection() {
             </Link>
 
             <Link to="/book-call" className="btn btn-secondary">
-              Book a Call
+              Schedule a Call
             </Link>
           </div>
         </div>
