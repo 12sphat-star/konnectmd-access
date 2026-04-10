@@ -44,7 +44,7 @@ export default function PlansPage() {
                 ))}
               </ul>
 
-              <Link to="/get-details" className="btn btn-primary full">
+              <Link to="/get-moreinfo" className="btn btn-primary full">
                 Get Details
               </Link>
             </div>

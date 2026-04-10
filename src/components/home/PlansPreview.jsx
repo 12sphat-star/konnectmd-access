@@ -41,7 +41,7 @@ export default function PlansPreview() {
               </ul>
 
               <div className="plan-actions">
-                <Link to="/get-details" className="btn btn-primary full">
+                <Link to="/get-more-info" className="btn btn-primary full">
                   Get Details
                 </Link>
                 <a
