@@ -18,7 +18,6 @@ export default function ContactPage() {
     loading: false,
     success: false,
     error: "",
-    responseText: "",
   });
 
   const handleChange = (e) => {
@@ -36,7 +35,6 @@ export default function ContactPage() {
       loading: true,
       success: false,
       error: "",
-      responseText: "",
     });
 
     const payload = {
@@ -68,11 +66,11 @@ export default function ContactPage() {
         throw new Error(text || "Failed to submit form");
       }
 
+      // Fixed: raw webhook response text is no longer stored or shown to the user
       setStatus({
         loading: false,
         success: true,
         error: "",
-        responseText: text || "Webhook sent successfully.",
       });
 
       setFormData(initialForm);
@@ -83,7 +81,6 @@ export default function ContactPage() {
         loading: false,
         success: false,
         error: error.message || "Something went wrong. Please try again.",
-        responseText: "",
       });
     }
   };
@@ -97,7 +94,7 @@ export default function ContactPage() {
             Find the right membership for your household or business
           </h1>
           <p className="section-copy">
-            Fill out the form below and we’ll help you review the options that
+            Fill out the form below and we'll help you review the options that
             may best fit your needs. One plan can support up to 7 members, and
             access follows you anywhere in the U.S.
           </p>
@@ -201,17 +198,34 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="state">State</label>
-                <input
-                  id="state"
-                  name="state"
-                  type="text"
-                  placeholder="Your state"
-                  value={formData.state}
-                  onChange={handleChange}
-                />
-              </div>
-            </div>
+  <label htmlFor="state">State</label>
+  <select
+    id="state"
+    name="state"
+    value={formData.state}
+    onChange={handleChange}
+  >
+    <option value="">Select your state</option>
+    <option>Alabama</option><option>Alaska</option><option>Arizona</option>
+    <option>Arkansas</option><option>California</option><option>Colorado</option>
+    <option>Connecticut</option><option>Delaware</option><option>Florida</option>
+    <option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+    <option>Illinois</option><option>Indiana</option><option>Iowa</option>
+    <option>Kansas</option><option>Kentucky</option><option>Louisiana</option>
+    <option>Maine</option><option>Maryland</option><option>Massachusetts</option>
+    <option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+    <option>Missouri</option><option>Montana</option><option>Nebraska</option>
+    <option>Nevada</option><option>New Hampshire</option><option>New Jersey</option>
+    <option>New Mexico</option><option>New York</option><option>North Carolina</option>
+    <option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+    <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option>
+    <option>South Carolina</option><option>South Dakota</option><option>Tennessee</option>
+    <option>Texas</option><option>Utah</option><option>Vermont</option>
+    <option>Virginia</option><option>Washington</option><option>West Virginia</option>
+    <option>Wisconsin</option><option>Wyoming</option>
+  </select>
+</div>
+           </div>
 
             <div style={{ marginTop: "1rem" }}>
               <label htmlFor="message">Message</label>
@@ -243,11 +257,8 @@ export default function ContactPage() {
 
             {status.error && <p className="form-error">{status.error}</p>}
 
-            {status.responseText && (
-              <p style={{ marginTop: "0.75rem", color: "#bfd0e4" }}>
-                Response: {status.responseText}
-              </p>
-            )}
+            {/* Fixed: removed raw webhook "Response: {responseText}" output —
+                it was exposing backend data and looked unprofessional to users */}
           </form>
         </div>
       </div>

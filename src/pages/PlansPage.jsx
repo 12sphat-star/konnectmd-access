@@ -44,7 +44,8 @@ export default function PlansPage() {
                 ))}
               </ul>
 
-              <Link to="/get-moreinfo" className="btn btn-primary full">
+              {/* Fixed: was /get-moreinfo (route did not exist) → now /get-details */}
+              <Link to="/get-details" className="btn btn-primary full">
                 Get Details
               </Link>
             </div>

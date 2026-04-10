@@ -3,6 +3,7 @@ export const plans = [
     name: "Silver",
     price: "$59.99/mo",
     featured: false,
+    bestFor: "Basic family coverage",
     description: "Basic concierge healthcare access for the family.",
     subtext: "Per family / month",
     highlights: [
@@ -21,6 +22,7 @@ export const plans = [
     name: "Gold",
     price: "$79.99/mo",
     featured: true,
+    bestFor: "Mental health & counseling support",
     description: "Wellness-focused access with counseling support.",
     subtext: "Per family / month",
     highlights: [
@@ -40,12 +42,13 @@ export const plans = [
     name: "Platinum",
     price: "$99.99/mo",
     featured: false,
+    bestFor: "Preventive & chronic care",
     description: "Premium comprehensive care with stronger preventive value.",
     subtext: "Per family / month",
     highlights: [
       "Everything in Gold",
       "Access to 4,000+ board-certified physicians",
-      "1000 of the nation’s top meds are free",
+      "1000 of the nation's top meds are free",
     ],
     features: [
       "Concierge access to dermatology",
@@ -59,6 +62,7 @@ export const plans = [
     name: "Titanium",
     price: "$149.99/mo",
     featured: false,
+    bestFor: "All-in-one family + lifestyle value",
     description: "Most exclusive bundled option with healthcare plus added lifestyle value.",
     subtext: "Per family / month",
     highlights: [
