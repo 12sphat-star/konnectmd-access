@@ -37,19 +37,19 @@ export default function ContactPage() {
       error: "",
     });
 
-    const payload = {
-      source: "KonnectMD Access Website",
-      submittedAt: new Date().toISOString(),
-      firstName: formData.firstName,
-      lastName: formData.lastName,
-      email: formData.email,
-      phone: formData.phone,
-      interestType: formData.interestType,
-      membershipInterest: formData.membershipInterest,
-      householdSize: formData.householdSize,
-      state: formData.state,
-      message: formData.message,
-    };
+const payload = {
+  source: "KonnectMD Access Website",
+  submittedAt: new Date().toISOString(),
+  firstName: formData.firstName,
+  lastName: formData.lastName,
+  email: formData.email,
+  phone: formData.phone,
+  interest_type: formData.interestType,
+  membership_interest: formData.membershipInterest,
+  household_size: formData.householdSize,
+  state: formData.state,
+  message: formData.message,
+};
 
     try {
       const response = await fetch(import.meta.env.VITE_GHL_WEBHOOK_URL, {
