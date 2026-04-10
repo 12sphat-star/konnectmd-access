@@ -20,7 +20,7 @@ export default function LandingPage() {
           </p>
 
           <div className="landing-actions">
-            <Link to="/get-more-info" className="btn btn-primary">
+            <Link to="/get-details" className="btn btn-primary">
               Get Plan Details
             </Link>
 
@@ -82,7 +82,7 @@ export default function LandingPage() {
           </p>
 
           <div className="landing-actions">
-            <Link to="/get-more-info" className="btn btn-primary">
+            <Link to="/get-details" className="btn btn-primary">
               Get Plan Details
             </Link>
 
