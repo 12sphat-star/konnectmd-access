@@ -92,7 +92,7 @@ export default function LandingPage() {
               rel="noreferrer"
               className="btn btn-outline"
             >
-              Go to Enrollment
+             View Full Details & Enroll
             </a>
           </div>
         </div>
