@@ -8,8 +8,8 @@ export default function PlansPreview() {
       <div className="container">
         <SectionHeading
           eyebrow="Membership Options"
-          title="Choose the level of access that fits your life"
-          text="Each membership is priced per family per month, with stronger benefits as you move up."
+          title="Four levels. One gets you started. All move you forward."
+          text="Each plan builds on the one below it — so as you move up, you keep everything from the previous tier and gain more. Priced per family per month."
         />
 
         <div className="plans-grid four">
@@ -21,6 +21,25 @@ export default function PlansPreview() {
               {plan.featured && <div className="featured-badge">Most Popular</div>}
 
               <h3>{plan.name}</h3>
+
+              {plan.bestFor && (
+                <div
+                  style={{
+                    display: "inline-block",
+                    fontSize: "0.78rem",
+                    fontWeight: 700,
+                    color: "var(--blue-soft)",
+                    background: "rgba(45, 127, 249, 0.1)",
+                    border: "1px solid rgba(45, 127, 249, 0.2)",
+                    borderRadius: "999px",
+                    padding: "0.3rem 0.75rem",
+                    marginBottom: "0.75rem",
+                  }}
+                >
+                  Best for: {plan.bestFor}
+                </div>
+              )}
+
               <p className="plan-desc">{plan.description}</p>
 
               <div className="plan-price">{plan.price}</div>
@@ -41,7 +60,7 @@ export default function PlansPreview() {
               </ul>
 
               <div className="plan-actions">
-                <Link to="/get-more-info" className="btn btn-primary full">
+                <Link to="/get-details" className="btn btn-primary full">
                   Get Details
                 </Link>
                 <a
@@ -57,12 +76,11 @@ export default function PlansPreview() {
           ))}
         </div>
 
-                <div className="plans-note">
+        <div className="plans-note">
           <p>
-            One-time enrollment fee: $30. After enrollment, members are guided
-            through onboarding so they can understand their benefits, access
-            their client portal, and begin using the membership as smoothly as
-            possible.
+            One-time enrollment fee: $30. After enrollment, every member is
+            guided through onboarding so you know exactly how to access your
+            portal and start using your benefits right away.
           </p>
         </div>
       </div>

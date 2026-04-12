@@ -4,23 +4,23 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "01",
-      title: "Choose a membership",
-      text: "Review the membership options and choose the level that best fits your household, budget, or business.",
+      title: "Pick Your Level",
+      text: "Silver, Gold, Platinum, or Titanium — each tier builds on the last. Start where your budget is today and upgrade anytime. Not sure which fits? A quick 15-minute call solves that.",
     },
     {
       number: "02",
-      title: "Complete enrollment",
-      text: "Enroll in the membership and get set up with a simple onboarding process.",
+      title: "Enroll in Minutes",
+      text: "No lengthy applications. No medical exams. No waiting periods. Complete enrollment online and you're in — same day access on most plans.",
     },
     {
       number: "03",
-      title: "Get onboarded",
-      text: "After enrollment, members are shown how to understand their benefits, access their portal, and use the membership with less confusion.",
+      title: "Get Onboarded",
+      text: "We don't just hand you a card and wish you luck. Every member gets onboarding so you know exactly how to use your benefits, access your portal, and get the most out of your membership from day one.",
     },
     {
       number: "04",
-      title: "Use services nationwide",
-      text: "Once setup is complete, members can begin using services and accessing benefits across the U.S.",
+      title: "Use It Anywhere",
+      text: "Virtual care, prescriptions, wellness support and more — available nationwide. Your membership travels with you wherever life takes you.",
     },
   ];
 
@@ -29,8 +29,8 @@ export default function HowItWorks() {
       <div className="container">
         <SectionHeading
           eyebrow="How It Works"
-          title="A clear path from enrollment to using your benefits"
-          text="The process is designed to feel simple, guided, and easy to understand."
+          title="From enrollment to care in four simple steps"
+          text="No confusing paperwork. No runaround. Just a clear path to getting the care you and your household need."
         />
 
         <div className="steps-grid four-steps">

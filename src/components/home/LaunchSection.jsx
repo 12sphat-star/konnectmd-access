@@ -7,43 +7,44 @@ export default function LaunchSection() {
       <div className="container two-col">
         <div>
           <SectionHeading
-            eyebrow="Now Available"
-            title="Launching with local momentum and nationwide access"
-            text="KonnectMD Access is being actively introduced in Hampton Roads, but the services are available nationwide for members across the U.S."
+            eyebrow="Now Available in Hampton Roads"
+            title="Local launch. Nationwide reach."
+            text="KonnectMD is being actively introduced right here in Hampton Roads — Virginia Beach, Norfolk, Chesapeake, Suffolk, Portsmouth and beyond. But the membership works anywhere in the U.S."
           />
 
           <p className="body-copy">
-            That means whether you live in Hampton Roads or elsewhere in the
-            country, you can explore membership options designed to help your
-            household or business stay connected to care.
+            Whether you're a local business owner in Norfolk, a freelancer in
+            Virginia Beach, or a family in Chesapeake — this was built for
+            your situation. And if you're outside Hampton Roads, the same
+            access is available wherever you are.
           </p>
 
           <p className="body-copy">
-            One plan can support up to 7 members, and access follows you
-            wherever you are in the United States.
+            We're building this market from the ground up — which means you get
+            direct access to an agent who actually knows your community, not a
+            call center.
           </p>
 
           <div className="hero-actions">
             <Link to="/get-details" className="btn btn-primary">
-              Get Plan Details
+              See My Options
             </Link>
-
             <Link to="/book-call" className="btn btn-secondary">
-              Book a Call
+              Book a Local Call
             </Link>
           </div>
 
           <p className="nationwide-note">
-            Services available nationwide across the U.S.
+            Serving Hampton Roads and all 50 states nationwide.
           </p>
         </div>
 
         <div>
-       <img
-  src="/images/now-available.jpg"
-  alt="Business owner reviewing healthcare access options"
-  className="section-image"
-/>
+          <img
+            src="/images/hampton-roads.jpg"
+            alt="Hampton Roads Virginia skyline"
+            className="section-image"
+          />
         </div>
       </div>
     </section>
