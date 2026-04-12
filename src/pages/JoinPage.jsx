@@ -40,15 +40,14 @@ export default function JoinPage() {
     };
 
     try {
-      const response = await fetch(
-        "https://services.leadconnectorhq.com/hooks/E6kJjCkXCeOgpU5OhZJh/webhook-trigger/2e95d40d-8640-4f6e-aa8f-3aa276da7705",
+    const response = await fetch(
+        "https://services.leadconnectorhq.com/hooks/E6kJjCkXCeOgpU5OhZJh/webhook-trigger/0f783b89-e7fe-4030-a5cd-301c238a3fd2",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
         }
       );
-
       if (!response.ok) throw new Error("Submission failed");
 
       setStatus({ loading: false, success: true, error: "" });
