@@ -3,36 +3,36 @@ import SectionHeading from "../shared/SectionHeading";
 export default function WhoItsFor() {
   const audiences = [
     {
-      label: "Self-Employed & Freelancers",
+  label: "The Solo Operator",
       img: "/images/self-employed.jpg",
       alt: "Self-employed professional working independently",
       points: [
-        "You built your own income — protect it with care access that fits",
-        "Skip the $1,200/mo premium and still stay connected to real care",
-        "Virtual visits, prescriptions, and wellness on your schedule",
-        "No HR department needed — enroll today and use it tomorrow",
+        "Your business runs on you — one health scare shouldn't derail everything",
+        "Access virtual care, prescriptions and wellness without a corporate plan",
+        "Use benefits the same day you enroll — no waiting periods",
+        "Plans start at $59.99/mo — less than most people spend on one ER visit",
       ],
     },
     {
-      label: "Small Business Owners",
+      label: "The Business That Wants to Do Right by Its Team",
       img: "/images/small-business.jpg",
       alt: "Small business owner in their workplace",
       points: [
-        "Attract and keep good people without a costly group plan",
-        "Business pricing starts at $24.99 per employee per month",
-        "First month free — low risk, high value for your team",
-        "Book a business demo and we'll walk through your options",
+        "You can't afford a group plan but you want to offer something real",
+        "Business access starts at $24.99 per employee per month",
+        "No complex HR setup — simple enrollment, immediate value",
+        "First month free — book a demo and see how it fits your team",
       ],
     },
     {
-      label: "Families Going Without",
+      label: "The Family Holding It Together",
       img: "/images/telehealth-family.jpg",
       alt: "Family on a telehealth video call",
       points: [
-        "One membership covers up to 7 people in your household",
-        "See a doctor from home — no waiting room, no co-pay on select plans",
-        "Mental health support, prescriptions, and specialist access included",
-        "Your coverage moves with you — nationwide, no referrals required",
+        "Insurance quotes felt impossible — this was designed for exactly that moment",
+        "One plan covers up to 7 household members nationwide",
+        "Doctor visits from your couch — mental health, prescriptions, specialist access",
+        "No referrals, no networks, no runaround — just care when you need it",
       ],
     },
   ];
@@ -93,9 +93,9 @@ export default function WhoItsFor() {
               marginRight: "auto",
             }}
           >
-            Not sure which situation fits you best? That's what the free call
-            is for. A licensed agent — not a bot, not a rep — will review your
-            specific situation and tell you what actually makes sense.
+           Ready to stop going without? Pick a time that works for you and
+            let's figure out the right fit together. Takes 15 minutes —
+            and it could save you thousands every year.
           </p>
           <a href="/book-call" className="btn btn-primary">
             Schedule a Free Call

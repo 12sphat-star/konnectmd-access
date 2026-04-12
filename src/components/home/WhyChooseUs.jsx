@@ -94,7 +94,7 @@ export default function WhoItsFor() {
             }}
           >
             Not sure if this fits your situation? That's exactly what the free
-            consultation call is for. A licensed agent will walk you through
+            consultation call is for. A agent will walk you through
             your options — no pressure, no commitment.
           </p>
           <a href="/book-call" className="btn btn-primary">
