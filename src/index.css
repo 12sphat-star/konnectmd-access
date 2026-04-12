@@ -1645,12 +1645,12 @@ a {
   border-bottom: none !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hamburger {
-    display: flex;
+    display: flex !important;
   }
 
   .desktop-nav {
-    display: none;
+    display: none !important;
   }
 }
