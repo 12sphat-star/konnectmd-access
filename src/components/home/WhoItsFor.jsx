@@ -7,10 +7,10 @@ export default function WhoItsFor() {
       img: "/images/self-employed.jpg",
       alt: "Self-employed professional working independently",
       points: [
-        "No employer plan — you carry the full cost",
-        "Traditional premiums can exceed your monthly profit",
-        "KonnectMD gives you real access without the insurance price tag",
-        "Virtual care, prescriptions, and wellness — starting at $59.99/mo",
+        "You built your own income — protect it with care access that fits",
+        "Skip the $1,200/mo premium and still stay connected to real care",
+        "Virtual visits, prescriptions, and wellness on your schedule",
+        "No HR department needed — enroll today and use it tomorrow",
       ],
     },
     {
@@ -18,10 +18,10 @@ export default function WhoItsFor() {
       img: "/images/small-business.jpg",
       alt: "Small business owner in their workplace",
       points: [
-        "Group plans are often out of reach for small teams",
-        "Offering access to care can help attract and retain people",
-        "One membership per household — no complex HR setup",
-        "We can discuss business-specific options on a quick call",
+        "Attract and keep good people without a costly group plan",
+        "Business pricing starts at $24.99 per employee per month",
+        "First month free — low risk, high value for your team",
+        "Book a business demo and we'll walk through your options",
       ],
     },
     {
@@ -29,10 +29,10 @@ export default function WhoItsFor() {
       img: "/images/telehealth-family.jpg",
       alt: "Family on a telehealth video call",
       points: [
-        "Up to 7 members on one plan",
-        "Cover the whole household for less than most individual insurance plans",
-        "Virtual care, mental health support, prescriptions, and more",
-        "Nationwide access — your coverage travels with your family",
+        "One membership covers up to 7 people in your household",
+        "See a doctor from home — no waiting room, no co-pay on select plans",
+        "Mental health support, prescriptions, and specialist access included",
+        "Your coverage moves with you — nationwide, no referrals required",
       ],
     },
   ];
@@ -42,8 +42,8 @@ export default function WhoItsFor() {
       <div className="container">
         <SectionHeading
           eyebrow="Who It Helps"
-          title="Built for the people traditional insurance left behind"
-          text="Whether you're on your own, running a business, or raising a family — if the cost of traditional health insurance has priced you out, this was built for you."
+          title="Real People. Real Situations. Real Solutions."
+          text="Three very different situations. One common problem — healthcare that costs too much or covers too little. Here's how KonnectMD Access fits each one."
         />
 
         <div className="steps-grid" style={{ marginTop: "2rem" }}>
@@ -93,9 +93,9 @@ export default function WhoItsFor() {
               marginRight: "auto",
             }}
           >
-            Not sure if this fits your situation? That's exactly what the free
-            consultation call is for. A licensed agent will walk you through
-            your options — no pressure, no commitment.
+            Not sure which situation fits you best? That's what the free call
+            is for. A licensed agent — not a bot, not a rep — will review your
+            specific situation and tell you what actually makes sense.
           </p>
           <a href="/book-call" className="btn btn-primary">
             Schedule a Free Call
