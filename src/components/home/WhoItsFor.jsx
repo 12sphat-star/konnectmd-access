@@ -5,7 +5,7 @@ export default function WhoItsFor() {
     {
       label: "Self-Employed & Freelancers",
       img: "/images/self-employed.jpg",
-      alt: "Self-employed professional",
+      alt: "Self-employed professional working independently",
       points: [
         "No employer plan — you carry the full cost",
         "Traditional premiums can exceed your monthly profit",
@@ -16,7 +16,7 @@ export default function WhoItsFor() {
     {
       label: "Small Business Owners",
       img: "/images/small-business.jpg",
-      alt: "Small business owner on a call",
+      alt: "Small business owner in their workplace",
       points: [
         "Group plans are often out of reach for small teams",
         "Offering access to care can help attract and retain people",
@@ -26,8 +26,8 @@ export default function WhoItsFor() {
     },
     {
       label: "Families Going Without",
-     img: "/images/telehealth-family.jpg",
-     alt: "Family on a telehealth video call",
+      img: "/images/telehealth-family.jpg",
+      alt: "Family on a telehealth video call",
       points: [
         "Up to 7 members on one plan",
         "Cover the whole household for less than most individual insurance plans",

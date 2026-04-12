@@ -58,8 +58,8 @@ export default function WhatItIs() {
 
         <div>
           <img
-            src="/images/business-owner.jpg"
-            alt="Business owner reviewing healthcare access options"
+            src="/images/agent-trust.jpg"
+            alt="Licensed agent reviewing options with a client"
             className="section-image"
           />
 
