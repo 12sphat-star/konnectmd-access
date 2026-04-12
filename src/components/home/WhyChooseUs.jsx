@@ -41,7 +41,7 @@ export default function WhoItsFor() {
     <section id="who-its-for" className="section section-dark">
       <div className="container">
         <SectionHeading
-          eyebrow="Who It Helps"
+          eyebrow="Why This Matters"
           title="Built for the people traditional insurance left behind"
           text="Whether you're on your own, running a business, or raising a family — if the cost of traditional health insurance has priced you out, this was built for you."
         />
