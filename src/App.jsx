@@ -1,3 +1,4 @@
+import JoinPage from "./pages/JoinPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -12,6 +13,7 @@ export default function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="/join-the-team" element={<JoinPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/plans" element={<PlansPage />} />
         <Route path="/get-details" element={<ContactPage />} />

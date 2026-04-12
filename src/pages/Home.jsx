@@ -1,3 +1,4 @@
+import AgentSection from "../components/home/AgentSection";
 import Hero from "../components/home/Hero";
 import TrustStrip from "../components/home/TrustStrip";
 import WhatItIs from "../components/home/WhatItIs";
@@ -24,6 +25,7 @@ export default function Home() {
 <PlansPreview />
 <AddOnsSection />
       <Disclaimer />
+      <AgentSection />
       <LaunchSection />
       <CTASection />
     </>
