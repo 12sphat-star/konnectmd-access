@@ -42,7 +42,7 @@ export default function WhoItsFor() {
       <div className="container">
         <SectionHeading
           eyebrow="Who It Helps"
-          title="Real People. Real Situations. Real Solutions."
+          title="The healthcare system wasn't built for you. This was."
           text="Three very different situations. One common problem — healthcare that costs too much or covers too little. Here's how KonnectMD Access fits each one."
         />
 
