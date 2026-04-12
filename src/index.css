@@ -1566,3 +1566,29 @@ a {
   border-radius: 999px;
   padding: 0.3rem 0.75rem;
 }
+@media (max-width: 900px) {
+  .two-col .section-image {
+    display: block !important;
+    width: 100%;
+    min-height: 220px;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 1.25rem;
+    order: -1;
+  }
+
+  .two-col > div:has(.section-image) {
+    order: -1;
+  }
+
+  .hero-image-wrap {
+    display: block !important;
+  }
+
+  .hero-image {
+    display: block !important;
+    min-height: 220px !important;
+    max-height: 280px !important;
+  }
+}

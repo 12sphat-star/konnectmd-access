@@ -11,6 +11,7 @@ export default function Navbar() {
         <nav className="nav-links">
           <Link to="/plans">Plans</Link>
           <Link to="/get-details">Get Details</Link>
+          <Link to="/join-the-team">Join the Team</Link>
           <Link to="/book-call" className="nav-cta">
             Book a Call
           </Link>
