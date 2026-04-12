@@ -6,8 +6,8 @@ export default function FastAccess() {
       <div className="container two-col">
         <div>
           <img
-            src="/images/doctor-call.jpg"
-            alt="Doctor on a virtual call"
+            src="/images/prescription-savings.jpg"
+            alt="Person picking up a prescription at a pharmacy"
             className="section-image"
           />
         </div>

@@ -4,7 +4,7 @@ export default function WhoItsFor() {
   const audiences = [
     {
       label: "Self-Employed & Freelancers",
-      img: "/images/business-owner.jpg",
+      img: "/images/self-employed.jpg",
       alt: "Self-employed professional",
       points: [
         "No employer plan — you carry the full cost",
@@ -15,7 +15,7 @@ export default function WhoItsFor() {
     },
     {
       label: "Small Business Owners",
-      img: "/images/doctor-call.jpg",
+      img: "/images/small-business.jpg",
       alt: "Small business owner on a call",
       points: [
         "Group plans are often out of reach for small teams",
@@ -26,8 +26,8 @@ export default function WhoItsFor() {
     },
     {
       label: "Families Going Without",
-      img: "/images/family-care.jpg",
-      alt: "Family receiving healthcare access",
+     img: "/images/telehealth-family.jpg",
+     alt: "Family on a telehealth video call",
       points: [
         "Up to 7 members on one plan",
         "Cover the whole household for less than most individual insurance plans",
