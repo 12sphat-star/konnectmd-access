@@ -1,44 +1,105 @@
-export default function WhyChooseUs() {
-  const items = [
+import SectionHeading from "../shared/SectionHeading";
+
+export default function WhoItsFor() {
+  const audiences = [
     {
-      title: "A Practical Option When Traditional Routes Feel Out of Reach",
-      text: "If traditional healthcare options do not fit your budget, that does not mean you should go without access to care.",
+      label: "Self-Employed & Freelancers",
+      img: "/images/business-owner.jpg",
+      alt: "Self-employed professional",
+      points: [
+        "No employer plan — you carry the full cost",
+        "Traditional premiums can exceed your monthly profit",
+        "KonnectMD gives you real access without the insurance price tag",
+        "Virtual care, prescriptions, and wellness — starting at $59.99/mo",
+      ],
     },
     {
-      title: "Built for Real-Life Budget Pressure",
-      text: "Many households and small business owners are not refusing care — they are being priced out of traditional options.",
+      label: "Small Business Owners",
+      img: "/images/doctor-call.jpg",
+      alt: "Small business owner on a call",
+      points: [
+        "Group plans are often out of reach for small teams",
+        "Offering access to care can help attract and retain people",
+        "One membership per household — no complex HR setup",
+        "We can discuss business-specific options on a quick call",
+      ],
     },
     {
-      title: "Household Value That Makes Sense",
-      text: "One plan may support up to 7 members, making it easier to create value across the household.",
-    },
-    {
-      title: "Nationwide Access and Guided Onboarding",
-      text: "Members can access services across the U.S. and receive onboarding to help them understand how to use their benefits.",
+      label: "Families Going Without",
+      img: "/images/family-care.jpg",
+      alt: "Family receiving healthcare access",
+      points: [
+        "Up to 7 members on one plan",
+        "Cover the whole household for less than most individual insurance plans",
+        "Virtual care, mental health support, prescriptions, and more",
+        "Nationwide access — your coverage travels with your family",
+      ],
     },
   ];
 
   return (
-    <section id="why-choose-us" className="section section-dark">
+    <section id="who-its-for" className="section section-dark">
       <div className="container">
-        <div className="section-heading">
-          <p className="eyebrow">Why People Are Taking a Closer Look</p>
-          <h2>More than a lower-cost option — a more usable one</h2>
-          <p className="section-copy">
-            The value is not just in the membership itself. It is in helping
-            people stay connected to care when they need a practical path
-            forward.
-          </p>
-        </div>
+        <SectionHeading
+          eyebrow="Who It Helps"
+          title="Built for the people traditional insurance left behind"
+          text="Whether you're on your own, running a business, or raising a family — if the cost of traditional health insurance has priced you out, this was built for you."
+        />
 
-        <div className="feature-grid premium-grid">
-          {items.map((item) => (
-            <div key={item.title} className="feature-card premium-card">
+        <div className="steps-grid" style={{ marginTop: "2rem" }}>
+          {audiences.map((audience) => (
+            <div key={audience.label} className="step-card premium-card">
+              <img
+                src={audience.img}
+                alt={audience.alt}
+                style={{
+                  width: "100%",
+                  height: "180px",
+                  objectFit: "cover",
+                  borderRadius: "14px",
+                  marginBottom: "1.1rem",
+                }}
+              />
               <div className="feature-top-line"></div>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
+              <h3 style={{ marginTop: 0, marginBottom: "0.85rem" }}>
+                {audience.label}
+              </h3>
+              <ul className="check-list">
+                {audience.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
             </div>
           ))}
+        </div>
+
+        <div
+          style={{
+            marginTop: "2rem",
+            padding: "1.5rem",
+            background: "var(--panel)",
+            border: "1px solid var(--border)",
+            borderRadius: "18px",
+            textAlign: "center",
+          }}
+        >
+          <p
+            style={{
+              color: "var(--muted)",
+              lineHeight: 1.75,
+              margin: "0 0 1rem",
+              maxWidth: "640px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            Not sure if this fits your situation? That's exactly what the free
+            consultation call is for. A licensed agent will walk you through
+            your options — no pressure, no commitment.
+          </p>
+          <a href="/book-call" className="btn btn-primary">
+            Schedule a Free Call
+          </a>
         </div>
       </div>
     </section>
