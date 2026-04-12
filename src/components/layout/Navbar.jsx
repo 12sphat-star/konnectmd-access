@@ -1,14 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="navbar">
       <div className="container nav-inner">
-        <Link to="/" className="brand">
+        <Link to="/" className="brand" onClick={() => setOpen(false)}>
           Konnect<span>MD</span> Access
         </Link>
 
-        <nav className="nav-links">
+        {/* Desktop nav */}
+        <nav className="nav-links desktop-nav">
           <Link to="/plans">Plans</Link>
           <Link to="/get-details">Get Details</Link>
           <Link to="/join-the-team">Join the Team</Link>
@@ -16,7 +20,31 @@ export default function Navbar() {
             Book a Call
           </Link>
         </nav>
+
+        {/* Mobile hamburger button */}
+        <button
+          className="hamburger"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className="mobile-menu">
+          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+          <Link to="/plans" onClick={() => setOpen(false)}>Plans</Link>
+          <Link to="/get-details" onClick={() => setOpen(false)}>Get Details</Link>
+          <Link to="/join-the-team" onClick={() => setOpen(false)}>Join the Team</Link>
+          <Link to="/book-call" onClick={() => setOpen(false)} className="mobile-cta">
+            Book a Call
+          </Link>
+        </div>
+      )}
     </header>
   );
 }
