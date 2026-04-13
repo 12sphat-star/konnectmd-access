@@ -68,7 +68,7 @@ export default function LandingPage() {
         {/* ── HERO IMAGE ── */}
         <div style={{ margin: "1.5rem 0", borderRadius: "20px", overflow: "hidden" }}>
           <img
-        src="/images/doctor-call.jpg"
+        src="/images/hero-telehealth.jpg"
 alt="KonnectMD Access agent on a call"
 style={{ width: "100%", height: "200px", objectFit: "cover", borderRadius: "14px", marginBottom: "1.5rem" }}
           />
