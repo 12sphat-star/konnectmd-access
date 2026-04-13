@@ -248,6 +248,22 @@ const payload = {
             {/* Fixed: removed raw webhook "Response: {responseText}" output —
                 it was exposing backend data and looked unprofessional to users */}
           </form>
+          <div style={{
+  marginTop: "1.5rem",
+  padding: "0.85rem 1.25rem",
+  background: "rgba(45, 127, 249, 0.06)",
+  border: "1px solid rgba(45, 127, 249, 0.15)",
+  borderRadius: "12px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "0.75rem",
+}}>
+  <span style={{ fontSize: "16px" }}>🔒</span>
+  <span style={{ fontSize: "0.85rem", color: "var(--muted)" }}>
+    Powered by <strong style={{ color: "var(--blue-soft)" }}>KonnectMD</strong> — HIPAA Compliant Telehealth. Your information is secure and will never be sold.
+  </span>
+</div>
         </div>
       </div>
     </section>

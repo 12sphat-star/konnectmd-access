@@ -15,11 +15,11 @@ export default function TrustStrip() {
       label: "Nationwide Access",
       sub: "All 50 states covered",
     },
-    {
-      icon: "✅",
-      label: "Not an MLM",
-      sub: "Licensed agent presented",
-    },
+   {
+  icon: "✅",
+  label: "Not an MLM",
+  sub: "Real opportunity. No recruting required.",
+},
   ];
 
   return (

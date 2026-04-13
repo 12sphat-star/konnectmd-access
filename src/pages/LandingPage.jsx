@@ -5,10 +5,10 @@ export default function LandingPage() {
   useEffect(() => {
   document.title = "You Stopped Paying for Insurance. Now What? | KonnectMD Access";
   document.querySelector('meta[property="og:title"]')?.setAttribute("content", "You Stopped Paying for Insurance. Now What? | KonnectMD Access");
-  document.querySelector('meta[property="og:description"]')?.setAttribute("content", "Millions of self-employed workers and families have been priced out of health insurance. KonnectMD Access is a real alternative starting at $59.99/mo.");
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", "Millions of self-employed workers and families have been priced out of health insurance. KonnectMD is a real alternative starting at $59.99/mo.");
   document.querySelector('meta[property="og:url"]')?.setAttribute("content", "https://konnectmd-access.pages.dev/landing");
   document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", "You Stopped Paying for Insurance. Now What? | KonnectMD Access");
-  document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", "Millions of self-employed workers and families have been priced out of health insurance. KonnectMD Access starts at $59.99/mo.");
+  document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", "Millions of self-employed workers and families have been priced out of health insurance. KonnectMD starts at $59.99/mo.");
 }, []);
   return (
     <section className="section landing-section">
@@ -16,7 +16,7 @@ export default function LandingPage() {
 
         {/* ── HERO ── */}
         <div className="landing-hero">
-          <p className="eyebrow">KonnectMD Access — Healthcare Membership</p>
+          <p className="eyebrow">KonnectMD — Healthcare Membership</p>
 
           <h1>
             You Stopped<br />
@@ -30,7 +30,7 @@ export default function LandingPage() {
             entrepreneurs, and families</strong> have been priced out of traditional
             health insurance — especially after ACA changes pushed premiums through
             the roof. Going without care isn't a plan.{" "}
-            <strong style={{ color: "var(--text)" }}>KonnectMD Access is.</strong>
+            <strong style={{ color: "var(--text)" }}>KonnectMD is.</strong>
           </p>
 
           <div
@@ -133,7 +133,7 @@ export default function LandingPage() {
           <p className="eyebrow" style={{ marginBottom: "0.5rem" }}>What This Is</p>
           <h2>Not Insurance. Something That Actually Works.</h2>
           <p>
-            KonnectMD Access is a <strong style={{ color: "var(--text)" }}>healthcare access and savings membership</strong> —
+            KonnectMD is a <strong style={{ color: "var(--text)" }}>healthcare access and savings membership</strong> —
             not health insurance. It's designed to keep you and your family connected to
             real care without the complexity, gatekeepers, and crushing costs of traditional systems.
           </p>
