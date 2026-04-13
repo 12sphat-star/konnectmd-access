@@ -70,7 +70,7 @@ export default function LandingPage() {
           <img
             src="/images/hero-telehealth.jpg"
             alt="Person using telehealth services from home"
-          style={{ width: "100%", height: "200px", objectFit: "cover", display: "block", objectPosition: "center top" }}
+          style={{ width: "100%", height: "200px", objectFit: "cover", display: "block", objectPosition: "center 20%" }}
           />
         </div>
 
@@ -166,9 +166,9 @@ export default function LandingPage() {
             everything you need to make the right decision.
           </p>
           <img
-            src="/images/now-available.jpg"
-            alt="KonnectMD Access now available in Hampton Roads"
-            style={{ width: "100%", height: "200px", objectFit: "cover", borderRadius: "14px", marginBottom: "1.5rem" }}
+            src="/images/doctor-call.jpg"
+alt="KonnectMD Access agent on a call"
+style={{ width: "100%", height: "200px", objectFit: "cover", borderRadius: "14px", marginBottom: "1.5rem" }}
           />
           <div className="landing-actions">
             <Link to="/" className="btn btn-primary">Explore the Full Site</Link>
