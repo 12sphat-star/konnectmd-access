@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../components/home/Hero";
 import TrustStrip from "../components/home/TrustStrip";
 import WhatItIs from "../components/home/WhatItIs";
@@ -15,6 +16,9 @@ import CTASection from "../components/home/CTASection";
 
 
 export default function Home() {
+  useEffect(() => {
+  document.title = "KonnectMD Access | Affordable Healthcare in Hampton Roads";
+}, []);
   return (
     <>
       <Hero />
