@@ -8,8 +8,10 @@ import WhoItsFor from "../components/home/WhoItsFor";
 import FastAccess from "../components/home/FastAccess";
 import HowItWorks from "../components/home/HowItWorks";
 import PlansPreview from "../components/home/PlansPreview";
+import TestimonialsSection from "../components/home/TestimonialsSection";
 import AddOnsSection from "../components/home/AddOnsSection";
 import Disclaimer from "../components/shared/Disclaimer";
+import FAQSection from "../components/home/FAQSection";
 import AgentSection from "../components/home/AgentSection";
 import LaunchSection from "../components/home/LaunchSection";
 import CTASection from "../components/home/CTASection";
@@ -30,8 +32,10 @@ export default function Home() {
 <FastAccess />
 <HowItWorks />
 <PlansPreview />
+<TestimonialsSection />
 <AddOnsSection />
       <Disclaimer />
+      <FAQSection />
       <AgentSection />
       <LaunchSection />
       <CTASection />
