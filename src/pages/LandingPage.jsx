@@ -89,6 +89,37 @@ style={{ width: "100%", height: "200px", objectFit: "cover", borderRadius: "14px
             </div>
           ))}
         </div>
+        {/* ── VIDEO ── */}
+<div className="landing-block">
+  <p className="eyebrow" style={{ marginBottom: "0.5rem" }}>See How It Works</p>
+  <h2>Watch This Before You Decide</h2>
+  <div
+    style={{
+      position: "relative",
+      paddingBottom: "56.25%",
+      height: 0,
+      overflow: "hidden",
+      borderRadius: "16px",
+      border: "1px solid var(--border)",
+      marginTop: "1.25rem",
+    }}
+  >
+    <iframe
+      src="https://www.youtube.com/embed/BBtPfd4MdVY?rel=0&modestbranding=1"
+      title="KonnectMD Overview"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+      }}
+    ></iframe>
+  </div>
+</div>
 
         {/* ── STAT STRIP ── */}
         <div className="landing-points">

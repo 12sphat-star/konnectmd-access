@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Hero from "../components/home/Hero";
 import TrustStrip from "../components/home/TrustStrip";
 import WhatItIs from "../components/home/WhatItIs";
+import VideoSection from "../components/home/VideoSection";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import CostComparison from "../components/home/CostComparison";
 import WhoItsFor from "../components/home/WhoItsFor";
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <TrustStrip />
       <WhatItIs />
+    <VideoSection />
   <WhyChooseUs />
   <CostComparison />
 <WhoItsFor />
