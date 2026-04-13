@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const initialForm = {
   firstName: "",
@@ -11,6 +11,9 @@ const initialForm = {
 };
 
 export default function JoinPage() {
+  useEffect(() => {
+  document.title = "Agent Opportunity | KonnectMD Access";
+}, []);
   const [formData, setFormData] = useState(initialForm);
   const [status, setStatus] = useState({
     loading: false,
