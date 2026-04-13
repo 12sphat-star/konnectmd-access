@@ -145,7 +145,7 @@ style={{ width: "100%", height: "200px", objectFit: "cover", borderRadius: "14px
               { num: "03", title: "Families Going Without", img: "/images/telehealth-family.jpg", alt: "Family on telehealth call", text: "You've been making do because nothing fit the budget. One membership can cover your whole household." },
             ].map((item) => (
               <div key={item.num} className="step-card" style={{ padding: 0, overflow: "hidden" }}>
-                <img src={item.img} alt={item.alt} style={{ width: "100%", height: "280px", objectFit: "cover", display: "block" }}
+       <img src={item.img} alt={item.alt} style={{ width: "100%", height: "200px", objectFit: "cover", display: "block", objectPosition: "center 20%" }} />
                  <div style={{ padding: "1.25rem" }}>
                   <div className="step-number" style={{ marginBottom: "0.75rem" }}>{item.num}</div>
                   <h3 style={{ margin: "0 0 0.4rem" }}>{item.title}</h3>
