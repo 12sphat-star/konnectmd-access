@@ -8,7 +8,7 @@ export default function WhatItIs() {
           <SectionHeading
             eyebrow="What This Is"
             title="A Smarter Path to Care — Not Insurance, Something Better Suited for You"
-            text="KonnectMD Access is a healthcare access and savings membership designed for the people traditional insurance left behind — the self-employed, small business owners, and families who need real care at a price that actually makes sense."
+            text="KonnectMD is a healthcare access and savings membership designed for the people traditional insurance left behind — the self-employed, small business owners, and families who need real care at a price that actually makes sense."
           />
 
           <p className="body-copy">
@@ -58,7 +58,7 @@ a secure, HIPAA-compliant platform by licensed professionals.
         <div>
           <img
             src="/images/agent-trust.jpg"
-            alt="Licensed agent reviewing options with a client"
+            alt="KonnectMD agent reviewing options with a client"
             className="section-image"
           />
 

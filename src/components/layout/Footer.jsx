@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="footer-note-block">
             <h4>Important Notice</h4>
             <p>
-              KonnectMD Access is not health insurance. It is a healthcare
+              KonnectMD is not health insurance. It is a healthcare
               savings and access membership with services available nationwide.
               All services are delivered through a secure, HIPAA-compliant
               platform by licensed professionals. Services are rendered subject

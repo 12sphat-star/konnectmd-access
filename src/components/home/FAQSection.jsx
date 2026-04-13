@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Do I need a license to become an agent?",
-    a: "No — a license is not required to become a KonnectMD Access agent. This is not an MLM. There are no recruit-your-friends requirements and no inventory. It is a straightforward income opportunity helping people access care they otherwise couldn't afford.",
+    a: "No — a license is not required to become a KonnectMD agent. This is not an MLM. There are no recruit-your-friends requirements and no inventory. It is a straightforward income opportunity helping people access care they otherwise couldn't afford.",
   },
   {
     q: "What if I have a medical emergency?",
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "How is this different from regular telehealth apps?",
-    a: "Most telehealth apps charge per visit. KonnectMD Access is a membership — you pay one monthly fee and get unlimited access to providers with $0 copays on select plans, plus prescription savings, mental health support, and more all in one place.",
+    a: "Most telehealth apps charge per visit. KonnectMD is a membership — you pay one monthly fee and get unlimited access to providers with $0 copays on select plans, plus prescription savings, mental health support, and more all in one place.",
   },
 ];
 
