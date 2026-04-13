@@ -96,11 +96,13 @@ const payload = {
           <h1 className="page-title">
             Find the right membership for your household or business
           </h1>
-          <p className="section-copy">
-            Fill out the form below and we'll help you review the options that
-            may best fit your needs. One plan can support up to 7 members, and
-            access follows you anywhere in the U.S.
-          </p>
+        <p className="section-copy">
+  Fill out the form below and we'll help you review the options that
+  may best fit your needs. One plan can support up to 7 members, and
+  access follows you anywhere in the U.S. Access a secure,
+  HIPAA-compliant telehealth platform with 24/7 virtual doctor visits
+  — no insurance needed.
+</p>
 
           <form className="basic-form" onSubmit={handleSubmit}>
             <div className="form-grid">
