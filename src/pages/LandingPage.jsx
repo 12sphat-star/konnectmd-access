@@ -4,6 +4,11 @@ import { useEffect } from "react";
 export default function LandingPage() {
   useEffect(() => {
   document.title = "You Stopped Paying for Insurance. Now What? | KonnectMD Access";
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content", "You Stopped Paying for Insurance. Now What? | KonnectMD Access");
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", "Millions of self-employed workers and families have been priced out of health insurance. KonnectMD Access is a real alternative starting at $59.99/mo.");
+  document.querySelector('meta[property="og:url"]')?.setAttribute("content", "https://konnectmd-access.pages.dev/landing");
+  document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", "You Stopped Paying for Insurance. Now What? | KonnectMD Access");
+  document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", "Millions of self-employed workers and families have been priced out of health insurance. KonnectMD Access starts at $59.99/mo.");
 }, []);
   return (
     <section className="section landing-section">
