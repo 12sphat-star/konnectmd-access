@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function LandingPage() {
+  useEffect(() => {
+  document.title = "You Stopped Paying for Insurance. Now What? | KonnectMD Access";
+}, []);
   return (
     <section className="section landing-section">
       <div className="container landing-container">
