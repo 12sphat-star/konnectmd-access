@@ -1,4 +1,8 @@
+import { useEffect } from "react";
 export default function CalendarPage() {
+  useEffect(() => {
+  document.title = "Book a Call | KonnectMD Access";
+}, []);
   return (
     <section className="section">
       <div className="container">
