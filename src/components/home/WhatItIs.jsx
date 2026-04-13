@@ -48,10 +48,9 @@ export default function WhatItIs() {
               A note on what this is
             </strong>
             <span style={{ color: "var(--muted)", fontSize: "0.93rem" }}>
-              This is not health insurance. It is a membership providing access
-              to healthcare services and savings. For traditional health or life
-              insurance needs, we can help with that too — through a licensed
-              agent conversation.
+            This is not health insurance. It is a membership providing access
+to healthcare services and savings. All services are delivered through
+a secure, HIPAA-compliant platform by licensed professionals.
             </span>
           </div>
         </div>

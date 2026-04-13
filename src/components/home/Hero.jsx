@@ -54,8 +54,8 @@ export default function Hero() {
               lineHeight: 1.6,
             }}
           >
-            Presented by a licensed health insurance agent. Not an MLM.
-            No referral requirement. Just real options for real people.
+         Presented by a KonnectMD agent. Not an MLM. No referral requirement.
+Just real options for real people. Powered by a HIPAA-compliant telehealth platform.
           </p>
         </div>
 
