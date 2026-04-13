@@ -31,7 +31,7 @@ export default function LandingPage() {
     document.title = "You Stopped Paying for Insurance. Now What? | KonnectMD Access";
     document.querySelector('meta[property="og:title"]')?.setAttribute("content", "You Stopped Paying for Insurance. Now What? | KonnectMD Access");
     document.querySelector('meta[property="og:description"]')?.setAttribute("content", "Millions of self-employed workers and families have been priced out of health insurance. KonnectMD is a real alternative starting at $59.99/mo.");
-    document.querySelector('meta[property="og:url"]')?.setAttribute("content", "https://konnectmd-access.pages.dev/landing");
+    document.querySelector('meta[property="og:url"]')?.setAttribute("content", "https://rukonnected.com/landing");
     document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", "You Stopped Paying for Insurance. Now What? | KonnectMD Access");
     document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", "Millions of self-employed workers and families have been priced out of health insurance. KonnectMD starts at $59.99/mo.");
   }, []);
@@ -70,7 +70,7 @@ export default function LandingPage() {
         </div>
 
         {/* ── TRUST BADGES ── */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "0.75rem", margin: "1.5rem 0" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(200px, 1fr))", gap: "1rem", marginTop: "1.25rem", overflowX: "auto" }}>
           {[
             { icon: "🔒", label: "HIPAA Compliant", sub: "Secure & private platform" },
             { icon: "👨‍⚕️", label: "4,000+ Providers", sub: "Board-certified nationwide" },

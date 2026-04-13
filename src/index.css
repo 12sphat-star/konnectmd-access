@@ -1739,3 +1739,8 @@ a {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
+@media (max-width: 768px) {
+  .landing-block > div[style] {
+    grid-template-columns: 1fr !important;
+  }
+}
