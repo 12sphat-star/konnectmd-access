@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 
 const initialForm = {
   firstName: "",
@@ -11,8 +12,10 @@ const initialForm = {
   state: "",
   message: "",
 };
-
 export default function ContactPage() {
+  useEffect(() => {
+  document.title = "Get Plan Details | KonnectMD Access";
+}, []);
   const [formData, setFormData] = useState(initialForm);
   const [status, setStatus] = useState({
     loading: false,
