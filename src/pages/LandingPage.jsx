@@ -59,7 +59,9 @@ export default function LandingPage() {
             <strong style={{ color: "var(--text)" }}>KonnectMD is.</strong>
           </p>
 
-         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1rem", marginTop: "1.25rem", overflowX: "auto" }}>
+          <div style={{ display: "inline-block", background: "rgba(45, 127, 249, 0.14)", border: "1px solid rgba(45, 127, 249, 0.3)", borderRadius: "999px", padding: "0.6rem 1.1rem", color: "var(--blue-soft)", fontWeight: 700, fontSize: "0.92rem", marginBottom: "1.5rem" }}>
+            Healthcare access starting at $59.99/mo — up to 7 members on one plan
+          </div>
 
           <div className="landing-actions">
             <Link to="/get-details" className="btn btn-primary">See My Options</Link>
@@ -68,7 +70,7 @@ export default function LandingPage() {
         </div>
 
         {/* ── TRUST BADGES ── */}
-       <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "0.75rem", margin: "1.5rem 0" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "0.75rem", margin: "1.5rem 0" }}>
           {[
             { icon: "🔒", label: "HIPAA Compliant", sub: "Secure & private platform" },
             { icon: "👨‍⚕️", label: "4,000+ Providers", sub: "Board-certified nationwide" },
