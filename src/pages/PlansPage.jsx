@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import { plans } from "../data/plans";
+import { useEffect } from "react";
 
 export default function PlansPage() {
+  useEffect(() => {
+  document.title = "Membership Plans | KonnectMD Access";
+}, []);
   return (
     <section className="section plans-page">
       <div className="container">
