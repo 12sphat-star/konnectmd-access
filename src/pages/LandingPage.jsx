@@ -72,7 +72,7 @@ export default function LandingPage() {
               Become a KonnectMD Agent — <strong style={{ color: "#FFD700" }}>No License Required.</strong> Earn real income helping people get healthcare they can afford.
             </span>
             <a
-              href="https://www.konnectmdagency.com/12stone"
+              href="https://rukonnected.com/join-the-team"
               target="_blank"
               rel="noreferrer"
               style={{
@@ -406,3 +406,4 @@ export default function LandingPage() {
     </>
   );
 }
+
