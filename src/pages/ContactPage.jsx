@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const initialForm = {
   firstName: "",
@@ -12,16 +12,34 @@ const initialForm = {
   state: "",
   message: "",
 };
+
 export default function ContactPage() {
-  useEffect(() => {
-  document.title = "Get Plan Details | KonnectMD Access";
-}, []);
-  const [formData, setFormData] = useState(initialForm);
+  const location = useLocation();
+
+  const [formData, setFormData] = useState(() => ({
+    ...initialForm,
+    interestType: location.state?.interestType || initialForm.interestType,
+  }));
+
   const [status, setStatus] = useState({
     loading: false,
     success: false,
     error: "",
   });
+
+  useEffect(() => {
+    document.title = "Get Plan Details | KonnectMD Access";
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    if (location.state?.interestType) {
+      setFormData((prev) => ({
+        ...prev,
+        interestType: location.state.interestType,
+      }));
+    }
+  }, [location.state]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,21 +58,23 @@ export default function ContactPage() {
       error: "",
     });
 
-const payload = {
-  source: "KonnectMD Access Website",
-  submittedAt: new Date().toISOString(),
-  firstName: formData.firstName,
-  lastName: formData.lastName,
-  email: formData.email,
-  phone: formData.phone,
-  interest_type: formData.interestType,
-  membership_interest: formData.membershipInterest,
-  household_size: formData.householdSize,
-  state: formData.state,
-  message: formData.message,
-};
+    const payload = {
+      source: "KonnectMD Access Website",
+      submittedAt: new Date().toISOString(),
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      interest_type: formData.interestType,
+      membership_interest: formData.membershipInterest,
+      household_size: formData.householdSize,
+      state: formData.state,
+      message: formData.message,
+    };
 
     try {
+      console.log("Submitting payload:", payload);
+
       const response = await fetch(import.meta.env.VITE_GHL_WEBHOOK_URL, {
         method: "POST",
         headers: {
@@ -69,14 +89,18 @@ const payload = {
         throw new Error(text || "Failed to submit form");
       }
 
-      // Fixed: raw webhook response text is no longer stored or shown to the user
       setStatus({
         loading: false,
         success: true,
         error: "",
       });
 
-      setFormData(initialForm);
+      setFormData({
+        ...initialForm,
+        interestType: location.state?.interestType || initialForm.interestType,
+      });
+
+      window.scrollTo(0, 0);
     } catch (error) {
       console.error("Webhook error:", error);
 
@@ -94,15 +118,13 @@ const payload = {
         <div className="cta-box premium-cta">
           <p className="eyebrow">Get Plan Details</p>
           <h1 className="page-title">
-            Find the right membership for your household or business
+            Tell us what you’re looking for and we’ll point you in the right direction.
           </h1>
-        <p className="section-copy">
-  Fill out the form below and we'll help you review the options that
-  may best fit your needs. One plan can support up to 7 members, and
-  access follows you anywhere in the U.S. Access a secure,
-  HIPAA-compliant telehealth platform with 24/7 virtual doctor visits
-  — no insurance needed.
-</p>
+
+          <p className="section-copy">
+            Fill out the form below and we’ll help you review the option that may
+            best fit your needs.
+          </p>
 
           <form className="basic-form" onSubmit={handleSubmit}>
             <div className="form-grid">
@@ -159,7 +181,7 @@ const payload = {
               </div>
 
               <div>
-                <label htmlFor="interestType">Interest Type</label>
+                <label htmlFor="interestType">Area of Interest</label>
                 <select
                   id="interestType"
                   name="interestType"
@@ -168,6 +190,11 @@ const payload = {
                 >
                   <option>Individual / Family</option>
                   <option>Business</option>
+                  <option>Telehealth / 24/7 Access</option>
+                  <option>Rx Savings</option>
+                  <option>Mental Health / Counseling</option>
+                  <option>Whole Family Membership</option>
+                  <option>Additional Benefits Stack</option>
                   <option>Not Sure Yet</option>
                 </select>
               </div>
@@ -203,17 +230,17 @@ const payload = {
               </div>
 
               <div>
-  <label htmlFor="state">State</label>
-<input
-  id="state"
-  name="state"
-  type="text"
-  placeholder="Your state"
-  value={formData.state}
-  onChange={handleChange}
-/>
-</div>
-           </div>
+                <label htmlFor="state">State</label>
+                <input
+                  id="state"
+                  name="state"
+                  type="text"
+                  placeholder="Your state"
+                  value={formData.state}
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
 
             <div style={{ marginTop: "1rem" }}>
               <label htmlFor="message">Message</label>
@@ -244,26 +271,29 @@ const payload = {
             )}
 
             {status.error && <p className="form-error">{status.error}</p>}
-
-            {/* Fixed: removed raw webhook "Response: {responseText}" output —
-                it was exposing backend data and looked unprofessional to users */}
           </form>
-          <div style={{
-  marginTop: "1.5rem",
-  padding: "0.85rem 1.25rem",
-  background: "rgba(45, 127, 249, 0.06)",
-  border: "1px solid rgba(45, 127, 249, 0.15)",
-  borderRadius: "12px",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  gap: "0.75rem",
-}}>
-  <span style={{ fontSize: "16px" }}>🔒</span>
-  <span style={{ fontSize: "0.85rem", color: "var(--muted)" }}>
-    Powered by <strong style={{ color: "var(--blue-soft)" }}>KonnectMD</strong> — HIPAA Compliant Telehealth. Your information is secure and will never be sold.
-  </span>
-</div>
+
+          <div
+            style={{
+              marginTop: "1.5rem",
+              padding: "0.85rem 1.25rem",
+              background: "rgba(45, 127, 249, 0.06)",
+              border: "1px solid rgba(45, 127, 249, 0.15)",
+              borderRadius: "12px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "0.75rem",
+            }}
+          >
+            <span style={{ fontSize: "16px" }}>🔒</span>
+            <span style={{ fontSize: "0.85rem", color: "var(--muted)" }}>
+              Powered by{" "}
+              <strong style={{ color: "var(--blue-soft)" }}>KonnectMD</strong> —
+              HIPAA Compliant Telehealth. Your information is secure and will
+              never be sold.
+            </span>
+          </div>
         </div>
       </div>
     </section>
