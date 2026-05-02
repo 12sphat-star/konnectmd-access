@@ -8,6 +8,18 @@ import ContactPage from "./pages/ContactPage";
 import CalendarPage from "./pages/CalendarPage";
 import LandingPage from "./pages/LandingPage";
 import JoinPage from "./pages/JoinPage";
+import NorfolkPage from "./pages/NorfolkPage";
+import VirginiaBeachPage from "./pages/VirginiaBeachPage";
+import ChesapeakePage from "./pages/ChesapeakePage";
+import PortsmouthPage from "./pages/PortsmouthPage";
+import HamptonPage from "./pages/HamptonPage";
+import NewportNewsPage from "./pages/NewportNewsPage";
+import SuffolkPage from "./pages/SuffolkPage";
+import LocationsPage from "./pages/LocationsPage";
+import FamilyCoveragePage from "./pages/FamilyCoveragePage";
+import NoInsuranceDoctorPage from "./pages/NoInsuranceDoctorPage";
+import PrescriptionSavingsPage from "./pages/PrescriptionSavingsPage";
+import SmallBusinessHealthcarePage from "./pages/SmallBusinessHealthcarePage";
 
 import InterestSelector from "./pages/InterestSelector";
 import TelehealthPage from "./pages/TelehealthPage";
@@ -34,6 +46,18 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/locations/norfolk-va" element={<NorfolkPage />} />
+        <Route path="/locations/virginia-beach-va" element={<VirginiaBeachPage />} />
+        <Route path="/locations/chesapeake-va" element={<ChesapeakePage />} />
+        <Route path="/locations/portsmouth-va" element={<PortsmouthPage />} />
+        <Route path="/locations/hampton-va" element={<HamptonPage />} />
+        <Route path="/locations/newport-news-va" element={<NewportNewsPage />} />
+        <Route path="/locations/suffolk-va" element={<SuffolkPage />} />
+        <Route path="/locations" element={<LocationsPage />} />
+        <Route path="/problems/family-healthcare" element={<FamilyCoveragePage />} />
+        <Route path="/problems/doctor-without-insurance" element={<NoInsuranceDoctorPage />} />
+        <Route path="/problems/prescription-savings" element={<PrescriptionSavingsPage />} />
+        <Route path="/problems/small-business-healthcare" element={<SmallBusinessHealthcarePage />} />
         <Route path="/plans" element={<PlansPage />} />
 
         <Route path="/get-details" element={<InterestSelector />} />
@@ -47,6 +71,7 @@ export default function App() {
         <Route path="/book-call" element={<CalendarPage />} />
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/join-the-team" element={<JoinPage />} />
+    
       </Routes>
 
       <Footer />

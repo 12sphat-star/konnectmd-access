@@ -1,105 +1,77 @@
 import SectionHeading from "../shared/SectionHeading";
 
-export default function WhoItsFor() {
-  const audiences = [
+export default function WhyChooseUs() {
+  const reasons = [
     {
-      label: "Self-Employed & Freelancers",
-      img: "/images/business-owner.jpg",
-      alt: "Self-employed professional",
-      points: [
-        "No employer plan — you carry the full cost",
-        "Traditional premiums can exceed your monthly profit",
-        "KonnectMD gives you real access without the insurance price tag",
-        "Virtual care, prescriptions, and wellness — starting at $59.99/mo",
-      ],
+      icon: "⏱️",
+      title: "No Open Enrollment Wait",
+      text: "KonnectMD gives people a way to access care without waiting for a traditional enrollment window.",
     },
     {
-      label: "Small Business Owners",
-      img: "/images/doctor-call.jpg",
-      alt: "Small business owner on a call",
-      points: [
-        "Group plans are often out of reach for small teams",
-        "Offering access to care can help attract and retain people",
-        "One membership per household — no complex HR setup",
-        "We can discuss business-specific options on a quick call",
-      ],
+      icon: "👨‍👩‍👧‍👦",
+      title: "Built for Households",
+      text: "Eligible membership options may include up to 7 household members, making it practical for families.",
     },
     {
-      label: "Families Going Without",
-      img: "/images/family-care.jpg",
-      alt: "Family receiving healthcare access",
-      points: [
-        "Up to 7 members on one plan",
-        "Cover the whole household for less than most individual insurance plans",
-        "Virtual care, mental health support, prescriptions, and more",
-        "Nationwide access — your coverage travels with your family",
-      ],
+      icon: "🏠",
+      title: "Care From Home",
+      text: "Members can access virtual care options without sitting in a waiting room for common needs.",
+    },
+    {
+      icon: "💊",
+      title: "More Than Doctor Visits",
+      text: "KonnectMD may help with prescription savings, mental health support, dental, vision, chiropractic access, and more.",
+    },
+    {
+      icon: "💼",
+      title: "Small Business Friendly",
+      text: "A practical conversation for business owners who want to support employees, contractors, or independent teams.",
+    },
+    {
+      icon: "✅",
+      title: "Simple to Understand",
+      text: "KonnectMD is not traditional health insurance. It is a healthcare membership designed around access and savings.",
     },
   ];
 
   return (
-    <section id="who-its-for" className="section section-dark">
+    <section id="why-choose-us" className="section">
       <div className="container">
         <SectionHeading
-          eyebrow="Why This Matters"
-          title="Real People. Real Situations. Real Solutions."
-          text="Whether you're on your own, running a business, or raising a family — if the cost of traditional health insurance has priced you out, this was built for you."
+          eyebrow="Why People Choose KonnectMD"
+          title="A Simpler Way to Access Care When Traditional Options Feel Too Expensive"
+          text="KonnectMD is built for people who need practical healthcare access, clear options, and a faster way to get help."
         />
 
-        <div className="steps-grid" style={{ marginTop: "2rem" }}>
-          {audiences.map((audience) => (
-            <div key={audience.label} className="step-card premium-card">
-              <img
-                src={audience.img}
-                alt={audience.alt}
-                style={{
-                  width: "100%",
-                  height: "180px",
-                  objectFit: "cover",
-                  borderRadius: "14px",
-                  marginBottom: "1.1rem",
-                }}
-              />
+        <div className="why-grid">
+          {reasons.map((reason) => (
+            <div key={reason.title} className="feature-card premium-card">
+              <div style={{ fontSize: "1.4rem", marginBottom: "0.5rem" }}>
+                {reason.icon}
+              </div>
+
               <div className="feature-top-line"></div>
-              <h3 style={{ marginTop: 0, marginBottom: "0.85rem" }}>
-                {audience.label}
+
+              <h3
+                style={{
+                  fontSize: "1rem",
+                  margin: "0.4rem 0",
+                }}
+              >
+                {reason.title}
               </h3>
-              <ul className="check-list">
-                {audience.points.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
+
+              <p
+                style={{
+                  fontSize: "0.88rem",
+                  lineHeight: 1.5,
+                  margin: 0,
+                }}
+              >
+                {reason.text}
+              </p>
             </div>
           ))}
-        </div>
-
-        <div
-          style={{
-            marginTop: "2rem",
-            padding: "1.5rem",
-            background: "var(--panel)",
-            border: "1px solid var(--border)",
-            borderRadius: "18px",
-            textAlign: "center",
-          }}
-        >
-          <p
-            style={{
-              color: "var(--muted)",
-              lineHeight: 1.75,
-              margin: "0 0 1rem",
-              maxWidth: "640px",
-              marginLeft: "auto",
-              marginRight: "auto",
-            }}
-          >
-            Not sure if this fits your situation? That's exactly what the free
-            consultation call is for. A KonnectMD agent will walk you through
-            your options — no pressure, no commitment.
-          </p>
-          <a href="/book-call" className="btn btn-primary">
-            Schedule a Free Call
-          </a>
         </div>
       </div>
     </section>

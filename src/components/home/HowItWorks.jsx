@@ -4,43 +4,77 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "01",
-      title: "Pick Your Level",
-      text: "Silver, Gold, Platinum, or Titanium — each tier builds on the last. Start where your budget is today and upgrade anytime. Not sure which fits? A quick 15-minute call solves that.",
+      title: "Get Your Options",
+      text: "Start by reviewing the KonnectMD membership levels online or speak with an agent for guidance. We help you understand what may fit your household, budget, or business.",
     },
     {
       number: "02",
-      title: "Enroll in Minutes",
-      text: "No lengthy applications. No medical exams. No waiting periods. Complete enrollment online and you're in — same day access on most plans.",
+      title: "Choose & Enroll",
+      text: "Select the membership that fits your needs and complete enrollment online in minutes. No complicated process and no traditional insurance-style confusion.",
     },
     {
       number: "03",
-      title: "Get Onboarded",
-      text: "We don't just hand you a card and wish you luck. Every member gets onboarding so you know exactly how to use your benefits, access your portal, and get the most out of your membership from day one.",
-    },
-    {
-      number: "04",
-      title: "Use It Anywhere",
-      text: "Virtual care, prescriptions, wellness support and more — available nationwide. Your membership travels with you wherever life takes you.",
+      title: "Start Using Benefits",
+      text: "Use your membership for virtual care, prescription savings, mental health support, and other eligible services depending on your plan.",
     },
   ];
 
   return (
-    <section className="section">
+    <section id="how-it-works" className="section section-dark">
       <div className="container">
         <SectionHeading
           eyebrow="How It Works"
-          title="From enrollment to care in four simple steps"
-          text="No confusing paperwork. No runaround. Just a clear path to getting the care you and your household need."
+          title="Simple to Start. Easy to Use."
+          text="KonnectMD was built to remove confusion and help people access care faster."
         />
 
-        <div className="steps-grid four-steps">
+        <div className="why-grid">
           {steps.map((step) => (
-            <div key={step.number} className="step-card">
-              <div className="step-number">{step.number}</div>
-              <h3>{step.title}</h3>
-              <p>{step.text}</p>
+            <div key={step.number} className="feature-card premium-card">
+              <div
+                style={{
+                  fontSize: "1.6rem",
+                  fontWeight: 800,
+                  color: "var(--blue-soft)",
+                  marginBottom: "0.6rem",
+                }}
+              >
+                {step.number}
+              </div>
+
+              <div className="feature-top-line"></div>
+
+              <h3
+                style={{
+                  fontSize: "1rem",
+                  margin: "0.45rem 0",
+                }}
+              >
+                {step.title}
+              </h3>
+
+              <p
+                style={{
+                  fontSize: "0.9rem",
+                  lineHeight: 1.55,
+                  margin: 0,
+                }}
+              >
+                {step.text}
+              </p>
             </div>
           ))}
+        </div>
+
+        <div
+          style={{
+            marginTop: "2rem",
+            textAlign: "center",
+          }}
+        >
+          <a href="/get-details" className="btn btn-primary">
+            Get Plan Details
+          </a>
         </div>
       </div>
     </section>

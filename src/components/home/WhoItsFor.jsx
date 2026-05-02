@@ -3,36 +3,36 @@ import SectionHeading from "../shared/SectionHeading";
 export default function WhoItsFor() {
   const audiences = [
     {
-  label: "The Solo Operator",
+      label: "Entrepreneurs & Self-Employed",
       img: "/images/self-employed.jpg",
-      alt: "Self-employed professional working independently",
+      alt: "Entrepreneur reviewing healthcare options",
       points: [
-        "Your business runs on you — one health scare shouldn't derail everything",
-        "Access virtual care, prescriptions and wellness without a corporate plan",
-        "Use benefits the same day you enroll — no waiting periods",
-        "Plans start at $59.99/mo — less than most people spend on one ER visit",
+        "You do not have an employer plan to fall back on",
+        "You need care access without waiting for open enrollment",
+        "KonnectMD can help with virtual care, prescriptions, and wellness support",
+        "A practical option when traditional insurance feels too expensive",
       ],
     },
     {
-      label: "The Business That Wants to Do Right by Its Team",
-      img: "/images/small-business.jpg",
-      alt: "Small business owner in their workplace",
+      label: "Small Business Owners",
+      img: "/images/doctor-call.jpg",
+      alt: "Small business owner reviewing options",
       points: [
-        "You can't afford a group plan but you want to offer something real",
-        "Business access starts at $24.99 per employee per month",
-        "No complex HR setup — simple enrollment, immediate value",
-        "First month free — book a demo and see how it fits your team",
+        "Group health plans can be expensive and complicated",
+        "KonnectMD can be discussed as a simple access option for teams",
+        "Helpful for employees, contractors, and independent workers",
+        "A smart conversation for businesses that want to offer more support",
       ],
     },
     {
-      label: "The Family Holding It Together",
-      img: "/images/telehealth-family.jpg",
-      alt: "Family on a telehealth video call",
+      label: "Families & Households",
+      img: "/images/family-care.jpg",
+      alt: "Family healthcare access",
       points: [
-        "Insurance quotes felt impossible — this was designed for exactly that moment",
-        "One plan covers up to 7 household members nationwide",
-        "Doctor visits from your couch — mental health, prescriptions, specialist access",
-        "No referrals, no networks, no runaround — just care when you need it",
+        "Up to 7 household members may be included on one membership",
+        "No added cost for each additional family member on eligible options",
+        "Virtual care, mental health support, prescription savings, and more",
+        "Built for families who need care without more confusion",
       ],
     },
   ];
@@ -41,9 +41,9 @@ export default function WhoItsFor() {
     <section id="who-its-for" className="section section-dark">
       <div className="container">
         <SectionHeading
-          eyebrow="Who It Helps"
-          title="The healthcare system wasn't built for you. This was."
-          text="Three very different situations. One common problem — healthcare that costs too much or covers too little. Here's how KonnectMD Access fits each one."
+          eyebrow="Who This Helps"
+          title="Built for People Who Need a Simpler Way to Access Care"
+          text="KonnectMD is for families, entrepreneurs, small business owners, and everyday people who need care access without the stress of traditional insurance confusion."
         />
 
         <div className="steps-grid" style={{ marginTop: "2rem" }}>
@@ -60,10 +60,13 @@ export default function WhoItsFor() {
                   marginBottom: "1.1rem",
                 }}
               />
+
               <div className="feature-top-line"></div>
+
               <h3 style={{ marginTop: 0, marginBottom: "0.85rem" }}>
                 {audience.label}
               </h3>
+
               <ul className="check-list">
                 {audience.points.map((point) => (
                   <li key={point}>{point}</li>
@@ -88,17 +91,18 @@ export default function WhoItsFor() {
               color: "var(--muted)",
               lineHeight: 1.75,
               margin: "0 0 1rem",
-              maxWidth: "640px",
+              maxWidth: "680px",
               marginLeft: "auto",
               marginRight: "auto",
             }}
           >
-           Ready to stop going without? Pick a time that works for you and
-            let's figure out the right fit together. Takes 15 minutes —
-            and it could save you thousands every year.
+            Not sure where you fit? That is what the call is for. A KonnectMD
+            agent can walk you through the options and help you understand what
+            may work for your household or business.
           </p>
-          <a href="/book-call" className="btn btn-primary">
-            Schedule a Free Call
+
+          <a href="/get-details" className="btn btn-primary">
+            Get Plan Details
           </a>
         </div>
       </div>

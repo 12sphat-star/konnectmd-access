@@ -1,44 +1,44 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
- const options = [
+const options = [
   {
-    title: "Telehealth / 24/7 Access",
-    subtitle: "Talk to a doctor without the waiting room.",
-    text: "Fast access by phone or video when convenience matters most.",
+    title: "Doctor Access",
+    subtitle: "Talk to a provider without the waiting room.",
+    text: "Good for people who want fast access to care from home.",
     path: "/get-details/telehealth",
     tag: "Most Popular",
     icon: "🩺",
     featured: true,
   },
   {
-    title: "Rx Savings",
+    title: "Prescription Savings",
     subtitle: "Lower everyday medication costs.",
-    text: "Help reduce monthly out-of-pocket medication expenses.",
+    text: "Explore ways KonnectMD may help with medication savings.",
     path: "/get-details/rx-savings",
     tag: "Budget Relief",
     icon: "💊",
   },
   {
-    title: "Mental Health / Counseling",
-    subtitle: "Support beyond physical care.",
-    text: "Access to mental wellness support in a simpler way.",
+    title: "Mental Health Support",
+    subtitle: "Care for stress, anxiety, and emotional wellness.",
+    text: "Learn how KonnectMD may support whole-person care.",
     path: "/get-details/mental-health",
     tag: "Whole-Person Care",
     icon: "🧠",
   },
   {
-    title: "Whole Family Membership",
-    subtitle: "Built for more than one person.",
-    text: "One membership can support your household.",
+    title: "Family Membership",
+    subtitle: "Built for households, not just one person.",
+    text: "One membership may include up to 7 household members.",
     path: "/get-details/family-membership",
     tag: "Family Value",
     icon: "👨‍👩‍👧‍👦",
   },
   {
-    title: "Additional Benefits Stack",
-    subtitle: "More than one feature.",
-    text: "Explore the full value beyond a single benefit.",
+    title: "Additional Benefits",
+    subtitle: "More value beyond one feature.",
+    text: "See other benefits that may be included with KonnectMD.",
     path: "/get-details/additional-benefits",
     tag: "Full Value",
     icon: "📦",
@@ -53,48 +53,44 @@ export default function InterestSelector() {
   }, []);
 
   return (
-    <section className="selector-lux section">
+    <main className="selector-page section">
       <div className="container">
-        <div className="selector-lux-hero">
-          <p className="selector-lux-kicker">Get Plan Details</p>
-          <h1>Choose the area that fits what matters most to you.</h1>
-          <p className="selector-lux-sub">
-            Instead of sending everyone through one generic page, choose the
-            path that fits your biggest concern and explore the option in a more
-            focused way.
+        <div className="selector-header">
+          <p className="eyebrow">Get Plan Details</p>
+          <h1>What matters most to you right now?</h1>
+          <p>
+            Choose the area that best fits your situation. Each option opens a
+            focused page so you can quickly understand how KonnectMD may help.
           </p>
         </div>
 
-        <div className="selector-lux-grid">
+        <div className="selector-grid">
           {options.map((option) => (
             <button
-  key={option.path}
-  type="button"
-  className={`details-selector-card ${option.featured ? "featured" : ""}`}
-  onClick={() => navigate(option.path)}
->
-  <div className="details-selector-card-top">
-    <span className="details-selector-icon">{option.icon}</span>
-    <span className="details-selector-tag">{option.tag}</span>
-  </div>
+              key={option.path}
+              type="button"
+              className={`selector-card ${option.featured ? "featured" : ""}`}
+              onClick={() => navigate(option.path)}
+            >
+              <div className="selector-card-top">
+                <span className="selector-icon">{option.icon}</span>
+                <span className="selector-tag">{option.tag}</span>
+              </div>
 
-  <h3>{option.title}</h3>
-  <h4>{option.subtitle}</h4>
-  <p>{option.text}</p>
+              <h3>{option.title}</h3>
+              <h4>{option.subtitle}</h4>
+              <p>{option.text}</p>
 
-  <div className="details-selector-cta">
-    <span>Explore This Option</span>
-    <span>→</span>
-  </div>
-</button>
+              <div className="selector-card-cta">
+                <span>Explore This Option</span>
+                <span>→</span>
+              </div>
+            </button>
           ))}
         </div>
 
-        <div className="selector-lux-footer">
-          <p>
-            Looking for the fastest next step? You can also go straight to the
-            contact form.
-          </p>
+        <div className="selector-footer">
+          <p>Already know you want details?</p>
           <button
             type="button"
             className="btn btn-primary"
@@ -104,6 +100,6 @@ export default function InterestSelector() {
           </button>
         </div>
       </div>
-    </section>
+    </main>
   );
 }

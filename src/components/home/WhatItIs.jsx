@@ -6,23 +6,24 @@ export default function WhatItIs() {
       <div className="container two-col">
         <div>
           <SectionHeading
-            eyebrow="What This Is"
-            title="A Smarter Path to Care — Not Insurance, Something Better Suited for You"
-            text="KonnectMD is a healthcare access and savings membership designed for the people traditional insurance left behind — the self-employed, small business owners, and families who need real care at a price that actually makes sense."
+            eyebrow="What KonnectMD Is"
+            title="A Healthcare Membership for People Who Need Care Without the Insurance Headache"
+            text="KonnectMD helps families, entrepreneurs, small business owners, and everyday people access care, savings, and support through a simple healthcare membership."
           />
 
           <p className="body-copy">
-            Depending on your membership level, access includes virtual care,
-            prescriptions, wellness support, mental health services, specialist
-            consultations, and more — all available nationwide with no network
-            restrictions.
+            Depending on the membership level, benefits may include virtual
+            urgent care, prescription savings, mental health support, dental,
+            vision, chiropractic access, and other healthcare services.
           </p>
 
           <p className="body-copy">
-            One plan can cover{" "}
-            <strong style={{ color: "var(--text)" }}>up to 7 household members.</strong>{" "}
-            Onboarding is included so you know exactly how to use every benefit
-            from day one.
+            One membership may include{" "}
+            <strong style={{ color: "var(--text)" }}>
+              up to 7 household members
+            </strong>
+            , making it easier for families to access care without paying more
+            for each person.
           </p>
 
           <div
@@ -45,12 +46,12 @@ export default function WhatItIs() {
                 textTransform: "uppercase",
               }}
             >
-              A note on what this is
+              Important to know
             </strong>
+
             <span style={{ color: "var(--muted)", fontSize: "0.93rem" }}>
-            This is not health insurance. It is a membership providing access
-to healthcare services and savings. All services are delivered through
-a secure, HIPAA-compliant platform by licensed professionals.
+              KonnectMD is not traditional health insurance. It is a healthcare
+              membership designed to provide access to services and savings.
             </span>
           </div>
         </div>
@@ -58,7 +59,7 @@ a secure, HIPAA-compliant platform by licensed professionals.
         <div>
           <img
             src="/images/agent-trust.jpg"
-            alt="KonnectMD agent reviewing options with a client"
+            alt="KonnectMD healthcare membership options being reviewed"
             className="section-image"
           />
 
@@ -71,10 +72,10 @@ a secure, HIPAA-compliant platform by licensed professionals.
             }}
           >
             {[
-              { stat: "$59.99", label: "Starting per month" },
-              { stat: "7", label: "Members per plan" },
-              { stat: "50+", label: "States covered" },
-              { stat: "4", label: "Membership levels" },
+              { stat: "$59.99", label: "Starting monthly option" },
+              { stat: "7", label: "Household members" },
+              { stat: "24/7", label: "Virtual care access" },
+              { stat: "NO", label: "Open enrollment wait" },
             ].map((item) => (
               <div
                 key={item.label}

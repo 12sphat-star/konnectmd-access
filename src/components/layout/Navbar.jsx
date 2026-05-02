@@ -14,14 +14,16 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className="nav-links desktop-nav">
           <Link to="/plans">Plans</Link>
+          <Link to="/locations">Locations</Link>
           <Link to="/get-details">Get Details</Link>
           <Link to="/join-the-team">Join the Team</Link>
+
           <Link to="/book-call" className="nav-cta">
             Book a Call
           </Link>
         </nav>
 
-        {/* Mobile hamburger button */}
+        {/* Mobile hamburger */}
         <button
           className="hamburger"
           onClick={() => setOpen(!open)}
@@ -36,11 +38,31 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="mobile-menu">
-          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link to="/plans" onClick={() => setOpen(false)}>Plans</Link>
-          <Link to="/get-details" onClick={() => setOpen(false)}>Get Details</Link>
-          <Link to="/join-the-team" onClick={() => setOpen(false)}>Join the Team</Link>
-          <Link to="/book-call" onClick={() => setOpen(false)} className="mobile-cta">
+          <Link to="/" onClick={() => setOpen(false)}>
+            Home
+          </Link>
+
+          <Link to="/plans" onClick={() => setOpen(false)}>
+            Plans
+          </Link>
+
+          <Link to="/locations" onClick={() => setOpen(false)}>
+            Locations
+          </Link>
+
+          <Link to="/get-details" onClick={() => setOpen(false)}>
+            Get Details
+          </Link>
+
+          <Link to="/join-the-team" onClick={() => setOpen(false)}>
+            Join the Team
+          </Link>
+
+          <Link
+            to="/book-call"
+            onClick={() => setOpen(false)}
+            className="mobile-cta"
+          >
             Book a Call
           </Link>
         </div>

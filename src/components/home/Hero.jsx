@@ -5,45 +5,48 @@ export default function Hero() {
     <section className="hero hero-premium">
       <div className="container hero-grid">
         <div className="hero-copy">
-          <p className="eyebrow">Now Available in Hampton Roads</p>
+          <p className="eyebrow">Now Launching in Hampton Roads</p>
 
           <h1>
-            Healthcare Access{" "}
+            Healthcare Access for Real Life —{" "}
             <span style={{ color: "var(--blue-soft)" }}>
-              Without the Insurance Price Tag.
+              Not Insurance Confusion.
             </span>
           </h1>
 
           <p className="hero-lead">
-            If you're self-employed, running a small business, or supporting a
-            family — and traditional health insurance has priced you out —
-            there is now a real alternative. KonnectMD Access gives you and
-            your household connected care starting at{" "}
+            Need a doctor without waiting weeks? Trying to cover your family
+            without getting crushed by cost? KonnectMD helps individuals,
+            families, self-employed workers, and small business owners get
+            connected care starting at{" "}
             <strong style={{ color: "var(--text)" }}>$59.99/mo.</strong>
           </p>
 
           <div className="hero-facts">
-            <div className="hero-fact">
-              <strong>Up to 7 Members</strong>
-              <span>One plan covers your whole household</span>
-            </div>
-            <div className="hero-fact">
-              <strong>Nationwide Access</strong>
-              <span>Use it anywhere in the U.S.</span>
-            </div>
-            <div className="hero-fact">
-              <strong>Starts at $59/mo</strong>
-              <span>4 membership levels available</span>
-            </div>
-          </div>
+  <div className="hero-fact">
+    <strong>Care From Home</strong>
+    <span>Talk to a provider without the waiting room</span>
+  </div>
+
+  <div className="hero-fact">
+    <strong>Fast Access</strong>
+    <span>Simple options when you need help now</span>
+  </div>
+
+  <div className="hero-fact">
+    <strong>Not an MLM</strong>
+    <span>No referrals required to use benefits</span>
+  </div>
+</div>
 
           <div className="hero-actions">
-            <Link to="/get-details" className="btn btn-primary">
-              See My Options
-            </Link>
-            <Link to="/plans" className="btn btn-secondary">
-              View Memberships
-            </Link>
+   <Link to="/get-details" className="btn btn-primary">
+  Get Plan Details
+</Link>
+
+<Link to="/locations" className="btn btn-secondary">
+  See Hampton Roads Locations
+</Link>
           </div>
 
           <p
@@ -54,22 +57,24 @@ export default function Hero() {
               lineHeight: 1.6,
             }}
           >
-         Presented by a KonnectMD agent. Not an MLM. No referral requirement.
-Just real options for real people. Powered by a HIPAA-compliant telehealth platform.
+            Built for Hampton Roads families, entrepreneurs, small business owners, and
+everyday people who need a smarter way to access care.
           </p>
         </div>
 
         <div className="hero-image-wrap hero-image-card">
           <img
             src="/images/hero-telehealth.jpg"
-            alt="Person using telehealth services on a laptop"
+            alt="Family using online doctor visit from home"
             className="hero-image"
           />
 
-          <div className="floating-stat">
-            <strong>$0</strong>
-            <span>Virtual visit copay on select plans</span>
-          </div>
+    <div className="floating-stat">
+  <strong>No</strong>
+  <span>
+    Open enrollment wait or preexisting condition stress
+  </span>
+</div>
         </div>
       </div>
     </section>

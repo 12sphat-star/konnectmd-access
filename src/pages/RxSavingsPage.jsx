@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function RxSavingsPage() {
   useEffect(() => {
-    document.title = "Rx Savings | KonnectMD";
+    document.title = "Prescription Savings | KonnectMD";
   }, []);
 
   return (
@@ -11,17 +11,18 @@ export default function RxSavingsPage() {
       <div className="container">
         <div className="detail-lux-hero">
           <div className="detail-lux-copy">
-            <p className="detail-lux-kicker">Rx Savings</p>
-            <h1>Prescription costs add up fast. Savings matter.</h1>
+            <p className="detail-lux-kicker">Prescription Savings</p>
+            <h1>Need help lowering the cost of everyday medications?</h1>
             <p className="detail-lux-sub">
-              For many people, medication cost is one of the biggest pressure
-              points. This path is for those who want better everyday value.
+              KonnectMD may help members access prescription savings that can
+              make medications more affordable for individuals, families, and
+              small business households.
             </p>
 
             <div className="detail-lux-actions">
               <Link
                 to="/contact"
-                state={{ interestType: "Rx Savings" }}
+                state={{ interestType: "Prescription Savings" }}
                 className="btn btn-primary"
               >
                 Get Details on This Option →
@@ -35,41 +36,77 @@ export default function RxSavingsPage() {
           <div className="detail-lux-panel">
             <div className="detail-lux-highlight">
               <strong>Best for</strong>
-              <span>People focused on reducing ongoing medication expense.</span>
+              <span>People paying too much for prescriptions.</span>
             </div>
             <div className="detail-lux-highlight">
-              <strong>Why it stands out</strong>
-              <span>It speaks directly to monthly out-of-pocket pressure.</span>
+              <strong>Why it matters</strong>
+              <span>Medication costs can hit every month.</span>
             </div>
             <div className="detail-lux-highlight">
-              <strong>Who uses it most</strong>
-              <span>Individuals, families, and business owners who want practical savings.</span>
+              <strong>Good for</strong>
+              <span>Families, retirees, entrepreneurs, and uninsured households.</span>
             </div>
           </div>
         </div>
 
         <div className="detail-lux-grid">
           <div className="detail-lux-card">
-            <h3>Monthly value</h3>
-            <p>A focused way to think about recurring healthcare costs.</p>
+            <h3>Lower Everyday Costs</h3>
+            <p>
+              Prescription savings can help reduce out-of-pocket medication
+              expenses for common prescriptions.
+            </p>
           </div>
           <div className="detail-lux-card">
-            <h3>Simple positioning</h3>
-            <p>Easy to understand for people comparing cost versus usefulness.</p>
+            <h3>Useful With or Without Insurance</h3>
+            <p>
+              Some people use savings tools even when they already have coverage
+              because medication prices can still be high.
+            </p>
           </div>
           <div className="detail-lux-card">
-            <h3>Everyday relevance</h3>
-            <p>Not just a nice feature — a real reason people look closer.</p>
+            <h3>Family Value</h3>
+            <p>
+              When more than one person in a household needs medication, savings
+              can become a major reason to look closer.
+            </p>
           </div>
         </div>
 
         <div className="detail-lux-band">
           <div>
-            <p className="detail-lux-kicker">Why people like this path</p>
-            <h2>It focuses on one of the most painful parts of healthcare spending.</h2>
+            <p className="detail-lux-kicker">Real-life search</p>
+            <h2>“How can I save money on prescriptions without insurance?”</h2>
             <p>
-              When the monthly cost of prescriptions keeps showing up, even small
-              savings can feel big. That makes this one of the most relatable paths.
+              That is one of the most common healthcare cost problems people
+              face. KonnectMD is designed to help members access care and
+              savings without relying only on traditional health insurance.
+            </p>
+          </div>
+        </div>
+
+        <div className="detail-lux-grid">
+          <div className="detail-lux-card">
+            <h3>Common Questions</h3>
+            <p>
+              <strong>Can KonnectMD help with prescriptions?</strong>
+              <br />
+              Yes. Prescription savings are part of the value many members look
+              for when reviewing KonnectMD options.
+            </p>
+          </div>
+          <div className="detail-lux-card">
+            <h3>Do I need insurance?</h3>
+            <p>
+              KonnectMD is not traditional health insurance. It is designed to
+              help members access services and savings.
+            </p>
+          </div>
+          <div className="detail-lux-card">
+            <h3>What happens next?</h3>
+            <p>
+              Choose “Get Details” and a KonnectMD agent can help you understand
+              which membership may fit your situation.
             </p>
           </div>
         </div>
