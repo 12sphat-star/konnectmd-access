@@ -14,17 +14,27 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="footer-links-block">
-            <h4>Explore</h4>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/plans">Plans</Link></li>
-              <li><Link to="/get-details">Get Details</Link></li>
-              <li><Link to="/locations">Hampton Roads Locations</Link></li>
-              <li><Link to="/book-call">Book a Call</Link></li>
-              <li><Link to="/join-the-team">Join the Team</Link></li>
-            </ul>
-          </div>
+<div className="footer-links-block">
+  <h4>Explore</h4>
+  <ul>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/plans">Plans</Link></li>
+    <li><Link to="/get-details">Get Details</Link></li>
+
+    <li>
+      <Link to="/locations">Hampton Roads Locations</Link>
+    </li>
+
+    <li>
+      <Link to="/healthcare-alternatives-hampton-roads">
+        Health Insurance Alternatives
+      </Link>
+    </li>
+
+    <li><Link to="/book-call">Book a Call</Link></li>
+    <li><Link to="/join-the-team">Join the Team</Link></li>
+  </ul>
+</div>
 
           <div className="footer-links-block">
             <h4>Popular Help</h4>
