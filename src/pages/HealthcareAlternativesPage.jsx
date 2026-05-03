@@ -4,36 +4,39 @@ import SEO from "../components/SEO";
 
 export default function HealthcareAlternativesPage() {
   useEffect(() => {
-    document.title = "Affordable Healthcare Alternatives in Hampton Roads | KonnectMD";
+    document.title =
+      "Health Insurance Alternatives in Hampton Roads | KonnectMD";
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
       <SEO
-        title="Affordable Healthcare Alternatives in Hampton Roads | KonnectMD"
-        description="Explore affordable healthcare alternatives for Hampton Roads families, entrepreneurs, self-employed workers, and small business owners looking for care access outside traditional insurance."
+        title="Health Insurance Alternatives in Hampton Roads | KonnectMD"
+        description="Looking for health insurance in Hampton Roads? Learn about healthcare alternatives for families, entrepreneurs, self-employed workers, and small business owners."
         path="/healthcare-alternatives-hampton-roads"
       />
 
       <main className="section detail-offer-page">
         <div className="container" style={{ maxWidth: "980px" }}>
-          <p className="details-kicker">Healthcare Alternatives</p>
+          <p className="details-kicker">Hampton Roads Healthcare Options</p>
 
           <h1>
-            Affordable Healthcare Alternatives in Hampton Roads
+            Looking for Health Insurance in Hampton Roads? There May Be Another
+            Option.
           </h1>
 
-          <p className="detail-offer-sub" style={{ maxWidth: "760px" }}>
-            Many families, entrepreneurs, and small business owners in Hampton
-            Roads are looking for a better way to access care without depending
-            only on expensive traditional health insurance. KonnectMD is one
-            option designed around access, savings, and practical support.
+          <p className="detail-offer-sub" style={{ maxWidth: "780px" }}>
+            Many people searching for health insurance are really looking for
+            affordable healthcare access, doctor visits, prescription savings,
+            mental health support, and family value. KonnectMD is not
+            traditional health insurance — it is a healthcare membership built
+            around access, savings, and practical support.
           </p>
 
           <div className="detail-offer-actions" style={{ marginTop: "1.5rem" }}>
             <Link to="/get-details" className="btn btn-primary">
-              Get KonnectMD Details →
+              Explore KonnectMD Options →
             </Link>
 
             <Link to="/locations" className="btn btn-outline">
@@ -50,47 +53,69 @@ export default function HealthcareAlternativesPage() {
               border: "1px solid var(--border)",
             }}
           >
-            <p className="details-kicker">The problem</p>
+            <p className="details-kicker">The real search intent</p>
             <h2 style={{ marginTop: 0 }}>
-              Traditional healthcare costs are pushing people to look for other options.
+              People may search “health insurance,” but what they often need is
+              affordable access to care.
             </h2>
             <p className="body-copy">
-              For many households, the issue is not whether healthcare matters.
-              The issue is affordability, access, and confusion. People want to
-              know how to see a doctor, save on prescriptions, support their
-              family, and get help without feeling trapped by cost.
+              Rising premiums, high deductibles, limited networks, and confusing
+              plan options have many families and small business owners looking
+              for a different conversation. They want to know how to see a
+              doctor, save on prescriptions, support their household, and get
+              help without feeling trapped by cost.
             </p>
           </section>
 
           <section style={{ marginTop: "3rem" }}>
-            <p className="details-kicker">Who is searching for alternatives?</p>
+            <p className="details-kicker">Who this helps</p>
 
-            <div style={{ display: "grid", gap: "1.6rem" }}>
-              <div>
-                <h2>Families trying to cover the household</h2>
-                <p className="body-copy">
-                  Families need care options that work for more than one person.
-                  When doctor visits, medications, mental health, dental, vision,
-                  and other needs add up, a membership-style option can be worth
-                  reviewing.
+            <div className="detail-value-grid">
+              <div className="detail-value-card">
+                <h3>Families</h3>
+                <p>
+                  Households looking for healthcare access that can support more
+                  than one person.
                 </p>
               </div>
 
-              <div>
-                <h2>Entrepreneurs and self-employed people</h2>
-                <p className="body-copy">
-                  Entrepreneurs often do not have an employer plan. They need
-                  healthcare access that fits irregular income, busy schedules,
-                  and real-life pressure.
+              <div className="detail-value-card">
+                <h3>Entrepreneurs</h3>
+                <p>
+                  Business-minded people who do not have an employer plan to
+                  fall back on.
                 </p>
               </div>
 
-              <div>
-                <h2>Small business owners</h2>
-                <p className="body-copy">
-                  Many small business owners want to help their team but cannot
-                  afford or manage traditional group health coverage. KonnectMD
-                  can create a simpler healthcare access conversation.
+              <div className="detail-value-card">
+                <h3>Self-Employed Workers</h3>
+                <p>
+                  Independent earners who need flexible healthcare access
+                  options.
+                </p>
+              </div>
+
+              <div className="detail-value-card">
+                <h3>Small Business Owners</h3>
+                <p>
+                  Owners who want to support their team without the complexity of
+                  traditional group coverage.
+                </p>
+              </div>
+
+              <div className="detail-value-card">
+                <h3>People Without Insurance</h3>
+                <p>
+                  Individuals who need doctor access, savings, and healthcare
+                  support without traditional coverage.
+                </p>
+              </div>
+
+              <div className="detail-value-card">
+                <h3>Budget-Conscious Households</h3>
+                <p>
+                  Families trying to reduce healthcare stress and understand
+                  practical alternatives.
                 </p>
               </div>
             </div>
@@ -105,13 +130,15 @@ export default function HealthcareAlternativesPage() {
               borderRadius: "0 18px 18px 0",
             }}
           >
-            <h2 style={{ marginTop: 0 }}>What makes an alternative worth considering?</h2>
+            <h2 style={{ marginTop: 0 }}>
+              Important: KonnectMD is not traditional health insurance.
+            </h2>
             <p className="body-copy">
-              A good healthcare alternative should be easy to understand, simple
-              to access, practical for families, and clear about what it is and
-              what it is not. KonnectMD is not traditional health insurance. It
-              is a healthcare membership designed to help members access services
-              and savings.
+              KonnectMD is a healthcare membership designed to help members
+              access services and savings. That distinction matters. This page
+              is for people who are comparing healthcare options and want to
+              understand what may be available outside the traditional insurance
+              box.
             </p>
           </section>
 
@@ -120,23 +147,23 @@ export default function HealthcareAlternativesPage() {
 
             <div className="detail-value-grid">
               <div className="detail-value-card">
-                <h3>Doctor access from home</h3>
+                <h3>Doctor Access From Home</h3>
                 <p>
                   Members may access virtual care options for many common,
-                  non-emergency needs.
+                  non-emergency healthcare needs.
                 </p>
               </div>
 
               <div className="detail-value-card">
-                <h3>Prescription savings</h3>
+                <h3>Prescription Savings</h3>
                 <p>
-                  Medication costs can add up quickly. KonnectMD may help members
+                  Medication costs add up quickly. KonnectMD may help members
                   access prescription savings tools.
                 </p>
               </div>
 
               <div className="detail-value-card">
-                <h3>Family value</h3>
+                <h3>Family Household Value</h3>
                 <p>
                   Eligible household members may receive access to the services
                   included in the selected membership level.
@@ -144,7 +171,7 @@ export default function HealthcareAlternativesPage() {
               </div>
 
               <div className="detail-value-card">
-                <h3>Mental health support</h3>
+                <h3>Mental Health Support</h3>
                 <p>
                   Mental wellness matters. KonnectMD may help members access
                   support in a simpler, more private way.
@@ -152,7 +179,7 @@ export default function HealthcareAlternativesPage() {
               </div>
 
               <div className="detail-value-card">
-                <h3>Small business option</h3>
+                <h3>Small Business Option</h3>
                 <p>
                   Business owners may use KonnectMD as a practical healthcare
                   access conversation for employees, contractors, or teams.
@@ -160,9 +187,9 @@ export default function HealthcareAlternativesPage() {
               </div>
 
               <div className="detail-value-card">
-                <h3>Additional benefits</h3>
+                <h3>Additional Benefits</h3>
                 <p>
-                  Depending on the option selected, additional services may
+                  Depending on the selected option, additional services may
                   include pet care, medical bill advocate support, GLP-1 support,
                   and more.
                 </p>
@@ -185,10 +212,11 @@ export default function HealthcareAlternativesPage() {
             </h2>
             <p className="body-copy">
               Norfolk, Virginia Beach, Chesapeake, Portsmouth, Hampton, Newport
-              News, and Suffolk are full of families, workers, entrepreneurs,
-              military-connected households, and small business owners. Many are
-              asking the same question: “What can I use when traditional
-              healthcare feels too expensive or too complicated?”
+              News, and Suffolk are full of families, entrepreneurs,
+              military-connected households, commuters, retirees, and small
+              business owners. Many are asking the same question: “What can I
+              use when traditional healthcare feels too expensive or too
+              complicated?”
             </p>
 
             <div
@@ -222,6 +250,18 @@ export default function HealthcareAlternativesPage() {
                   No. KonnectMD is not traditional health insurance. It is a
                   healthcare membership designed around access to services and
                   savings.
+                </p>
+              </div>
+
+              <div>
+                <h3>
+                  Can this help if I searched for health insurance in Hampton
+                  Roads?
+                </h3>
+                <p className="body-copy">
+                  Yes. If what you really need is affordable healthcare access,
+                  doctor support, prescription savings, and family value,
+                  KonnectMD may be worth reviewing.
                 </p>
               </div>
 
