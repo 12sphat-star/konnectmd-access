@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://rukonnected.com/</loc>
-</url>
+<url><loc>https://rukonnected.com/</loc></url>
+<url><loc>https://rukonnected.com/plans</loc></url>
+<url><loc>https://rukonnected.com/get-details</loc></url>
+<url><loc>https://rukonnected.com/book-call</loc></url>
+<url><loc>https://rukonnected.com/locations</loc></url>
+<url><loc>https://rukonnected.com/telehealth-growth</loc></url>
 
-<url>
-<loc>https://rukonnected.com/get-details</loc>
-</url>
+<!-- City Pages -->
+<url><loc>https://rukonnected.com/locations/norfolk-va</loc></url>
+<url><loc>https://rukonnected.com/locations/virginia-beach-va</loc></url>
+<url><loc>https://rukonnected.com/locations/chesapeake-va</loc></url>
+<url><loc>https://rukonnected.com/locations/portsmouth-va</loc></url>
+<url><loc>https://rukonnected.com/locations/hampton-va</loc></url>
+<url><loc>https://rukonnected.com/locations/newport-news-va</loc></url>
+<url><loc>https://rukonnected.com/locations/suffolk-va</loc></url>
 
-<url>
-<loc>https://rukonnected.com/locations</loc>
-</url>
+<!-- Problem Pages -->
+<url><loc>https://rukonnected.com/problems/doctor-without-insurance</loc></url>
+<url><loc>https://rukonnected.com/problems/family-healthcare</loc></url>
+<url><loc>https://rukonnected.com/problems/prescription-savings</loc></url>
+<url><loc>https://rukonnected.com/problems/small-business-healthcare</loc></url>
 
-<url>
-<loc>https://rukonnected.com/telehealth-growth</loc>
-</url>
-
-<url>
-<loc>https://rukonnected.com/plans</loc>
-</url>
-
-<url>
-<loc>https://rukonnected.com/book-call</loc>
-</url>
+<!-- Detail Pages -->
+<url><loc>https://rukonnected.com/get-details/telehealth</loc></url>
+<url><loc>https://rukonnected.com/get-details/rx-savings</loc></url>
+<url><loc>https://rukonnected.com/get-details/mental-health</loc></url>
+<url><loc>https://rukonnected.com/get-details/family-membership</loc></url>
+<url><loc>https://rukonnected.com/get-details/additional-benefits</loc></url>
 
 </urlset>
