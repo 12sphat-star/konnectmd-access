@@ -16,7 +16,7 @@ import FAQSection from "../components/home/FAQSection";
 import AgentSection from "../components/home/AgentSection";
 import LaunchSection from "../components/home/LaunchSection";
 import CTASection from "../components/home/CTASection";
-
+import SEO from "../components/SEO";
 
 export default function Home() {
   useEffect(() => {
@@ -24,6 +24,11 @@ export default function Home() {
 }, []);
   return (
     <>
+    <SEO
+  title="Affordable Healthcare Access in Hampton Roads | KonnectMD"
+  description="KonnectMD helps Hampton Roads families, entrepreneurs, and small business owners access virtual care, prescription savings, mental health support, family membership options, and more."
+  path="/"
+/>
       <Hero />
       <TrustStrip />
       <WhatItIs />

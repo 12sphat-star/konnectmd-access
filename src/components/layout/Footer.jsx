@@ -37,16 +37,16 @@ export default function Footer() {
           </div>
 
           <div className="footer-links-block">
-            <h4>Local Areas</h4>
-            <ul>
-              <li><Link to="/locations/norfolk-va">Norfolk</Link></li>
-              <li><Link to="/locations/virginia-beach-va">Virginia Beach</Link></li>
-              <li><Link to="/locations/chesapeake-va">Chesapeake</Link></li>
-              <li><Link to="/locations/portsmouth-va">Portsmouth</Link></li>
-              <li><Link to="/locations/hampton-va">Hampton</Link></li>
-              <li><Link to="/locations/newport-news-va">Newport News</Link></li>
-              <li><Link to="/locations/suffolk-va">Suffolk</Link></li>
-            </ul>
+        <h4>Explore</h4>
+<ul>
+  <li><Link to="/">Home</Link></li>
+  <li><Link to="/plans">Plans</Link></li>
+  <li><Link to="/get-details">Get Details</Link></li>
+  <li><Link to="/locations">Hampton Roads Locations</Link></li>
+  <li><Link to="/telehealth-growth">Why Telehealth Is Growing</Link></li>
+  <li><Link to="/book-call">Book a Call</Link></li>
+  <li><Link to="/join-the-team">Join the Team</Link></li>
+</ul>
           </div>
 
           <div className="footer-note-block">

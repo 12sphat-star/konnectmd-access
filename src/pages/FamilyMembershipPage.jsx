@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function FamilyMembershipPage() {
   useEffect(() => {
@@ -7,7 +8,14 @@ export default function FamilyMembershipPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  return (
+ return (
+  <>
+    <SEO
+      title="Family Healthcare Membership | KonnectMD"
+      description="One KonnectMD membership may support multiple eligible household members with access to services included in the selected plan."
+      path="/get-details/family-membership"
+    />
+
     <section className="section detail-offer-page">
       <div className="container">
         <div className="detail-offer-hero">
@@ -154,5 +162,6 @@ export default function FamilyMembershipPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

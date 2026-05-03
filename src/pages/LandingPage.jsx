@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import SEO from "../components/SEO";
 
 const faqs = [
   {
@@ -34,6 +35,11 @@ export default function LandingPage() {
 
   return (
     <>
+    <SEO
+  title="Affordable Healthcare Access in Hampton Roads | KonnectMD"
+  description="KonnectMD helps Hampton Roads families, entrepreneurs, and small business owners access virtual care, prescription savings, mental health support, family membership options, and more."
+  path="/"
+/>
       {showBanner && (
         <div className="landing-top-banner">
           <div className="landing-top-banner-inner">

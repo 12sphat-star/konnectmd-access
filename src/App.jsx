@@ -27,6 +27,7 @@ import RxSavingsPage from "./pages/RxSavingsPage";
 import MentalHealthPage from "./pages/MentalHealthPage";
 import FamilyMembershipPage from "./pages/FamilyMembershipPage";
 import AdditionalBenefitsPage from "./pages/AdditionalBenefitsPage";
+import TelehealthIndustryPage from "./pages/TelehealthIndustryPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -66,6 +67,7 @@ export default function App() {
         <Route path="/get-details/mental-health" element={<MentalHealthPage />} />
         <Route path="/get-details/family-membership" element={<FamilyMembershipPage />} />
         <Route path="/get-details/additional-benefits" element={<AdditionalBenefitsPage />} />
+        <Route path="/telehealth-growth" element={<TelehealthIndustryPage />} />
 
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/book-call" element={<CalendarPage />} />
