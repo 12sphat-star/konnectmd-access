@@ -1,64 +1,71 @@
 import React from "react";
 import CTA from "../components/CTA";
+import SEO from "../components/SEO";
 
 export default function PortsmouthPage() {
   return (
-    <main className="page city-page">
-      <section className="hero">
-        <div className="container">
-          <p className="eyebrow">Portsmouth Healthcare Access</p>
-          <h1>Healthcare Access Portsmouth Families Can Actually Use</h1>
-          <p className="lead">
-            KonnectMD helps Portsmouth residents, workers, families, and small
-            business owners get access to care, savings, and support without
-            being blocked by high costs or complicated systems.
-          </p>
-        </div>
-      </section>
+    <>
+      <SEO
+        title="Healthcare Options in Portsmouth VA | KonnectMD"
+        description="Looking for healthcare options in Portsmouth? KonnectMD helps families, entrepreneurs, and small business owners explore affordable healthcare access."
+        path="/locations/portsmouth-va"
+      />
 
-      <section className="content-section">
-        <div className="container">
-          <h2>Built for Working People and Families</h2>
-          <p>
-            Many Portsmouth residents need healthcare options that are simple,
-            affordable, and easy to understand. KonnectMD helps members access
-            virtual urgent care, mental health support, prescription savings,
-            and family healthcare benefits.
-          </p>
+      <main className="page city-page">
+        <section className="hero">
+          <div className="container">
+            <p className="eyebrow">Portsmouth Healthcare Access</p>
 
-          <h2>What Portsmouth Members May Appreciate</h2>
-          <ul>
-            <li>Access to virtual urgent care</li>
-            <li>Help when traditional insurance is too expensive</li>
-            <li>Prescription savings for common medications</li>
-            <li>Mental health support from home</li>
-            <li>Family membership options for up to 7 household members</li>
-          </ul>
+            <h1>Healthcare Options for Portsmouth Families</h1>
 
-          <h2>Serving Portsmouth Communities</h2>
-          <p>
-            Churchland, Olde Towne, Cradock, Midtown, Port Norfolk, Cavalier
-            Manor, and surrounding communities.
-          </p>
+            <p className="lead">
+              From Churchland to Olde Towne, KonnectMD helps Portsmouth
+              residents explore healthcare access when traditional insurance
+              feels too expensive or confusing.
+            </p>
+          </div>
+        </section>
 
-          <h2>Common Questions in Portsmouth</h2>
-          <p>
-            <strong>Can I use KonnectMD if I am between jobs?</strong>
-            <br />
-            Yes. KonnectMD may be useful for people between jobs, uninsured, or
-            looking for additional healthcare access.
-          </p>
+        <section className="content-section">
+          <div className="container">
+            <h2>Built for Real Portsmouth Needs</h2>
 
-          <p>
-            <strong>Does this help with prescriptions?</strong>
-            <br />
-            Yes. Prescription savings are part of the value for many KonnectMD
-            members.
-          </p>
-        </div>
-      </section>
+            <p>
+              Portsmouth has working families, entrepreneurs, retirees,
+              self-employed residents, and small business owners who need
+              practical ways to access care and savings.
+            </p>
 
-      <CTA />
-    </main>
+            <h2>Where KonnectMD May Help</h2>
+
+            <ul>
+              <li>Doctor access from home</li>
+              <li>Prescription savings</li>
+              <li>Mental health support</li>
+              <li>Family healthcare value</li>
+              <li>Healthcare access for people without traditional insurance</li>
+            </ul>
+
+            <h2>Popular Searches</h2>
+
+            <ul>
+              <li>Healthcare Portsmouth VA</li>
+              <li>Doctor without insurance Portsmouth</li>
+              <li>Affordable healthcare Portsmouth VA</li>
+              <li>Prescription savings Portsmouth</li>
+            </ul>
+
+            <h2>Serving Portsmouth Areas</h2>
+
+            <p>
+              Churchland, Olde Towne, Cradock, Midtown, Port Norfolk, Cavalier
+              Manor, and surrounding communities.
+            </p>
+          </div>
+        </section>
+
+        <CTA />
+      </main>
+    </>
   );
 }
