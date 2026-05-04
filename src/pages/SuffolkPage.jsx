@@ -1,49 +1,71 @@
 import React from "react";
 import CTA from "../components/CTA";
+import SEO from "../components/SEO";
 
 export default function SuffolkPage() {
   return (
-    <main className="page city-page">
-      <section className="hero">
-        <div className="container">
-          <p className="eyebrow">Suffolk Healthcare Access</p>
-          <h1>Affordable Healthcare Access for Suffolk Households</h1>
-          <p className="lead">
-            KonnectMD helps Suffolk families, commuters, business owners, and
-            growing households access care, savings, and support through a more
-            flexible healthcare solution.
-          </p>
-        </div>
-      </section>
+    <>
+      <SEO
+        title="Healthcare Options in Suffolk VA | KonnectMD"
+        description="Looking for healthcare options in Suffolk? KonnectMD helps families, entrepreneurs, commuters, and small business owners explore affordable healthcare access."
+        path="/locations/suffolk-va"
+      />
 
-      <section className="content-section">
-        <div className="container">
-          <h2>Healthcare That Fits Family Life</h2>
-          <p>
-            Suffolk continues to grow, and many households need practical
-            healthcare options that fit modern schedules and real budgets.
-            KonnectMD helps members access virtual care, mental health support,
-            prescription savings, and family options.
-          </p>
+      <main className="page city-page">
+        <section className="hero">
+          <div className="container">
+            <p className="eyebrow">Suffolk Healthcare Access</p>
 
-          <h2>Why Suffolk Residents Use KonnectMD</h2>
-          <ul>
-            <li>Online doctor access when life is busy</li>
-            <li>Healthcare support for families</li>
-            <li>Prescription savings tools</li>
-            <li>Mental health support</li>
-            <li>Up to 7 household members on some options</li>
-          </ul>
+            <h1>Affordable Healthcare Options in Suffolk</h1>
 
-          <h2>Serving Suffolk Communities</h2>
-          <p>
-            Harbour View, North Suffolk, Downtown Suffolk, Chuckatuck, Whaleyville,
-            and surrounding communities.
-          </p>
-        </div>
-      </section>
+            <p className="lead">
+              From North Suffolk to Downtown Suffolk, KonnectMD helps families,
+              entrepreneurs, commuters, and growing households explore practical
+              healthcare access options.
+            </p>
+          </div>
+        </section>
 
-      <CTA />
-    </main>
+        <section className="content-section">
+          <div className="container">
+            <h2>Built for Suffolk Families and Growth</h2>
+
+            <p>
+              Suffolk continues to grow, and many households need healthcare
+              options that work for busy schedules, family budgets, and real
+              everyday needs.
+            </p>
+
+            <h2>Where KonnectMD May Help</h2>
+
+            <ul>
+              <li>Virtual doctor access for common needs</li>
+              <li>Prescription savings</li>
+              <li>Mental health support</li>
+              <li>Family membership value</li>
+              <li>Support for entrepreneurs and small business owners</li>
+            </ul>
+
+            <h2>Popular Searches</h2>
+
+            <ul>
+              <li>Healthcare Suffolk VA</li>
+              <li>Doctor without insurance Suffolk</li>
+              <li>Affordable healthcare Suffolk VA</li>
+              <li>Health insurance alternatives Suffolk</li>
+            </ul>
+
+            <h2>Serving Suffolk Areas</h2>
+
+            <p>
+              Harbour View, North Suffolk, Downtown Suffolk, Chuckatuck,
+              Whaleyville, and surrounding communities.
+            </p>
+          </div>
+        </section>
+
+        <CTA />
+      </main>
+    </>
   );
 }
