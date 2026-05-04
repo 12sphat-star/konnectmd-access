@@ -1,64 +1,71 @@
 import React from "react";
 import CTA from "../components/CTA";
+import SEO from "../components/SEO";
 
 export default function VirginiaBeachPage() {
   return (
-    <main className="page city-page">
-      <section className="hero">
-        <div className="container">
-          <p className="eyebrow">Virginia Beach Healthcare Access</p>
-          <h1>Healthcare Access for Busy Virginia Beach Families</h1>
-          <p className="lead">
-            Virginia Beach families, small business owners, military-connected
-            households, and independent workers need care that fits real life.
-            KonnectMD helps make healthcare access simpler and more affordable.
-          </p>
-        </div>
-      </section>
+    <>
+      <SEO
+        title="Healthcare Options in Virginia Beach VA | KonnectMD"
+        description="Looking for healthcare options in Virginia Beach? KonnectMD helps families, entrepreneurs, and small business owners explore affordable healthcare access."
+        path="/locations/virginia-beach-va"
+      />
 
-      <section className="content-section">
-        <div className="container">
-          <h2>Care That Moves at Your Speed</h2>
-          <p>
-            Between work, traffic, school, family schedules, and rising costs,
-            getting care can feel harder than it should. KonnectMD helps members
-            access virtual care, mental health support, prescription savings,
-            and family healthcare options from wherever they are.
-          </p>
+      <main className="page city-page">
+        <section className="hero">
+          <div className="container">
+            <p className="eyebrow">Virginia Beach Healthcare Access</p>
 
-          <h2>Why Virginia Beach Residents Use KonnectMD</h2>
-          <ul>
-            <li>Online doctor access for common urgent care needs</li>
-            <li>Support for families with busy schedules</li>
-            <li>Mental health support without the usual friction</li>
-            <li>Prescription savings for everyday medications</li>
-            <li>Membership options that may include up to 7 household members</li>
-          </ul>
+            <h1>Affordable Healthcare Options in Virginia Beach</h1>
 
-          <h2>Serving Virginia Beach Communities</h2>
-          <p>
-            Town Center, Kempsville, Lynnhaven, Oceanfront, Princess Anne,
-            Red Mill, Bayside, and surrounding communities.
-          </p>
+            <p className="lead">
+              From Town Center to Oceanfront, KonnectMD helps Virginia Beach
+              residents explore healthcare access without the stress of high
+              traditional insurance costs.
+            </p>
+          </div>
+        </section>
 
-          <h2>Common Questions in Virginia Beach</h2>
-          <p>
-            <strong>Can I talk to a doctor from home?</strong>
-            <br />
-            Yes. KonnectMD includes virtual care access depending on the
-            membership selected.
-          </p>
+        <section className="content-section">
+          <div className="container">
+            <h2>Built for Real Virginia Beach Life</h2>
 
-          <p>
-            <strong>Is KonnectMD only for uninsured people?</strong>
-            <br />
-            No. Some people use it even if they already have coverage because
-            they want additional access and savings.
-          </p>
-        </div>
-      </section>
+            <p>
+              Families, military-connected households, entrepreneurs,
+              self-employed workers, and growing businesses often need a more
+              practical healthcare conversation.
+            </p>
 
-      <CTA />
-    </main>
+            <h2>Where KonnectMD May Help</h2>
+
+            <ul>
+              <li>Doctor access from home</li>
+              <li>Prescription savings</li>
+              <li>Mental health support</li>
+              <li>Family membership value</li>
+              <li>Support for entrepreneurs and business owners</li>
+            </ul>
+
+            <h2>Popular Searches</h2>
+
+            <ul>
+              <li>Healthcare Virginia Beach</li>
+              <li>Doctor without insurance Virginia Beach</li>
+              <li>Affordable health options Virginia Beach</li>
+              <li>Prescription savings Virginia Beach</li>
+            </ul>
+
+            <h2>Serving Virginia Beach Areas</h2>
+
+            <p>
+              Town Center, Oceanfront, Kempsville, Princess Anne, Green Run,
+              Bayside, Red Mill, and surrounding communities.
+            </p>
+          </div>
+        </section>
+
+        <CTA />
+      </main>
+    </>
   );
 }
