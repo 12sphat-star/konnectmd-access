@@ -7,7 +7,11 @@ export default function NorfolkPage() {
       <section className="hero">
         <div className="container">
           <p className="eyebrow">Norfolk Healthcare Access</p>
-          <h1>Need a Doctor Without the Insurance Headache in Norfolk?</h1>
+          <p className="lead">
+  From Ocean View to Downtown Norfolk, KonnectMD helps families,
+  entrepreneurs, students, and self-employed residents access care without
+  waiting weeks or stressing over traditional insurance costs.
+</p>
           <p className="lead">
             From Ocean View to Downtown Norfolk, KonnectMD helps families,
             workers, students, and self-employed residents access care without
