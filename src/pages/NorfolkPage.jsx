@@ -5,11 +5,12 @@ import SEO from "../components/SEO";
 export default function NorfolkPage() {
   return (
     <>
-      <SEO
-        title="Healthcare Options in Norfolk VA | KonnectMD"
-        description="Looking for healthcare options in Norfolk? KonnectMD helps families, entrepreneurs, students, military-connected households, and business owners explore affordable healthcare access."
-        path="/locations/norfolk-va"
-      />
+  <SEO
+  title="Healthcare Options in Norfolk VA | KonnectMD"
+  description="Looking for healthcare options in Norfolk? KonnectMD helps families, entrepreneurs, students, military-connected households, and business owners explore affordable healthcare access."
+  path="/locations/norfolk-va"
+  image="https://rukonnected.com/images/healthcare-norfolk-va.jpg"
+/>
 
       <main className="page city-page">
         <section className="hero">
