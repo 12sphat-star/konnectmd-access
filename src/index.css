@@ -3085,3 +3085,48 @@ a {
   max-width: 900px;
   text-wrap: balance;
 }
+.launch-navbar {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: transparent;
+  box-shadow: none;
+}
+
+.launch-navbar .brand,
+.launch-navbar .nav-links a {
+  color: white;
+}
+
+.launch-navbar .brand span {
+  color: #22d3ee;
+}
+
+.launch-navbar .nav-cta,
+.launch-navbar .mobile-cta {
+  background: #22d3ee;
+  color: #020617 !important;
+}
+
+.launch-navbar .hamburger span {
+  background: white;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
