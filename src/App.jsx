@@ -35,6 +35,8 @@ import AdditionalBenefitsPage from "./pages/AdditionalBenefitsPage";
 import TelehealthIndustryPage from "./pages/TelehealthIndustryPage";
 import HealthcareAlternativesPage from "./pages/HealthcareAlternativesPage";
 
+import LaunchPage from "./pages/LaunchPage";
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -87,6 +89,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
+        {/* Main Pages */}
         <Route path="/plans" element={<PlansPage />} />
         <Route path="/get-details" element={<InterestSelector />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -94,6 +97,10 @@ export default function App() {
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/join-the-team" element={<JoinPage />} />
 
+        {/* NEW LAUNCH PAGE */}
+        <Route path="/launch" element={<LaunchPage />} />
+
+        {/* Locations */}
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/locations/norfolk-va" element={<NorfolkPage />} />
         <Route path="/locations/virginia-beach-va" element={<VirginiaBeachPage />} />
@@ -103,18 +110,59 @@ export default function App() {
         <Route path="/locations/newport-news-va" element={<NewportNewsPage />} />
         <Route path="/locations/suffolk-va" element={<SuffolkPage />} />
 
-        <Route path="/problems/family-healthcare" element={<FamilyCoveragePage />} />
-        <Route path="/problems/doctor-without-insurance" element={<NoInsuranceDoctorPage />} />
-        <Route path="/problems/prescription-savings" element={<PrescriptionSavingsPage />} />
-        <Route path="/problems/small-business-healthcare" element={<SmallBusinessHealthcarePage />} />
+        {/* Problem / Solution Pages */}
+        <Route
+          path="/problems/family-healthcare"
+          element={<FamilyCoveragePage />}
+        />
 
-        <Route path="/get-details/telehealth" element={<TelehealthPage />} />
-        <Route path="/get-details/rx-savings" element={<RxSavingsPage />} />
-        <Route path="/get-details/mental-health" element={<MentalHealthPage />} />
-        <Route path="/get-details/family-membership" element={<FamilyMembershipPage />} />
-        <Route path="/get-details/additional-benefits" element={<AdditionalBenefitsPage />} />
+        <Route
+          path="/problems/doctor-without-insurance"
+          element={<NoInsuranceDoctorPage />}
+        />
 
-        <Route path="/telehealth-growth" element={<TelehealthIndustryPage />} />
+        <Route
+          path="/problems/prescription-savings"
+          element={<PrescriptionSavingsPage />}
+        />
+
+        <Route
+          path="/problems/small-business-healthcare"
+          element={<SmallBusinessHealthcarePage />}
+        />
+
+        {/* Detail Pages */}
+        <Route
+          path="/get-details/telehealth"
+          element={<TelehealthPage />}
+        />
+
+        <Route
+          path="/get-details/rx-savings"
+          element={<RxSavingsPage />}
+        />
+
+        <Route
+          path="/get-details/mental-health"
+          element={<MentalHealthPage />}
+        />
+
+        <Route
+          path="/get-details/family-membership"
+          element={<FamilyMembershipPage />}
+        />
+
+        <Route
+          path="/get-details/additional-benefits"
+          element={<AdditionalBenefitsPage />}
+        />
+
+        {/* SEO Pages */}
+        <Route
+          path="/telehealth-growth"
+          element={<TelehealthIndustryPage />}
+        />
+
         <Route
           path="/healthcare-alternatives-hampton-roads"
           element={<HealthcareAlternativesPage />}

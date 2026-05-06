@@ -78,33 +78,65 @@ export default function LaunchPage() {
         }
 
         @media (max-width: 900px) {
-          .launch-hero {
-            grid-template-columns: 1fr;
-            padding-top: 80px;
-            text-align: center;
-          }
+  .launch-hero {
+    grid-template-columns: 1fr;
+    padding: 55px 18px 40px;
+    text-align: center;
+    gap: 28px;
+    min-height: auto;
+  }
 
-          .launch-tags,
-          .launch-actions {
-            justify-content: center;
-          }
+  .launch-title {
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -1px;
+  }
 
-          .launch-grid {
-            grid-template-columns: 1fr;
-          }
+  .launch-hero p {
+    font-size: 17px !important;
+    line-height: 1.45 !important;
+  }
 
-          .mobile-sticky {
-            display: block;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 9999;
-            padding: 14px;
-            background: rgba(2, 6, 23, 0.85);
-            backdrop-filter: blur(10px);
-          }
-        }
+  .launch-tags,
+  .launch-actions {
+    justify-content: center;
+  }
+
+  .launch-actions {
+    flex-direction: column;
+  }
+
+  .launch-btn {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .launch-image {
+    max-width: 360px;
+    margin-top: -10px;
+  }
+
+  .launch-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-sticky {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 12px;
+    background: rgba(2, 6, 23, 0.88);
+    backdrop-filter: blur(10px);
+  }
+
+  main {
+    padding-bottom: 82px;
+  }
+}
       `}</style>
 
       <div
