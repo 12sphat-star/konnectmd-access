@@ -4,40 +4,72 @@ export default function VideoSection() {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">See How It Works</p>
-          <h2>A quick overview of what KonnectMD offers</h2>
+
+          <h2>
+            A quick overview of what KonnectMD offers
+          </h2>
+
           <p className="section-copy">
             Watch this short overview to see exactly what members get access to
             and how KonnectMD can work for your household or business.
           </p>
         </div>
 
+        {/* VIDEO LABEL */}
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: "14px",
+          }}
+        >
+          <span
+            style={{
+              display: "inline-block",
+              background: "#2563eb",
+              color: "white",
+              padding: "12px 18px",
+              borderRadius: "999px",
+              fontWeight: "900",
+              boxShadow: "0 10px 30px rgba(37,99,235,.35)",
+              letterSpacing: "0.5px",
+            }}
+          >
+            ▶ WATCH THE 2-MINUTE OVERVIEW
+          </span>
+        </div>
+
+        {/* HOSTED VIDEO */}
         <div
           style={{
             position: "relative",
-            paddingBottom: "56.25%",
-            height: 0,
+            borderRadius: "24px",
             overflow: "hidden",
-            borderRadius: "18px",
             border: "1px solid var(--border)",
-            marginTop: "1.5rem",
+            marginTop: "1rem",
+            boxShadow: "0 20px 60px rgba(0,0,0,.25)",
           }}
         >
-          <iframe
-            src="https://www.youtube.com/embed/BBtPfd4MdVY?rel=0&modestbranding=1"
-            title="KonnectMD Overview"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster="/images/launch-hero.png"
             style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
               width: "100%",
-              height: "100%",
+              display: "block",
+              cursor: "pointer",
             }}
-          ></iframe>
+          >
+            <source
+              src="/videos/launch-video.mp4"
+              type="video/mp4"
+            />
+
+            Your browser does not support the video tag.
+          </video>
         </div>
 
+        {/* CTA */}
         <div
           style={{
             marginTop: "1.5rem",

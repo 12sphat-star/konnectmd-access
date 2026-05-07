@@ -194,68 +194,42 @@ export default function LandingPage() {
             </div>
 
             {/* VIDEO */}
-            <div id="video-section" className="landing-video-wrap">
-              <div className="landing-video-card">
+{/* VIDEO */}
+<div className="landing-video-embed">
+  <p
+    style={{
+      textAlign: "center",
+      marginBottom: "12px",
+      fontWeight: "900",
+      color: "white",
+      background: "#2563eb",
+      padding: "12px 18px",
+      borderRadius: "999px",
+      width: "fit-content",
+      marginLeft: "auto",
+      marginRight: "auto",
+      boxShadow: "0 10px 30px rgba(37,99,235,.35)",
+    }}
+  >
+    ▶ WATCH THE 2-MINUTE OVERVIEW
+  </p>
 
-                <div className="landing-video-embed">
-                  <iframe
-                    src="https://www.youtube.com/embed/N9u1RxR6wD4?rel=0&modestbranding=1"
-                    title="2 minute overview"
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-
-                <div className="landing-video-copy">
-                  <p className="landing-kicker">See How It Works</p>
-                  <h2>2 Minutes That Could Change Everything</h2>
-                  <p>
-                    Learn how this works and why more people are choosing a
-                    different path to care.
-                  </p>
-                </div>
-
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="landing-cta-band">
-              <div>
-                <h3>Ready to Get Started?</h3>
-                <p>Tell us what you need and we’ll guide you.</p>
-              </div>
-
-              <Link to="/contact" className="btn btn-primary">
-                Go to Contact Form →
-              </Link>
-            </div>
-
-            {/* FAQ */}
-            <div className="landing-faq-block">
-              <p className="landing-kicker">Quick Answers</p>
-              <h2>Frequently Asked Questions</h2>
-
-              <div className="landing-faq-list">
-                {faqs.map((faq, index) => (
-                  <div key={index} className="landing-faq-item">
-                    <button
-                      type="button"
-                      className="landing-faq-question"
-                      onClick={() =>
-                        setOpenFaq(openFaq === index ? null : index)
-                      }
-                    >
-                      <span>{faq.q}</span>
-                      <span>{openFaq === index ? "−" : "+"}</span>
-                    </button>
-
-                    {openFaq === index && (
-                      <div className="landing-faq-answer">{faq.a}</div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
+  <video
+    controls
+    playsInline
+    preload="metadata"
+    poster="/images/launch-hero.png"
+    style={{
+      width: "100%",
+      borderRadius: "24px",
+      boxShadow: "0 20px 60px rgba(0,0,0,.25)",
+      cursor: "pointer",
+    }}
+  >
+    <source src="/videos/launch-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 
             {/* FINAL CTA */}
             <div className="landing-final-cta">
