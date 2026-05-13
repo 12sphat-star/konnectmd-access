@@ -19,6 +19,8 @@ import AgentSection from "../components/home/AgentSection";
 import LaunchSection from "../components/home/LaunchSection";
 import CTASection from "../components/home/CTASection";
 import SEO from "../components/SEO";
+import { Link } from "react-router-dom";
+import HamptonRoadsLocations from "../components/home/HamptonRoadsLocations";
 
 export default function Home() {
   useEffect(() => {
@@ -73,6 +75,7 @@ export default function Home() {
 <FastAccess />
 <HowItWorks />
 <PlansPreview />
+<HamptonRoadsLocations />
 <TestimonialsSection />
 <AddOnsSection />
       <Disclaimer />
