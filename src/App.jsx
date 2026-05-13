@@ -37,6 +37,12 @@ import TelehealthIndustryPage from "./pages/TelehealthIndustryPage";
 import HealthcareAlternativesPage from "./pages/HealthcareAlternativesPage";
 
 import LaunchPage from "./pages/LaunchPage";
+import NorfolkTelehealthPage from "./pages/NorfolkTelehealthPage";
+import VirginiaBeachTelehealthPage from "./pages/VirginiaBeachTelehealthPage";
+import ChesapeakeTelehealthPage from "./pages/ChesapeakeTelehealthPage";
+import PortsmouthTelehealthPage from "./pages/PortsmouthTelehealthPage";
+import HamptonTelehealthPage from "./pages/HamptonTelehealthPage";
+import NewportNewsTelehealthPage from "./pages/NewportNewsTelehealthPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -110,7 +116,12 @@ export default function App() {
         <Route path="/locations/hampton-va" element={<HamptonPage />} />
         <Route path="/locations/newport-news-va" element={<NewportNewsPage />} />
         <Route path="/locations/suffolk-va" element={<SuffolkPage />} />
-
+<Route path="/norfolk-telehealth" element={<NorfolkTelehealthPage />} />
+<Route path="/virginia-beach-telehealth" element={<VirginiaBeachTelehealthPage />} />
+<Route path="/chesapeake-telehealth" element={<ChesapeakeTelehealthPage />} />
+<Route path="/portsmouth-telehealth" element={<PortsmouthTelehealthPage />} />
+<Route path="/hampton-telehealth" element={<HamptonTelehealthPage />} />
+<Route path="/newport-news-telehealth" element={<NewportNewsTelehealthPage />} />
         {/* Problem / Solution Pages */}
         <Route
           path="/problems/family-healthcare"
@@ -173,6 +184,7 @@ export default function App() {
           path="/healthcare-alternatives-hampton-roads"
           element={<HealthcareAlternativesPage />}
         />
+
       </Routes>
 
       <Footer />
