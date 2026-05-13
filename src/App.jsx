@@ -24,6 +24,7 @@ import FamilyCoveragePage from "./pages/FamilyCoveragePage";
 import NoInsuranceDoctorPage from "./pages/NoInsuranceDoctorPage";
 import PrescriptionSavingsPage from "./pages/PrescriptionSavingsPage";
 import SmallBusinessHealthcarePage from "./pages/SmallBusinessHealthcarePage";
+import BusinessOwnersEntrepreneursPage from "./pages/BusinessOwnersEntrepreneursPage";
 
 import InterestSelector from "./pages/InterestSelector";
 import TelehealthPage from "./pages/TelehealthPage";
@@ -129,6 +130,11 @@ export default function App() {
         <Route
           path="/problems/small-business-healthcare"
           element={<SmallBusinessHealthcarePage />}
+        />
+
+        <Route
+          path="/business-owners-entrepreneurs-healthcare-hampton-roads"
+          element={<BusinessOwnersEntrepreneursPage />}
         />
 
         {/* Detail Pages */}

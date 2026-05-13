@@ -41,13 +41,52 @@ const faqs = [
     q: "How is this different from regular telehealth apps?",
     a: "Most telehealth apps charge per visit. KonnectMD is a membership — you pay one monthly fee and get unlimited access to providers with $0 copays on select plans, plus prescription savings, mental health support, and more all in one place.",
   },
+  {
+  q: "Can entrepreneurs and self-employed people use KonnectMD Access?",
+  a: "Yes — KonnectMD Access is becoming a popular healthcare access option for entrepreneurs, self-employed professionals, 1099 workers, and small business owners in Hampton Roads who need flexible healthcare support outside traditional employer plans.",
+},
+{
+  q: "Does KonnectMD Access work for small business owners?",
+  a: "Yes — many small business owners use KonnectMD Access to explore affordable healthcare access options for themselves, their families, and in some cases their employees.",
+},
+{
+  q: "Does KonnectMD Access include mental health support?",
+  a: "Depending on the membership level, KonnectMD Access may include access to mental health counseling and emotional wellness support services.",
+},
+{
+  q: "Can I use KonnectMD Access in Hampton Roads?",
+  a: "Yes — KonnectMD Access is available throughout Hampton Roads including Norfolk, Virginia Beach, Chesapeake, Portsmouth, Hampton, Newport News, and Suffolk.",
+},
+{
+  q: "Do I have to wait for open enrollment?",
+  a: "No — KonnectMD Access is not tied to traditional health insurance open enrollment periods.",
+},
+{
+  q: "Does KonnectMD Access include virtual urgent care?",
+  a: "Yes — depending on the membership selected, members may receive access to virtual urgent care services for common non-emergency health concerns.",
+},
 ];
 
 export default function FAQSection() {
   const [open, setOpen] = useState(null);
-
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
+};
   return (
     <section className="section section-dark">
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+/>
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">Got Questions?</p>

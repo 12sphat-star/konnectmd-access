@@ -6,6 +6,8 @@ import VideoSection from "../components/home/VideoSection";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import CostComparison from "../components/home/CostComparison";
 import WhoItsFor from "../components/home/WhoItsFor";
+import BusinessOwnersSection from "../components/home/BusinessOwnersSection";
+import ExploreHealthcareOptions from "../components/home/ExploreHealthcareOptions";
 import FastAccess from "../components/home/FastAccess";
 import HowItWorks from "../components/home/HowItWorks";
 import PlansPreview from "../components/home/PlansPreview";
@@ -29,6 +31,36 @@ export default function Home() {
   description="KonnectMD helps Hampton Roads families, entrepreneurs, and small business owners access virtual care, prescription savings, mental health support, family membership options, and more."
   path="/"
 />
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      name: "KonnectMD Access",
+      url: "https://rukonnected.com",
+      areaServed: [
+        "Norfolk",
+        "Virginia Beach",
+        "Chesapeake",
+        "Portsmouth",
+        "Hampton",
+        "Newport News",
+        "Suffolk",
+        "Hampton Roads",
+      ],
+      description:
+        "KonnectMD helps Hampton Roads families, entrepreneurs, and small business owners explore healthcare access, virtual care, prescription savings, mental health support, and wellness membership options.",
+      serviceType: [
+        "Telehealth",
+        "Virtual Urgent Care",
+        "Mental Health Support",
+        "Prescription Savings",
+        "Healthcare Membership",
+      ],
+    }),
+  }}
+/>
       <Hero />
       <TrustStrip />
       <WhatItIs />
@@ -36,6 +68,8 @@ export default function Home() {
   <WhyChooseUs />
   <CostComparison />
 <WhoItsFor />
+<BusinessOwnersSection />
+<ExploreHealthcareOptions />
 <FastAccess />
 <HowItWorks />
 <PlansPreview />
