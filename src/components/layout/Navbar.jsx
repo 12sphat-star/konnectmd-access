@@ -5,22 +5,29 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-   <header className="navbar">
+    <header className="navbar">
       <div className="container nav-inner">
+        {/* Logo */}
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
           Konnect<span>MD</span> Access
         </Link>
 
-        {/* Desktop nav */}
+        {/* Desktop Navigation */}
         <nav className="nav-links desktop-nav">
           <Link to="/plans">Plans</Link>
+
           <Link to="/locations">Locations</Link>
+
           <Link to="/get-details">Get Details</Link>
+
           <Link to="/join-the-team">Join the Team</Link>
 
+          <Link to="/book-call" className="nav-cta">
+            Book a Call
+          </Link>
         </nav>
 
-        {/* Mobile hamburger */}
+        {/* Mobile Hamburger */}
         <button
           className="hamburger"
           onClick={() => setOpen(!open)}
@@ -32,7 +39,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       {open && (
         <div className="mobile-menu">
           <Link to="/" onClick={() => setOpen(false)}>
@@ -56,11 +63,11 @@ export default function Navbar() {
           </Link>
 
           <Link
-            to="/contact"
+            to="/book-call"
             onClick={() => setOpen(false)}
             className="mobile-cta"
           >
-           Contact Us
+            Book a Call
           </Link>
         </div>
       )}

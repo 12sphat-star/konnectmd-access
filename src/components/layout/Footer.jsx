@@ -46,18 +46,53 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="footer-links-block">
-        <h4>Explore</h4>
-<ul>
-  <li><Link to="/">Home</Link></li>
-  <li><Link to="/plans">Plans</Link></li>
-  <li><Link to="/get-details">Get Details</Link></li>
-  <li><Link to="/locations">Hampton Roads Locations</Link></li>
-  <li><Link to="/telehealth-growth">Why Telehealth Is Growing</Link></li>
-  <li><Link to="/book-call">Book a Call</Link></li>
-  <li><Link to="/join-the-team">Join the Team</Link></li>
-</ul>
-          </div>
+    <div className="footer-links-block">
+  <h4>Hampton Roads Locations</h4>
+
+  <ul>
+    <li>
+      <Link to="/norfolk-telehealth">
+        Norfolk Telehealth
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/virginia-beach-telehealth">
+        Virginia Beach Telehealth
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/chesapeake-telehealth">
+        Chesapeake Telehealth
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/portsmouth-telehealth">
+        Portsmouth Telehealth
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/hampton-telehealth">
+        Hampton Telehealth
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/newport-news-telehealth">
+        Newport News Telehealth
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/suffolk-telehealth">
+        Suffolk Telehealth
+      </Link>
+    </li>
+  </ul>
+</div>
 
           <div className="footer-note-block">
             <h4>Important Notice</h4>
