@@ -13,8 +13,8 @@ export default function CalendarPage() {
           <h1 className="page-title">Schedule a time to review your options</h1>
           <p className="section-copy">
             Choose a time that works for you and we'll walk through the
-            membership options that best fit your needs. Takes 15 minutes —
-            no pressure, no commitment.
+            membership options that best fit your needs. Takes 15  minutes but there's 
+            extra time if you need it —no pressure, no commitment.
           </p>
 
           <div

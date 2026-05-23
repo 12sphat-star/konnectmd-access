@@ -88,10 +88,20 @@ export default function HamptonRoadsLocations() {
             }}
           >
             KonnectMD helps families, entrepreneurs, self-employed professionals,
-            and small business owners across Hampton Roads explore healthcare access,
-            telehealth support, prescription savings, mental health support, and
-            virtual care options.
+and small business owners across Hampton Roads and throughout the United States
+explore healthcare access, telehealth support, prescription savings,
+mental health support, and virtual care options.
           </p>
+          <p
+  style={{
+    marginTop: "18px",
+    color: "#93c5fd",
+    fontWeight: "700",
+    fontSize: "15px",
+  }}
+>
+  Available nationwide across all 50 states and U.S. territories.
+</p>
         </div>
 
         <div

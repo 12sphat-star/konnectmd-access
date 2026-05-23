@@ -156,7 +156,7 @@ const faqSchema = {
             Still have questions? Talk to a real person — not a bot.
           </p>
           <a href="/book-call" className="btn btn-primary">
-            Book a Free 15-Minute Call
+            Book a Free 30-Minute Call
           </a>
         </div>
       </div>

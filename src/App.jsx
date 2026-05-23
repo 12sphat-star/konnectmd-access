@@ -56,43 +56,10 @@ function ScrollToTop() {
   return null;
 }
 
-function LaunchBanner() {
-  return (
-    <div
-      style={{
-        background: "linear-gradient(90deg, #0284c7, #0ea5e9)",
-        color: "white",
-        textAlign: "center",
-        padding: "10px 15px",
-        fontWeight: "600",
-        fontSize: "14px",
-        lineHeight: "1.5",
-      }}
-    >
-      🚀 LIVE ZOOM EVENT – May 21 @ 8PM | Hampton Roads Launch{" "}
-      <a
-        href="https://www.eventbrite.com/e/the-answer-to-rising-healthcare-costs-tickets-1988397603759?aff=oddtdtcreator"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          color: "#fff",
-          marginLeft: "8px",
-          textDecoration: "underline",
-          fontWeight: "800",
-          whiteSpace: "nowrap",
-        }}
-      >
-        Reserve Your Spot Now →
-      </a>
-    </div>
-  );
-}
-
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <LaunchBanner />
       <Navbar />
 
       <Routes>

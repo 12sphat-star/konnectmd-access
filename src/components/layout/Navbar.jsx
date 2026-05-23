@@ -1,14 +1,11 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const location = useLocation();
-
-  const isLaunchPage = location.pathname === "/launch";
 
   return (
-    <header className={isLaunchPage ? "navbar launch-navbar" : "navbar"}>
+   <header className="navbar">
       <div className="container nav-inner">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
           Konnect<span>MD</span> Access
@@ -21,9 +18,6 @@ export default function Navbar() {
           <Link to="/get-details">Get Details</Link>
           <Link to="/join-the-team">Join the Team</Link>
 
-          <Link to="/launch" className="nav-cta">
-            May 21 Launch
-          </Link>
         </nav>
 
         {/* Mobile hamburger */}
@@ -62,11 +56,11 @@ export default function Navbar() {
           </Link>
 
           <Link
-            to="/launch"
+            to="/contact"
             onClick={() => setOpen(false)}
             className="mobile-cta"
           >
-            May 21 Launch
+           Contact Us
           </Link>
         </div>
       )}

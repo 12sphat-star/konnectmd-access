@@ -67,6 +67,16 @@ export default function Footer() {
               rendered subject to the licensed professional’s judgment. If you
               are experiencing a medical emergency, dial 911 immediately.
             </p>
+ <p
+  style={{
+    marginTop: "18px",
+    color: "#94a3b8",
+    fontSize: "14px",
+    lineHeight: "1.6",
+  }}
+>
+  KonnectMD Access is available nationwide throughout the United States and U.S. territories.
+</p>
 
             <a
               href="https://www.konnectmd.com/_files/ugd/523e5b_a002539b6c86403196de1ea736bad54a.pdf"
