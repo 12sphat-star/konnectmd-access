@@ -13,19 +13,16 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="nav-links desktop-nav">
-          <Link to="/plans">Plans</Link>
-
-          <Link to="/locations">Locations</Link>
-
-          <Link to="/get-details">Get Details</Link>
-
-          <Link to="/join-the-team">Join the Team</Link>
-
-          <Link to="/book-call" className="nav-cta">
-            Book a Call
-          </Link>
-        </nav>
+       <nav className="nav-links desktop-nav">
+  <Link to="/plans">Plans</Link>
+  <Link to="/locations">Locations</Link>
+  <Link to="/insights">Insights</Link>
+  <Link to="/get-details">Get Details</Link>
+  <Link to="/join-the-team">Join the Team</Link>
+  <Link to="/book-call" className="nav-cta">
+    Book a Call
+  </Link>
+</nav>
 
         {/* Mobile Hamburger */}
         <button
@@ -53,6 +50,18 @@ export default function Navbar() {
           <Link to="/locations" onClick={() => setOpen(false)}>
             Locations
           </Link>
+
+          <Link to="/locations" onClick={() => setOpen(false)}>
+  Locations
+</Link>
+
+<Link to="/insights" onClick={() => setOpen(false)}>
+  Insights
+</Link>
+
+<Link to="/get-details" onClick={() => setOpen(false)}>
+  Get Details
+</Link>
 
           <Link to="/get-details" onClick={() => setOpen(false)}>
             Get Details

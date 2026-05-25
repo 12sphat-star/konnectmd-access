@@ -21,6 +21,7 @@ import CTASection from "../components/home/CTASection";
 import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 import HamptonRoadsLocations from "../components/home/HamptonRoadsLocations";
+import LatestInsights from "../components/home/LatestInsights";
 
 export default function Home() {
   useEffect(() => {
@@ -82,6 +83,7 @@ export default function Home() {
       <FAQSection />
       <AgentSection />
       <LaunchSection />
+       <LatestInsights />
       <CTASection />
     </>
   );

@@ -20,6 +20,7 @@ export default function Hero() {
             families, self-employed workers, and small business owners get
             connected care starting at{" "}
             <strong style={{ color: "var(--text)" }}>$59.99/mo.</strong>
+            Available nationwide with a growing Hampton Roads presence.
           </p>
 
           <div className="hero-facts">
