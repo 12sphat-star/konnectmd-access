@@ -77,6 +77,7 @@ export default function App() {
 
         {/* NEW LAUNCH PAGE */}
         <Route path="/launch" element={<LaunchPage />} />
+        <Route path="/veterans-healthcare-access" element={<LaunchPage />} />
 
         {/* Locations */}
         <Route path="/locations" element={<LocationsPage />} />
