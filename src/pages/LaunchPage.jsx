@@ -390,7 +390,94 @@ export default function LaunchPage() {
           </div>
         </div>
       </section>
+<section style={{ background: "white", color: "#020617", padding: "80px 24px" }}>
+  <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+    <p
+      style={{
+        color: "#0891b2",
+        fontWeight: 900,
+        letterSpacing: 1,
+      }}
+    >
+      HAMPTON ROADS VETERANS
+    </p>
 
+    <h2
+      style={{
+        fontSize: "clamp(34px, 5vw, 56px)",
+        lineHeight: 1.05,
+        marginBottom: 24,
+      }}
+    >
+      Serving one of America's largest military communities.
+    </h2>
+
+    <p
+      style={{
+        fontSize: 19,
+        color: "#475569",
+        lineHeight: 1.8,
+        maxWidth: 950,
+      }}
+    >
+      Hampton Roads is home to one of the largest military and veteran
+      populations in the United States. From Naval Station Norfolk and Joint
+      Base Langley-Eustis to NAS Oceana, Little Creek, Portsmouth Naval Medical
+      Center, and the Coast Guard community, thousands of active-duty military,
+      veterans, retirees, reservists, and military families call this region
+      home.
+    </p>
+
+    <p
+      style={{
+        fontSize: 19,
+        color: "#475569",
+        lineHeight: 1.8,
+        marginTop: 24,
+      }}
+    >
+      Whether you live in Norfolk, Virginia Beach, Chesapeake, Portsmouth,
+      Hampton, Newport News, or Suffolk, healthcare access remains an important
+      concern for many military households. KonnectMD Access is available
+      nationwide while maintaining a strong focus on serving the Hampton Roads
+      community.
+    </p>
+
+    <div
+      style={{
+        marginTop: 40,
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+        gap: 20,
+      }}
+    >
+      {[
+        "Norfolk Veterans",
+        "Virginia Beach Military Families",
+        "Chesapeake Veterans",
+        "Portsmouth Military Community",
+        "Hampton Veterans",
+        "Newport News Military Families",
+        "Suffolk Veterans",
+        "Nationwide Access",
+      ].map((item) => (
+        <div
+          key={item}
+          style={{
+            background: "#f8fafc",
+            border: "1px solid #e2e8f0",
+            borderRadius: 18,
+            padding: 20,
+            textAlign: "center",
+            fontWeight: 700,
+          }}
+        >
+          {item}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
       <section style={{ background: "#020617", padding: "80px 24px" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <p style={{ color: "#67e8f9", fontWeight: 900, letterSpacing: 1 }}>
