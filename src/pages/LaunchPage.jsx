@@ -6,8 +6,8 @@ export default function LaunchPage() {
   return (
     <main style={{ background: "#020617", color: "white", overflow: "hidden" }}>
       <SEO
-        title="Nationwide Healthcare Access | KonnectMD Access"
-        description="KonnectMD Access helps individuals, families, entrepreneurs, and small business owners explore telehealth, mental health support, prescription savings, family healthcare options, and wellness services nationwide."
+        title="Veterans Healthcare Access | Telehealth & Family Support | KonnectMD"
+        description="Healthcare access support for veterans and military families including telehealth, mental health support, prescription savings, family healthcare options, and wellness services nationwide."
         path="/launch"
       />
 
@@ -76,6 +76,14 @@ export default function LaunchPage() {
           border-radius: 24px;
           padding: 28px;
           box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .faq-card {
+          background: #0b1f36;
+          border: 1px solid rgba(103,232,249,.16);
+          border-radius: 18px;
+          padding: 22px;
+          text-align: left;
         }
 
         .mobile-sticky {
@@ -168,14 +176,14 @@ export default function LaunchPage() {
                 marginBottom: 24,
               }}
             >
-              Nationwide Healthcare Access • Hampton Roads Presence
+              Veterans • Military Families • Nationwide Access
             </div>
 
             <h1 className="launch-title">
-              Healthcare Costs
-              <span style={{ display: "block" }}>Keep Going Up.</span>
+              Veterans & Military Families
+              <span style={{ display: "block" }}>Deserve Better</span>
               <span style={{ display: "block", color: "#67e8f9" }}>
-                Families Need Better Access.
+                Healthcare Access.
               </span>
             </h1>
 
@@ -188,10 +196,10 @@ export default function LaunchPage() {
                 maxWidth: 650,
               }}
             >
-              KonnectMD Access helps individuals, families, entrepreneurs, and
-              small business owners explore healthcare access options including
-              telehealth, mental health support, prescription savings, family
-              membership options, and wellness services.
+              KonnectMD Access helps veterans, military families, individuals,
+              entrepreneurs, and households explore healthcare access options
+              including telehealth, mental health support, prescription savings,
+              family membership options, and wellness services.
             </p>
 
             <p
@@ -207,20 +215,15 @@ export default function LaunchPage() {
 
             <div
               className="launch-tags"
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 12,
-                marginTop: 26,
-              }}
+              style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 26 }}
             >
               {[
                 "Telehealth",
                 "Mental Health Support",
                 "Prescription Savings",
                 "Family Options",
-                "Small Business Friendly",
-                "Nationwide Access",
+                "Veteran-Friendly Access",
+                "Nationwide",
               ].map((tag) => (
                 <span
                   key={tag}
@@ -251,18 +254,14 @@ export default function LaunchPage() {
                 fontSize: 18,
               }}
             >
-              Many families are looking for healthcare access that is easier to
-              use, easier to understand, and available when they need it.
+              KonnectMD Access does not replace VA benefits or health insurance.
+              It is a healthcare access and savings membership that may help
+              complement existing options.
             </div>
 
             <div
               className="launch-actions"
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 16,
-                marginTop: 34,
-              }}
+              style={{ display: "flex", flexWrap: "wrap", gap: 16, marginTop: 34 }}
             >
               <a
                 className="launch-btn"
@@ -289,22 +288,50 @@ export default function LaunchPage() {
                 Book a 30-Minute Call
               </Link>
             </div>
-
-            <p style={{ marginTop: 18, color: "#94a3b8" }}>
-              Not health insurance • Healthcare access membership • Nationwide availability
-            </p>
           </div>
 
           <div style={{ textAlign: "center" }}>
             <img
               src="/images/launch-hero.png"
-              alt="KonnectMD healthcare access"
+              alt="Veterans and military families healthcare access"
               className="launch-image"
             />
           </div>
         </div>
       </section>
+<section style={{ background: "#020617", padding: "80px 24px" }}>
+  <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+    <p style={{ color: "#67e8f9", fontWeight: 900, letterSpacing: 1 }}>
+      WHY THIS MATTERS
+    </p>
 
+    <h2 style={{ fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.05 }}>
+      Veterans and military families often need healthcare access that moves with real life.
+    </h2>
+
+    <p style={{ color: "#cbd5e1", fontSize: 19, lineHeight: 1.7, maxWidth: 850 }}>
+      Military life, veteran transitions, family responsibilities, PCS moves, long appointment wait times,
+      prescription costs, and mental health needs can all create pressure. KonnectMD Access helps veterans,
+      military spouses, and families explore healthcare access options that may complement existing benefits.
+    </p>
+
+    <div className="launch-grid">
+      {[
+        "Mental health and emotional wellness support",
+        "Virtual urgent care for common non-emergency needs",
+        "Prescription savings for everyday medications",
+        "Family healthcare membership options",
+        "Support for military spouses and households",
+        "Nationwide access for families who move or travel",
+      ].map((item) => (
+        <div className="launch-card" key={item}>
+          <div style={{ fontSize: 32, marginBottom: 12 }}>⭐</div>
+          <h3 style={{ margin: 0, fontSize: 22 }}>{item}</h3>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
       <section
         style={{
           background: "#0f172a",
@@ -322,52 +349,117 @@ export default function LaunchPage() {
             fontWeight: 800,
           }}
         >
-          TELEHEALTH • MENTAL HEALTH • PRESCRIPTION SAVINGS • FAMILY OPTIONS
+          VETERANS • MILITARY FAMILIES • TELEHEALTH • MENTAL HEALTH SUPPORT
         </p>
 
         <h3 style={{ fontSize: 24, marginTop: 18 }}>
-          24/7 ACCESS • NATIONWIDE • NO OPEN ENROLLMENT • HOUSEHOLD OPTIONS
+          24/7 ACCESS • NATIONWIDE • PRESCRIPTION SAVINGS • FAMILY OPTIONS
         </h3>
       </section>
 
-      <section
-        id="details"
-        style={{ background: "white", color: "#020617", padding: "80px 24px" }}
-      >
+      <section style={{ background: "white", color: "#020617", padding: "80px 24px" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontSize: "clamp(36px, 5vw, 58px)", lineHeight: 1.05, margin: 0 }}>
-            One Membership.
+            Healthcare access support
             <span style={{ display: "block", color: "#0891b2" }}>
-              Multiple Ways To Access Care.
+              for veterans and military families.
             </span>
           </h2>
 
-          <p
-            style={{
-              color: "#475569",
-              fontSize: 19,
-              maxWidth: 760,
-              margin: "18px auto 0",
-            }}
-          >
-            KonnectMD Access is designed for families, entrepreneurs, business owners,
-            self-employed professionals, and households looking for healthcare access,
-            savings, and wellness support in a changing market.
+          <p style={{ color: "#475569", fontSize: 19, maxWidth: 780, margin: "18px auto 0" }}>
+            Hampton Roads is home to one of the strongest military and veteran
+            communities in the country. From Norfolk and Virginia Beach to
+            Chesapeake, Portsmouth, Hampton, Newport News, and Suffolk, families
+            are looking for practical healthcare access that works with modern life.
           </p>
 
           <div className="launch-grid">
             {[
-              "24/7 Virtual Urgent Care",
+              "Virtual Urgent Care",
               "Mental Health Support",
               "Prescription Savings",
-              "Dental, Vision & Chiropractic Savings",
-              "Family Membership Options",
+              "Family Healthcare Options",
               "Small Business Friendly",
+              "Nationwide Access",
             ].map((item) => (
               <div className="launch-card" key={item}>
                 <div style={{ fontSize: 32, marginBottom: 12 }}>✅</div>
                 <h3 style={{ margin: 0, fontSize: 22 }}>{item}</h3>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ background: "#020617", padding: "80px 24px" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <p style={{ color: "#67e8f9", fontWeight: 900, letterSpacing: 1 }}>
+            COMMON QUESTIONS
+          </p>
+
+          <h2 style={{ fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.05 }}>
+            Veterans healthcare access questions people ask.
+          </h2>
+
+          <div className="launch-grid">
+            {[
+              [
+                "Does KonnectMD replace VA benefits?",
+                "No. KonnectMD Access does not replace VA benefits, health insurance, TRICARE, or emergency care. It is a healthcare access and savings membership that may complement existing options.",
+              ],
+              [
+                "Can military families use KonnectMD?",
+                "Yes. KonnectMD Access may help military families explore virtual urgent care, mental health support, prescription savings, and family healthcare access options depending on the membership selected.",
+              ],
+              [
+                "Is mental health support available?",
+                "Depending on the membership level, KonnectMD Access may include access to mental health and emotional wellness support services.",
+              ],
+              [
+                "Can veterans use telehealth?",
+                "Yes. Telehealth can be useful for many common non-emergency healthcare concerns and may help people access support without always starting in a waiting room.",
+              ],
+              [
+                "Is this only for Hampton Roads?",
+                "No. KonnectMD Access is available nationwide throughout the United States and U.S. territories, while building a strong local presence in Hampton Roads.",
+              ],
+              [
+                "Can families be included?",
+                "Depending on the membership selected, household and family membership options may be available.",
+              ],
+            ].map(([q, a]) => (
+              <div className="faq-card" key={q}>
+                <h3 style={{ color: "#93c5fd", marginTop: 0 }}>{q}</h3>
+                <p style={{ color: "#cbd5e1", lineHeight: 1.7 }}>{a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ background: "white", color: "#020617", padding: "80px 24px" }}>
+        <div style={{ maxWidth: 1050, margin: "0 auto", textAlign: "center" }}>
+          <h2 style={{ fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.05 }}>
+            Explore more healthcare access resources.
+          </h2>
+
+          <div className="launch-grid">
+            {[
+              ["/mental-health-support-hampton-roads", "Mental Health Support"],
+              ["/insights", "Healthcare Access Insights"],
+              ["/plans", "Membership Plans"],
+              ["/norfolk-telehealth", "Telehealth in Norfolk"],
+              ["/virginia-beach-telehealth", "Telehealth in Virginia Beach"],
+              ["/book-call", "Book a Call"],
+            ].map(([url, label]) => (
+              <Link
+                key={url}
+                to={url}
+                className="launch-card"
+                style={{ textDecoration: "none" }}
+              >
+                <h3 style={{ margin: 0 }}>{label}</h3>
+              </Link>
             ))}
           </div>
 
@@ -378,35 +470,17 @@ export default function LaunchPage() {
               color: "white",
               borderRadius: 32,
               padding: "50px 24px",
-              position: "relative",
-              overflow: "hidden",
             }}
           >
             <p style={{ color: "#67e8f9", fontWeight: 900, letterSpacing: 1 }}>
-              HEALTHCARE ACCESS DESIGNED FOR MODERN LIFE
+              TAKE THE NEXT STEP
             </p>
 
-            <h2
-              style={{
-                fontSize: "clamp(32px, 5vw, 56px)",
-                lineHeight: 1.05,
-                margin: "12px 0",
-              }}
-            >
-              Don’t Wait Until Healthcare
-              <span style={{ display: "block", color: "#67e8f9" }}>
-                Gets More Expensive.
-              </span>
+            <h2 style={{ fontSize: "clamp(32px, 5vw, 56px)", lineHeight: 1.05 }}>
+              Healthcare access should not be confusing.
             </h2>
 
-            <p
-              style={{
-                color: "#cbd5e1",
-                fontSize: 19,
-                maxWidth: 720,
-                margin: "20px auto",
-              }}
-            >
+            <p style={{ color: "#cbd5e1", fontSize: 19, maxWidth: 720, margin: "20px auto" }}>
               Explore how KonnectMD Access may help you, your family, or your
               business access healthcare support in a more practical way.
             </p>
@@ -419,10 +493,6 @@ export default function LaunchPage() {
             >
               Explore Membership Options
             </a>
-
-            <p style={{ marginTop: 18, color: "#94a3b8" }}>
-              Available nationwide throughout the United States and U.S. territories.
-            </p>
           </div>
         </div>
       </section>

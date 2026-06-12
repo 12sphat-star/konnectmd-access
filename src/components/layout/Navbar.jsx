@@ -16,6 +16,7 @@ export default function Navbar() {
        <nav className="nav-links desktop-nav">
   <Link to="/plans">Plans</Link>
   <Link to="/locations">Locations</Link>
+  <Link to="/launch">Veterans</Link>
   <Link to="/insights">Insights</Link>
   <Link to="/get-details">Get Details</Link>
  <a
@@ -60,7 +61,9 @@ export default function Navbar() {
           <Link to="/locations" onClick={() => setOpen(false)}>
   Locations
 </Link>
-
+<Link to="/launch" onClick={() => setOpen(false)}>
+  Veterans
+</Link>
 <Link to="/insights" onClick={() => setOpen(false)}>
   Insights
 </Link>
