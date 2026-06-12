@@ -34,7 +34,7 @@ export default function Footer() {
 
     <li><Link to="/book-call">Book a Call</Link></li>
     <li><a
-  href="https://konnectmdagency.com/"
+  href="https://konnectmdagency.com//"
   target="_blank"
   rel="noopener noreferrer"
 >

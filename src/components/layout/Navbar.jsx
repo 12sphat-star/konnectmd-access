@@ -67,11 +67,10 @@ export default function Navbar() {
             Get Details
           </Link>
 
-         <a
+     <a
   href="https://konnectmdagency.com/"
   target="_blank"
   rel="noopener noreferrer"
-  onClick={() => setOpen(false)}
 >
   Join the Team
 </a>
