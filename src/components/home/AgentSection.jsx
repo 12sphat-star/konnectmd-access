@@ -20,9 +20,14 @@ export default function AgentSection() {
             Flexible schedule. Real commissions. Full training and support
             provided. Licensed insurance agents especially welcome.
           </p>
-          <Link to="/join-the-team" className="btn btn-primary">
+          <a
+  href="https://konnectmdagency.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="..."
+>
             Learn About the Opportunity
-          </Link>
+         </a>
         </div>
 
         <div

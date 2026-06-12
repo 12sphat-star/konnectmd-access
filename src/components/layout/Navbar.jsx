@@ -67,9 +67,14 @@ export default function Navbar() {
             Get Details
           </Link>
 
-          <Link to="/join-the-team" onClick={() => setOpen(false)}>
-            Join the Team
-          </Link>
+         <a
+  href="https://konnectmdagency.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setOpen(false)}
+>
+  Join the Team
+</a>
 
           <Link
             to="/book-call"

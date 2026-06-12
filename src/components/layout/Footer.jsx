@@ -33,7 +33,13 @@ export default function Footer() {
     </li>
 
     <li><Link to="/book-call">Book a Call</Link></li>
-    <li><Link to="/join-the-team">Join the Team</Link></li>
+    <li><a
+  href="https://konnectmdagency.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Join the Team
+</a></li>
   </ul>
 </div>
 

@@ -3,59 +3,80 @@ import { plans } from "../data/plans";
 import { useEffect } from "react";
 
 export default function PlansPage() {
-  useEffect(() => {
-  document.title = "Membership Plans | KonnectMD Access";
+useEffect(() => {
+document.title = "Membership Plans | KonnectMD Access";
 }, []);
-  return (
-    <section className="section plans-page">
-      <div className="container">
-        <p className="eyebrow">Plans</p>
-        <h1 className="page-title">Choose the membership level that fits your needs</h1>
-        <p className="section-copy">
-          Whether you need simple access, stronger household value, or expanded
-          support, there is a membership level designed to meet you where you are.
-        </p>
 
-        <div className="plans-top-actions">
-          <a
-            href="https://www.konnectmdagency.com/index.aspx?ReferringDealerID=817595"
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-join-large"
-          >
-            Join Now
-          </a>
+return ( <section className="section plans-page"> <div className="container"> <p className="eyebrow">Plans</p>
 
-          <Link to="/get-details" className="btn btn-secondary">
-            Get Plan Details First
-          </Link>
-        </div>
+```
+    <h1 className="page-title">
+      Choose the membership level that fits your needs
+    </h1>
 
-        <div className="plans-grid four" style={{ marginTop: "2rem" }}>
-          {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className={`plan-card premium-plan ${plan.featured ? "featured" : ""}`}
+    <p className="section-copy">
+      Whether you need simple access, stronger household value, or expanded
+      support, there is a membership level designed to meet you where you are.
+    </p>
+
+    <div className="plans-top-actions">
+      <a
+        href="https://konnectmdnow.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary"
+      >
+        Join Now
+      </a>
+
+      <Link to="/get-details" className="btn btn-secondary">
+        Get Plan Details First
+      </Link>
+    </div>
+
+    <div className="plans-grid four" style={{ marginTop: "2rem" }}>
+      {plans.map((plan) => (
+        <div
+          key={plan.name}
+          className={`plan-card premium-plan ${
+            plan.featured ? "featured" : ""
+          }`}
+        >
+          {plan.featured && (
+            <div className="featured-badge">Most Popular</div>
+          )}
+
+          <h3>{plan.name}</h3>
+
+          <p className="plan-desc">{plan.description}</p>
+
+          <div className="plan-price">{plan.price}</div>
+
+          <ul>
+            {plan.features.map((feature) => (
+              <li key={feature}>{feature}</li>
+            ))}
+          </ul>
+
+          <div className="plan-actions">
+            <Link to="/get-details" className="btn btn-secondary full">
+              Get Details
+            </Link>
+
+            <a
+              href="https://konnectmdnow.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary full"
             >
-              {plan.featured && <div className="featured-badge">Most Popular</div>}
-              <h3>{plan.name}</h3>
-              <p className="plan-desc">{plan.description}</p>
-              <div className="plan-price">{plan.price}</div>
-
-              <ul>
-                {plan.features.map((feature) => (
-                  <li key={feature}>{feature}</li>
-                ))}
-              </ul>
-
-              {/* Fixed: was /get-moreinfo (route did not exist) → now /get-details */}
-              <Link to="/get-details" className="btn btn-primary full">
-                Get Details
-              </Link>
-            </div>
-          ))}
+              Join Now
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-  );
+      ))}
+    </div>
+  </div>
+</section>
+
+);
 }

@@ -63,14 +63,14 @@ export default function PlansPreview() {
                 <Link to="/get-details" className="btn btn-primary full">
                   Get Details
                 </Link>
-                <a
-                  href="https://www.konnectmdagency.com/index.aspx?ReferringDealerID=817595"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-secondary full"
-                >
-                  Join Now
-                </a>
+               <a
+  href="https://konnectmdnow.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn btn-primary"
+>
+  Join Now
+</a>
               </div>
             </div>
           ))}

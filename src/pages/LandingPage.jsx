@@ -52,9 +52,14 @@ export default function LandingPage() {
             </div>
 
             <div className="landing-top-banner-actions">
-              <Link to="/join-the-team" className="landing-banner-link">
-                Join Us
-              </Link>
+             <a
+  href="https://konnectmdagency.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="landing-banner-link"
+>
+  Join Us
+</a>
 
               <button
                 type="button"
