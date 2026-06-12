@@ -291,11 +291,11 @@ export default function LaunchPage() {
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <img
-              src="/images/launch-hero.png"
-              alt="Veterans and military families healthcare access"
-              className="launch-image"
-            />
+           <img
+  src="/images/veterans-healthcare-access-hero.png"
+  alt="Veterans and military families exploring healthcare access and telehealth support"
+  className="launch-image"
+/>
           </div>
         </div>
       </section>
@@ -532,12 +532,34 @@ export default function LaunchPage() {
 
           <div className="launch-grid">
             {[
-              ["/mental-health-support-hampton-roads", "Mental Health Support"],
-              ["/insights", "Healthcare Access Insights"],
-              ["/plans", "Membership Plans"],
-              ["/norfolk-telehealth", "Telehealth in Norfolk"],
-              ["/virginia-beach-telehealth", "Telehealth in Virginia Beach"],
-              ["/book-call", "Book a Call"],
+              [
+  "/mental-health-support-hampton-roads",
+  "Mental Health Support"
+],
+[
+  "/insights",
+  "Healthcare Access Insights"
+],
+[
+  "/plans",
+  "Membership Plans"
+],
+[
+  "/norfolk-telehealth",
+  "Telehealth in Norfolk"
+],
+[
+  "/virginia-beach-telehealth",
+  "Telehealth in Virginia Beach"
+],
+[
+  "/book-call",
+  "Book a Call"
+],
+[
+  "/healthcare-alternatives-hampton-roads",
+  "Healthcare Alternatives"
+],
             ].map(([url, label]) => (
               <Link
                 key={url}
