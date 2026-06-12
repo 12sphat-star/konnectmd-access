@@ -18,7 +18,13 @@ export default function Navbar() {
   <Link to="/locations">Locations</Link>
   <Link to="/insights">Insights</Link>
   <Link to="/get-details">Get Details</Link>
-  <Link to="/join-the-team">Join the Team</Link>
+ <a
+  href="https://konnectmdagency.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Join the Team
+</a>
   <Link to="/book-call" className="nav-cta">
     Book a Call
   </Link>
@@ -67,10 +73,11 @@ export default function Navbar() {
             Get Details
           </Link>
 
-     <a
+<a
   href="https://konnectmdagency.com/"
   target="_blank"
   rel="noopener noreferrer"
+  onClick={() => setOpen(false)}
 >
   Join the Team
 </a>
