@@ -1,11 +1,16 @@
 import React from "react";
-
-const EVENT_URL =
-  "https://www.eventbrite.com/e/the-answer-to-rising-healthcare-costs-tickets-1988397603759?aff=oddtdtcreator";
+import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function LaunchPage() {
   return (
     <main style={{ background: "#020617", color: "white", overflow: "hidden" }}>
+      <SEO
+        title="Nationwide Healthcare Access | KonnectMD Access"
+        description="KonnectMD Access helps individuals, families, entrepreneurs, and small business owners explore telehealth, mental health support, prescription savings, family healthcare options, and wellness services nationwide."
+        path="/launch"
+      />
+
       <style>{`
         @keyframes float {
           0% { transform: translateY(0px); }
@@ -78,77 +83,66 @@ export default function LaunchPage() {
         }
 
         @media (max-width: 900px) {
-  .launch-hero {
-    grid-template-columns: 1fr;
-    padding: 55px 18px 40px;
-    text-align: center;
-    gap: 28px;
-    min-height: auto;
-  }
+          .launch-hero {
+            grid-template-columns: 1fr;
+            padding: 55px 18px 40px;
+            text-align: center;
+            gap: 28px;
+            min-height: auto;
+          }
 
-  .launch-title {
-    font-size: 38px;
-    line-height: 1.05;
-    letter-spacing: -1px;
-  }
+          .launch-title {
+            font-size: 38px;
+            line-height: 1.05;
+            letter-spacing: -1px;
+          }
 
-  .launch-hero p {
-    font-size: 17px !important;
-    line-height: 1.45 !important;
-  }
+          .launch-hero p {
+            font-size: 17px !important;
+            line-height: 1.45 !important;
+          }
 
-  .launch-tags,
-  .launch-actions {
-    justify-content: center;
-  }
+          .launch-tags,
+          .launch-actions {
+            justify-content: center;
+          }
 
-  .launch-actions {
-    flex-direction: column;
-  }
+          .launch-actions {
+            flex-direction: column;
+          }
 
-  .launch-btn {
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-  }
+          .launch-btn {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+          }
 
-  .launch-image {
-    max-width: 360px;
-    margin-top: -10px;
-  }
+          .launch-image {
+            max-width: 360px;
+            margin-top: -10px;
+          }
 
-  .launch-grid {
-    grid-template-columns: 1fr;
-  }
+          .launch-grid {
+            grid-template-columns: 1fr;
+          }
 
-  .mobile-sticky {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    padding: 12px;
-    background: rgba(2, 6, 23, 0.88);
-    backdrop-filter: blur(10px);
-  }
+          .mobile-sticky {
+            display: block;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            padding: 12px;
+            background: rgba(2, 6, 23, 0.88);
+            backdrop-filter: blur(10px);
+          }
 
-  main {
-    padding-bottom: 82px;
-  }
-}
+          main {
+            padding-bottom: 82px;
+          }
+        }
       `}</style>
-
-      <div
-        style={{
-          background: "linear-gradient(90deg,#06b6d4,#2563eb)",
-          textAlign: "center",
-          padding: "12px 16px",
-          fontWeight: 900,
-        }}
-      >
-        ⚡ LIVE MAY 21ST @ 8PM EST • LIMITED REGISTRATION • FREE ONLINE EVENT
-      </div>
 
       <section style={{ position: "relative" }}>
         <div
@@ -174,14 +168,14 @@ export default function LaunchPage() {
                 marginBottom: 24,
               }}
             >
-              🚀 LIVE ONLINE EVENT • MAY 21ST • 8PM EST
+              Nationwide Healthcare Access • Hampton Roads Presence
             </div>
 
             <h1 className="launch-title">
               Healthcare Costs
               <span style={{ display: "block" }}>Keep Going Up.</span>
               <span style={{ display: "block", color: "#67e8f9" }}>
-                Hampton Roads Needs Options.
+                Families Need Better Access.
               </span>
             </h1>
 
@@ -194,9 +188,21 @@ export default function LaunchPage() {
                 maxWidth: 650,
               }}
             >
-              Join the KonnectMD launch and discover how families,
-              entrepreneurs, and agents are accessing healthcare support without
-              waiting on open enrollment.
+              KonnectMD Access helps individuals, families, entrepreneurs, and
+              small business owners explore healthcare access options including
+              telehealth, mental health support, prescription savings, family
+              membership options, and wellness services.
+            </p>
+
+            <p
+              style={{
+                color: "#93c5fd",
+                fontWeight: 800,
+                fontSize: 18,
+                marginTop: 16,
+              }}
+            >
+              Available nationwide throughout the United States and U.S. territories.
             </p>
 
             <div
@@ -208,23 +214,28 @@ export default function LaunchPage() {
                 marginTop: 26,
               }}
             >
-              {["Telehealth", "Mental Health", "Rx Savings", "Family Coverage"].map(
-                (tag) => (
-                  <span
-                    key={tag}
-                    style={{
-                      border: "1px solid rgba(103,232,249,.25)",
-                      background: "rgba(34,211,238,.12)",
-                      color: "#cffafe",
-                      padding: "10px 14px",
-                      borderRadius: "999px",
-                      fontWeight: 700,
-                    }}
-                  >
-                    ✔ {tag}
-                  </span>
-                )
-              )}
+              {[
+                "Telehealth",
+                "Mental Health Support",
+                "Prescription Savings",
+                "Family Options",
+                "Small Business Friendly",
+                "Nationwide Access",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  style={{
+                    border: "1px solid rgba(103,232,249,.25)",
+                    background: "rgba(34,211,238,.12)",
+                    color: "#cffafe",
+                    padding: "10px 14px",
+                    borderRadius: "999px",
+                    fontWeight: 700,
+                  }}
+                >
+                  ✔ {tag}
+                </span>
+              ))}
             </div>
 
             <div
@@ -240,8 +251,8 @@ export default function LaunchPage() {
                 fontSize: 18,
               }}
             >
-              ⚠️ Most people don’t realize there are healthcare alternatives
-              available until costs become overwhelming.
+              Many families are looking for healthcare access that is easier to
+              use, easier to understand, and available when they need it.
             </div>
 
             <div
@@ -253,12 +264,17 @@ export default function LaunchPage() {
                 marginTop: 34,
               }}
             >
-              <a className="launch-btn" href={EVENT_URL} target="_blank" rel="noreferrer">
-                🚀 Register for the May 21st Launch
+              <a
+                className="launch-btn"
+                href="https://konnectmdnow.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Explore Membership Options
               </a>
 
-              <a
-                href="#details"
+              <Link
+                to="/book-call"
                 style={{
                   display: "inline-block",
                   color: "white",
@@ -270,19 +286,19 @@ export default function LaunchPage() {
                   background: "rgba(255,255,255,.06)",
                 }}
               >
-                Learn More
-              </a>
+                Book a 30-Minute Call
+              </Link>
             </div>
 
             <p style={{ marginTop: 18, color: "#94a3b8" }}>
-              Free registration • Live Zoom event • May 21st at 8PM
+              Not health insurance • Healthcare access membership • Nationwide availability
             </p>
           </div>
 
           <div style={{ textAlign: "center" }}>
             <img
               src="/images/launch-hero.png"
-              alt="KonnectMD Launch"
+              alt="KonnectMD healthcare access"
               className="launch-image"
             />
           </div>
@@ -306,36 +322,47 @@ export default function LaunchPage() {
             fontWeight: 800,
           }}
         >
-          HEALTHCARE • MENTAL HEALTH • TELEHEALTH • BUSINESS SOLUTIONS
+          TELEHEALTH • MENTAL HEALTH • PRESCRIPTION SAVINGS • FAMILY OPTIONS
         </p>
 
         <h3 style={{ fontSize: 24, marginTop: 18 }}>
-          24/7 ACCESS • NATIONWIDE • NO OPEN ENROLLMENT • FAMILY OPTIONS
+          24/7 ACCESS • NATIONWIDE • NO OPEN ENROLLMENT • HOUSEHOLD OPTIONS
         </h3>
       </section>
 
-      <section id="details" style={{ background: "white", color: "#020617", padding: "80px 24px" }}>
+      <section
+        id="details"
+        style={{ background: "white", color: "#020617", padding: "80px 24px" }}
+      >
         <div style={{ maxWidth: 1100, margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontSize: "clamp(36px, 5vw, 58px)", lineHeight: 1.05, margin: 0 }}>
-            One Launch.
+            One Membership.
             <span style={{ display: "block", color: "#0891b2" }}>
-              Multiple Ways to Get Connected.
+              Multiple Ways To Access Care.
             </span>
           </h2>
 
-          <p style={{ color: "#475569", fontSize: 19, maxWidth: 760, margin: "18px auto 0" }}>
-            This event is for families, entrepreneurs, business owners, and agents
-            looking for healthcare access, savings, and new opportunities in a changing market.
+          <p
+            style={{
+              color: "#475569",
+              fontSize: 19,
+              maxWidth: 760,
+              margin: "18px auto 0",
+            }}
+          >
+            KonnectMD Access is designed for families, entrepreneurs, business owners,
+            self-employed professionals, and households looking for healthcare access,
+            savings, and wellness support in a changing market.
           </p>
 
           <div className="launch-grid">
             {[
               "24/7 Virtual Urgent Care",
-              "Mental Health Counseling",
+              "Mental Health Support",
               "Prescription Savings",
-              "Dental, Vision & Chiropractic",
-              "Family Memberships Up to 7",
-              "Agent & Partner Income Opportunity",
+              "Dental, Vision & Chiropractic Savings",
+              "Family Membership Options",
+              "Small Business Friendly",
             ].map((item) => (
               <div className="launch-card" key={item}>
                 <div style={{ fontSize: 32, marginBottom: 12 }}>✅</div>
@@ -356,35 +383,59 @@ export default function LaunchPage() {
             }}
           >
             <p style={{ color: "#67e8f9", fontWeight: 900, letterSpacing: 1 }}>
-              FEATURING DR. CASUAL PITTS
+              HEALTHCARE ACCESS DESIGNED FOR MODERN LIFE
             </p>
 
-            <h2 style={{ fontSize: "clamp(32px, 5vw, 56px)", lineHeight: 1.05, margin: "12px 0" }}>
+            <h2
+              style={{
+                fontSize: "clamp(32px, 5vw, 56px)",
+                lineHeight: 1.05,
+                margin: "12px 0",
+              }}
+            >
               Don’t Wait Until Healthcare
               <span style={{ display: "block", color: "#67e8f9" }}>
                 Gets More Expensive.
               </span>
             </h2>
 
-            <p style={{ color: "#cbd5e1", fontSize: 19, maxWidth: 720, margin: "20px auto" }}>
-              Join us LIVE on May 21st at 8PM and discover how KonnectMD is helping
-              families, business owners, and agents access healthcare support in a new way.
+            <p
+              style={{
+                color: "#cbd5e1",
+                fontSize: 19,
+                maxWidth: 720,
+                margin: "20px auto",
+              }}
+            >
+              Explore how KonnectMD Access may help you, your family, or your
+              business access healthcare support in a more practical way.
             </p>
 
-            <a className="launch-btn" href={EVENT_URL} target="_blank" rel="noreferrer">
-              🚀 Reserve My Free Spot Now
+            <a
+              className="launch-btn"
+              href="https://konnectmdnow.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore Membership Options
             </a>
 
             <p style={{ marginTop: 18, color: "#94a3b8" }}>
-              Free registration • Live Zoom event • May 21st at 8PM
+              Available nationwide throughout the United States and U.S. territories.
             </p>
           </div>
         </div>
       </section>
 
       <div className="mobile-sticky">
-        <a className="launch-btn" href={EVENT_URL} target="_blank" rel="noreferrer" style={{ width: "100%", textAlign: "center" }}>
-          🚀 Register Free Now
+        <a
+          className="launch-btn"
+          href="https://konnectmdnow.com/"
+          target="_blank"
+          rel="noreferrer"
+          style={{ width: "100%", textAlign: "center" }}
+        >
+          Explore Membership Options
         </a>
       </div>
     </main>
