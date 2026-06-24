@@ -477,6 +477,66 @@ export default function LaunchPage() {
       ))}
     </div>
   </div>
+
+</section>
+<section style={{ background: "#f8fafc", color: "#020617", padding: "80px 24px" }}>
+  <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+    <p style={{ color: "#0891b2", fontWeight: 900, letterSpacing: 1 }}>
+      VETERAN RESOURCES
+    </p>
+
+    <h2 style={{ fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.05 }}>
+      Important resources veterans and military families should know.
+    </h2>
+
+    <p style={{ color: "#475569", fontSize: 19, lineHeight: 1.8, maxWidth: 900 }}>
+      KonnectMD Access may help complement existing healthcare access options,
+      but veterans and military families should also know where to turn for VA
+      benefits, crisis support, counseling, and community-based resources.
+    </p>
+
+    <div className="launch-grid">
+      {[
+        [
+          "Veterans Crisis Line",
+          "For immediate crisis support, dial 988 and press 1. Veterans, service members, and loved ones can also text 838255 or chat online through the Veterans Crisis Line.",
+        ],
+        [
+          "Vet Centers",
+          "VA Vet Centers provide community-based counseling and outreach for eligible veterans, service members, National Guard and Reserve members, and qualifying family members.",
+        ],
+        [
+          "VA Mental Health Services",
+          "The VA provides mental health services for eligible veterans, including counseling, treatment, crisis support, and connections to local resources.",
+        ],
+        [
+          "Hampton Roads Support",
+          "Veterans and military families in Norfolk, Virginia Beach, Chesapeake, Portsmouth, Hampton, Newport News, and Suffolk may have access to both VA and community-based support options.",
+        ],
+        [
+          "When KonnectMD May Help",
+          "KonnectMD Access may help with non-emergency telehealth, prescription savings, family healthcare access, and wellness-related support depending on the membership selected.",
+        ],
+        [
+          "When To Seek Emergency Help",
+          "If someone is in immediate danger, at risk of self-harm, experiencing a medical emergency, chest pain, severe bleeding, or trouble breathing, call 911 immediately.",
+        ],
+      ].map(([title, text]) => (
+        <div className="launch-card" key={title}>
+          <h3 style={{ marginTop: 0, fontSize: 22 }}>{title}</h3>
+          <p style={{ color: "#475569", lineHeight: 1.7, marginBottom: 0 }}>
+            {text}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    <p style={{ color: "#64748b", fontSize: 13, lineHeight: 1.6, marginTop: 28 }}>
+      Source references: Veterans Crisis Line, VA Vet Centers, VA Mental Health
+      Services, and official VA public information. KonnectMD Access is not
+      affiliated with or endorsed by the U.S. Department of Veterans Affairs.
+    </p>
+  </div>
 </section>
       <section style={{ background: "#020617", padding: "80px 24px" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>

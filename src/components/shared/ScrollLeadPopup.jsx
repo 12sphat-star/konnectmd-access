@@ -8,7 +8,7 @@ export default function ScrollLeadPopup() {
     const handleScroll = () => {
       const hasSeenPopup = sessionStorage.getItem("konnectmd_popup_seen");
 
-      if (!hasSeenPopup && window.scrollY > 450) {
+      if (!hasSeenPopup && window.scrollY > 1200) {
         setShow(true);
         sessionStorage.setItem("konnectmd_popup_seen", "true");
       }
