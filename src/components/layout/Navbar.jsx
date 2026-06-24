@@ -7,31 +7,30 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="container nav-inner">
-        {/* Logo */}
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
           Konnect<span>MD</span> Access
         </Link>
 
-        {/* Desktop Navigation */}
-       <nav className="nav-links desktop-nav">
-  <Link to="/plans">Plans</Link>
-  <Link to="/locations">Locations</Link>
-  <Link to="/veterans-healthcare-access">Veterans</Link>
-  <Link to="/insights">Insights</Link>
-  <Link to="/get-details">Get Details</Link>
- <a
-  href="https://konnectmdagency.com/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Join the Team
-</a>
-  <Link to="/book-call" className="nav-cta">
-    Book a Call
-  </Link>
-</nav>
+        <nav className="nav-links desktop-nav">
+          <Link to="/plans">Plans</Link>
+          <Link to="/locations">Locations</Link>
+          <Link to="/veterans-healthcare-access">Veterans</Link>
+          <Link to="/insights">Insights</Link>
+          <Link to="/get-details">Get Details</Link>
 
-        {/* Mobile Hamburger */}
+          <a
+            href="https://konnectmdagency.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join the Team
+          </a>
+
+          <Link to="/book-call" className="nav-cta">
+            Book a Call
+          </Link>
+        </nav>
+
         <button
           className="hamburger"
           onClick={() => setOpen(!open)}
@@ -43,7 +42,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
         <div className="mobile-menu">
           <Link to="/" onClick={() => setOpen(false)}>
@@ -58,32 +56,29 @@ export default function Navbar() {
             Locations
           </Link>
 
-          <Link to="/locations" onClick={() => setOpen(false)}>
-  Locations
-</Link>
-<Link to="/launch" onClick={() => setOpen(false)}>
-  Veterans
-</Link>
-<Link to="/insights" onClick={() => setOpen(false)}>
-  Insights
-</Link>
+          <Link
+            to="/veterans-healthcare-access"
+            onClick={() => setOpen(false)}
+          >
+            Veterans
+          </Link>
 
-<Link to="/get-details" onClick={() => setOpen(false)}>
-  Get Details
-</Link>
+          <Link to="/insights" onClick={() => setOpen(false)}>
+            Insights
+          </Link>
 
           <Link to="/get-details" onClick={() => setOpen(false)}>
             Get Details
           </Link>
 
-<a
-  href="https://konnectmdagency.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  onClick={() => setOpen(false)}
->
-  Join the Team
-</a>
+          <a
+            href="https://konnectmdagency.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            Join the Team
+          </a>
 
           <Link
             to="/book-call"
