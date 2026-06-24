@@ -102,6 +102,30 @@ export default function InsightsPage() {
                 unique emotional pressure. Access to support matters.
               </p>
             </Link>
+            <Link
+  to="/insights/telehealth-for-veterans-hampton-roads"
+  style={{
+    background: "#0b1f36",
+    border: "1px solid rgba(147,197,253,0.20)",
+    borderRadius: "22px",
+    padding: "28px",
+    color: "#fff",
+    textDecoration: "none",
+  }}
+>
+  <p style={{ color: "#93c5fd", fontWeight: 800 }}>
+    Veterans & Telehealth
+  </p>
+
+  <h2 style={{ fontSize: "26px", fontWeight: 950 }}>
+    Telehealth for Veterans in Hampton Roads
+  </h2>
+
+  <p style={{ color: "#cbd5e1", lineHeight: 1.7 }}>
+    Learn what telehealth may help treat, what requires urgent or emergency care,
+    and how veterans and military families can think about healthcare access.
+  </p>
+</Link>
           </div>
         </div>
       </section>

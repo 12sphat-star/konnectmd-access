@@ -34,6 +34,7 @@ import MentalHealthPage from "./pages/MentalHealthPage";
 import FamilyMembershipPage from "./pages/FamilyMembershipPage";
 import AdditionalBenefitsPage from "./pages/AdditionalBenefitsPage";
 import VeteranMentalHealthSupportPage from "./pages/VeteranMentalHealthSupportPage";
+import TelehealthForVeteransPage from "./pages/TelehealthForVeteransPage";
 
 import TelehealthIndustryPage from "./pages/TelehealthIndustryPage";
 import HealthcareAlternativesPage from "./pages/HealthcareAlternativesPage";
@@ -49,6 +50,7 @@ import SuffolkTelehealthPage from "./pages/SuffolkTelehealthPage";
 import MentalHealthSupportHamptonRoadsPage from "./pages/MentalHealthSupportHamptonRoadsPage";
 import InsightsPage from "./pages/InsightsPage";
 import TelehealthGrowingArticlePage from "./pages/TelehealthGrowingArticlePage";
+import WhenToUseTelehealthVsUrgentCarePage from "./pages/WhenToUseTelehealthVsUrgentCarePage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -100,14 +102,18 @@ export default function App() {
 <Route path="/newport-news-telehealth" element={<NewportNewsTelehealthPage />} />
 <Route path="/suffolk-telehealth" element={<SuffolkTelehealthPage />} />
 <Route path="/insights" element={<InsightsPage />} />
-<Route
-  path="/insights/why-telehealth-is-growing-hampton-roads"
-  element={<TelehealthGrowingArticlePage />}
+<Route path="/insights/why-telehealth-is-growing-hampton-roads"element={<TelehealthGrowingArticlePage />}
+
 />
 
 <Route
-  path="/insights/veteran-mental-health-support-hampton-roads"
-  element={<VeteranMentalHealthSupportPage />}
+  path="/insights/telehealth-for-veterans-hampton-roads"
+  element={<TelehealthForVeteransPage />}
+/>
+
+<Route
+  path="/insights/when-to-use-telehealth-vs-urgent-care-vs-er-hampton-roads"
+  element={<WhenToUseTelehealthVsUrgentCarePage />}
 />
 
         {/* Problem / Solution Pages */}

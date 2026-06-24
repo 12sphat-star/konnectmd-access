@@ -943,7 +943,15 @@ export default function LaunchPage() {
 ],
 [
   "/insights/veteran-mental-health-support-hampton-roads",
-  "Veteran Mental Health Support"
+  "Veteran Mental Health Support",
+],
+[
+  "/insights/telehealth-for-veterans-hampton-roads",
+  "Telehealth for Veterans",
+],
+[
+  "/insights/when-to-use-telehealth-vs-urgent-care-vs-er-hampton-roads",
+  "Telehealth vs Urgent Care vs ER"
 ],
             ].map(([url, label]) => (
               <Link
