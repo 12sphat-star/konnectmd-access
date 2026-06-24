@@ -1,3 +1,4 @@
+import ScrollLeadPopup from "./components/shared/ScrollLeadPopup";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -32,6 +33,7 @@ import RxSavingsPage from "./pages/RxSavingsPage";
 import MentalHealthPage from "./pages/MentalHealthPage";
 import FamilyMembershipPage from "./pages/FamilyMembershipPage";
 import AdditionalBenefitsPage from "./pages/AdditionalBenefitsPage";
+import VeteranMentalHealthSupportPage from "./pages/VeteranMentalHealthSupportPage";
 
 import TelehealthIndustryPage from "./pages/TelehealthIndustryPage";
 import HealthcareAlternativesPage from "./pages/HealthcareAlternativesPage";
@@ -60,9 +62,10 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Navbar />
+   <BrowserRouter>
+  <ScrollToTop />
+  <Navbar />
+  <ScrollLeadPopup />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -78,7 +81,8 @@ export default function App() {
         {/* NEW LAUNCH PAGE */}
         <Route path="/launch" element={<LaunchPage />} />
         <Route path="/veterans-healthcare-access" element={<LaunchPage />} />
-
+        <Route path="/insights/veteran-mental-health-support-hampton-roads"element={<VeteranMentalHealthSupportPage />}
+/>
         {/* Locations */}
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/locations/norfolk-va" element={<NorfolkPage />} />

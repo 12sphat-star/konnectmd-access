@@ -560,6 +560,10 @@ export default function LaunchPage() {
   "/healthcare-alternatives-hampton-roads",
   "Healthcare Alternatives"
 ],
+[
+  "/insights/veteran-mental-health-support-hampton-roads",
+  "Veteran Mental Health Support"
+],
             ].map(([url, label]) => (
               <Link
                 key={url}
