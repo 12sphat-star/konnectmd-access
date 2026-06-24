@@ -2,6 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 
+const tableCell = {
+  padding: "16px 18px",
+  borderBottom: "1px solid #e2e8f0",
+  color: "#475569",
+  lineHeight: 1.5,
+};
+
+const tableCellStrong = {
+  ...tableCell,
+  fontWeight: 900,
+  color: "#020617",
+};
+
 export default function LaunchPage() {
   return (
     <main style={{ background: "#020617", color: "white", overflow: "hidden" }}>
@@ -537,6 +550,258 @@ export default function LaunchPage() {
       affiliated with or endorsed by the U.S. Department of Veterans Affairs.
     </p>
   </div>
+  <section
+  style={{
+    background: "#071426",
+    color: "#fff",
+    padding: "80px 24px",
+  }}
+>
+  <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+    <p
+      style={{
+        color: "#93c5fd",
+        fontWeight: 900,
+        letterSpacing: "0.12em",
+      }}
+    >
+      TELEHEALTH GUIDE
+    </p>
+
+    <h2
+      style={{
+        fontSize: "clamp(34px, 5vw, 56px)",
+        lineHeight: 1.05,
+      }}
+    >
+      What telehealth can and cannot help with.
+    </h2>
+
+    <p
+      style={{
+        color: "#cbd5e1",
+        fontSize: "18px",
+        lineHeight: 1.8,
+        maxWidth: "900px",
+      }}
+    >
+      Many veterans and military families are interested in telehealth because it
+      may reduce travel, shorten wait times, and make healthcare access more
+      convenient for non-emergency situations.
+    </p>
+
+    <div className="launch-grid">
+      <div className="launch-card">
+        <h3>✓ Conditions Telehealth May Help Treat</h3>
+
+        <ul style={{ lineHeight: 2 }}>
+          <li>Sinus infections</li>
+          <li>Allergies</li>
+          <li>Cold and flu symptoms</li>
+          <li>Minor skin conditions</li>
+          <li>Pink eye</li>
+          <li>Medication refill requests</li>
+          <li>Minor digestive issues</li>
+          <li>Behavioral health support</li>
+        </ul>
+      </div>
+
+      <div className="launch-card">
+        <h3>✕ Conditions That Require Immediate Medical Care</h3>
+
+        <ul style={{ lineHeight: 2 }}>
+          <li>Chest pain</li>
+          <li>Stroke symptoms</li>
+          <li>Severe bleeding</li>
+          <li>Trouble breathing</li>
+          <li>Major injuries</li>
+          <li>Loss of consciousness</li>
+          <li>Suicidal emergencies</li>
+          <li>Life-threatening conditions</li>
+        </ul>
+      </div>
+    </div>
+
+    <p
+      style={{
+        color: "#94a3b8",
+        fontSize: "14px",
+        marginTop: "24px",
+      }}
+    >
+      Emergency situations require 911, emergency medical services, or
+      appropriate emergency care. KonnectMD Access is not emergency medical
+      care.
+    </p>
+  </div>
+</section>
+<section
+  style={{
+    background: "#ffffff",
+    color: "#020617",
+    padding: "70px 24px 20px",
+  }}
+>
+  <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+    <p style={{ color: "#0891b2", fontWeight: 900, letterSpacing: "0.12em" }}>
+      WHY KONNECTMD ACCESS MATTERS
+    </p>
+
+    <h2 style={{ fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.05 }}>
+      The gap is not always emergency care. Sometimes the gap is everyday access.
+    </h2>
+
+    <p style={{ color: "#475569", fontSize: 19, lineHeight: 1.8, maxWidth: 900 }}>
+      Many families do not need the emergency room for every health concern, but
+      they still need a way to speak with a licensed provider, ask questions,
+      explore next steps, and avoid unnecessary delays. KonnectMD Access is
+      designed for those non-emergency moments when people need practical access
+      to care, prescription savings, mental health support, and family healthcare
+      options.
+    </p>
+
+    <div className="launch-grid">
+      {[
+        "When you need care after hours",
+        "When the issue is not serious enough for the ER",
+        "When you want to avoid unnecessary urgent care visits",
+        "When prescription costs are becoming a burden",
+        "When your family needs easier access to support",
+        "When you want healthcare options outside traditional insurance"
+      ].map((item) => (
+        <div className="launch-card" key={item}>
+          <h3 style={{ margin: 0 }}>{item}</h3>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+<section
+  style={{
+    background: "#f8fafc",
+    color: "#020617",
+    padding: "80px 24px",
+  }}
+>
+  <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+    <p
+      style={{
+        color: "#0891b2",
+        fontWeight: 900,
+        letterSpacing: "0.12em",
+      }}
+    >
+      CARE DECISION GUIDE
+    </p>
+
+    <h2
+      style={{
+        fontSize: "clamp(34px, 5vw, 56px)",
+        lineHeight: 1.05,
+        marginBottom: 24,
+      }}
+    >
+      Telehealth vs urgent care vs the emergency room.
+    </h2>
+
+    <p
+      style={{
+        color: "#475569",
+        fontSize: 19,
+        lineHeight: 1.8,
+        maxWidth: 900,
+        marginBottom: 40,
+      }}
+    >
+      Not every healthcare situation requires the same level of care. Understanding
+      where to go can help veterans, military families, and households save time
+      while getting the right level of support.
+    </p>
+
+    <div
+      style={{
+        overflowX: "auto",
+        background: "#ffffff",
+        border: "1px solid #e2e8f0",
+        borderRadius: 24,
+        boxShadow: "0 20px 60px rgba(15, 23, 42, 0.08)",
+      }}
+    >
+      <table
+        style={{
+          width: "100%",
+          borderCollapse: "collapse",
+          minWidth: "760px",
+        }}
+      >
+        <thead>
+          <tr style={{ background: "#0f172a", color: "#ffffff" }}>
+            {[
+              "Healthcare Need",
+              "Telehealth",
+              "Urgent Care",
+              "Emergency Room",
+            ].map((head) => (
+              <th
+                key={head}
+                style={{
+                  padding: "18px",
+                  textAlign: "left",
+                  fontSize: 15,
+                  fontWeight: 900,
+                  borderBottom: "1px solid #334155",
+                }}
+              >
+                {head}
+              </th>
+            ))}
+          </tr>
+        </thead>
+
+        <tbody>
+          {[
+            ["Minor illness", "Often appropriate", "Appropriate", "Usually not needed"],
+            ["Prescription questions", "Often appropriate", "Appropriate", "Usually not needed"],
+            ["Mental health support", "May be appropriate", "Limited", "For crisis situations"],
+            ["Minor injuries", "Not ideal", "Often appropriate", "Sometimes needed"],
+            ["Major injuries", "Not appropriate", "Not appropriate", "Appropriate"],
+            ["Chest pain", "Not appropriate", "Not appropriate", "Call 911 / ER"],
+            ["Stroke symptoms", "Not appropriate", "Not appropriate", "Call 911 / ER"],
+            ["Trouble breathing", "Not appropriate", "Not appropriate", "Call 911 / ER"],
+          ].map(([need, telehealth, urgentCare, er]) => (
+            <tr key={need}>
+              <td style={tableCellStrong}>{need}</td>
+              <td style={tableCell}>{telehealth}</td>
+              <td style={tableCell}>{urgentCare}</td>
+              <td style={tableCell}>{er}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div
+      style={{
+        marginTop: 34,
+        background: "#020617",
+        color: "#ffffff",
+        borderRadius: 22,
+        padding: 28,
+      }}
+    >
+      <h3 style={{ marginTop: 0, color: "#67e8f9", fontSize: 24 }}>
+        Important safety reminder
+      </h3>
+
+      <p style={{ color: "#cbd5e1", lineHeight: 1.7, marginBottom: 0 }}>
+        Telehealth is designed for non-emergency healthcare situations. Chest
+        pain, stroke symptoms, severe bleeding, trouble breathing, suicidal
+        emergencies, major injuries, and life-threatening symptoms require
+        immediate emergency care or calling 911.
+      </p>
+    </div>
+  </div>
+</section>
 </section>
       <section style={{ background: "#020617", padding: "80px 24px" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
@@ -574,6 +839,62 @@ export default function LaunchPage() {
                 "Can families be included?",
                 "Depending on the membership selected, household and family membership options may be available.",
               ],
+              [
+  "Can veterans use KonnectMD Access?",
+  "Yes. Veterans, military families, spouses, and households can explore KonnectMD Access membership options and healthcare access resources available nationwide.",
+],
+[
+  "Does KonnectMD Access replace VA benefits?",
+  "No. KonnectMD Access does not replace VA benefits, TRICARE, health insurance, or emergency care. It may complement existing healthcare resources for non-emergency access, savings, and support.",
+],
+[
+  "Does KonnectMD Access replace TRICARE?",
+  "No. KonnectMD Access is not TRICARE, VA benefits, or health insurance. It is a healthcare access and savings membership.",
+],
+[
+  "Can military spouses use KonnectMD Access?",
+  "Yes. Depending on the membership selected, military spouses and family members may be able to access household healthcare support options.",
+],
+[
+  "Can family members be included on one membership?",
+  "Depending on the membership selected, family or household options may be available. Review the current membership details to confirm who may be included.",
+],
+[
+  "Is KonnectMD Access health insurance?",
+  "No. KonnectMD Access is not health insurance. It is a membership-based healthcare access program that may include telehealth, prescription savings, mental health support, wellness services, and other healthcare-related benefits.",
+],
+[
+  "Can KonnectMD Access be used nationwide?",
+  "Yes. KonnectMD Access is available throughout the United States and U.S. territories.",
+],
+[
+  "Can veterans access telehealth through KonnectMD Access?",
+  "Depending on the membership selected, veterans and military families may be able to access telehealth services for non-emergency healthcare needs.",
+],
+[
+  "Can KonnectMD Access help with prescription savings?",
+  "Depending on the membership selected, prescription savings programs may be available and may help reduce out-of-pocket medication costs.",
+],
+[
+  "When should I use telehealth instead of urgent care?",
+  "Telehealth may be appropriate for non-emergency concerns such as allergies, sinus issues, minor illness, medication questions, and other common healthcare needs. Urgent care may be better when an in-person exam or procedure is needed.",
+],
+[
+  "When should I go directly to the emergency room?",
+  "Go directly to the emergency room or call 911 for chest pain, stroke symptoms, severe bleeding, trouble breathing, major trauma, loss of consciousness, suicidal emergencies, or life-threatening conditions.",
+],
+[
+  "What should I do if I am experiencing a mental health crisis?",
+  "Call or text 988 immediately. Veterans can dial 988 and press 1 for the Veterans Crisis Line. If someone is in immediate danger, call 911.",
+],
+[
+  "Can small business owners offer KonnectMD Access to employees?",
+  "Yes. Small business owners, entrepreneurs, and organizations may explore KonnectMD Access as a healthcare access option for employees, contractors, or team members.",
+],
+[
+  "How do I learn which membership option may fit my situation?",
+  "You can review the membership options online, request more information, or book a 30-minute call to discuss whether KonnectMD Access may fit your household, business, or family needs.",
+],
             ].map(([q, a]) => (
               <div className="faq-card" key={q}>
                 <h3 style={{ color: "#93c5fd", marginTop: 0 }}>{q}</h3>

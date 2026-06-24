@@ -100,10 +100,14 @@ export default function App() {
 <Route path="/newport-news-telehealth" element={<NewportNewsTelehealthPage />} />
 <Route path="/suffolk-telehealth" element={<SuffolkTelehealthPage />} />
 <Route path="/insights" element={<InsightsPage />} />
-
 <Route
   path="/insights/why-telehealth-is-growing-hampton-roads"
   element={<TelehealthGrowingArticlePage />}
+/>
+
+<Route
+  path="/insights/veteran-mental-health-support-hampton-roads"
+  element={<VeteranMentalHealthSupportPage />}
 />
 
         {/* Problem / Solution Pages */}
