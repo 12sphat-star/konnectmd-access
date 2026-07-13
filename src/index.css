@@ -1067,8 +1067,6 @@ a {
     gap: 1.25rem;
   }
 
-      max-width: 100%;
-  }
 
  .hero h1,
 .landing-title,
@@ -1170,7 +1168,7 @@ a {
     gap: 0.75rem;
     flex-wrap: wrap;
   }
-}
+   }
 @media (max-width: 768px) {
   .mobile-hide {
     display: none !important;
