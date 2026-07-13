@@ -1,0 +1,478 @@
+.behavioral-center {
+  background: #ffffff;
+  color: #071426;
+}
+
+.behavioral-hero {
+  padding: 2rem 0 5rem;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(124, 58, 237, 0.2),
+      transparent 36%
+    ),
+    linear-gradient(180deg, #071426 0%, #0b1f36 100%);
+  color: #ffffff;
+}
+
+.behavioral-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 2.5rem;
+  color: #91a5bc;
+  font-size: 0.85rem;
+}
+
+.behavioral-breadcrumbs a {
+  color: #c4b5fd;
+}
+
+.behavioral-hero-grid,
+.behavioral-crisis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  align-items: center;
+}
+
+.behavioral-eyebrow,
+.behavioral-section-eyebrow,
+.behavioral-crisis-eyebrow {
+  margin: 0 0 0.8rem;
+  color: #c4b5fd;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.behavioral-crisis-eyebrow {
+  color: #fecaca;
+}
+
+.behavioral-hero h1 {
+  max-width: 14ch;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(3rem, 5.8vw, 5.1rem);
+  line-height: 0.99;
+  letter-spacing: -0.055em;
+}
+
+.behavioral-lead {
+  max-width: 67ch;
+  margin: 1.4rem 0 0;
+  color: #d6e2f0;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.behavioral-hero-actions,
+.behavioral-membership-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.behavioral-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+.behavioral-badges span {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(196, 181, 253, 0.25);
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.1);
+  color: #ddd6fe;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.behavioral-hero-image-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.3);
+}
+
+.behavioral-hero-image {
+  display: block;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.behavioral-hero-card {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 17px;
+  background: rgba(7, 20, 38, 0.92);
+}
+
+.behavioral-hero-card strong,
+.behavioral-hero-card span {
+  display: block;
+}
+
+.behavioral-hero-card span {
+  margin-top: 0.3rem;
+  color: #d6e2f0;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.behavioral-support-section,
+.behavioral-professional-section,
+.behavioral-faq-section,
+.behavioral-related-section,
+.behavioral-sources-section {
+  padding: 6rem 0;
+}
+
+.behavioral-support-section,
+.behavioral-related-section,
+.behavioral-sources-section {
+  background: #f8f7fc;
+}
+
+.behavioral-section-header {
+  max-width: 860px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.behavioral-section-header h2,
+.behavioral-sources-card h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.35rem, 5vw, 3.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.behavioral-section-header > p:last-child,
+.behavioral-sources-card p {
+  color: #526175;
+  line-height: 1.8;
+}
+
+.behavioral-support-grid,
+.behavioral-practical-grid,
+.behavioral-konnectmd-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.behavioral-support-grid article,
+.behavioral-professional-grid article,
+.behavioral-faq-grid article,
+.behavioral-related-card {
+  padding: 1.6rem;
+  border: 1px solid #e2deed;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 35, 65, 0.08);
+}
+
+.behavioral-support-grid article > span,
+.behavioral-related-card > span {
+  color: #6d28d9;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.behavioral-support-grid h3,
+.behavioral-practical-grid h3,
+.behavioral-professional-grid h3,
+.behavioral-konnectmd-grid h3,
+.behavioral-faq-grid h3,
+.behavioral-related-card h3 {
+  margin: 0.7rem 0;
+  color: #071426;
+  font-size: 1.22rem;
+  line-height: 1.3;
+}
+
+.behavioral-support-grid p,
+.behavioral-practical-grid p,
+.behavioral-professional-grid p,
+.behavioral-konnectmd-grid p,
+.behavioral-faq-grid p,
+.behavioral-related-card p {
+  margin: 0;
+  color: #5f6f82;
+  line-height: 1.7;
+}
+
+.behavioral-practical-section,
+.behavioral-konnectmd-section {
+  padding: 6rem 0;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(124, 58, 237, 0.18),
+      transparent 36%
+    ),
+    #071426;
+  color: #ffffff;
+}
+
+.behavioral-light-header h2 {
+  color: #ffffff;
+}
+
+.behavioral-light-header > p:last-child {
+  color: #bfd0e4;
+}
+
+.behavioral-practical-grid article,
+.behavioral-konnectmd-grid article {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: linear-gradient(180deg, #132d50 0%, #0d2341 100%);
+}
+
+.behavioral-practical-grid h3,
+.behavioral-konnectmd-grid h3 {
+  color: #ffffff;
+}
+
+.behavioral-practical-grid p,
+.behavioral-konnectmd-grid p {
+  color: #bfd0e4;
+}
+
+.behavioral-professional-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.behavioral-crisis-section {
+  padding: 5rem 0;
+  background: #7f1d1d;
+  color: #ffffff;
+}
+
+.behavioral-crisis-grid h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.7rem, 5vw, 4.1rem);
+  line-height: 1.02;
+}
+
+.behavioral-crisis-grid p {
+  color: #fee2e2;
+  line-height: 1.75;
+}
+
+.behavioral-crisis-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.behavioral-crisis-actions a {
+  display: grid;
+  place-items: center;
+  min-height: 68px;
+  padding: 1rem;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #991b1b;
+  font-weight: 900;
+  text-align: center;
+}
+
+.behavioral-konnectmd-grid article {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.behavioral-konnectmd-grid article > span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #7c3aed;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.behavioral-membership-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.4rem;
+  border: 1px solid rgba(196, 181, 253, 0.35);
+  border-radius: 20px;
+  background: rgba(124, 58, 237, 0.1);
+}
+
+.behavioral-membership-message strong {
+  color: #ffffff;
+  font-size: 1.18rem;
+}
+
+.behavioral-membership-message p {
+  max-width: 700px;
+  margin: 0.4rem 0 0;
+  color: #bfd0e4;
+  line-height: 1.6;
+}
+
+.behavioral-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.behavioral-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.behavioral-related-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.behavioral-related-card strong {
+  margin-top: auto;
+  padding-top: 1.3rem;
+  color: #6d28d9;
+}
+
+.behavioral-sources-card {
+  padding: 2rem;
+  border: 1px solid #e2deed;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 18px 42px rgba(15, 35, 65, 0.08);
+}
+
+.behavioral-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.behavioral-source-links a {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #e2deed;
+  border-radius: 999px;
+  color: #6d28d9;
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.behavioral-disclaimer {
+  margin-top: 1.6rem;
+  padding: 1.25rem;
+  border-left: 5px solid #7c3aed;
+  border-radius: 14px;
+  background: #f8f7fc;
+}
+
+.behavioral-disclaimer strong {
+  color: #071426;
+}
+
+.behavioral-disclaimer p {
+  margin: 0.55rem 0 0;
+  color: #68788b;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1100px) {
+  .behavioral-support-grid,
+  .behavioral-practical-grid,
+  .behavioral-konnectmd-grid,
+  .behavioral-professional-grid,
+  .behavioral-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 950px) {
+  .behavioral-hero-grid,
+  .behavioral-crisis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .behavioral-hero-image {
+    height: 430px;
+  }
+
+  .behavioral-membership-message {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .behavioral-support-section,
+  .behavioral-practical-section,
+  .behavioral-professional-section,
+  .behavioral-konnectmd-section,
+  .behavioral-faq-section,
+  .behavioral-related-section,
+  .behavioral-sources-section {
+    padding: 4rem 0;
+  }
+
+  .behavioral-support-grid,
+  .behavioral-practical-grid,
+  .behavioral-professional-grid,
+  .behavioral-konnectmd-grid,
+  .behavioral-faq-grid,
+  .behavioral-related-grid,
+  .behavioral-crisis-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .behavioral-hero-image {
+    height: 340px;
+  }
+
+  .behavioral-hero-actions,
+  .behavioral-membership-actions {
+    flex-direction: column;
+  }
+
+  .behavioral-hero-actions .btn,
+  .behavioral-membership-actions .btn {
+    width: 100%;
+  }
+
+  .behavioral-related-card {
+    min-height: auto;
+  }
+
+  .behavioral-sources-card {
+    padding: 1.4rem;
+  }
+}

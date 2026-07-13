@@ -26,6 +26,7 @@ import NoInsuranceDoctorPage from "./pages/NoInsuranceDoctorPage";
 import PrescriptionSavingsPage from "./pages/PrescriptionSavingsPage";
 import SmallBusinessHealthcarePage from "./pages/SmallBusinessHealthcarePage";
 import BusinessOwnersEntrepreneursPage from "./pages/BusinessOwnersEntrepreneursPage";
+import TelehealthResourceCenter from "./pages/TelehealthResourceCenter";
 
 import InterestSelector from "./pages/InterestSelector";
 import TelehealthPage from "./pages/TelehealthPage";
@@ -35,6 +36,12 @@ import FamilyMembershipPage from "./pages/FamilyMembershipPage";
 import AdditionalBenefitsPage from "./pages/AdditionalBenefitsPage";
 import VeteranMentalHealthSupportPage from "./pages/VeteranMentalHealthSupportPage";
 import TelehealthForVeteransPage from "./pages/TelehealthForVeteransPage";
+
+import VeteransResourceCenter from "./pages/VeteransResourceCenter";
+import PrescriptionSavingsResourceCenter from "./pages/PrescriptionSavingsResourceCenter";
+import BehavioralHealthResourceCenter from "./pages/BehavioralHealthResourceCenter";
+import FamilyHealthcareResourceCenter from "./pages/FamilyHealthcareResourceCenter";
+import SmallBusinessHealthcareResourceCenter from "./pages/SmallBusinessHealthcareResourceCenter";
 
 import TelehealthIndustryPage from "./pages/TelehealthIndustryPage";
 import HealthcareAlternativesPage from "./pages/HealthcareAlternativesPage";
@@ -110,7 +117,30 @@ export default function App() {
   path="/insights/telehealth-for-veterans-hampton-roads"
   element={<TelehealthForVeteransPage />}
 />
-
+<Route
+  path="/resource-center/telehealth"
+  element={<TelehealthResourceCenter />}
+ /> 
+<Route
+  path="/resource-center/veterans"
+  element={<VeteransResourceCenter />}
+/>
+<Route
+  path="/resource-center/prescription-savings"
+  element={<PrescriptionSavingsResourceCenter />}
+/>
+<Route
+  path="/resource-center/behavioral-health"
+  element={<BehavioralHealthResourceCenter />}
+/>
+<Route
+  path="/resource-center/family-healthcare"
+  element={<FamilyHealthcareResourceCenter />}
+/>
+<Route
+  path="/resource-center/small-business-healthcare"
+  element={<SmallBusinessHealthcareResourceCenter />}
+/>
 <Route
   path="/insights/when-to-use-telehealth-vs-urgent-care-vs-er-hampton-roads"
   element={<WhenToUseTelehealthVsUrgentCarePage />}

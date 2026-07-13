@@ -1,0 +1,542 @@
+.family-center {
+  background: #ffffff;
+  color: #071426;
+}
+
+.family-hero {
+  padding: 2rem 0 5rem;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(14, 165, 233, 0.2),
+      transparent 36%
+    ),
+    linear-gradient(180deg, #071426 0%, #0b1f36 100%);
+  color: #ffffff;
+}
+
+.family-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 2.5rem;
+  color: #91a5bc;
+  font-size: 0.85rem;
+}
+
+.family-breadcrumbs a {
+  color: #7dd3fc;
+}
+
+.family-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  align-items: center;
+}
+
+.family-eyebrow,
+.family-section-eyebrow {
+  margin: 0 0 0.8rem;
+  color: #7dd3fc;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.family-hero-copy h1 {
+  max-width: 12ch;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(3.1rem, 6vw, 5.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.family-hero-copy h1 span {
+  display: block;
+  color: #7dd3fc;
+}
+
+.family-hero-lead {
+  max-width: 65ch;
+  margin: 1.4rem 0 0;
+  color: #d6e2f0;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.family-hero-actions,
+.family-membership-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.family-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+.family-badges span {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(125, 211, 252, 0.24);
+  border-radius: 999px;
+  background: rgba(14, 165, 233, 0.1);
+  color: #bae6fd;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.family-hero-image-wrap {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.3);
+}
+
+.family-hero-image {
+  display: block;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.family-hero-card {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  border-radius: 17px;
+  background: rgba(7, 20, 38, 0.92);
+}
+
+.family-hero-card strong,
+.family-hero-card span {
+  display: block;
+}
+
+.family-hero-card strong {
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+.family-hero-card span {
+  margin-top: 0.25rem;
+  color: #bae6fd;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.family-needs-section,
+.family-virtual-section,
+.family-care-levels-section,
+.family-scenarios-section,
+.family-faq-section,
+.family-related-section,
+.family-sources-section {
+  padding: 6rem 0;
+}
+
+.family-needs-section,
+.family-care-levels-section,
+.family-related-section,
+.family-sources-section {
+  background: #f6faff;
+}
+
+.family-section-header {
+  max-width: 860px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.family-section-header h2,
+.family-sources-card h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.35rem, 5vw, 3.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.family-section-header > p:last-child,
+.family-sources-card p {
+  color: #526175;
+  line-height: 1.8;
+}
+
+.family-needs-grid,
+.family-preventive-grid,
+.family-virtual-grid,
+.family-konnectmd-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.family-info-card,
+.family-virtual-grid article,
+.family-care-levels-grid article,
+.family-scenarios-grid article,
+.family-faq-grid article,
+.family-related-card {
+  padding: 1.6rem;
+  border: 1px solid #dce8f2;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 35, 65, 0.08);
+}
+
+.family-info-card > span,
+.family-care-levels-grid article > span,
+.family-related-card > span {
+  color: #0284c7;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.family-info-card h3,
+.family-preventive-grid h3,
+.family-virtual-grid h3,
+.family-care-levels-grid h3,
+.family-konnectmd-grid h3,
+.family-scenarios-grid h3,
+.family-faq-grid h3,
+.family-related-card h3 {
+  margin: 0.7rem 0;
+  color: #071426;
+  font-size: 1.22rem;
+  line-height: 1.3;
+}
+
+.family-info-card p,
+.family-preventive-grid p,
+.family-virtual-grid p,
+.family-care-levels-grid p,
+.family-konnectmd-grid p,
+.family-scenarios-grid p,
+.family-faq-grid p,
+.family-related-card p {
+  margin: 0;
+  color: #5f6f82;
+  line-height: 1.7;
+}
+
+.family-preventive-section,
+.family-konnectmd-section {
+  padding: 6rem 0;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(14, 165, 233, 0.18),
+      transparent 36%
+    ),
+    #071426;
+  color: #ffffff;
+}
+
+.family-light-header h2 {
+  color: #ffffff;
+}
+
+.family-light-header > p:last-child {
+  color: #bfd0e4;
+}
+
+.family-preventive-grid article,
+.family-konnectmd-grid article {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: linear-gradient(180deg, #132d50 0%, #0d2341 100%);
+}
+
+.family-preventive-grid h3,
+.family-konnectmd-grid h3 {
+  color: #ffffff;
+}
+
+.family-preventive-grid p,
+.family-konnectmd-grid p {
+  color: #bfd0e4;
+}
+
+.family-source-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.family-source-row a {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  border-radius: 999px;
+  color: #7dd3fc;
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.family-virtual-action {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.family-virtual-action > a:not(.btn) {
+  color: #0284c7;
+  font-weight: 800;
+}
+
+.family-care-levels-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.family-care-levels-grid article.is-emergency {
+  border-color: #ef4444;
+  background: #fff5f5;
+}
+
+.family-care-levels-grid article.is-emergency > span,
+.family-care-levels-grid article.is-emergency h3 {
+  color: #b91c1c;
+}
+
+.family-emergency-note {
+  max-width: 900px;
+  margin: 2rem auto 0;
+  padding: 1.3rem;
+  border-left: 5px solid #dc2626;
+  border-radius: 15px;
+  background: #fff1f2;
+  text-align: center;
+}
+
+.family-emergency-note strong {
+  color: #991b1b;
+  font-size: 1.15rem;
+}
+
+.family-emergency-note p {
+  margin: 0.4rem 0 0;
+  color: #7f1d1d;
+  line-height: 1.6;
+}
+
+.family-konnectmd-grid article {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.family-konnectmd-grid article > span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #0284c7;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.family-membership-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.4rem;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  border-radius: 20px;
+  background: rgba(14, 165, 233, 0.1);
+}
+
+.family-membership-message strong {
+  color: #ffffff;
+  font-size: 1.18rem;
+}
+
+.family-membership-message p {
+  max-width: 700px;
+  margin: 0.4rem 0 0;
+  color: #bfd0e4;
+  line-height: 1.6;
+}
+
+.family-scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.family-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.family-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.family-related-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.family-related-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(14, 165, 233, 0.45);
+  box-shadow: 0 24px 48px rgba(15, 35, 65, 0.14);
+}
+
+.family-related-card strong {
+  margin-top: auto;
+  padding-top: 1.3rem;
+  color: #0284c7;
+}
+
+.family-sources-card {
+  padding: 2rem;
+  border: 1px solid #dce8f2;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 18px 42px rgba(15, 35, 65, 0.08);
+}
+
+.family-sources-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.family-sources-links a {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #dce8f2;
+  border-radius: 999px;
+  color: #0284c7;
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.family-disclaimer {
+  margin-top: 1.6rem;
+  padding: 1.25rem;
+  border-left: 5px solid #0284c7;
+  border-radius: 14px;
+  background: #f6faff;
+}
+
+.family-disclaimer strong {
+  color: #071426;
+}
+
+.family-disclaimer p {
+  margin: 0.55rem 0 0;
+  color: #68788b;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1100px) {
+  .family-needs-grid,
+  .family-preventive-grid,
+  .family-virtual-grid,
+  .family-konnectmd-grid,
+  .family-care-levels-grid,
+  .family-scenarios-grid,
+  .family-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 950px) {
+  .family-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .family-hero-image {
+    height: 430px;
+  }
+
+  .family-membership-message {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .family-needs-section,
+  .family-preventive-section,
+  .family-virtual-section,
+  .family-care-levels-section,
+  .family-konnectmd-section,
+  .family-scenarios-section,
+  .family-faq-section,
+  .family-related-section,
+  .family-sources-section {
+    padding: 4rem 0;
+  }
+
+  .family-needs-grid,
+  .family-preventive-grid,
+  .family-virtual-grid,
+  .family-care-levels-grid,
+  .family-konnectmd-grid,
+  .family-scenarios-grid,
+  .family-faq-grid,
+  .family-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .family-hero-image {
+    height: 340px;
+  }
+
+  .family-hero-actions,
+  .family-membership-actions,
+  .family-virtual-action {
+    flex-direction: column;
+  }
+
+  .family-hero-actions .btn,
+  .family-membership-actions .btn,
+  .family-virtual-action .btn {
+    width: 100%;
+  }
+
+  .family-related-card {
+    min-height: auto;
+  }
+
+  .family-sources-card {
+    padding: 1.4rem;
+  }
+}

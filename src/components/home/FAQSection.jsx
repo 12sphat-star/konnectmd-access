@@ -1,163 +1,277 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
+import "../../Styles/FAQSection.css";
 
 const faqs = [
   {
-    q: "Is this health insurance?",
-    a: "No — KonnectMD Access is a healthcare access and savings membership, not health insurance. It provides access to licensed providers, prescriptions, wellness services, and more. It does not replace insurance but for many people it is the most practical and affordable option available.",
+    category: "Membership",
+    q: "Is KonnectMD health insurance?",
+    a: "No. KonnectMD is a healthcare access membership, not health insurance. It can help members access virtual care, prescription savings, behavioral health services, wellness resources, and other benefits. It does not provide insurance coverage for every medical expense.",
   },
   {
-    q: "What do I actually get with a membership?",
-    a: "Depending on your membership level you get access to virtual urgent care, primary care, mental health counseling, prescription savings, dental and vision discounts, lab discounts, chiropractic discounts, and more. Higher tiers add dermatology, chronic care management, preventive care, and lifestyle benefits.",
+    category: "Membership",
+    q: "What is included with a KonnectMD membership?",
+    a: "Benefits depend on the membership level selected. Available services may include 24/7 physician access, virtual urgent care, primary care, counseling, prescription savings, dental and vision discounts, lab benefits, chiropractic discounts, dermatology, preventive care, chronic-care support, pet-health resources, and lifestyle benefits.",
   },
   {
-    q: "How much does it cost?",
-    a: "Memberships start at $59.99/mo for the Silver plan and go up to $149.99/mo for Titanium. There is a one-time $30 enrollment fee. Business access starts at $24.99 per employee per month with the first month free.",
+    category: "Pricing",
+    q: "How much does membership cost?",
+    a: "Current household membership levels range from $59.99 per month for Silver to $149.99 per month for Titanium. A one-time enrollment fee may apply. Business pricing and eligibility may differ from household membership pricing.",
   },
   {
-    q: "How many people can be on one plan?",
-    a: "One membership can cover up to 7 household members. That makes it one of the strongest value options for families.",
+    category: "Family",
+    q: "How many family members can be included?",
+    a: "One eligible household membership may include up to seven family members, subject to current membership terms and eligibility requirements.",
   },
   {
-    q: "Can I use this anywhere in the U.S.?",
-    a: "Yes — KonnectMD Access is available nationwide. Your membership works wherever you are in the United States.",
+    category: "Access",
+    q: "Is KonnectMD available nationwide?",
+    a: "KonnectMD provides nationwide healthcare access through participating providers and services. Availability for specific services can vary by state, provider licensing, membership level, and program terms.",
   },
   {
-    q: "How quickly can I start using it?",
-    a: "Most members can access benefits the same day they enroll. After enrollment you go through a quick onboarding so you know exactly how to use every service.",
+    category: "Access",
+    q: "How quickly can I begin using the membership?",
+    a: "Many services may become available soon after enrollment and onboarding. Activation timing can vary by service, membership level, and account setup requirements.",
   },
   {
-    q: "Do I need a license to become an agent?",
-    a: "No — a license is not required to become a KonnectMD agent. This is not an MLM. There are no recruit-your-friends requirements and no inventory. It is a straightforward income opportunity helping people access care they otherwise couldn't afford.",
+    category: "Telehealth",
+    q: "Does KonnectMD include virtual urgent care?",
+    a: "Virtual urgent care and physician access are available through qualifying memberships for many common non-emergency healthcare concerns.",
   },
   {
-    q: "What if I have a medical emergency?",
-    a: "If you are ever experiencing a medical emergency dial 911 immediately. KonnectMD is not appropriate for emergencies. Virtual care is designed for non-emergency consultations, primary care, mental health support, and everyday healthcare needs.",
+    category: "Behavioral Health",
+    q: "Does KonnectMD include mental health support?",
+    a: "Depending on the membership level, members may have access to counseling, psychology, psychiatry, crisis support, emotional wellness resources, and other behavioral health services.",
   },
   {
-    q: "Is KonnectMD HIPAA compliant?",
-    a: "Yes — KonnectMD operates a secure, HIPAA-compliant platform. All services are provided by licensed professionals subject to their professional judgment.",
+    category: "Prescription Savings",
+    q: "How do prescription savings work?",
+    a: "KonnectMD memberships may include discounted medications, an acute medication formulary, and broader prescription benefits depending on the plan selected. Savings vary by medication, pharmacy, availability, and program terms.",
   },
   {
-    q: "How is this different from regular telehealth apps?",
-    a: "Most telehealth apps charge per visit. KonnectMD is a membership — you pay one monthly fee and get unlimited access to providers with $0 copays on select plans, plus prescription savings, mental health support, and more all in one place.",
+    category: "Business",
+    q: "Can small businesses use KonnectMD?",
+    a: "Yes. KonnectMD offers healthcare access options for business owners, entrepreneurs, employees, and organizations seeking an alternative or supplemental healthcare benefit.",
   },
   {
-  q: "Can entrepreneurs and self-employed people use KonnectMD Access?",
-  a: "Yes — KonnectMD Access is becoming a popular healthcare access option for entrepreneurs, self-employed professionals, 1099 workers, and small business owners in Hampton Roads who need flexible healthcare support outside traditional employer plans.",
-},
-{
-  q: "Does KonnectMD Access work for small business owners?",
-  a: "Yes — many small business owners use KonnectMD Access to explore affordable healthcare access options for themselves, their families, and in some cases their employees.",
-},
-{
-  q: "Does KonnectMD Access include mental health support?",
-  a: "Depending on the membership level, KonnectMD Access may include access to mental health counseling and emotional wellness support services.",
-},
-{
-  q: "Can I use KonnectMD Access in Hampton Roads?",
-  a: "Yes — KonnectMD Access is available throughout Hampton Roads including Norfolk, Virginia Beach, Chesapeake, Portsmouth, Hampton, Newport News, and Suffolk.",
-},
-{
-  q: "Do I have to wait for open enrollment?",
-  a: "No — KonnectMD Access is not tied to traditional health insurance open enrollment periods.",
-},
-{
-  q: "Does KonnectMD Access include virtual urgent care?",
-  a: "Yes — depending on the membership selected, members may receive access to virtual urgent care services for common non-emergency health concerns.",
-},
+    category: "Self-Employed",
+    q: "Can entrepreneurs and self-employed people use KonnectMD?",
+    a: "Yes. Self-employed professionals, independent contractors, entrepreneurs, and small business owners can enroll in eligible household memberships or explore available business options.",
+  },
+  {
+    category: "Insurance",
+    q: "Can I use KonnectMD if I already have health insurance?",
+    a: "Yes. Many members use KonnectMD alongside existing insurance to improve access to virtual care, prescription savings, behavioral health services, and other resources.",
+  },
+  {
+    category: "Enrollment",
+    q: "Do I need to wait for open enrollment?",
+    a: "No. KonnectMD membership enrollment is separate from traditional health insurance open-enrollment periods.",
+  },
+  {
+    category: "Safety",
+    q: "What should I do during a medical emergency?",
+    a: "Call 911 or go to the nearest emergency department. KonnectMD virtual services are not a replacement for emergency medical care.",
+  },
+  {
+    category: "Privacy",
+    q: "Is the KonnectMD platform secure?",
+    a: "KonnectMD states that its healthcare platform uses privacy and security practices designed for healthcare services. Members should review the current privacy policy, platform terms, and provider information for complete details.",
+  },
+  {
+    category: "Telehealth",
+    q: "How is this different from a typical telehealth app?",
+    a: "KonnectMD combines virtual care with additional services such as prescription savings, behavioral health, care navigation, family access, discounts, and specialty programs. Exact benefits depend on the membership selected.",
+  },
+];
+
+const popularQuestions = [
+  "Is KonnectMD health insurance?",
+  "What is included with a KonnectMD membership?",
+  "How much does membership cost?",
+  "How many family members can be included?",
+  "Is KonnectMD available nationwide?",
+];
+
+const categories = [
+  "Popular",
+  "Membership",
+  "Access",
+  "Prescription Savings",
+  "Behavioral Health",
+  "Family",
+  "Business",
+  "Telehealth",
 ];
 
 export default function FAQSection() {
-  const [open, setOpen] = useState(null);
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.a,
-    },
-  })),
-};
+  const [openQuestion, setOpenQuestion] = useState(null);
+  const [activeCategory, setActiveCategory] = useState("Popular");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredFaqs = useMemo(() => {
+    const normalizedSearch = searchTerm.trim().toLowerCase();
+
+    let results =
+      activeCategory === "Popular"
+        ? faqs.filter((faq) => popularQuestions.includes(faq.q))
+        : faqs.filter((faq) => faq.category === activeCategory);
+
+    if (normalizedSearch) {
+      results = faqs.filter(
+        (faq) =>
+          faq.q.toLowerCase().includes(normalizedSearch) ||
+          faq.a.toLowerCase().includes(normalizedSearch) ||
+          faq.category.toLowerCase().includes(normalizedSearch)
+      );
+    }
+
+    return results;
+  }, [activeCategory, searchTerm]);
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+
+  const selectCategory = (category) => {
+    setActiveCategory(category);
+    setSearchTerm("");
+    setOpenQuestion(null);
+  };
+
   return (
-    <section className="section section-dark">
+    <section className="faq-center" aria-labelledby="faq-center-title">
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-/>
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="container">
-        <div className="section-heading">
-          <p className="eyebrow">Got Questions?</p>
-          <h2>Everything you need to know before you decide</h2>
-          <p className="section-copy">
-            Real answers to the questions people actually ask — including the
-            ones about whether this is legit.
+        <div className="faq-center-header">
+          <p className="faq-center-eyebrow">Healthcare Knowledge Center</p>
+
+          <h2 id="faq-center-title">How Can We Help You Today?</h2>
+
+          <p>
+            Search for an answer or choose a healthcare topic to quickly find
+            the information you need.
           </p>
         </div>
 
-        <div style={{ marginTop: "2rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              style={{
-                background: "var(--panel)",
-                border: "1px solid var(--border)",
-                borderRadius: "14px",
-                overflow: "hidden",
-                transition: "border-color 0.2s ease",
-                borderColor: open === index ? "rgba(45, 127, 249, 0.3)" : "var(--border)",
-              }}
-            >
-              <button
-                onClick={() => setOpen(open === index ? null : index)}
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  padding: "1.1rem 1.25rem",
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  textAlign: "left",
-                  gap: "1rem",
-                }}
-              >
-                <span style={{ fontWeight: 700, fontSize: "1rem", color: "var(--text)", lineHeight: 1.4 }}>
-                  {faq.q}
-                </span>
-                <span style={{ color: "var(--blue-soft)", fontSize: "1.4rem", lineHeight: 1, flexShrink: 0, fontWeight: 300 }}>
-                  {open === index ? "−" : "+"}
-                </span>
-              </button>
+        <div className="faq-search-wrap">
+          <label htmlFor="faq-search" className="faq-search-label">
+            Search frequently asked questions
+          </label>
 
-              {open === index && (
-                <div style={{ padding: "0 1.25rem 1.1rem", color: "var(--muted)", lineHeight: 1.75, fontSize: "0.95rem" }}>
-                  {faq.a}
-                </div>
-              )}
-            </div>
+          <div className="faq-search-box">
+            <span aria-hidden="true">⌕</span>
+
+            <input
+              id="faq-search"
+              type="search"
+              value={searchTerm}
+              placeholder="Search membership, telehealth, prescriptions, family..."
+              onChange={(event) => {
+                setSearchTerm(event.target.value);
+                setOpenQuestion(null);
+              }}
+            />
+
+            {searchTerm && (
+              <button
+                type="button"
+                onClick={() => {
+                  setSearchTerm("");
+                  setOpenQuestion(null);
+                }}
+                aria-label="Clear FAQ search"
+              >
+                Clear
+              </button>
+            )}
+          </div>
+        </div>
+
+        <div className="faq-category-bar" aria-label="FAQ categories">
+          {categories.map((category) => (
+            <button
+              key={category}
+              type="button"
+              className={`faq-category-button ${
+                activeCategory === category && !searchTerm ? "is-active" : ""
+              }`}
+              onClick={() => selectCategory(category)}
+            >
+              {category}
+            </button>
           ))}
         </div>
 
-        <div
-          style={{
-            marginTop: "2rem",
-            padding: "1.25rem",
-            background: "rgba(45, 127, 249, 0.06)",
-            border: "1px solid rgba(45, 127, 249, 0.15)",
-            borderRadius: "14px",
-            textAlign: "center",
-          }}
-        >
-          <p style={{ color: "var(--muted)", margin: "0 0 0.75rem", fontSize: "0.95rem" }}>
-            Still have questions? Talk to a real person — not a bot.
-          </p>
-          <a href="/book-call" className="btn btn-primary">
-            Book a Free 30-Minute Call
-          </a>
+        <div className="faq-center-list">
+          {filteredFaqs.length > 0 ? (
+            filteredFaqs.map((faq) => {
+              const isOpen = openQuestion === faq.q;
+
+              return (
+                <article
+                  key={`${faq.category}-${faq.q}`}
+                  className={`faq-center-item ${isOpen ? "is-open" : ""}`}
+                >
+                  <button
+                    type="button"
+                    className="faq-center-question"
+                    onClick={() =>
+                      setOpenQuestion(isOpen ? null : faq.q)
+                    }
+                    aria-expanded={isOpen}
+                  >
+                    <span>
+                      <small>{faq.category}</small>
+                      <strong>{faq.q}</strong>
+                    </span>
+
+                    <span className="faq-center-toggle" aria-hidden="true">
+                      {isOpen ? "−" : "+"}
+                    </span>
+                  </button>
+
+                  {isOpen && (
+                    <div className="faq-center-answer">
+                      <p>{faq.a}</p>
+                    </div>
+                  )}
+                </article>
+              );
+            })
+          ) : (
+            <div className="faq-no-results">
+              <h3>No matching answer was found.</h3>
+              <p>Try another search term or select a category above.</p>
+            </div>
+          )}
+        </div>
+
+        <div className="faq-center-cta">
+          <div>
+            <h3>Still have questions?</h3>
+            <p>
+              Speak with a KonnectMD Access advisor and get help understanding
+              the membership options.
+            </p>
+          </div>
+
+          <Link to="/book-call" className="btn btn-primary">
+            Book a 30-Minute Call
+          </Link>
         </div>
       </div>
     </section>

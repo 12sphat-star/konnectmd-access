@@ -1,45 +1,38 @@
 import { Link } from "react-router-dom";
 
 export default function ExploreHealthcareOptions() {
-  const options = [
+const options = [
   [
-    "/telehealth-doctor-hampton-roads",
+    "/healthcare-alternatives-hampton-roads",
     "Telehealth Doctors",
     "Virtual care access for Hampton Roads families and professionals.",
   ],
-
   [
-    "/mental-health-support-hampton-roads",
+    "/get-details/mental-health",
     "Mental Health Support",
     "Virtual mental health and emotional wellness support options for Hampton Roads families, entrepreneurs, and small business owners.",
   ],
-
   [
-    "/prescription-savings-hampton-roads",
+    "/problems/prescription-savings",
     "Prescription Savings",
     "Ways to reduce everyday medication costs.",
   ],
-
   [
-    "/family-healthcare-membership-hampton-roads",
+    "/problems/family-healthcare",
     "Family Healthcare Membership",
     "Healthcare access options for households and families.",
   ],
-
   [
-    "/small-business-healthcare-hampton-roads",
+    "/problems/small-business-healthcare",
     "Small Business Healthcare",
     "Options for owners, teams, and self-employed workers.",
   ],
-
   [
     "/business-owners-entrepreneurs-healthcare-hampton-roads",
     "Business Owners & Entrepreneurs",
     "Healthcare access for the people building Hampton Roads.",
   ],
 ];
-
-
   return (
     <section
       style={{
@@ -107,6 +100,7 @@ export default function ExploreHealthcareOptions() {
                 color: "#ffffff",
                 textDecoration: "none",
                 boxShadow: "0 20px 50px rgba(0,0,0,0.22)",
+                display: "block",
               }}
             >
               <h3

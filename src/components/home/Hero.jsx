@@ -1,81 +1,72 @@
+import "../../Styles/Hero.css";
 import { Link } from "react-router-dom";
+
+const trustPoints = [
+  "24/7 access to licensed physicians",
+  "Prescription savings on thousands of medications",
+  "Behavioral health, counseling, psychology & psychiatry",
+  "One membership can include up to 7 family members",
+];
 
 export default function Hero() {
   return (
-    <section className="hero hero-premium">
-      <div className="container hero-grid">
-        <div className="hero-copy">
-          <p className="eyebrow">Now Launching in Hampton Roads</p>
+    <section className="hero-v2" aria-labelledby="homepage-hero-title">
+      <div className="container hero-v2-grid">
+        <div className="hero-v2-copy">
+          <p className="hero-v2-eyebrow">
+            KonnectMD Access | Healthcare Access Resource Center
+          </p>
 
-          <h1>
-            Healthcare Access for Real Life —{" "}
-            <span style={{ color: "var(--blue-soft)" }}>
-              Not Insurance Confusion.
-            </span>
+          <h1 id="homepage-hero-title" className="hero-v2-title">
+            Healthcare Access
+            <span> That Fits Real Life.</span>
           </h1>
 
-          <p className="hero-lead">
-            Need a doctor without waiting weeks? Trying to cover your family
-            without getting crushed by cost? KonnectMD helps individuals,
-            families, self-employed workers, and small business owners get
-            connected care starting at{" "}
-            <strong style={{ color: "var(--text)" }}>$59.99/mo.</strong>
-            Available nationwide with a growing Hampton Roads presence.
+          <p className="hero-v2-lead">
+            Explore trusted healthcare resources and connect with nationwide
+            healthcare solutions including 24/7 physician access,
+            prescription savings, behavioral health services, wellness
+            programs, and family healthcare—all through KonnectMD.
           </p>
 
-          <div className="hero-facts">
-  <div className="hero-fact">
-    <strong>Care From Home</strong>
-    <span>Talk to a provider without the waiting room</span>
-  </div>
+          <ul
+            className="hero-v2-trust-list"
+            aria-label="Membership highlights"
+          >
+            {trustPoints.map((point) => (
+              <li key={point}>
+                <span className="hero-v2-check" aria-hidden="true">
+                  ✓
+                </span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
 
-  <div className="hero-fact">
-    <strong>Fast Access</strong>
-    <span>Simple options when you need help now</span>
-  </div>
+          <div className="hero-v2-actions">
+  <Link to="/get-details" className="btn btn-primary">
+    Find My Healthcare Solution
+  </Link>
 
-  <div className="hero-fact">
-    <strong>Not an MLM</strong>
-    <span>No referrals required to use benefits</span>
-  </div>
+  <a href="#learning-center" className="btn btn-secondary">
+    Explore Resource Centers
+  </a>
 </div>
 
-          <div className="hero-actions">
-   <Link to="/get-details" className="btn btn-primary">
-  Get Plan Details
-</Link>
-
-<Link to="/locations" className="btn btn-secondary">
-  See Hampton Roads Locations
-</Link>
-          </div>
-
-          <p
-            style={{
-              marginTop: "1.25rem",
-              fontSize: "0.85rem",
-              color: "var(--muted)",
-              lineHeight: 1.6,
-            }}
-          >
-            Built for Hampton Roads families, entrepreneurs, small business owners, and
-everyday people who need a smarter way to access care.
-          </p>
+          <Link to="/plans" className="hero-v2-text-link">
+            See how KonnectMD Access works
+            <span aria-hidden="true"> →</span>
+          </Link>
         </div>
 
-        <div className="hero-image-wrap hero-image-card">
-          <img
-            src="/images/hero-telehealth.jpg"
-            alt="Family using online doctor visit from home"
-            className="hero-image"
-          />
-
-    <div className="floating-stat">
-  <strong>No</strong>
-  <span>
-    Open enrollment wait or preexisting condition stress
-  </span>
-</div>
+        <div className="hero-v2-visual">
+          <div className="hero-v2-image-frame">
+            <img
+              src="/images/hero-healthcare-resource-center.jpg"
+              alt="Families, veterans, healthcare professionals, seniors, and business owners using modern healthcare services"
+              className="hero-v2-image"
+            />
+          </div>
         </div>
       </div>
     </section>

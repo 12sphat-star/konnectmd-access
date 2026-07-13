@@ -1,0 +1,627 @@
+.veterans-center {
+  background: #ffffff;
+  color: #071426;
+}
+
+.veterans-center-hero {
+  padding: 2rem 0 5rem;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(82, 112, 84, 0.28),
+      transparent 34%
+    ),
+    linear-gradient(180deg, #071426 0%, #0b1f36 100%);
+  color: #ffffff;
+}
+
+.veterans-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 2.5rem;
+  color: #91a5bc;
+  font-size: 0.85rem;
+}
+
+.veterans-breadcrumbs a {
+  color: #a7c7a9;
+}
+
+.veterans-hero-grid,
+.veterans-feature-grid,
+.veterans-family-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  align-items: center;
+}
+
+.veterans-eyebrow,
+.veterans-section-eyebrow {
+  margin: 0 0 0.8rem;
+  color: #7fbf83;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.veterans-hero-copy h1 {
+  max-width: 13ch;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(3.2rem, 6vw, 5.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.veterans-hero-lead {
+  max-width: 64ch;
+  margin: 1.4rem 0 0;
+  color: #d6e2f0;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.veterans-hero-actions,
+.veterans-membership-actions,
+.veterans-resource-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.veterans-affiliation-note {
+  margin: 1.2rem 0 0;
+  color: #aab9ca;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.veterans-hero-image-wrap,
+.veterans-feature-image-wrap {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.3);
+}
+
+.veterans-hero-image,
+.veterans-feature-image {
+  display: block;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.veterans-options-section,
+.veterans-telehealth-section,
+.veterans-mental-section,
+.veterans-prescription-section,
+.veterans-family-section,
+.veterans-related-section,
+.veterans-faq-section,
+.veterans-sources-section {
+  padding: 6rem 0;
+}
+
+.veterans-options-section,
+.veterans-prescription-section,
+.veterans-related-section,
+.veterans-sources-section {
+  background: #f7f9f7;
+}
+
+.veterans-section-header {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.veterans-section-header h2,
+.veterans-feature-grid h2,
+.veterans-family-grid h2,
+.veterans-sources-card h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.35rem, 5vw, 3.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.veterans-section-header > p:last-child,
+.veterans-feature-grid p,
+.veterans-family-grid p,
+.veterans-sources-card p {
+  color: #526175;
+  line-height: 1.8;
+}
+
+.veterans-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.veterans-option-card,
+.veterans-mental-card,
+.veterans-prescription-grid article,
+.veterans-family-questions article,
+.veterans-related-card,
+.veterans-faq-grid article {
+  padding: 1.6rem;
+  border: 1px solid #dce5dc;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 35, 65, 0.08);
+}
+
+.veterans-option-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+}
+
+.veterans-option-card > span,
+.veterans-related-card > span {
+  color: #567e59;
+  font-size: 0.73rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.veterans-option-card h3,
+.veterans-mental-card h3,
+.veterans-prescription-grid h3,
+.veterans-family-questions h3,
+.veterans-related-card h3,
+.veterans-faq-grid h3 {
+  margin: 0.7rem 0;
+  color: #071426;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.veterans-option-card p,
+.veterans-mental-card p,
+.veterans-prescription-grid p,
+.veterans-family-questions p,
+.veterans-related-card p,
+.veterans-faq-grid p {
+  margin: 0;
+  color: #5f6f82;
+  line-height: 1.7;
+}
+
+.veterans-option-card a {
+  margin-top: auto;
+  padding-top: 1.3rem;
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.veterans-community-note {
+  max-width: 920px;
+  margin: 2rem auto 0;
+  padding: 1.25rem;
+  border-left: 5px solid #b45309;
+  border-radius: 14px;
+  background: #fff7ed;
+}
+
+.veterans-community-note strong {
+  color: #7c2d12;
+}
+
+.veterans-community-note p {
+  margin: 0.45rem 0 0;
+  color: #6b4b3b;
+  line-height: 1.65;
+}
+
+.veterans-link-stack {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.veterans-link-stack a {
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.veterans-mental-section {
+  background: #071426;
+  color: #ffffff;
+}
+
+.veterans-mental-section .veterans-section-header h2,
+.veterans-mental-section .veterans-section-header p {
+  color: #ffffff;
+}
+
+.veterans-mental-section .veterans-section-header > p:last-child {
+  color: #bfd0e4;
+}
+
+.veterans-mental-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.veterans-mental-card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, #132d50 0%, #0d2341 100%);
+  box-shadow: none;
+}
+
+.veterans-mental-card h3 {
+  color: #ffffff;
+}
+
+.veterans-mental-card p {
+  color: #bfd0e4;
+}
+
+.veterans-mental-card a {
+  display: inline-flex;
+  margin-top: 1.2rem;
+  color: #93c5fd;
+  font-weight: 800;
+}
+
+.veterans-mental-card.is-crisis {
+  border-color: rgba(248, 113, 113, 0.65);
+  background: #451a1a;
+}
+
+.veterans-crisis-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(248, 113, 113, 0.5);
+  border-radius: 22px;
+  background: #7f1d1d;
+}
+
+.veterans-crisis-banner strong {
+  font-size: 1.3rem;
+}
+
+.veterans-crisis-banner p {
+  max-width: 700px;
+  margin: 0.4rem 0 0;
+  color: #fee2e2;
+  line-height: 1.6;
+}
+
+.veterans-crisis-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.veterans-crisis-actions a {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #991b1b;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.veterans-prescription-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.veterans-resource-actions {
+  justify-content: center;
+}
+
+.veterans-family-grid {
+  align-items: flex-start;
+}
+
+.veterans-family-grid > div:first-child > a {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.veterans-family-questions {
+  display: grid;
+  gap: 1rem;
+}
+
+.veterans-comparison-section {
+  padding: 6rem 0;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(82, 112, 84, 0.24),
+      transparent 35%
+    ),
+    #071426;
+  color: #ffffff;
+}
+
+.veterans-light-header h2 {
+  color: #ffffff;
+}
+
+.veterans-light-header > p:last-child {
+  color: #bfd0e4;
+}
+
+.veterans-comparison-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+}
+
+.veterans-comparison-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  background: #0d2341;
+}
+
+.veterans-comparison-table th,
+.veterans-comparison-table td {
+  padding: 1.15rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #dbe8f7;
+  line-height: 1.6;
+  text-align: left;
+  vertical-align: top;
+}
+
+.veterans-comparison-table thead th {
+  background: #132d50;
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.veterans-comparison-table tbody th {
+  color: #a7c7a9;
+  font-weight: 900;
+}
+
+.veterans-comparison-disclaimer {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  border-left: 5px solid #7fbf83;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.veterans-comparison-disclaimer p {
+  margin: 0.35rem 0 0;
+  color: #bfd0e4;
+  line-height: 1.65;
+}
+
+.veterans-membership-actions {
+  justify-content: center;
+}
+
+.veterans-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.veterans-related-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.veterans-related-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(82, 126, 89, 0.55);
+  box-shadow: 0 24px 48px rgba(15, 35, 65, 0.14);
+}
+
+.veterans-related-card strong {
+  margin-top: auto;
+  padding-top: 1.3rem;
+  color: #2563eb;
+}
+
+.veterans-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.veterans-sources-card {
+  padding: 2rem;
+  border: 1px solid #dce5dc;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 18px 42px rgba(15, 35, 65, 0.08);
+}
+
+.veterans-sources-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.veterans-sources-links a {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #dce5dc;
+  border-radius: 999px;
+  color: #2563eb;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.veterans-medical-disclaimer {
+  margin-top: 1.5rem !important;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5ebe5;
+  color: #748397 !important;
+  font-size: 0.82rem;
+  line-height: 1.6 !important;
+}
+
+@media (max-width: 1050px) {
+  .veterans-options-grid,
+  .veterans-mental-grid,
+  .veterans-prescription-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 950px) {
+  .veterans-hero-grid,
+  .veterans-feature-grid,
+  .veterans-family-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .veterans-hero-image,
+  .veterans-feature-image {
+    height: 430px;
+  }
+
+  .veterans-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .veterans-related-card {
+    min-height: auto;
+  }
+
+  .veterans-crisis-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .veterans-options-section,
+  .veterans-telehealth-section,
+  .veterans-mental-section,
+  .veterans-prescription-section,
+  .veterans-family-section,
+  .veterans-comparison-section,
+  .veterans-related-section,
+  .veterans-faq-section,
+  .veterans-sources-section {
+    padding: 4rem 0;
+  }
+
+  .veterans-options-grid,
+  .veterans-mental-grid,
+  .veterans-prescription-grid,
+  .veterans-faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .veterans-hero-image,
+  .veterans-feature-image {
+    height: 340px;
+  }
+
+  .veterans-hero-actions,
+  .veterans-membership-actions,
+  .veterans-resource-actions,
+  .veterans-crisis-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .veterans-hero-actions .btn,
+  .veterans-membership-actions .btn,
+  .veterans-resource-actions .btn,
+  .veterans-crisis-actions a {
+    width: 100%;
+  }
+
+  .veterans-sources-card {
+    padding: 1.4rem;
+  }
+}
+.veterans-benefit-section{
+    padding:6rem 0;
+    background:#f8fafc;
+}
+
+.veterans-benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:1.5rem;
+    margin-top:3rem;
+}
+
+.veterans-benefit-card{
+    background:#fff;
+    border:1px solid #dbe5ef;
+    border-radius:22px;
+    padding:1.8rem;
+    box-shadow:0 16px 35px rgba(0,0,0,.06);
+    transition:.25s;
+}
+
+.veterans-benefit-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 24px 50px rgba(0,0,0,.10);
+}
+
+.veterans-benefit-card h3{
+    margin-bottom:.75rem;
+    color:#071426;
+    font-size:1.25rem;
+}
+
+.veterans-benefit-card p{
+    color:#5d6d81;
+    line-height:1.75;
+}
+
+.veterans-benefit-highlight{
+    background:linear-gradient(135deg,#0b1f36,#132d50);
+    border-color:#2563eb;
+}
+
+.veterans-benefit-highlight h3,
+.veterans-benefit-highlight p{
+    color:#fff;
+}
+
+@media(max-width:900px){
+
+.veterans-benefit-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:650px){
+
+.veterans-benefit-grid{
+grid-template-columns:1fr;
+}
+
+}

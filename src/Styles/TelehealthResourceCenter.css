@@ -1,0 +1,429 @@
+.telehealth-center {
+  background: #ffffff;
+  color: #071426;
+}
+
+.telehealth-center-hero {
+  padding: 2rem 0 5rem;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.2),
+      transparent 34%
+    ),
+    #071426;
+  color: #ffffff;
+}
+
+.telehealth-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 2.5rem;
+  color: #91a5bc;
+  font-size: 0.85rem;
+}
+
+.telehealth-breadcrumbs a {
+  color: #93c5fd;
+}
+
+.telehealth-hero-grid,
+.telehealth-definition-grid,
+.telehealth-emergency-grid,
+.telehealth-prepare-grid,
+.telehealth-konnectmd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  align-items: center;
+}
+
+.telehealth-eyebrow,
+.telehealth-section-eyebrow,
+.telehealth-danger-eyebrow {
+  margin: 0 0 0.8rem;
+  color: #60a5fa;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.telehealth-danger-eyebrow {
+  color: #fecaca;
+}
+
+.telehealth-hero-copy h1 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(3.3rem, 6vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.telehealth-hero-lead {
+  margin: 1.4rem 0 0;
+  max-width: 62ch;
+  color: #d6e2f0;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.telehealth-hero-actions,
+.telehealth-konnectmd-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.telehealth-emergency-note {
+  margin: 1.2rem 0 0;
+  color: #fca5a5;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.telehealth-hero-image-wrap,
+.telehealth-prepare-image-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid rgba(147, 197, 253, 0.22);
+  border-radius: 28px;
+  background: #0b1f36;
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.28),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.telehealth-hero-image-wrap {
+  aspect-ratio: 4 / 5;
+}
+
+.telehealth-prepare-image-wrap {
+  aspect-ratio: 4 / 3;
+}
+
+.telehealth-hero-image,
+.telehealth-prepare-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s ease;
+}
+
+.telehealth-hero-image-wrap:hover .telehealth-hero-image,
+.telehealth-prepare-image-wrap:hover .telehealth-prepare-image {
+  transform: scale(1.025);
+}
+
+.telehealth-definition,
+.telehealth-use-section,
+.telehealth-prepare-section,
+.telehealth-related-section,
+.telehealth-faq-section,
+.telehealth-guide-placeholder {
+  padding: 6rem 0;
+}
+
+.telehealth-definition-grid h2,
+.telehealth-section-header h2,
+.telehealth-emergency-grid h2,
+.telehealth-prepare-grid h2,
+.telehealth-konnectmd-grid h2,
+.telehealth-guide-card h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.35rem, 5vw, 3.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.telehealth-definition-grid p,
+.telehealth-section-header > p:last-child,
+.telehealth-emergency-grid p,
+.telehealth-prepare-grid p,
+.telehealth-konnectmd-grid p,
+.telehealth-guide-card p {
+  color: #526175;
+  line-height: 1.8;
+}
+
+.telehealth-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.telehealth-source-links a {
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.telehealth-use-section,
+.telehealth-related-section {
+  background: #f7faff;
+}
+
+.telehealth-section-header {
+  max-width: 820px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.telehealth-use-grid,
+.telehealth-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.telehealth-use-card,
+.telehealth-related-card,
+.telehealth-faq-grid article {
+  padding: 1.6rem;
+  border: 1px solid #dce6f2;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 35, 65, 0.08);
+}
+
+.telehealth-use-card h3,
+.telehealth-related-card h3,
+.telehealth-faq-grid h3 {
+  margin: 0 0 0.7rem;
+  color: #071426;
+  font-size: 1.25rem;
+}
+
+.telehealth-use-card p,
+.telehealth-related-card p,
+.telehealth-faq-grid p {
+  margin: 0;
+  color: #5f6f82;
+  line-height: 1.7;
+}
+
+.telehealth-clinical-note {
+  max-width: 850px;
+  margin: 2rem auto 0;
+  color: #68788b;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.telehealth-emergency-section {
+  padding: 5rem 0;
+  background: #7f1d1d;
+  color: #ffffff;
+}
+
+.telehealth-emergency-grid h2,
+.telehealth-emergency-grid p {
+  color: #ffffff;
+}
+
+.telehealth-emergency-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.telehealth-emergency-list div {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.telehealth-emergency-list span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #991b1b;
+  font-weight: 900;
+}
+
+.telehealth-prepare-list {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.telehealth-prepare-list li {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+
+.telehealth-prepare-list li > span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.telehealth-prepare-list p {
+  margin: 0;
+}
+
+.telehealth-konnectmd-section {
+  padding: 6rem 0;
+  background: #071426;
+  color: #ffffff;
+}
+
+.telehealth-konnectmd-grid h2,
+.telehealth-konnectmd-grid p {
+  color: #ffffff;
+}
+
+.telehealth-konnectmd-grid p {
+  color: #bfd0e4;
+}
+
+.telehealth-konnectmd-points {
+  display: grid;
+  gap: 1rem;
+}
+
+.telehealth-konnectmd-points div {
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #132d50 0%, #0d2341 100%);
+}
+
+.telehealth-konnectmd-points strong,
+.telehealth-konnectmd-points span {
+  display: block;
+}
+
+.telehealth-konnectmd-points strong {
+  margin-bottom: 0.35rem;
+  color: #ffffff;
+}
+
+.telehealth-konnectmd-points span {
+  color: #bfd0e4;
+  line-height: 1.55;
+}
+
+.telehealth-related-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  color: inherit;
+}
+
+.telehealth-related-card > span {
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.telehealth-related-card strong {
+  margin-top: auto;
+  padding-top: 1.3rem;
+  color: #2563eb;
+}
+
+.telehealth-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.telehealth-guide-placeholder {
+  padding-top: 0;
+}
+
+.telehealth-guide-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 26px;
+  background: #eaf2ff;
+}
+
+@media (max-width: 950px) {
+  .telehealth-hero-grid,
+  .telehealth-definition-grid,
+  .telehealth-emergency-grid,
+  .telehealth-prepare-grid,
+  .telehealth-konnectmd-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .telehealth-use-grid,
+  .telehealth-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+
+}
+
+@media (max-width: 700px) {
+  .telehealth-center-hero {
+    padding-bottom: 4rem;
+  }
+
+  .telehealth-definition,
+  .telehealth-use-section,
+  .telehealth-prepare-section,
+  .telehealth-related-section,
+  .telehealth-faq-section {
+    padding: 4rem 0;
+  }
+
+  .telehealth-use-grid,
+  .telehealth-related-grid,
+  .telehealth-faq-grid,
+  .telehealth-emergency-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .telehealth-hero-actions,
+  .telehealth-konnectmd-actions {
+    flex-direction: column;
+  }
+
+  .telehealth-hero-actions .btn,
+  .telehealth-konnectmd-actions .btn {
+    width: 100%;
+  }
+
+  .telehealth-guide-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .telehealth-guide-card .btn {
+    width: 100%;
+  }
+}

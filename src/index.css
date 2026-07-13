@@ -723,13 +723,13 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
   align-items: center;
 }
 
 .hero-copy {
-  max-width: 560px;
+  max-width: 640px;
 }
 
 .hero h1 {
@@ -773,14 +773,13 @@ a {
 }
 
 .hero-image-card {
-  max-width: 520px;
-  margin-left: auto;
+  max-width: 100%;
+  margin-left: 0;
 }
 
 .hero-image {
   width: 100%;
-  min-height: 380px;
-  max-height: 460px;
+  height: 560px;
   object-fit: cover;
   border-radius: 24px;
   box-shadow: 0 22px 55px rgba(0, 0, 0, 0.28);
@@ -1068,18 +1067,17 @@ a {
     gap: 1.25rem;
   }
 
-  .hero-copy {
-    max-width: 100%;
+      max-width: 100%;
   }
 
-  .hero h1,
-  .landing-title,
-  .page-title {
-    font-size: clamp(2rem, 8vw, 2.8rem);
-    line-height: 1.02;
-    max-width: 100%;
-    margin-bottom: 0.75rem;
-  }
+ .hero h1,
+.landing-title,
+.page-title {
+  font-size: clamp(2rem, 8vw, 2.8rem);
+  line-height: 1.02;
+  max-width: 100%;
+  margin-bottom: 0.75rem;
+}
 
   .hero-lead,
   .section-copy,

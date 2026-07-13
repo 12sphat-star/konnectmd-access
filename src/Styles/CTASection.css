@@ -1,0 +1,125 @@
+.final-cta {
+  padding: 6rem 0;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.18),
+      transparent 35%
+    ),
+    #071426;
+  color: #ffffff;
+}
+
+.final-cta-header {
+  max-width: 860px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.final-cta-eyebrow {
+  margin: 0 0 0.8rem;
+  color: #93c5fd;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.final-cta-header h2 {
+  margin: 0 0 1rem;
+  color: #ffffff;
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+
+.final-cta-header > p:last-child {
+  margin: 0;
+  color: #bfd0e4;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.final-cta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.final-cta-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  padding: 1.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  background: linear-gradient(180deg, #132d50 0%, #0d2341 100%);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.final-cta-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(96, 165, 250, 0.55);
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.28);
+}
+
+.final-cta-card h3 {
+  margin: 0 0 0.75rem;
+  color: #ffffff;
+  font-size: 1.45rem;
+}
+
+.final-cta-card p {
+  margin: 0;
+  color: #bfd0e4;
+  line-height: 1.7;
+}
+
+.final-cta-link {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  color: #93c5fd;
+  font-weight: 800;
+}
+
+.final-cta-trust {
+  max-width: 900px;
+  margin: 2rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.final-cta-trust p {
+  margin: 0;
+  color: #91a5bc;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .final-cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .final-cta {
+    padding: 4rem 0;
+  }
+
+  .final-cta-card {
+    padding: 1.4rem;
+  }
+}

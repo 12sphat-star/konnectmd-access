@@ -1,84 +1,86 @@
+import "../../Styles/CTASection.css";
 import { Link } from "react-router-dom";
+
+const nextSteps = [
+  {
+    title: "Keep Exploring",
+    text: "Review healthcare guides, membership options, and resource centers before making a decision.",
+    action: "Explore Resources",
+    to: "#learning-center",
+    type: "internal",
+  },
+  {
+    title: "Talk With an Advisor",
+    text: "Get help understanding which KonnectMD membership may fit your household or business.",
+    action: "Book a 30-Minute Call",
+    to: "/book-call",
+    type: "internal",
+  },
+  {
+    title: "Become a Member",
+    text: "Ready to move forward? Review the enrollment page and choose your membership.",
+    action: "View Memberships & Enroll",
+    to: "https://konnectmdnow.com/",
+    type: "external",
+  },
+];
 
 export default function CTASection() {
   return (
-    <section id="contact" className="cta-section">
+    <section
+      id="contact"
+      className="final-cta"
+      aria-labelledby="final-cta-title"
+    >
       <div className="container">
-        <div className="cta-box premium-cta">
-          <p className="eyebrow">Ready to Move Forward?</p>
-          <h2>Stop going without. Start today.</h2>
+        <div className="final-cta-header">
+          <p className="final-cta-eyebrow">Choose Your Next Step</p>
+
+          <h2 id="final-cta-title">
+            Wherever You Are in Your Healthcare Journey, We&apos;re Here to Help.
+          </h2>
+
           <p>
-            Thousands of self-employed workers, business owners, and families
-            are already using KonnectMD to stay connected to care. The only
-            question is whether it fits your situation — and that's a 15-minute
-            conversation away.
+            Continue learning, speak with a KonnectMD Access advisor, or review
+            the available membership options when you&apos;re ready.
           </p>
+        </div>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: "1rem",
-              margin: "1.5rem 0",
-              textAlign: "center",
-            }}
-          >
-            {[
-              { stat: "$59.99", label: "Starting per month" },
-              { stat: "7", label: "Members per plan" },
-              { stat: "$0", label: "Virtual visit copay on select plans" },
-            ].map((item) => (
-              <div
-                key={item.label}
-                style={{
-                  background: "rgba(255,255,255,0.04)",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: "14px",
-                  padding: "1rem",
-                }}
-              >
-                <span
-                  style={{
-                    display: "block",
-                    fontSize: "1.8rem",
-                    fontWeight: 800,
-                    color: "var(--gold)",
-                    lineHeight: 1,
-                  }}
-                >
-                  {item.stat}
-                </span>
-                <span
-                  style={{
-                    display: "block",
-                    fontSize: "0.82rem",
-                    color: "var(--muted)",
-                    marginTop: "0.35rem",
-                    lineHeight: 1.4,
-                  }}
-                >
-                  {item.label}
-                </span>
-              </div>
-            ))}
-          </div>
+        <div className="final-cta-grid">
+          {nextSteps.map((item) => (
+            <article className="final-cta-card" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
 
-          <div className="hero-actions" style={{ justifyContent: "center" }}>
-            <Link to="/get-details" className="btn btn-primary">
-              See My Options
-            </Link>
-            <Link to="/book-call" className="btn btn-secondary">
-              Book My 15-Minute Call
-            </Link>
-            <a
-              href="https://www.konnectmdagency.com/index.aspx?ReferringDealerID=817595"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-outline"
-            >
-              View Full Details & Enroll
-            </a>
-          </div>
+{item.type === "external" ? (
+  <a
+    href={item.to}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="final-cta-link"
+  >
+    {item.action} <span aria-hidden="true">→</span>
+  </a>
+) : item.to.startsWith("#") ? (
+  <a href={item.to} className="final-cta-link">
+    {item.action} <span aria-hidden="true">→</span>
+  </a>
+) : (
+  <Link to={item.to} className="final-cta-link">
+    {item.action} <span aria-hidden="true">→</span>
+  </Link>
+)}
+            </article>
+          ))}
+        </div>
+
+        <div className="final-cta-trust">
+          <p>
+            KonnectMD Access provides education and guidance to help people
+            understand and access services available through KonnectMD.
+            Memberships are not health insurance and do not replace emergency
+            care.
+          </p>
         </div>
       </div>
     </section>
