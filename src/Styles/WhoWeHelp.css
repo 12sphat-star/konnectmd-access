@@ -1,0 +1,115 @@
+/* ==========================================
+   WHO WE HELP
+========================================== */
+
+.who-help{
+  padding:80px 0;
+  background:#ffffff;
+}
+
+.who-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:22px;
+    margin-top:50px;
+}
+
+.who-card{
+  display:flex;
+  flex-direction:column;
+  text-decoration:none;
+  background:#fff;
+  border:1px solid #e2e8f0;
+  border-radius:20px;
+  padding:32px;
+  transition:.3s ease;
+  box-shadow:0 10px 25px rgba(15,23,42,.06);
+  height:100%;
+}
+
+.who-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(15,23,42,.12);
+  border-color:#2563eb;
+}
+
+.who-icon{
+  width:72px;
+  height:72px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#2563eb,#60a5fa);
+  font-size:2rem;
+  margin-bottom:24px;
+}
+
+.who-card h3{
+  font-size:1.4rem;
+  color:#071426;
+  margin-bottom:15px;
+}
+
+.who-card p{
+  color:#64748b;
+  line-height:1.75;
+  flex:1;
+  margin-bottom:24px;
+}
+
+.who-card span{
+  color:#2563eb;
+  font-weight:700;
+}
+
+@media (max-width:768px){
+
+  .who-help{
+    padding:60px 0;
+  }
+
+  .who-grid{
+    gap:20px;
+  }
+
+  .who-card{
+    padding:24px;
+  }
+
+  .who-icon{
+    width:60px;
+    height:60px;
+    font-size:1.7rem;
+    margin-bottom:18px;
+  }
+
+  .who-card h3{
+    font-size:1.2rem;
+  }
+
+  @media (max-width:1200px){
+
+  .who-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
+
+@media (max-width:768px){
+
+  .who-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media (max-width:576px){
+
+  .who-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+}

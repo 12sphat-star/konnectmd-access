@@ -114,6 +114,21 @@ const workforceSupport = [
   },
 ];
 
+const businessIndustries = [
+  "Restaurants & Food Service",
+  "Construction & Skilled Trades",
+  "Medical & Dental Practices",
+  "Retail Businesses",
+  "Real Estate Companies",
+  "Churches & Nonprofits",
+  "Cleaning & Landscaping",
+  "Home Service Businesses",
+  "Transportation & Logistics",
+  "Manufacturing",
+  "Professional Offices",
+  "Independent Business Owners",
+];
+
 const employerGoals = [
   {
     title: "Recruitment",
@@ -134,6 +149,39 @@ const employerGoals = [
     title: "Employee Well-Being",
     text:
       "Provide access to physician, prescription, behavioral-health, and practical life-support resources through one membership experience.",
+  },
+];
+
+const businessScenarios = [
+  {
+    title: "An Employee Wakes Up Sick Before Work",
+    text:
+      "24/7 virtual physician access may help an employee address an appropriate non-emergency concern without first losing hours traveling to and waiting in a medical office.",
+  },
+  {
+    title: "An Employee Needs a Prescription",
+    text:
+      "Prescription benefits and participating pharmacy resources may help the employee compare eligible medication options and available pricing.",
+  },
+  {
+    title: "A Team Member Is Struggling With Stress",
+    text:
+      "Qualifying behavioral-health and life-support resources may provide counseling and support involving stress, relationships, finances, caregiving, and workplace concerns.",
+  },
+  {
+    title: "An Employee’s Child Gets Sick After Hours",
+    text:
+      "Eligible household access may help a parent connect with a licensed physician and determine whether virtual, in-person, urgent, or emergency care is appropriate.",
+  },
+  {
+    title: "A Remote Employee Needs Care",
+    text:
+      "Nationwide virtual access may support employees working from home, traveling, or living outside the company’s immediate service area.",
+  },
+  {
+    title: "A New Hire Is Comparing Benefits",
+    text:
+      "A clearly explained healthcare-access benefit may strengthen the company’s overall employee value proposition alongside compensation and other benefits.",
   },
 ];
 
@@ -172,34 +220,34 @@ const implementationSteps = [
 
 const konnectmdBenefits = [
   {
-    title: "Virtual Care for Everyday Needs",
+    title: "24/7 Licensed Physician Access",
     text:
-      "Qualifying memberships may provide 24/7 physician access for appropriate non-emergency concerns.",
+      "Every KonnectMD membership includes 24/7 access to licensed physicians for appropriate non-emergency healthcare concerns.",
   },
   {
     title: "Prescription Benefits",
     text:
-      "Membership levels may include acute-medication benefits, prescription savings, and broader chronic-medication benefits.",
+      "Membership levels combine physician access with prescription savings, eligible acute-medication benefits, participating pharmacies, and broader chronic-medication benefits at qualifying levels.",
   },
   {
-    title: "Behavioral Health",
+    title: "Behavioral Health and Life Support",
     text:
-      "Eligible employees may access counseling and broader support involving emotional, family, workplace, financial, legal-resource, and caregiving concerns.",
+      "Qualifying membership levels include counseling and broader support involving emotional wellness, relationships, parenting, workplace stress, finances, legal-resource referrals, substance use, and caregiving.",
   },
   {
-    title: "Family Value",
+    title: "Family and Household Value",
     text:
-      "Qualifying memberships may include eligible household members, reducing the need to purchase separate access for each person.",
+      "Eligible memberships can support employees, spouses, and dependents under one household membership, subject to current eligibility terms.",
   },
   {
-    title: "Nationwide Availability",
+    title: "Nationwide Healthcare Access",
     text:
-      "The membership can support businesses with employees working across multiple locations, subject to service availability and provider licensing.",
+      "KonnectMD supports businesses with employees working locally, remotely, while traveling, or across multiple states, subject to provider licensing and service availability.",
   },
   {
-    title: "Works Alongside Other Benefits",
+    title: "Works Alongside Existing Benefits",
     text:
-      "KonnectMD may supplement employer insurance, Medicare, Medicaid, VA benefits, individual insurance, or other healthcare resources without replacing them.",
+      "KonnectMD can complement employer insurance, individual insurance, Medicare, Medicaid, VA benefits, and other healthcare resources without replacing them.",
   },
 ];
 
@@ -296,6 +344,7 @@ const relatedResources = [
     link: "/resource-center/family-healthcare",
   },
 ];
+
 
 export default function SmallBusinessHealthcareResourceCenter() {
   const pageSchema = {
@@ -418,6 +467,77 @@ export default function SmallBusinessHealthcareResourceCenter() {
           </div>
         </section>
 
+<section className="business-stat-section">
+  <div className="container">
+    <div className="business-stat-header">
+      <p className="business-resource-section-eyebrow">
+        Small Business Healthcare Snapshot
+      </p>
+
+      <h2>Small Businesses Power America—and Healthcare Matters</h2>
+
+      <p>
+        Small employers support a major share of the American workforce while
+        facing difficult decisions involving healthcare costs, employee access,
+        recruiting, retention, and workforce well-being.
+      </p>
+    </div>
+
+    <div className="business-stat-grid">
+      <article>
+        <strong>36.2 Million</strong>
+        <span>Small businesses operate across the United States.</span>
+
+        <a
+          href="https://advocacy.sba.gov/2026/02/03/frequently-asked-questions-about-small-business-2026/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          U.S. Small Business Administration ↗
+        </a>
+      </article>
+
+      <article>
+        <strong>62.3 Million</strong>
+        <span>
+          People are employed by small businesses—45.9% of private-sector
+          workers.
+        </span>
+
+        <a
+          href="https://advocacy.sba.gov/2026/02/03/frequently-asked-questions-about-small-business-2026/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          U.S. Small Business Administration ↗
+        </a>
+      </article>
+
+      <article>
+        <strong>$26,993</strong>
+        <span>
+          Average annual premium for employer-sponsored family health coverage
+          in 2025.
+        </span>
+
+        <a
+          href="https://www.kff.org/health-costs/2025-employer-health-benefits-survey/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          KFF Employer Health Benefits Survey ↗
+        </a>
+      </article>
+    </div>
+
+    <p className="business-stat-note">
+      These figures provide national context and do not represent KonnectMD
+      pricing, guaranteed savings, or expected results for an individual
+      employer.
+    </p>
+  </div>
+</section>
+
         <section
           id="business-challenges"
           className="business-challenges-section"
@@ -523,6 +643,37 @@ export default function SmallBusinessHealthcareResourceCenter() {
           </div>
         </section>
 
+<section className="business-industries-section">
+  <div className="container">
+
+    <div className="business-resource-section-header">
+      <p className="business-resource-section-eyebrow">
+        Industries We Support
+      </p>
+
+      <h2>
+        Built for Many Types of Small Businesses
+      </h2>
+
+      <p>
+        Healthcare access is important across every industry. Whether your team
+        works in an office, on job sites, in restaurants, on the road, or
+        remotely, convenient access to healthcare can support employees and
+        their families.
+      </p>
+    </div>
+
+    <div className="business-industries-grid">
+      {businessIndustries.map((industry) => (
+        <article key={industry}>
+          <h3>{industry}</h3>
+        </article>
+      ))}
+    </div>
+
+  </div>
+</section>
+
         <section className="business-goals-section">
           <div className="container">
             <div className="business-resource-section-header">
@@ -551,19 +702,156 @@ export default function SmallBusinessHealthcareResourceCenter() {
           </div>
         </section>
 
+<section className="business-scenarios-section">
+  <div className="container">
+    <div className="business-resource-section-header">
+      <p className="business-resource-section-eyebrow">
+        Real Workforce Scenarios
+      </p>
+
+      <h2>How Employees May Use Healthcare Access in Everyday Life</h2>
+
+      <p>
+        The value of a benefit becomes clearer when employees understand how it
+        may help with real healthcare, family, prescription, and workplace
+        situations.
+      </p>
+    </div>
+
+    <div className="business-scenarios-grid">
+      {businessScenarios.map((scenario) => (
+        <article key={scenario.title}>
+          <h3>{scenario.title}</h3>
+          <p>{scenario.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section className="business-assessment-section">
+  <div className="container">
+    <div className="business-assessment-card">
+      <div className="business-assessment-copy">
+        <p className="business-resource-section-eyebrow">
+          Business Healthcare Readiness Assessment
+        </p>
+
+        <h2>
+          How Well Is Your Business Supporting Employee Healthcare Access?
+        </h2>
+
+        <p>
+          Take this brief assessment to identify potential gaps involving
+          employee access, recruiting, retention, workforce wellness, and
+          healthcare benefits.
+        </p>
+
+        <div className="business-assessment-points">
+          <span>Employee healthcare access</span>
+          <span>Recruiting and retention priorities</span>
+          <span>Current benefit challenges</span>
+          <span>Workforce wellness needs</span>
+        </div>
+      </div>
+
+      <div className="business-assessment-action">
+        <strong>Start with a clearer picture of your business.</strong>
+
+        <p>
+          Your responses can help guide a more relevant conversation about
+          healthcare-access options for your employees and their families.
+        </p>
+
+        <a
+          href="https://konnectmd-business-platform.pages.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary"
+        >
+          Start the Assessment
+        </a>
+
+        <small>
+          This assessment is educational and does not provide legal, tax,
+          insurance, or employee-benefits advice.
+        </small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="business-decision-section">
+  <div className="container">
+
+    <div className="business-resource-section-header">
+      <p className="business-resource-section-eyebrow">
+        Before You Choose Any Benefit
+      </p>
+
+      <h2>Five Questions Every Business Owner Should Ask</h2>
+
+      <p>
+        Healthcare decisions affect recruiting, retention, productivity, employee
+        satisfaction, and company culture. Before selecting any benefit,
+        understand what problem you're trying to solve.
+      </p>
+    </div>
+
+    <div className="business-decision-grid">
+
+      <article>
+        <span>01</span>
+        <h3>What problem am I trying to solve?</h3>
+        <p>Recruiting, retention, absenteeism, employee satisfaction, affordability, or access?</p>
+      </article>
+
+      <article>
+        <span>02</span>
+        <h3>Will employees actually use it?</h3>
+        <p>The most valuable benefit is one employees understand and use regularly.</p>
+      </article>
+
+      <article>
+        <span>03</span>
+        <h3>Can employees access care after work?</h3>
+        <p>Convenient access often matters as much as the benefit itself.</p>
+      </article>
+
+      <article>
+        <span>04</span>
+        <h3>Does it help the employee's family?</h3>
+        <p>Benefits that support spouses and children often provide greater perceived value.</p>
+      </article>
+
+      <article>
+        <span>05</span>
+        <h3>Can I clearly explain it?</h3>
+        <p>If employees don't understand the benefit, they usually won't use it.</p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
         <section className="business-konnectmd-section">
           <div className="container">
             <div className="business-resource-section-header business-resource-light-header">
               <p className="business-resource-section-eyebrow">
-                Where KonnectMD May Fit
+                The KonnectMD Business Solution
               </p>
 
               <h2>Practical Healthcare Access for Employees and Families</h2>
 
               <p>
-                KonnectMD may supplement an employer’s existing strategy or
-                provide an additional access benefit for businesses seeking a
-                practical way to support everyday healthcare needs.
+               <p>
+  KonnectMD gives businesses a practical way to provide employees and eligible
+  family members with nationwide healthcare access. Every membership includes
+  24/7 licensed physician access, while higher membership levels expand the
+  available prescription, behavioral-health, specialist, wellness, and
+  household benefits.
+</p>
               </p>
             </div>
 
@@ -582,12 +870,11 @@ export default function SmallBusinessHealthcareResourceCenter() {
 
             <div className="business-membership-message">
               <div>
-                <strong>Business and membership terms must be confirmed.</strong>
+                <strong>Help your employees understand and use their benefits.</strong>
                 <p>
-                  Pricing, employee eligibility, household access, services,
-                  onboarding, visit limits, prescriptions, and program
-                  availability may change and should be confirmed before an
-                  employer makes commitments to employees.
+                  KonnectMD Access can help your business review membership options, educate
+  employees, support activation, and explain how to use physician,
+  prescription, behavioral-health, and household services.
                 </p>
               </div>
 

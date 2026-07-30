@@ -369,8 +369,94 @@
   border-radius: 26px;
   background: #eaf2ff;
 }
+.telehealth-benefits-section {
+  padding: 6rem 0;
+  background: #f7f9fc;
+}
+
+.telehealth-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.telehealth-benefits-grid article {
+  padding: 1.7rem;
+  border: 1px solid #dce6f2;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 35, 65, 0.08);
+}
+
+.telehealth-benefits-grid h3 {
+  margin: 0 0 0.75rem;
+  color: #071426;
+  font-size: 1.2rem;
+}
+
+.telehealth-benefits-grid p {
+  margin: 0;
+  color: #5f6f82;
+  line-height: 1.7;
+}
+.telehealth-evolution-section{
+  padding:6rem 0;
+  background:#f7f9fc;
+}
+
+.telehealth-evolution-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1.25rem;
+  margin-top:3rem;
+}
+
+.telehealth-evolution-grid article{
+  padding:1.7rem;
+  border:1px solid #dce6f2;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 14px 34px rgba(15,35,65,.08);
+}
+
+.telehealth-evolution-grid h3{
+  margin:0 0 .75rem;
+  color:#071426;
+  font-size:1.2rem;
+}
+
+.telehealth-evolution-grid p{
+  margin:0;
+  color:#5f6f82;
+  line-height:1.75;
+}
+
+.telehealth-evolution-highlight{
+  margin-top:3rem;
+  padding:2rem;
+  border-left:6px solid #2563eb;
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 18px 38px rgba(15,35,65,.08);
+}
+
+.telehealth-evolution-highlight strong{
+  display:block;
+  color:#071426;
+  font-size:1.35rem;
+}
+
+.telehealth-evolution-highlight p{
+  margin-top:.8rem;
+  color:#526175;
+  line-height:1.8;
+}
 
 @media (max-width: 950px) {
+  .telehealth-evolution-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .telehealth-hero-grid,
   .telehealth-definition-grid,
   .telehealth-emergency-grid,
@@ -378,6 +464,7 @@
   .telehealth-konnectmd-grid {
     grid-template-columns: 1fr;
   }
+}
 
   .telehealth-use-grid,
   .telehealth-related-grid {
@@ -385,12 +472,11 @@
   }
 
 
-}
-
 @media (max-width: 700px) {
-  .telehealth-center-hero {
-    padding-bottom: 4rem;
+  .telehealth-evolution-grid {
+    grid-template-columns: 1fr;
   }
+
 
   .telehealth-definition,
   .telehealth-use-section,
@@ -426,4 +512,7 @@
   .telehealth-guide-card .btn {
     width: 100%;
   }
+  .telehealth-benefits-grid {
+  grid-template-columns: 1fr;
+}
 }

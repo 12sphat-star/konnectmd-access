@@ -25,7 +25,8 @@ import FamilyCoveragePage from "./pages/FamilyCoveragePage";
 import NoInsuranceDoctorPage from "./pages/NoInsuranceDoctorPage";
 import PrescriptionSavingsPage from "./pages/PrescriptionSavingsPage";
 import SmallBusinessHealthcarePage from "./pages/SmallBusinessHealthcarePage";
-import BusinessOwnersEntrepreneursPage from "./pages/BusinessOwnersEntrepreneursPage";
+import BusinessHealthcarePage from "./pages/BusinessHealthcarePage";
+import EntrepreneursPage from "./pages/EntrepreneursPage";
 import TelehealthResourceCenter from "./pages/TelehealthResourceCenter";
 
 import InterestSelector from "./pages/InterestSelector";
@@ -42,6 +43,7 @@ import PrescriptionSavingsResourceCenter from "./pages/PrescriptionSavingsResour
 import BehavioralHealthResourceCenter from "./pages/BehavioralHealthResourceCenter";
 import FamilyHealthcareResourceCenter from "./pages/FamilyHealthcareResourceCenter";
 import SmallBusinessHealthcareResourceCenter from "./pages/SmallBusinessHealthcareResourceCenter";
+import EntrepreneurHealthcareResourceCenter from "./pages/EntrepreneurHealthcareResourceCenter";
 
 import TelehealthIndustryPage from "./pages/TelehealthIndustryPage";
 import HealthcareAlternativesPage from "./pages/HealthcareAlternativesPage";
@@ -138,8 +140,12 @@ export default function App() {
   element={<FamilyHealthcareResourceCenter />}
 />
 <Route
-  path="/resource-center/small-business-healthcare"
-  element={<SmallBusinessHealthcareResourceCenter />}
+  path="/resource-center/business-healthcare"
+  element={<BusinessHealthcarePage />}
+/>
+<Route
+  path="/resource-center/entrepreneurs"
+  element={<EntrepreneursPage />}
 />
 <Route
   path="/insights/when-to-use-telehealth-vs-urgent-care-vs-er-hampton-roads"
@@ -163,13 +169,13 @@ export default function App() {
         />
 
         <Route
-          path="/problems/small-business-healthcare"
+          path="/resource-center/business-healthcare"
           element={<SmallBusinessHealthcarePage />}
         />
 
         <Route
           path="/business-owners-entrepreneurs-healthcare-hampton-roads"
-          element={<BusinessOwnersEntrepreneursPage />}
+          element={<BusinessHealthcarePage />}
         />
 
         {/* Detail Pages */}

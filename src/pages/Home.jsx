@@ -1,5 +1,7 @@
 import Hero from "../components/home/Hero";
 import KonnectMDIntro from "../components/home/KonnectMDIntro";
+import WhoWeHelp from "../components/home/WhoWeHelp";
+import KonnectMDFeatures from "../components/home/KonnectMDFeatures";
 import TrustStrip from "../components/home/TrustStrip";
 import HealthcareDashboard from "../components/home/HealthcareDashboard";
 import PrescriptionSavingsCenter from "../components/home/PrescriptionSavingsCenter";
@@ -61,6 +63,8 @@ export default function Home() {
 
       <Hero />
       <KonnectMDIntro />
+      <WhoWeHelp />
+      <KonnectMDFeatures />
       <TrustStrip />
       <HealthcareDashboard />
       <PrescriptionSavingsCenter />

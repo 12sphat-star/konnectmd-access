@@ -4,34 +4,67 @@ import SEO from "../components/SEO";
 
 const costFactors = [
   {
+    title: "Brand vs. Generic",
+    text:
+      "FDA-approved generic medications contain the same active ingredients and must meet FDA standards for quality, strength, safety, effectiveness, and performance. They often cost less than brand-name medications.",
+  },
+  {
     title: "Pharmacy Pricing",
     text:
-      "The same prescription may have different prices at different pharmacies. Network status, contracts, location, and available discount pricing can all affect what you pay.",
+      "The same medication may have different prices at different pharmacies because of network contracts, location, purchasing arrangements, and available discount pricing.",
   },
   {
-    title: "Insurance Cost Sharing",
+    title: "Insurance Is Not Always the Lowest Price",
     text:
-      "Your insurance copay or coinsurance is not always the lowest available price. Compare your plan cost with any eligible cash or savings-program price before purchasing.",
+      "Your insurance copay or coinsurance may not always be the lowest available price. Compare your plan cost with any eligible cash or prescription-savings price before purchasing.",
   },
   {
-    title: "Brand and Generic Options",
+    title: "Pharmacy Benefit Managers",
     text:
-      "FDA-approved generic medications contain the same active ingredients and provide the same clinical benefit as their brand-name counterparts.",
+      "Pharmacy benefit managers help negotiate prescription pricing among manufacturers, pharmacies, and health plans. These arrangements can influence formularies, pharmacy networks, and what patients pay.",
   },
   {
-    title: "Medication Formulary",
+    title: "Manufacturer Assistance",
     text:
-      "A formulary is the current list of medications included or discounted by a health plan, membership, or prescription program.",
+      "Some pharmaceutical manufacturers offer savings cards or patient-assistance programs for qualifying medications and patients. Eligibility and program restrictions vary.",
   },
   {
-    title: "Dosage and Quantity",
+    title: "KonnectMD Prescription Benefits",
     text:
-      "Medication strength, dosage form, refill quantity, and supply length can change the final price or determine whether a prescription qualifies for a particular benefit.",
+      "KonnectMD combines prescription savings, participating retail pharmacies, included medication benefits, and home-delivery options. Exact benefits depend on the membership selected and current program terms.",
+  },
+];
+
+const prescriptionMyths = [
+  {
+    myth: "Generic medications are lower quality.",
+    fact:
+      "FDA-approved generic medications must meet the same standards for quality, strength, safety, effectiveness, and performance as brand-name medications.",
   },
   {
-    title: "Retail or Home Delivery",
-    text:
-      "Some programs provide both local pharmacy pickup and mail-order options. One may be more convenient or cost-effective depending on the prescription.",
+    myth: "Every pharmacy charges the same price.",
+    fact:
+      "Prescription prices can vary by pharmacy, network contracts, location, available discount pricing, dosage, and quantity.",
+  },
+  {
+    myth: "Insurance always gives the lowest prescription price.",
+    fact:
+      "Not always. Depending on the medication, deductible, copay, and available savings programs, another eligible price may cost less.",
+  },
+  {
+    myth: "Prescription savings programs are only for people without insurance.",
+    fact:
+      "People with insurance may also compare their insurance price with an eligible savings-program price and choose the better option for that fill.",
+  },
+  {
+    myth: "Telehealth providers cannot prescribe medications.",
+    fact:
+      "Licensed providers may prescribe many medications when medically appropriate and legally permitted. Some medications require an in-person evaluation.",
+  },
+  {
+    myth: "A lower price means a medication is less effective.",
+    fact:
+      "Price does not determine effectiveness. Approved generic medications can provide the same clinical benefit as their brand-name equivalents.",
   },
 ];
 
@@ -340,50 +373,53 @@ export default function PrescriptionSavingsResourceCenter() {
           </div>
         </section>
 
-        <section className="rx-cost-section">
-          <div className="container">
-            <div className="rx-section-header">
-              <p className="rx-section-eyebrow">
-                Understanding Medication Prices
-              </p>
+ <section className="rx-cost-section">
+  <div className="container">
+    <div className="rx-section-header">
+      ...
+    </div>
 
-              <h2>Why Can the Same Prescription Have Different Prices?</h2>
+    <div className="rx-cost-grid">
+      {costFactors.map((factor) => (
+        <article className="rx-info-card" key={factor.title}>
+          {factor.category && (
+            <span className="rx-info-category">
+              {factor.category}
+            </span>
+          )}
 
-              <p>
-                Medication prices can be affected by the pharmacy, insurance
-                benefit, formulary, manufacturer, dosage, quantity, available
-                generic options, and the savings program used.
-              </p>
-            </div>
+          <h3>{factor.title}</h3>
+          <p>{factor.text}</p>
 
-  <div className="rx-cost-grid">
-  {costFactors.map((factor) => (
-    <article className="rx-info-card" key={factor.title}>
-      {factor.category && (
-        <span className="rx-info-category">
-          {factor.category}
-        </span>
-      )}
+          {factor.link ? (
+            factor.link.startsWith("/") ? (
+              <Link to={factor.link} className="rx-info-link">
+                Explore resource →
+              </Link>
+            ) : (
+              <a href={factor.link} className="rx-info-link">
+                Explore resource →
+              </a>
+            )
+          ) : null}
+        </article>
+      ))}
+    </div>
 
-      <h3>{factor.title}</h3>
-      <p>{factor.text}</p>
+    <div className="rx-cost-highlight">
+      <strong>
+        The lowest prescription price is not always found at the closest pharmacy.
+      </strong>
 
-      {factor.link ? (
-        factor.link.startsWith("/") ? (
-          <Link to={factor.link} className="rx-info-link">
-            Explore resource →
-          </Link>
-        ) : (
-          <a href={factor.link} className="rx-info-link">
-            Explore resource →
-          </a>
-        )
-      ) : null}
-    </article>
-  ))}
-</div>
-          </div>
-        </section>
+      <p>
+        Comparing pharmacy prices, asking about an appropriate generic alternative,
+        and reviewing available insurance, assistance, and membership benefits may
+        help reduce medication costs.
+      </p>
+    </div>
+
+  </div>
+</section>
 
         <section id="save-on-prescriptions" className="rx-savings-section">
           <div className="container">
@@ -489,7 +525,34 @@ export default function PrescriptionSavingsResourceCenter() {
             </div>
           </div>
         </section>
+<section className="rx-myths-section">
+  <div className="container">
+    <div className="rx-section-header">
+      <p className="rx-section-eyebrow">
+        Prescription Myths and Facts
+      </p>
 
+      <h2>Common Prescription Assumptions That Can Cost You Money</h2>
+
+      <p>
+        Understanding how medication pricing, generics, insurance, telehealth,
+        and savings programs work can help you make more informed decisions.
+      </p>
+    </div>
+
+    <div className="rx-myths-grid">
+      {prescriptionMyths.map((item) => (
+        <article key={item.myth}>
+          <span>Myth</span>
+          <h3>{item.myth}</h3>
+
+          <strong>Fact</strong>
+          <p>{item.fact}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
         <section className="rx-konnectmd-section">
           <div className="container">
             <div className="rx-section-header rx-light-header">
@@ -499,12 +562,15 @@ export default function PrescriptionSavingsResourceCenter() {
 
               <h2>Multiple Ways to Reduce Prescription Costs</h2>
 
-              <p>
-                KonnectMD brings together included-medication benefits,
-                pharmacy discounts, participating retail locations, home
-                delivery, and additional assistance resources under one
-                membership experience.
-              </p>
+            <p>
+  Every KonnectMD membership includes 24/7 access to licensed physicians for
+  appropriate non-emergency healthcare concerns. Depending on the membership
+  selected, members may also receive prescription savings resources, included
+  acute medications, qualifying chronic medication benefits, retail pharmacy
+  access, home-delivery options, behavioral health resources, specialist
+  access, wellness benefits, and additional healthcare support designed to
+  improve access while helping reduce out-of-pocket healthcare costs.
+</p>
             </div>
 
             <div className="rx-benefit-grid">
@@ -521,12 +587,13 @@ export default function PrescriptionSavingsResourceCenter() {
 
             <div className="rx-plan-message">
               <div>
-                <strong>Membership level matters</strong>
-                <p>
-                  Silver and Gold prescription benefits differ from the broader
-                  chronic-medication benefits available through qualifying
-                  Platinum and Titanium memberships.
-                </p>
+                <strong>Choose the membership that best fits your healthcare needs.</strong>
+             <p>
+  Every KonnectMD membership includes 24/7 physician access. Prescription
+  benefits expand as membership levels increase. Review the available
+  membership options to compare included medications, chronic medication
+  benefits, prescription savings resources, and additional healthcare services.
+</p>
               </div>
 
               <Link to="/plans" className="btn btn-primary">

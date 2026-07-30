@@ -230,6 +230,18 @@ const comparisonRows = [
   },
 ];
 
+const veteranAudience = [
+  "Active Duty Transitioning to Civilian Life",
+  "Recently Separated Veterans",
+  "Retired Military",
+  "National Guard & Reserve Veterans",
+  "Veteran Spouses",
+  "Veteran Caregivers",
+  "Disabled Veterans",
+  "Veteran-Owned Business Owners",
+];
+
+
 export default function VeteransResourceCenter() {
   const pageSchema = {
     "@context": "https://schema.org",
@@ -327,6 +339,37 @@ export default function VeteransResourceCenter() {
             </div>
           </div>
         </section>
+
+        <section className="veterans-audience-section">
+  <div className="container">
+
+    <div className="veterans-section-header">
+      <p className="veterans-section-eyebrow">
+        Who This Resource Center Helps
+      </p>
+
+      <h2>
+        Built for Veterans, Military Families, and Caregivers
+      </h2>
+
+      <p>
+        Whether you're recently separated from military service, receiving VA
+        healthcare, helping care for a Veteran, or simply trying to understand
+        your healthcare options, this Resource Center was built to help you make
+        informed decisions.
+      </p>
+    </div>
+
+    <div className="veterans-audience-grid">
+      {veteranAudience.map((item) => (
+        <article key={item}>
+          <h3>{item}</h3>
+        </article>
+      ))}
+    </div>
+
+  </div>
+</section>
 
         <section id="veteran-options" className="veterans-options-section">
           <div className="container">

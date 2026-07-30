@@ -177,6 +177,43 @@ export default function TelehealthResourceCenter() {
           </div>
         </section>
 
+<section className="telehealth-konnectmd-intro">
+  <div className="container">
+    <div className="telehealth-konnectmd-intro-card">
+      <p className="telehealth-section-eyebrow">
+        How KonnectMD Fits
+      </p>
+
+      <h2>Telehealth Is a Core Part of Every KonnectMD Membership</h2>
+
+    <p>
+  KonnectMD was designed around access. Every membership includes 24/7
+  access to licensed physicians for appropriate non-emergency healthcare
+  concerns, helping members connect with care beyond traditional office
+  hours.
+</p>
+
+<p>
+  KonnectMD memberships will combine virtual physician access with broader
+  healthcare resources. Depending on the membership selected, those
+  additional benefits may include prescription savings, behavioral health
+  and life-support resources, specialist access, wellness services, and
+  household benefits.
+</p>
+
+      <div className="telehealth-konnectmd-intro-actions">
+        <Link to="/plans" className="btn btn-primary">
+          Compare KonnectMD Memberships
+        </Link>
+
+        <Link to="/get-details" className="btn btn-secondary">
+          Learn More About KonnectMD
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
         <section className="telehealth-definition">
           <div className="container telehealth-definition-grid">
             <div>
@@ -219,6 +256,168 @@ export default function TelehealthResourceCenter() {
           </div>
         </section>
 
+        <section className="telehealth-evolution-section">
+  <div className="container">
+    <div className="telehealth-section-header">
+      <p className="telehealth-section-eyebrow">
+        Why Telehealth Matters Today
+      </p>
+
+      <h2>
+        Why Telehealth Has Become an Essential Part of Modern Healthcare
+      </h2>
+
+      <p>
+        Healthcare has changed dramatically over the last decade. Rising
+        healthcare costs, physician shortages, longer appointment wait times,
+        increased demand for behavioral health services, and advances in secure
+        technology have all contributed to the rapid growth of telehealth across
+        the United States.
+      </p>
+
+      <p>
+        Today, telehealth is no longer viewed as an alternative to traditional
+        healthcare. Instead, it has become another way for patients to connect
+        with licensed healthcare professionals when appropriate while improving
+        access, convenience, and continuity of care.
+      </p>
+    </div>
+
+    <div className="telehealth-evolution-grid">
+
+      <article>
+        <h3>Growing Physician Shortages</h3>
+        <p>
+          Many communities continue to experience shortages of primary care
+          physicians and specialists, making timely appointments more difficult
+          for patients.
+        </p>
+      </article>
+
+      <article>
+        <h3>Healthcare Costs Continue to Rise</h3>
+        <p>
+          Patients increasingly look for practical ways to access healthcare
+          while avoiding unnecessary office visits whenever virtual care is
+          appropriate.
+        </p>
+      </article>
+
+      <article>
+        <h3>Busy Families and Professionals</h3>
+        <p>
+          Parents, entrepreneurs, caregivers, students, and employees often
+          need healthcare that fits around work, school, travel, and family
+          responsibilities.
+        </p>
+      </article>
+
+      <article>
+        <h3>Improving Rural Healthcare Access</h3>
+        <p>
+          Telehealth can reduce geographic barriers by connecting patients with
+          licensed providers without requiring long-distance travel for many
+          appropriate healthcare concerns.
+        </p>
+      </article>
+
+      <article>
+        <h3>Behavioral Health Demand</h3>
+        <p>
+          Counseling and behavioral-health services have become one of the
+          fastest-growing uses of telehealth because many individuals value the
+          convenience, privacy, and flexibility of virtual appointments.
+        </p>
+      </article>
+
+      <article>
+        <h3>Technology Has Made It Possible</h3>
+        <p>
+          Secure video platforms, electronic health records, broadband
+          expansion, and electronic prescribing have made telehealth a trusted
+          part of today's healthcare system.
+        </p>
+      </article>
+
+    </div>
+
+    <div className="telehealth-evolution-highlight">
+      <strong>
+        Telehealth is not replacing traditional healthcare.
+      </strong>
+
+      <p>
+        It expands healthcare access by giving patients another way to connect
+        with licensed healthcare professionals when clinically appropriate.
+        Office visits, specialists, urgent care, emergency departments,
+        hospitals, and preventive care all continue to play essential roles in
+        a complete healthcare strategy.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="when-to-use" className="telehealth-use-section">
+  <div className="container">
+    <div className="telehealth-section-header">
+      <p className="telehealth-section-eyebrow">
+        Choosing the Right Care Setting
+      </p>
+
+      <h2>When Should You Use Telehealth?</h2>
+
+      <p>
+        Telehealth can be useful for many appropriate non-emergency concerns,
+        but some situations require an office visit, urgent care, or emergency
+        treatment.
+      </p>
+    </div>
+
+    <div className="telehealth-use-grid">
+      <article className="telehealth-use-card">
+        <h3>Telehealth May Be Appropriate</h3>
+        <p>
+          Cold or flu symptoms, allergies, minor rashes, pink eye, medication
+          questions, certain infections, follow-up care, and other concerns a
+          provider can reasonably evaluate remotely.
+        </p>
+      </article>
+
+      <article className="telehealth-use-card">
+        <h3>Consider an Office Visit</h3>
+        <p>
+          Annual physicals, vaccinations, preventive screenings, chronic-care
+          examinations, lab work, procedures, and concerns requiring a
+          hands-on evaluation.
+        </p>
+      </article>
+
+      <article className="telehealth-use-card">
+        <h3>Urgent Care May Be Better</h3>
+        <p>
+          Minor fractures, deep cuts, severe sore throat, dehydration, high
+          fever, possible ear infection, or other non-life-threatening
+          problems requiring examination, imaging, testing, or treatment.
+        </p>
+      </article>
+
+      <article className="telehealth-use-card">
+        <h3>Use Emergency Care</h3>
+        <p>
+          Chest pain, stroke symptoms, severe breathing difficulty, major
+          trauma, uncontrolled bleeding, loss of consciousness, or immediate
+          danger require emergency care.
+        </p>
+      </article>
+    </div>
+
+    <p className="telehealth-clinical-note">
+      A licensed healthcare professional determines whether a concern can be
+      handled virtually. Call 911 or seek emergency care for severe or
+      life-threatening symptoms.
+    </p>
+  </div>
+</section>
         <section
           id="when-to-use"
           className="telehealth-use-section"
@@ -253,7 +452,74 @@ export default function TelehealthResourceCenter() {
             </p>
           </div>
         </section>
+<section className="telehealth-benefits-section">
+  <div className="container">
+    <div className="telehealth-section-header">
+      <p className="telehealth-section-eyebrow">
+        Benefits Beyond Convenience
+      </p>
 
+      <h2>Why Telehealth Has Become an Important Part of Modern Healthcare</h2>
+
+      <p>
+        Telehealth is more than a convenient video visit. For many individuals,
+        families, entrepreneurs, and businesses, it can improve access to care,
+        reduce unnecessary delays, and make it easier to connect with licensed
+        healthcare professionals when appropriate.
+      </p>
+    </div>
+
+    <div className="telehealth-benefits-grid">
+      <article>
+        <h3>Save Valuable Time</h3>
+        <p>
+          Avoid travel and waiting rooms for many appropriate non-emergency
+          healthcare concerns.
+        </p>
+      </article>
+
+      <article>
+        <h3>Better Access</h3>
+        <p>
+          Evening, weekend, and travel-friendly access can make healthcare more
+          practical for busy schedules.
+        </p>
+      </article>
+
+      <article>
+        <h3>Support for Families</h3>
+        <p>
+          Parents may be able to connect with a provider without rearranging an
+          entire day around an appointment.
+        </p>
+      </article>
+
+      <article>
+        <h3>Helpful for Rural Communities</h3>
+        <p>
+          Virtual care may improve access where healthcare providers are located
+          farther away.
+        </p>
+      </article>
+
+      <article>
+        <h3>Behavioral Health Access</h3>
+        <p>
+          Counseling and behavioral-health services have become one of the
+          fastest-growing uses of telehealth.
+        </p>
+      </article>
+
+      <article>
+        <h3>Business Productivity</h3>
+        <p>
+          Employees and business owners may spend less time away from work when
+          appropriate healthcare can begin virtually.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
         <section className="telehealth-emergency-section">
           <div className="container telehealth-emergency-grid">
             <div>

@@ -1,0 +1,615 @@
+.entrepreneur-center {
+  background: #ffffff;
+  color: #071426;
+}
+
+.entrepreneur-hero {
+  padding: 2rem 0 5rem;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.22),
+      transparent 36%
+    ),
+    linear-gradient(180deg, #071426 0%, #0b1f36 100%);
+  color: #ffffff;
+}
+
+.entrepreneur-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 2.5rem;
+  color: #91a5bc;
+  font-size: 0.85rem;
+}
+
+.entrepreneur-breadcrumbs a {
+  color: #93c5fd;
+}
+
+.entrepreneur-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  align-items: center;
+}
+
+.entrepreneur-eyebrow,
+.entrepreneur-section-eyebrow {
+  margin: 0 0 0.8rem;
+  color: #93c5fd;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.entrepreneur-hero-copy h1 {
+  max-width: 14ch;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(3rem, 5.7vw, 5.1rem);
+  line-height: 0.99;
+  letter-spacing: -0.055em;
+}
+
+.entrepreneur-hero-copy h1 span {
+  display: block;
+  color: #60a5fa;
+}
+
+.entrepreneur-hero-lead {
+  max-width: 67ch;
+  margin: 1.4rem 0 0;
+  color: #d6e2f0;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.entrepreneur-hero-actions,
+.entrepreneur-membership-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.entrepreneur-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+.entrepreneur-badges span {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(147, 197, 253, 0.24);
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #bfdbfe;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.entrepreneur-hero-image-wrap {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.3);
+}
+
+.entrepreneur-hero-image {
+  display: block;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.entrepreneur-hero-card {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(147, 197, 253, 0.25);
+  border-radius: 17px;
+  background: rgba(7, 20, 38, 0.93);
+}
+
+.entrepreneur-hero-card strong,
+.entrepreneur-hero-card span {
+  display: block;
+}
+
+.entrepreneur-hero-card span {
+  margin-top: 0.25rem;
+  color: #bfdbfe;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.entrepreneur-stat-section {
+  padding: 2.2rem 0;
+  background: #eef5ff;
+}
+
+.entrepreneur-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.entrepreneur-stat-grid div {
+  padding: 1.3rem;
+  border: 1px solid #d5e4f5;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.entrepreneur-stat-grid strong,
+.entrepreneur-stat-grid span {
+  display: block;
+}
+
+.entrepreneur-stat-grid strong {
+  color: #071426;
+  font-size: 1.5rem;
+}
+
+.entrepreneur-stat-grid span {
+  margin-top: 0.4rem;
+  color: #526175;
+  line-height: 1.55;
+}
+
+.entrepreneur-stat-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.entrepreneur-stat-sources a {
+  color: #2563eb;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.entrepreneur-challenges-section,
+.entrepreneur-professions-section,
+.entrepreneur-scenarios-section,
+.entrepreneur-faq-section,
+.entrepreneur-related-section,
+.entrepreneur-sources-section {
+  padding: 6rem 0;
+}
+
+.entrepreneur-challenges-section,
+.entrepreneur-scenarios-section,
+.entrepreneur-related-section,
+.entrepreneur-sources-section {
+  background: #f7f9fc;
+}
+
+.entrepreneur-section-header {
+  max-width: 880px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.entrepreneur-section-header h2,
+.entrepreneur-sources-card h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.35rem, 5vw, 3.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.entrepreneur-section-header > p:last-child,
+.entrepreneur-sources-card > p {
+  color: #526175;
+  line-height: 1.8;
+}
+
+.entrepreneur-challenges-grid,
+.entrepreneur-options-grid,
+.entrepreneur-konnectmd-grid,
+.entrepreneur-scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.entrepreneur-challenges-grid article,
+.entrepreneur-scenarios-grid article,
+.entrepreneur-faq-grid article,
+.entrepreneur-related-card {
+  padding: 1.6rem;
+  border: 1px solid #dce6f2;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 35, 65, 0.08);
+}
+
+.entrepreneur-challenges-grid article > span,
+.entrepreneur-related-card > span {
+  color: #2563eb;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.entrepreneur-challenges-grid h3,
+.entrepreneur-options-grid h3,
+.entrepreneur-konnectmd-grid h3,
+.entrepreneur-scenarios-grid h3,
+.entrepreneur-faq-grid h3,
+.entrepreneur-related-card h3 {
+  margin: 0.7rem 0;
+  color: #071426;
+  font-size: 1.22rem;
+  line-height: 1.3;
+}
+
+.entrepreneur-challenges-grid p,
+.entrepreneur-options-grid p,
+.entrepreneur-konnectmd-grid p,
+.entrepreneur-scenarios-grid p,
+.entrepreneur-faq-grid p,
+.entrepreneur-related-card p {
+  margin: 0;
+  color: #5f6f82;
+  line-height: 1.7;
+}
+
+.entrepreneur-options-section,
+.entrepreneur-konnectmd-section {
+  padding: 6rem 0;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.18),
+      transparent 36%
+    ),
+    #071426;
+  color: #ffffff;
+}
+
+.entrepreneur-light-header h2 {
+  color: #ffffff;
+}
+
+.entrepreneur-light-header > p:last-child {
+  color: #bfd0e4;
+}
+
+.entrepreneur-options-grid article,
+.entrepreneur-konnectmd-grid article {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: linear-gradient(180deg, #132d50 0%, #0d2341 100%);
+}
+
+.entrepreneur-options-grid h3,
+.entrepreneur-konnectmd-grid h3 {
+  color: #ffffff;
+}
+
+.entrepreneur-options-grid p,
+.entrepreneur-konnectmd-grid p {
+  color: #bfd0e4;
+}
+
+.entrepreneur-options-grid a {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #93c5fd;
+  font-weight: 800;
+}
+
+.entrepreneur-options-notice {
+  max-width: 900px;
+  margin: 2rem auto 0;
+  padding: 1.3rem;
+  border-left: 5px solid #60a5fa;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+.entrepreneur-options-notice strong {
+  color: #ffffff;
+  font-size: 1.15rem;
+}
+
+.entrepreneur-options-notice p {
+  margin: 0.4rem 0 0;
+  color: #bfd0e4;
+  line-height: 1.6;
+}
+
+.entrepreneur-professions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.entrepreneur-professions-grid div {
+  display: grid;
+  place-items: center;
+  min-height: 100px;
+  padding: 1rem;
+  border: 1px solid #dce6f2;
+  border-radius: 18px;
+  background: #ffffff;
+  color: #0f2c50;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(15, 35, 65, 0.07);
+}
+
+.entrepreneur-konnectmd-grid article {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.entrepreneur-konnectmd-grid article > span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.entrepreneur-membership-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.4rem;
+  border: 1px solid rgba(147, 197, 253, 0.35);
+  border-radius: 20px;
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.entrepreneur-membership-message strong {
+  color: #ffffff;
+  font-size: 1.18rem;
+}
+
+.entrepreneur-membership-message p {
+  max-width: 680px;
+  margin: 0.4rem 0 0;
+  color: #bfd0e4;
+  line-height: 1.6;
+}
+
+.entrepreneur-assessment-section {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.entrepreneur-assessment-card {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.5rem;
+  border: 1px solid #dce6f2;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.12),
+      transparent 38%
+    ),
+    #f7f9fc;
+  box-shadow: 0 22px 52px rgba(15, 35, 65, 0.1);
+}
+
+.entrepreneur-assessment-card h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.entrepreneur-assessment-card p {
+  color: #526175;
+  line-height: 1.75;
+}
+
+.entrepreneur-assessment-status {
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: #071426;
+  color: #ffffff;
+}
+
+.entrepreneur-assessment-status strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.entrepreneur-assessment-status p {
+  color: #bfd0e4;
+}
+
+.entrepreneur-assessment-status .btn {
+  width: 100%;
+}
+
+.entrepreneur-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.entrepreneur-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.entrepreneur-related-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.entrepreneur-related-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(37, 99, 235, 0.45);
+  box-shadow: 0 24px 48px rgba(15, 35, 65, 0.14);
+}
+
+.entrepreneur-related-card strong {
+  margin-top: auto;
+  padding-top: 1.3rem;
+  color: #2563eb;
+}
+
+.entrepreneur-sources-card {
+  padding: 2rem;
+  border: 1px solid #dce6f2;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 18px 42px rgba(15, 35, 65, 0.08);
+}
+
+.entrepreneur-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.entrepreneur-source-links a {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #dce6f2;
+  border-radius: 999px;
+  color: #2563eb;
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.entrepreneur-disclaimer {
+  margin-top: 1.6rem;
+  padding: 1.25rem;
+  border-left: 5px solid #2563eb;
+  border-radius: 14px;
+  background: #f7f9fc;
+}
+
+.entrepreneur-disclaimer strong {
+  color: #071426;
+}
+
+.entrepreneur-disclaimer p {
+  margin: 0.55rem 0 0;
+  color: #68788b;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1100px) {
+  .entrepreneur-challenges-grid,
+  .entrepreneur-options-grid,
+  .entrepreneur-konnectmd-grid,
+  .entrepreneur-scenarios-grid,
+  .entrepreneur-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .entrepreneur-professions-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 950px) {
+  .entrepreneur-hero-grid,
+  .entrepreneur-assessment-card {
+    grid-template-columns: 1fr;
+  }
+
+  .entrepreneur-hero-image {
+    height: 430px;
+  }
+
+  .entrepreneur-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entrepreneur-membership-message {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .entrepreneur-challenges-section,
+  .entrepreneur-options-section,
+  .entrepreneur-professions-section,
+  .entrepreneur-konnectmd-section,
+  .entrepreneur-scenarios-section,
+  .entrepreneur-assessment-section,
+  .entrepreneur-faq-section,
+  .entrepreneur-related-section,
+  .entrepreneur-sources-section {
+    padding: 4rem 0;
+  }
+
+  .entrepreneur-challenges-grid,
+  .entrepreneur-options-grid,
+  .entrepreneur-professions-grid,
+  .entrepreneur-konnectmd-grid,
+  .entrepreneur-scenarios-grid,
+  .entrepreneur-faq-grid,
+  .entrepreneur-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entrepreneur-hero-image {
+    height: 340px;
+  }
+
+  .entrepreneur-hero-actions,
+  .entrepreneur-membership-actions {
+    flex-direction: column;
+  }
+
+  .entrepreneur-hero-actions .btn,
+  .entrepreneur-membership-actions .btn {
+    width: 100%;
+  }
+
+  .entrepreneur-assessment-card {
+    padding: 1.4rem;
+  }
+
+  .entrepreneur-related-card {
+    min-height: auto;
+  }
+
+  .entrepreneur-sources-card {
+    padding: 1.4rem;
+  }
+}

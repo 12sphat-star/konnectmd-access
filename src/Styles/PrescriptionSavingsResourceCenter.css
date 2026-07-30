@@ -431,12 +431,80 @@
   font-size: 0.82rem;
   line-height: 1.65;
 }
+.rx-cost-highlight {
+  max-width: 920px;
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  border-left: 5px solid #2563eb;
+  border-radius: 16px;
+  background: #eaf2ff;
+}
+
+.rx-cost-highlight strong {
+  display: block;
+  color: #071426;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.rx-cost-highlight p {
+  margin: 0.6rem 0 0;
+  color: #526175;
+  line-height: 1.7;
+}
+
+.rx-myths-section {
+  padding: 6rem 0;
+  background: #f7f9fc;
+}
+
+.rx-myths-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.rx-myths-grid article {
+  padding: 1.6rem;
+  border: 1px solid #dce6f2;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 35, 65, 0.08);
+}
+
+.rx-myths-grid article > span {
+  color: #b91c1c;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rx-myths-grid h3 {
+  margin: 0.6rem 0 1.2rem;
+  color: #071426;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.rx-myths-grid strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #2563eb;
+}
+
+.rx-myths-grid p {
+  margin: 0;
+  color: #5f6f82;
+  line-height: 1.7;
+}
 
 @media (max-width: 1100px) {
   .rx-cost-grid,
   .rx-savings-grid,
   .rx-benefit-grid,
-  .rx-medication-types-grid {
+  .rx-medication-types-grid,
+  .rx-myths-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -466,6 +534,7 @@
   .rx-cost-section,
   .rx-savings-section,
   .rx-generic-section,
+  .rx-myths-section,
   .rx-medication-types-section,
   .rx-konnectmd-section,
   .rx-process-section,
@@ -479,6 +548,7 @@
   .rx-savings-grid,
   .rx-benefit-grid,
   .rx-medication-types-grid,
+  .rx-myths-grid,
   .rx-process-grid,
   .rx-faq-grid,
   .rx-related-grid {

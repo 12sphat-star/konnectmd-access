@@ -141,11 +141,11 @@ const konnectmdBenefits = [
     text:
       "Qualifying memberships may support the member, an eligible spouse, and eligible dependents, with up to seven household members under current program terms.",
   },
-  {
-    title: "24/7 Virtual Physician Access",
-    text:
-      "Members may connect with licensed physicians for appropriate non-emergency concerns without relying only on traditional office hours.",
-  },
+ {
+  title: "24/7 Virtual Physician Access",
+  text:
+    "Every KonnectMD membership includes 24/7 access to licensed physicians for appropriate non-emergency healthcare concerns.",
+},
   {
     title: "Prescription Benefits",
     text:
@@ -344,7 +344,7 @@ export default function FamilyHealthcareResourceCenter() {
             <nav className="family-breadcrumbs" aria-label="Breadcrumb">
               <Link to="/">Home</Link>
               <span aria-hidden="true">›</span>
-              <Link to="/insights">Healthcare Resources</Link>
+             <a href="/#learning-center">Healthcare Resources</a>
               <span aria-hidden="true">›</span>
               <span>Family Healthcare Resource Center</span>
             </nav>
@@ -385,11 +385,11 @@ export default function FamilyHealthcareResourceCenter() {
               </div>
 
               <div className="family-hero-image-wrap">
-                <img
-                  src="/images/family-care.jpg"
-                  alt="Multi-generational family reviewing healthcare options together"
-                  className="family-hero-image"
-                />
+               <img
+  src="/images/konnectmd-together-family.jpg"
+  alt="Multi-generational family learning about healthcare options together"
+  className="family-hero-image"
+/>
 
                 <div className="family-hero-card">
                   <strong>Up to 7 household members</strong>
@@ -564,16 +564,19 @@ export default function FamilyHealthcareResourceCenter() {
           <div className="container">
             <div className="family-section-header family-light-header">
               <p className="family-section-eyebrow">
-                Where KonnectMD May Help
+               The KonnectMD Household Solution
               </p>
 
-              <h2>One Membership Can Connect a Household to Multiple Resources</h2>
+              <h2>One Membership. Multiple Healthcare Resources for Your Household.</h2>
 
               <p>
-                KonnectMD may provide a practical way to combine virtual
-                physician access, prescription benefits, behavioral-health
-                support, and additional healthcare savings for eligible
-                household members.
+              <p>
+  Every KonnectMD membership includes 24/7 physician access for appropriate
+  non-emergency healthcare concerns. Higher membership levels expand available
+  prescription benefits, behavioral-health resources, specialist access,
+  wellness benefits, and additional healthcare services designed to support
+  eligible household members.
+</p>
               </p>
             </div>
 
@@ -592,11 +595,13 @@ export default function FamilyHealthcareResourceCenter() {
 
             <div className="family-membership-message">
               <div>
-                <strong>Membership benefits are not identical.</strong>
+                <strong>Choose the membership that best fits your family's healthcare needs.</strong>
                 <p>
-                  Physician access, counseling, prescriptions, chronic-care
-                  benefits, household eligibility, visit limits, and additional
-                  services vary by membership level and current program terms.
+                 Review each membership level carefully. Physician access is included with every
+plan, while prescription benefits, behavioral-health resources, chronic
+medications, wellness services, and additional household benefits expand as
+membership levels increase.
+
                 </p>
               </div>
 

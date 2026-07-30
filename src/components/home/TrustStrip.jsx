@@ -31,11 +31,23 @@ const trustItems = [
 export default function TrustStrip() {
   return (
     <section className="trust-strip-v2" aria-labelledby="trust-strip-title">
-      <div className="container">
-        <div className="trust-strip-heading">
-          <h2 id="trust-strip-title">Start Your Healthcare Journey</h2>
-          <p>Choose a topic to explore resources, services, and next steps.</p>
-        </div>
+      <div className="trust-strip-heading">
+
+  <p className="eyebrow">
+    TRUSTED HEALTHCARE ACCESS
+  </p>
+
+  <h2 id="trust-strip-title">
+    Healthcare Should Be Easier to Access.
+  </h2>
+
+  <p>
+    KonnectMD brings together convenient healthcare resources designed to help
+    individuals, families, veterans, entrepreneurs, and businesses access care
+    with greater confidence and convenience.
+  </p>
+
+</div>
 
         <div className="trust-strip-grid">
           {trustItems.map((item) => (
@@ -57,7 +69,7 @@ export default function TrustStrip() {
             </Link>
           ))}
         </div>
-      </div>
+      
     </section>
   );
 }
