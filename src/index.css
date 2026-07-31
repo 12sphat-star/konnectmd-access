@@ -152,6 +152,14 @@ a {
   align-items: center;
 }
 
+.hero-image img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:22px;
+    box-shadow:0 20px 45px rgba(15,23,42,.15);
+}
+
 .eyebrow {
   margin: 0 0 0.85rem;
   font-size: 0.8rem;
@@ -3176,3 +3184,16 @@ a {
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+.business-hero-image{
+    width:100%;
+}
+
+.business-hero-image img{
+    width:100%;
+    display:block;
+    border-radius:22px;
+    box-shadow:0 20px 45px rgba(15,23,42,.15);
+}
+
+

@@ -13,30 +13,44 @@ export default function BusinessHealthcarePage() {
       />
 
       <main className="page problem-page">
-        <section className="hero">
-          <div className="container">
-            <p className="eyebrow">Healthcare Options for Growing Businesses</p>
+       <section className="hero">
+  <div className="container hero-grid">
 
-            <h1>Small Business Health Benefits in Hampton Roads</h1>
+    <div className="hero-content">
 
-            <p className="lead">
-              Many small business owners want to support their people but
-              traditional group health plans can be expensive, confusing, and
-              difficult to manage. KonnectMD may offer a simpler healthcare
-              conversation for teams, contractors, and growing businesses.
-            </p>
+      <p className="eyebrow">Healthcare Options for Growing Businesses</p>
 
-            <div className="hero-actions">
-              <Link to="/get-details" className="btn btn-primary">
-                Get Plan Details
-              </Link>
+      <h1>Small Business Health Benefits in Hampton Roads</h1>
 
-              <Link to="/book-call" className="btn btn-secondary">
-                Book a Business Call
-              </Link>
-            </div>
-          </div>
-        </section>
+      <p className="lead">
+        Many small business owners want to support their people but
+        traditional group health plans can be expensive, confusing, and
+        difficult to manage. KonnectMD may offer a simpler healthcare
+        conversation for teams, contractors, and growing businesses.
+      </p>
+
+      <div className="hero-actions">
+        <Link to="/get-details" className="btn btn-primary">
+          Get Plan Details
+        </Link>
+
+        <Link to="/book-call" className="btn btn-secondary">
+          Book a Business Call
+        </Link>
+      </div>
+
+    </div>
+
+<div className="business-hero-image">
+  <img
+    src="/images/business-owner-healthcare-hero.jpg"
+    alt="Business owner reviewing healthcare options for themselves and their growing business"
+    loading="eager"
+  />
+</div>
+
+  </div>
+</section>
 
         <section className="content-section">
           <div className="container">

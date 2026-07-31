@@ -75,19 +75,27 @@ export default function ContactPage() {
     try {
       console.log("Submitting payload:", payload);
 
-      const response = await fetch(import.meta.env.VITE_GHL_WEBHOOK_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+   const form = new FormData();
 
-      const text = await response.text();
+Object.entries(payload).forEach(([key, value]) => {
+  form.append(key, value || "");
+});
 
-      if (!response.ok) {
-        throw new Error(text || "Failed to submit form");
-      }
+const response = await fetch(
+  import.meta.env.VITE_GOOGLE_SCRIPT_URL,
+  {
+    method: "POST",
+    body: form,
+  }
+);
+
+const text = await response.text();
+
+console.log("Apps Script response:", text);
+
+if (!response.ok) {
+  throw new Error(text || "Failed to submit form");
+}
 
       setStatus({
         loading: false,

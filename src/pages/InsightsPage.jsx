@@ -31,7 +31,9 @@ export default function InsightsPage() {
               fontWeight: 950,
             }}
           >
-            Healthcare access education for real families, workers, and business owners.
+            Trusted Healthcare Resources
+for Individuals, Families,
+Veterans, and Business Owners.
           </h1>
 
           <p
@@ -42,9 +44,9 @@ export default function InsightsPage() {
               maxWidth: "820px",
             }}
           >
-            Learn about telehealth, mental health support, prescription savings,
-            veterans healthcare access, and healthcare access options serving
-            Hampton Roads locally and people nationwide.
+           Explore trusted articles covering telehealth, prescription savings,
+behavioral health, veterans healthcare, family healthcare, and
+healthcare access—helping you make informed healthcare decisions.
           </p>
 
           <div

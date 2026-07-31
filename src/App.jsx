@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import CalendarPage from "./pages/CalendarPage";
 import LandingPage from "./pages/LandingPage";
 import JoinPage from "./pages/JoinPage";
+import MembershipFinder from "./components/home/MembershipFinder";
 
 import NorfolkPage from "./pages/NorfolkPage";
 import VirginiaBeachPage from "./pages/VirginiaBeachPage";
@@ -80,6 +81,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/membership-finder" element={<MembershipFinder />} />
 
         {/* Main Pages */}
         <Route path="/plans" element={<PlansPage />} />

@@ -213,56 +213,134 @@ export default function BusinessOwnersEntrepreneursPage() {
   path="/business-owners-entrepreneurs-healthcare-hampton-roads"
 /> 
       <section style={styles.hero}>
-        <div style={styles.container}>
-          <div style={styles.grid2}>
-            <div>
-              <p style={styles.eyebrow}>Healthcare Access for Business Owners</p>
+  <div style={styles.container}>
 
-              <h1 style={styles.h1}>
-                You Built the Business. <span style={styles.blue}>Now Protect the People Behind It.</span>
-              </h1>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "1.15fr .85fr",
+        gap: "50px",
+        alignItems: "center",
+      }}
+    >
+      {/* LEFT SIDE */}
+      <div>
 
-              <p style={styles.p}>
-                If you are self-employed, running a business, building a side hustle, or operating as a
-                1099 professional, healthcare can feel expensive, confusing, and built for somebody else.
-                KonnectMD gives Hampton Roads business owners another way to explore care access,
-                savings, and support.
-              </p>
+        <p style={styles.eyebrow}>
+          Healthcare Access for Business Owners
+        </p>
 
-              <div style={styles.buttonRow}>
-                <Link to="/contact" style={styles.primaryButton}>
-                  Get Healthcare Access Details
-                </Link>
+        <h1 style={styles.h1}>
+          You Built the Business.
+          <br />
+          <span style={styles.blue}>
+            Now Protect the People Behind It.
+          </span>
+        </h1>
 
-                <Link to="/plans" style={styles.secondaryButton}>
-                  View Plan Options
-                </Link>
-              </div>
+        <p
+          style={{
+            ...styles.p,
+            fontSize: "18px",
+            maxWidth: "620px",
+          }}
+        >
+          If you're self-employed, running a business,
+          building a side hustle, or working as a 1099
+          professional, healthcare can feel expensive,
+          confusing, and built for somebody else.
 
-              <p style={{ ...styles.p, fontSize: "13px", marginTop: "18px" }}>
-                Not insurance. Not an MLM. A healthcare access and savings membership.
-              </p>
-            </div>
+          KonnectMD gives Hampton Roads business owners
+          another way to explore healthcare access,
+          virtual care, prescription savings, and
+          family-friendly support.
+        </p>
 
-            <div style={styles.bigCard}>
-              <p style={styles.eyebrow}>Who This Helps</p>
-              <h2 style={{ ...styles.h2, fontSize: "34px" }}>
-                Built for the people carrying the responsibility.
-              </h2>
+        <div style={styles.buttonRow}>
+          <Link
+            to="/contact"
+            style={styles.primaryButton}
+          >
+            Get Healthcare Access Details
+          </Link>
 
-              <div style={styles.grid3}>
-                {ownerTypes.map(([title, text]) => (
-                  <div key={title} style={styles.card}>
-                    <div style={styles.icon}>✓</div>
-                    <h3 style={styles.h3}>{title}</h3>
-                    <p style={styles.p}>{text}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <Link
+            to="/plans"
+            style={styles.secondaryButton}
+          >
+            View Plan Options
+          </Link>
         </div>
-      </section>
+
+        <p
+          style={{
+            ...styles.p,
+            fontSize: "13px",
+            marginTop: "18px",
+          }}
+        >
+          Not insurance. Not an MLM.
+          A healthcare access and savings membership.
+        </p>
+
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div>
+
+        <img
+          src="/images/business-owner-healthcare-hero.jpg"
+          alt="Business owner reviewing healthcare options"
+          style={{
+            width: "100%",
+            borderRadius: "24px",
+            display: "block",
+            boxShadow: "0 25px 60px rgba(0,0,0,.35)",
+          }}
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section style={styles.altSection}>
+  <div style={styles.container}>
+
+    <div
+      style={{
+        textAlign: "center",
+        maxWidth: "800px",
+        margin: "0 auto 50px",
+      }}
+    >
+      <p style={styles.eyebrow}>Who This Helps</p>
+
+      <h2 style={styles.h2}>
+        Built for the people carrying the responsibility.
+      </h2>
+
+      <p style={styles.p}>
+        Whether you're building a business by yourself or leading a growing
+        team, healthcare shouldn't be another obstacle to your success.
+      </p>
+    </div>
+
+    <div style={styles.grid3}>
+      {ownerTypes.map(([title, text]) => (
+        <div key={title} style={styles.card}>
+          <div style={styles.icon}>✓</div>
+          <h3 style={styles.h3}>{title}</h3>
+          <p style={styles.p}>{text}</p>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
 
       <section style={styles.altSection}>
         <div style={styles.container}>

@@ -16,7 +16,7 @@ export default function Navbar() {
           <Link to="/locations">Locations</Link>
           <Link to="/veterans-healthcare-access">Veterans</Link>
           <Link to="/insights">Insights</Link>
-          <Link to="/get-details">Get Details</Link>
+          <Link to="/membership-finder">Find Your Plan</Link>
 
           <a
             href="https://konnectmdagency.com/"
@@ -67,9 +67,9 @@ export default function Navbar() {
             Insights
           </Link>
 
-          <Link to="/get-details" onClick={() => setOpen(false)}>
-            Get Details
-          </Link>
+         <Link to="/membership-finder" onClick={() => setOpen(false)}>
+  Find Your Plan
+</Link>
 
           <a
             href="https://konnectmdagency.com/"

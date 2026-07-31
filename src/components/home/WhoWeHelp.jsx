@@ -1,12 +1,7 @@
 import "../../Styles/WhoWeHelp.css";
+import { Link } from "react-router-dom";
 
 const audiences = [
-  {
-    icon: "❤️",
-    title: "Individuals",
-    text: "Whether you're uninsured, changing jobs, retiring early, or simply looking for another healthcare option, KonnectMD may provide a smarter way to access care.",
-    link: "/membership-finder",
-  },
   {
     icon: "👨‍👩‍👧‍👦",
     title: "Families",
@@ -15,14 +10,8 @@ const audiences = [
   },
   {
     icon: "🏢",
-    title: "Businesses",
-    text: "Support employee recruitment, retention, and wellness with healthcare solutions designed for today's small business.",
-    link: "/resource-center/business-healthcare",
-  },
-  {
-    icon: "💼",
-    title: "Entrepreneurs",
-    text: "Healthcare options for self-employed professionals, freelancers, consultants, independent contractors, and growing startups.",
+    title: "Business Owners & Entrepreneurs",
+    text: "Healthcare access for small business owners, entrepreneurs, self-employed professionals, freelancers, and independent contractors.",
     link: "/resource-center/entrepreneurs",
   },
   {
@@ -30,6 +19,12 @@ const audiences = [
     title: "Veterans",
     text: "Learn how KonnectMD can complement your existing healthcare options and provide additional access to virtual care and behavioral health resources.",
     link: "/resource-center/veterans",
+  },
+  {
+    icon: "🧭",
+    title: "Not Sure Where You Fit?",
+    text: "Whether you're an individual, retiree, changing jobs, or simply exploring your options, our Personalized Membership Guide can help you discover which KonnectMD membership may best fit your needs.",
+    link: "/membership-finder",
   },
 ];
 
@@ -59,9 +54,9 @@ export default function WhoWeHelp() {
         <div className="who-grid">
 
           {audiences.map((item) => (
-            <a
+            <Link
               key={item.title}
-              href={item.link}
+              to={item.link}
               className="who-card"
             >
               <div className="who-icon">
@@ -76,7 +71,7 @@ export default function WhoWeHelp() {
                 Learn More →
               </span>
 
-            </a>
+            </Link>
           ))}
 
         </div>
