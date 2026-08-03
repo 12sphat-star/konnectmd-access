@@ -29,11 +29,11 @@ export default function ScrollLeadPopup() {
     );
 
     const isMobile = window.matchMedia("(max-width: 767px)").matches;
+    
     const hasCompleted = localStorage.getItem(POPUP_COMPLETED_KEY) === "true";
     const lastSeen = Number(localStorage.getItem(POPUP_STORAGE_KEY) || 0);
     const recentlySeen = Date.now() - lastSeen < SEVEN_DAYS;
 
-const isMobile = window.matchMedia("(max-width: 767px)").matches;
 
 if (isExcludedPage || isMobile || hasCompleted || recentlySeen) {
   return undefined;
