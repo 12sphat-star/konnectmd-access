@@ -33,12 +33,15 @@ export default function ScrollLeadPopup() {
     const lastSeen = Number(localStorage.getItem(POPUP_STORAGE_KEY) || 0);
     const recentlySeen = Date.now() - lastSeen < SEVEN_DAYS;
 
- if (isExcludedPage || hasCompleted || recentlySeen) {
+const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+if (isExcludedPage || isMobile || hasCompleted || recentlySeen) {
   return undefined;
 }
 
     let timeRequirementMet = false;
     let scrollRequirementMet = false;
+    
 
     const tryToOpenPopup = () => {
       if (timeRequirementMet && scrollRequirementMet) {
