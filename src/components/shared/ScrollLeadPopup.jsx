@@ -33,7 +33,7 @@ export default function ScrollLeadPopup() {
     const lastSeen = Number(localStorage.getItem(POPUP_STORAGE_KEY) || 0);
     const recentlySeen = Date.now() - lastSeen < SEVEN_DAYS;
 
-    if (isExcludedPage || isMobile) {
+ if (isExcludedPage || hasCompleted || recentlySeen) {
   return undefined;
 }
 
