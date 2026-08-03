@@ -33,9 +33,9 @@ export default function ScrollLeadPopup() {
     const lastSeen = Number(localStorage.getItem(POPUP_STORAGE_KEY) || 0);
     const recentlySeen = Date.now() - lastSeen < SEVEN_DAYS;
 
-    if (isExcludedPage || isMobile || hasCompleted || recentlySeen) {
-      return undefined;
-    }
+    if (isExcludedPage || isMobile) {
+  return undefined;
+}
 
     let timeRequirementMet = false;
     let scrollRequirementMet = false;
@@ -65,7 +65,7 @@ export default function ScrollLeadPopup() {
     const timer = window.setTimeout(() => {
       timeRequirementMet = true;
       tryToOpenPopup();
-    }, 45000);
+   }, 5000);
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
@@ -82,46 +82,88 @@ export default function ScrollLeadPopup() {
   };
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    setIsSubmitting(true);
-    setSubmitError("");
+  setIsSubmitting(true);
+  setSubmitError("");
 
-    const form = event.currentTarget;
-    const data = new FormData(form);
+  const form = event.currentTarget;
 
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+  const data = new FormData();
+
+  data.append("source", "Website Popup");
+  data.append("submittedAt", new Date().toISOString());
+
+  data.append(
+    "firstName",
+    form.elements.firstName.value
+  );
+
+  data.append(
+    "lastName",
+    form.elements.lastName.value
+  );
+
+  data.append(
+    "email",
+    form.elements.email.value
+  );
+
+  data.append(
+    "phone",
+    form.elements.phone.value
+  );
+
+  data.append(
+    "interest_type",
+    form.elements.interest.value
+  );
+
+  data.append("membership_interest", "Need Help Choosing");
+  data.append("household_size", "");
+  data.append("state", "");
+  data.append("message", "Lead submitted from website popup.");
+
+  try {
+    const response = await fetch(
+      import.meta.env.VITE_GOOGLE_SCRIPT_URL,
+      {
         method: "POST",
         body: data,
-      });
-
-      if (!response.ok) {
-        throw new Error("Submission failed");
       }
+    );
 
-      localStorage.setItem(POPUP_COMPLETED_KEY, "true");
-      setSubmitted(true);
-      form.reset();
-    } catch (error) {
-      console.error("Popup form submission error:", error);
-      setSubmitError(
-        "We could not send your information. Please try again in a moment."
-      );
-    } finally {
-      setIsSubmitting(false);
+    const text = await response.text();
+
+    if (!response.ok) {
+      throw new Error(text || "Submission failed");
     }
-  };
 
-  if (!show) return null;
+    localStorage.setItem(POPUP_COMPLETED_KEY, "true");
 
-  return (
-    <div
-      style={overlayStyle}
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="lead-popup-title"
-    >
+    setSubmitted(true);
+
+    form.reset();
+  } catch (error) {
+    console.error(error);
+
+    setSubmitError(
+      "We could not send your information. Please try again."
+    );
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
+if (!show) return null;
+
+return (
+  <div
+    style={overlayStyle}
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="lead-popup-title"
+  >
       <div style={popupStyle}>
         <button
           type="button"
@@ -171,14 +213,21 @@ export default function ScrollLeadPopup() {
                 value={pathname}
               />
 
-              <input
-                name="name"
-                type="text"
-                placeholder="Name"
-                autoComplete="name"
-                required
-                style={inputStyle}
-              />
+            <input
+  name="firstName"
+  type="text"
+  placeholder="First Name"
+  required
+  style={inputStyle}
+/>
+
+<input
+  name="lastName"
+  type="text"
+  placeholder="Last Name"
+  required
+  style={inputStyle}
+/>
 
               <input
                 name="email"

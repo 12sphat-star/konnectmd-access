@@ -108,7 +108,6 @@ if (!response.ok) {
         interestType: location.state?.interestType || initialForm.interestType,
       });
 
-      window.scrollTo(0, 0);
     } catch (error) {
       console.error("Webhook error:", error);
 
@@ -273,10 +272,79 @@ if (!response.ok) {
             </div>
 
             {status.success && (
-              <p className="form-success">
-                Thanks — your request was submitted successfully.
-              </p>
-            )}
+  <div
+    style={{
+      background: "#071426",
+      border: "1px solid rgba(147, 197, 253, 0.25)",
+      borderRadius: "18px",
+      padding: "32px",
+      marginTop: "24px",
+      textAlign: "center",
+      color: "#ffffff",
+    }}
+  >
+    <div
+      style={{
+        fontSize: "52px",
+        marginBottom: "16px",
+      }}
+    >
+      ✅
+    </div>
+
+    <h2
+      style={{
+        marginBottom: "16px",
+        color: "#93c5fd",
+      }}
+    >
+      Thank You!
+    </h2>
+
+    <p
+      style={{
+        fontSize: "18px",
+        lineHeight: 1.7,
+        color: "#cbd5e1",
+        marginBottom: "20px",
+      }}
+    >
+      We've received your request for information.
+    </p>
+
+    <p
+      style={{
+        lineHeight: 1.7,
+        color: "#cbd5e1",
+        marginBottom: "24px",
+      }}
+    >
+      A <strong>KonnectMD Access representative</strong> will review your
+      request and contact you shortly to answer your questions and help you
+      determine which membership best fits your needs.
+    </p>
+
+    <div
+      style={{
+        background: "#0b1f36",
+        borderRadius: "12px",
+        padding: "18px",
+      }}
+    >
+      <strong>While you're waiting...</strong>
+
+      <div style={{ marginTop: "12px", lineHeight: "1.8" }}>
+        ✓ Explore our Healthcare Resource Center
+        <br />
+        ✓ Learn about Prescription Savings
+        <br />
+        ✓ Discover Behavioral Health Services
+        <br />
+        ✓ Review Family Membership Benefits
+      </div>
+    </div>
+  </div>
+)}
 
             {status.error && <p className="form-error">{status.error}</p>}
           </form>
