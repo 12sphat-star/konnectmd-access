@@ -175,10 +175,10 @@ const konnectmdBenefits = [
       "Qualifying KonnectMD memberships include eligible acute medications according to the current formulary, dosage, and quantity requirements.",
   },
   {
-    title: "1,000+ Chronic Medications",
-    text:
-      "Qualifying higher-tier memberships may include more than 1,000 commonly prescribed chronic medications at no additional medication cost.",
-  },
+  title: "1,000+ Chronic Medications at No Additional Medication Cost",
+  text:
+    "Qualifying Platinum and Titanium memberships may provide access to more than 1,000 commonly prescribed chronic medications at no additional medication cost, subject to the current formulary, dosage, quantity, availability, and program terms.",
+},
   {
     title: "Additional Prescription Discounts",
     text:
@@ -334,12 +334,13 @@ export default function PrescriptionSavingsResourceCenter() {
                   Dollar.
                 </h1>
 
-                <p className="rx-hero-lead">
-                  Learn why medication prices differ, how prescription savings
-                  programs work, when generic medications may be appropriate,
-                  and how qualifying KonnectMD benefits may help reduce
-                  household prescription costs.
-                </p>
+              <p className="rx-hero-lead">
+  Learn how qualifying KonnectMD memberships may provide eligible
+  acute medications, prescription discounts, access to more than
+  70,000 participating pharmacies, and more than 1,000 commonly
+  prescribed chronic medications at no additional medication cost
+  through qualifying higher-tier memberships.
+</p>
 
                 <div className="rx-hero-actions">
                   <a href="#save-on-prescriptions" className="btn btn-primary">
@@ -364,14 +365,48 @@ export default function PrescriptionSavingsResourceCenter() {
   className="rx-hero-image"
 />
 
-                <div className="rx-hero-stat-card">
-                  <strong>70,000+</strong>
-                  <span>Participating retail pharmacies nationwide</span>
-                </div>
+<div className="rx-hero-stat-card">
+  <strong>70,000+</strong>
+  <span>Participating retail pharmacies nationwide</span>
+</div>
               </div>
             </div>
           </div>
         </section>
+
+
+<section className="rx-trust-strip">
+  <div className="container">
+    <div className="rx-trust-items">
+
+      <div className="rx-trust-item">
+        <div className="rx-trust-number">70,000+</div>
+        <div className="rx-trust-text">
+          Participating Pharmacies Nationwide
+        </div>
+      </div>
+
+      <div className="rx-trust-divider"></div>
+
+      <div className="rx-trust-item">
+        <div className="rx-trust-number">1,000+</div>
+        <div className="rx-trust-text">
+          Included Chronic Medications*
+        </div>
+      </div>
+
+      <div className="rx-trust-divider"></div>
+
+      <div className="rx-trust-item">
+        <div className="rx-trust-number">24/7</div>
+        <div className="rx-trust-text">
+          Physician Access
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
  <section className="rx-cost-section">
   <div className="container">
@@ -562,18 +597,18 @@ export default function PrescriptionSavingsResourceCenter() {
 
               <h2>Multiple Ways to Reduce Prescription Costs</h2>
 
-            <p>
-  Every KonnectMD membership includes 24/7 access to licensed physicians for
-  appropriate non-emergency healthcare concerns. Depending on the membership
-  selected, members may also receive prescription savings resources, included
-  acute medications, qualifying chronic medication benefits, retail pharmacy
-  access, home-delivery options, behavioral health resources, specialist
-  access, wellness benefits, and additional healthcare support designed to
-  improve access while helping reduce out-of-pocket healthcare costs.
+     <p>
+  Every KonnectMD membership includes 24/7 access to licensed
+  physicians for appropriate non-emergency healthcare concerns.
+  Depending on the membership selected, members may also receive
+  eligible acute medications, prescription discounts, qualifying
+  chronic medication benefits, retail pharmacy access, home-delivery
+  options, and secure online access to review applicable prescription
+  resources. Benefits expand as membership levels increase.
 </p>
             </div>
 
-            <div className="rx-benefit-grid">
+            <div className="rx-highlight-grid">
               {konnectmdBenefits.map((benefit) => (
                 <article className="rx-benefit-card" key={benefit.title}>
                   <span aria-hidden="true">✓</span>
@@ -596,9 +631,9 @@ export default function PrescriptionSavingsResourceCenter() {
 </p>
               </div>
 
-              <Link to="/plans" className="btn btn-primary">
-                Compare Membership Benefits
-              </Link>
+           <Link to="/plans" className="btn btn-primary">
+  Find the Right Membership for Your Prescription Needs
+</Link>
             </div>
           </div>
         </section>

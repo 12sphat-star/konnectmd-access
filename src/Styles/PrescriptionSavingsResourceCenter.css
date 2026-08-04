@@ -577,3 +577,71 @@
     padding: 1.4rem;
   }
 }
+
+/* =========================================================
+   PRESCRIPTION SAVINGS TRUST STRIP
+========================================================= */
+
+.rx-trust-strip {
+  padding: 2.25rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #071426;
+}
+
+.rx-trust-items {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.rx-trust-item {
+  text-align: center;
+}
+
+.rx-trust-number {
+  margin-bottom: 0.5rem;
+  color: #60a5fa;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.rx-trust-text {
+  color: #dbeafe;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.rx-trust-divider {
+  width: 1px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.rx-trust-item {
+  transition: transform 0.25s ease;
+}
+
+.rx-trust-item:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+  .rx-trust-strip {
+    padding: 2rem 0;
+  }
+
+  .rx-trust-items {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .rx-trust-divider {
+    width: 70px;
+    height: 1px;
+    margin: 0 auto;
+  }
+}

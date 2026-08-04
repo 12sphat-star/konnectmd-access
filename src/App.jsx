@@ -13,6 +13,9 @@ import LandingPage from "./pages/LandingPage";
 import JoinPage from "./pages/JoinPage";
 import MembershipFinder from "./components/home/MembershipFinder";
 
+import MemberExperiencePage from "./pages/MemberExperiencePage";
+
+
 import NorfolkPage from "./pages/NorfolkPage";
 import VirginiaBeachPage from "./pages/VirginiaBeachPage";
 import ChesapeakePage from "./pages/ChesapeakePage";
@@ -114,8 +117,9 @@ export default function App() {
 <Route path="/suffolk-telehealth" element={<SuffolkTelehealthPage />} />
 <Route path="/insights" element={<InsightsPage />} />
 <Route path="/insights/why-telehealth-is-growing-hampton-roads"element={<TelehealthGrowingArticlePage />}
-
 />
+<Route path="/member-experience" element={<MemberExperiencePage />} />
+
 
 <Route
   path="/insights/telehealth-for-veterans-hampton-roads"
