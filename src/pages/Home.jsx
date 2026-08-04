@@ -1,4 +1,5 @@
 import Hero from "../components/home/Hero";
+import MemberPortalPreview from "../components/home/MemberPortalPreview";
 import KonnectMDIntro from "../components/home/KonnectMDIntro";
 import WhoWeHelp from "../components/home/WhoWeHelp";
 import KonnectMDFeatures from "../components/home/KonnectMDFeatures";
@@ -62,6 +63,8 @@ export default function Home() {
       />
 
       <Hero />
+      <TrustStrip />
+      <MemberPortalPreview />
       <KonnectMDIntro />
       <WhoWeHelp />
       <KonnectMDFeatures />
