@@ -19,9 +19,7 @@ export default function Navbar() {
           <Link to="/membership-finder">Find Your Plan</Link>
 
           <a
-            href="https://konnectmdagency.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+           href="/join-the-team"
           >
             Join the Team
           </a>
@@ -72,13 +70,11 @@ export default function Navbar() {
 </Link>
 
           <a
-            href="https://konnectmdagency.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-          >
-            Join the Team
-          </a>
+  href="/join-the-team"
+  onClick={() => setOpen(false)}
+>
+  Join the Team
+</a>
 
           <Link
             to="/book-call"

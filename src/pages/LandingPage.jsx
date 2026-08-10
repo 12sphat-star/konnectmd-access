@@ -53,9 +53,7 @@ export default function LandingPage() {
 
             <div className="landing-top-banner-actions">
              <a
-  href="https://konnectmdagency.com/"
-  target="_blank"
-  rel="noopener noreferrer"
+ href="/join-the-team"
   className="landing-banner-link"
 >
   Join Us

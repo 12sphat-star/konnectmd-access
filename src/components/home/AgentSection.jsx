@@ -21,9 +21,7 @@ export default function AgentSection() {
             provided. Licensed insurance agents especially welcome.
           </p>
           <a
-  href="https://konnectmdagency.com/"
-  target="_blank"
-  rel="noopener noreferrer"
+href="/join-the-team"
   className="..."
 >
             Learn About the Opportunity
