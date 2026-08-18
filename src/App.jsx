@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import CalendarPage from "./pages/CalendarPage";
 import LandingPage from "./pages/LandingPage";
 import JoinPage from "./pages/JoinPage";
+import HamptonRoadsHealthcareAccessPage from "./pages/HamptonRoadsHealthcareAccessPage";
 import MembershipFinder from "./components/home/MembershipFinder";
 
 import MemberExperiencePage from "./pages/MemberExperiencePage";
@@ -93,6 +94,7 @@ export default function App() {
         <Route path="/book-call" element={<CalendarPage />} />
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/join-the-team" element={<JoinPage />} />
+        <Route path="/hampton-roads-healthcare-access"element={<HamptonRoadsHealthcareAccessPage />}/>
 
         {/* NEW LAUNCH PAGE */}
         <Route path="/launch" element={<LaunchPage />} />

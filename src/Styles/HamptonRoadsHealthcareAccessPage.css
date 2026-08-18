@@ -1,0 +1,422 @@
+/* =========================================================
+   HAMPTON ROADS HEALTHCARE ACCESS INITIATIVE
+   Checkpoint 1: Hero + Signals + Need Navigation
+========================================================= */
+
+.hr-access-page {
+  background: #ffffff;
+  color: #071426;
+}
+
+.hr-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hr-hero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  /*
+    Temporary background treatment.
+    We'll replace this with the approved human/community hero image.
+  */
+  background:
+    radial-gradient(circle at 80% 25%, rgba(96, 165, 250, 0.22), transparent 34%),
+    linear-gradient(115deg, #071426 0%, #0b1f36 55%, #12345a 100%);
+}
+
+.hr-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 20, 38, 0.96) 0%,
+    rgba(7, 20, 38, 0.86) 48%,
+    rgba(7, 20, 38, 0.32) 100%
+  );
+}
+
+.hr-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 90px 0 75px;
+}
+
+.hr-eyebrow {
+  margin: 0 0 18px;
+  color: #93c5fd;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hr-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.8rem, 6vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.hr-hero-lead {
+  max-width: 700px;
+  margin: 26px 0 0;
+  color: #e5eef8;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.45;
+}
+
+.hr-hero-copy {
+  max-width: 650px;
+  margin: 16px 0 0;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hr-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.hr-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 25px;
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.hr-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hr-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.3);
+}
+
+.hr-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.hr-btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+}
+
+.hr-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.hr-first-100 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: fit-content;
+  max-width: 620px;
+  margin-top: 42px;
+  padding: 16px 20px;
+  border-left: 4px solid #60a5fa;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.hr-first-100 span {
+  color: #93c5fd;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.hr-first-100 strong {
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+
+/* =========================
+   FOUR SIGNALS
+========================= */
+
+.hr-signals {
+  position: relative;
+  z-index: 4;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+}
+
+.hr-signal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hr-signal {
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 22px 28px;
+  border-right: 1px solid #e2e8f0;
+}
+
+.hr-signal:first-child {
+  border-left: 1px solid #e2e8f0;
+}
+
+.hr-signal strong {
+  color: #0b1f36;
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  line-height: 1.1;
+}
+
+.hr-signal span {
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+
+/* =========================
+   WHAT BROUGHT YOU HERE?
+========================= */
+
+.hr-needs {
+  padding: 90px 0 100px;
+  background: #f8fafc;
+}
+
+.hr-section-heading {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.hr-section-heading > p {
+  margin: 0 0 12px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.hr-section-heading h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.hr-section-heading > span {
+  display: block;
+  max-width: 650px;
+  margin: 18px auto 0;
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.hr-needs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.hr-need-card {
+  display: flex;
+  gap: 18px;
+  min-height: 210px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.hr-need-card:hover {
+  transform: translateY(-5px);
+  border-color: #93c5fd;
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.09);
+}
+
+.hr-need-icon {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #eff6ff;
+  font-size: 1.7rem;
+}
+
+.hr-need-card h3 {
+  margin: 2px 0 10px;
+  color: #0b1f36;
+  font-size: 1.18rem;
+  line-height: 1.25;
+}
+
+.hr-need-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.hr-card-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2563eb;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .hr-hero {
+    min-height: 570px;
+  }
+
+  .hr-signal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hr-signal {
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .hr-needs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px) {
+  .hr-container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .hr-hero {
+    min-height: auto;
+  }
+
+  .hr-hero-content {
+    padding: 68px 0 52px;
+  }
+
+  .hr-eyebrow {
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+
+  .hr-hero h1 {
+    font-size: clamp(2.55rem, 12vw, 3.8rem);
+  }
+
+  .hr-hero-lead {
+    font-size: 1.18rem;
+  }
+
+  .hr-hero-copy {
+    font-size: 0.98rem;
+  }
+
+  .hr-hero-actions {
+    flex-direction: column;
+  }
+
+  .hr-btn {
+    width: 100%;
+  }
+
+  .hr-first-100 {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 32px;
+  }
+
+  .hr-signal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hr-signal {
+    min-height: 98px;
+    padding: 18px 15px;
+  }
+
+  .hr-signal:first-child {
+    border-left: none;
+  }
+
+  .hr-signal strong {
+    font-size: 1.15rem;
+  }
+
+  .hr-signal span {
+    font-size: 0.82rem;
+  }
+
+  .hr-needs {
+    padding: 65px 0 75px;
+  }
+
+  .hr-section-heading {
+    margin-bottom: 34px;
+    text-align: left;
+  }
+
+  .hr-section-heading > span {
+    margin-left: 0;
+  }
+
+  .hr-needs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hr-need-card {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .hr-need-icon {
+    flex-basis: 46px;
+    width: 46px;
+    height: 46px;
+    font-size: 1.45rem;
+  }
+}
