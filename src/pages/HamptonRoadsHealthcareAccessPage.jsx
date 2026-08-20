@@ -3,49 +3,57 @@ import "../styles/HamptonRoadsHealthcareAccessPage.css";
 
 function HamptonRoadsHealthcareAccessPage() {
   const needs = [
-    {
-      icon: "🩺",
-      title: "I Need to See a Doctor",
-      text: "Explore convenient 24/7 virtual physician access.",
-      link: "/resource-center/telehealth",
-      cta: "Explore Virtual Care",
-    },
-    {
-      icon: "🧠",
-      title: "I Need Support",
-      text: "Mental, emotional, family, work and everyday-life support.",
-      link: "/resource-center/behavioral-health",
-      cta: "Find Support",
-    },
-    {
-      icon: "💊",
-      title: "Medication Costs",
-      text: "Explore prescription resources and ways to reduce medication costs.",
-      link: "/resource-center/prescription-savings",
-      cta: "Prescription Resources",
-    },
-    {
-      icon: "👨‍👩‍👧‍👦",
-      title: "I Need Help for My Family",
-      text: "Explore healthcare resources for individuals and families.",
-      link: "/resource-center/family-healthcare",
-      cta: "Family Resources",
-    },
-    {
-      icon: "🏢",
-      title: "I Want to Help My Employees",
-      text: "Explore healthcare-access resources for small businesses and their teams.",
-      link: "/resource-center/business-healthcare",
-      cta: "Business Resources",
-    },
-    {
-      icon: "🇺🇸",
-      title: "I'm a Veteran",
-      text: "Explore additional healthcare resources for veterans and their families.",
-      link: "/resource-center/veterans",
-      cta: "Veteran Resources",
-    },
-  ];
+  {
+    icon: "🩺",
+    title: "I Need to See a Doctor",
+    text: "Explore convenient virtual-care resources and physician access.",
+    link: "/resource-center/telehealth",
+    cta: "Explore Virtual Care",
+  },
+  {
+    icon: "🧠",
+    title: "I Need Mental, Emotional or Life Support",
+    text: "Explore support for emotional health, family, work and everyday-life challenges.",
+    link: "/resource-center/behavioral-health",
+    cta: "Find Support",
+  },
+  {
+    icon: "💊",
+    title: "I Need Help With Medication Costs",
+    text: "Explore prescription resources and options that may help with medication costs.",
+    link: "/resource-center/prescription-savings",
+    cta: "Explore Prescription Resources",
+  },
+  {
+    icon: "👨‍👩‍👧‍👦",
+    title: "I Need Healthcare Help for My Family",
+    text: "Explore practical healthcare-access resources for you and your family.",
+    link: "/resource-center/family-healthcare",
+    cta: "Explore Family Resources",
+  },
+  {
+    icon: "🏢",
+    title: "My Employees Need Healthcare Options",
+    text: "Explore healthcare-access resources for small businesses and their teams.",
+    link: "/resource-center/business-healthcare",
+    cta: "Explore Business Resources",
+  },
+  {
+    icon: "🇺🇸",
+    title: "I'm a Veteran or Military Family",
+    text: "Explore healthcare resources for veterans and military families.",
+    link: "/resource-center/veterans",
+    cta: "Explore Veteran Resources",
+  },
+  {
+    icon: "↗",
+    title: "I'm Not Sure Where to Start",
+    text: "That's okay. Start here and we'll help you explore which options may fit your situation.",
+    link: "/membership-finder",
+    cta: "Help Me Find a Starting Point",
+    featured: true,
+  },
+];
 
   return (
     <main className="hr-access-page">
@@ -61,15 +69,16 @@ function HamptonRoadsHealthcareAccessPage() {
 
           <h1>What Do You Need Help With Today?</h1>
 
-          <p className="hr-hero-lead">
-            Healthcare can be complicated.
-            <strong> Finding help shouldn't be.</strong>
-          </p>
+        <p className="hr-hero-lead">
+  Healthcare can be complicated.
+  <strong> Finding help shouldn't be.</strong>
+</p>
 
-          <p className="hr-hero-copy">
-            Start with what you or your family need. We'll help you explore
-            healthcare resources and practical options that may help.
-          </p>
+<p className="hr-hero-copy">
+  We're helping Hampton Roads individuals and families find practical
+  healthcare resources, understand their options, and take the next
+  step based on what they actually need.
+</p>
 
           <div className="hr-hero-actions">
             <a href="#find-help" className="hr-btn hr-btn-primary">
@@ -81,40 +90,54 @@ function HamptonRoadsHealthcareAccessPage() {
             </Link>
           </div>
 
-          <div className="hr-first-100">
-            <span>OUR FIRST MISSION</span>
-            <strong>Help 100 Hampton Roads Individuals & Families</strong>
-          </div>
+         <div className="hr-first-100">
+  <span>OUR FIRST COMMUNITY MISSION</span>
+  <strong>
+    Help 100 Hampton Roads individuals and families take their next
+    step toward better healthcare access.
+  </strong>
+</div>
         </div>
       </section>
 
-      {/* SECTION 2 — QUICK SIGNALS */}
-      <section className="hr-signals">
-        <div className="hr-container hr-signal-grid">
+{/* SECTION 2 — REAL-LIFE NEEDS */}
+<section className="hr-signals">
+  <div className="hr-container hr-signal-grid">
 
-          <div className="hr-signal">
-            <strong>24/7</strong>
-            <span>Physician Access</span>
-          </div>
+    <div className="hr-signal">
+      
+      <div>
+        <strong>I NEED TO SEE A DOCTOR</strong>
+        <span>Getting care shouldn't mean losing half your day.</span>
+      </div>
+    </div>
 
-          <div className="hr-signal">
-            <strong>Mental + Life</strong>
-            <span>Support</span>
-          </div>
+    <div className="hr-signal">
+      
+      <div>
+        <strong>I NEED SUPPORT</strong>
+        <span>Mental, emotional, family, work & everyday-life challenges.</span>
+      </div>
+    </div>
 
-          <div className="hr-signal">
-            <strong>Prescription</strong>
-            <span>Help</span>
-          </div>
+    <div className="hr-signal">
+      
+      <div>
+        <strong>MEDICATIONS COST TOO MUCH</strong>
+        <span>Prescription costs shouldn't force impossible choices.</span>
+      </div>
+    </div>
 
-          <div className="hr-signal">
-            <strong>Family</strong>
-            <span>Healthcare Access</span>
-          </div>
+    <div className="hr-signal">
+      
+      <div>
+        <strong>I NEED HELP FOR MY FAMILY</strong>
+        <span>Finding practical healthcare access for the people who matter most.</span>
+      </div>
+    </div>
 
-        </div>
-      </section>
-
+  </div>
+</section>
       {/* SECTION 3 — START WITH THE NEED */}
       <section id="find-help" className="hr-needs">
         <div className="hr-container">
@@ -132,7 +155,7 @@ function HamptonRoadsHealthcareAccessPage() {
             {needs.map((need) => (
               <Link
                 to={need.link}
-                className="hr-need-card"
+                className={`hr-need-card ${need.featured ? "hr-need-card-featured" : ""}`}
                 key={need.title}
               >
                 <div className="hr-need-icon">{need.icon}</div>
@@ -150,6 +173,392 @@ function HamptonRoadsHealthcareAccessPage() {
 
         </div>
       </section>
+
+      {/* SECTION 4 — MENTAL, WELLNESS & EVERYDAY-LIFE SUPPORT */}
+<section className="hr-life-support">
+  <div className="hr-container">
+
+    <div className="hr-life-support-heading">
+      <span className="hr-eyebrow">SUPPORT FOR MORE OF REAL LIFE</span>
+
+     <h2>Sometimes You Need More Than Medical Care.</h2>
+
+      <p className="hr-life-support-lead">
+        Your health can be affected by what's happening emotionally,
+        at home, at work and in everyday life. Finding the right support
+        shouldn't be another problem to solve.
+      </p>
+    </div>
+
+    <div className="hr-support-grid">
+
+      <div className="hr-support-group">
+        <span>MENTAL &amp; EMOTIONAL</span>
+        <h3>When Life Feels Heavy</h3>
+        <p>
+          Anxiety • Depression • Stress • Trauma • Grief • Burnout
+        </p>
+      </div>
+
+      <div className="hr-support-group">
+        <span>FAMILY &amp; RELATIONSHIPS</span>
+        <h3>When Home Gets Complicated</h3>
+        <p>
+          Marriage • Parenting • Child Behavioral • Family Conflict
+        </p>
+      </div>
+
+      <div className="hr-support-group">
+        <span>WORK &amp; CAREER</span>
+        <h3>When Work Follows You Home</h3>
+        <p>
+          Work Stress • Conflict • Harassment &amp; Bullying • Career Concerns
+        </p>
+      </div>
+
+      <div className="hr-support-group">
+        <span>EVERYDAY LIFE</span>
+        <h3>When You Just Need Some Help</h3>
+        <p>
+          Financial Stress • Child Care • Elder Care • Legal Referrals • Basic Needs
+        </p>
+      </div>
+
+    </div>
+
+    <div className="hr-life-support-bottom">
+      <div>
+        <strong>And that's only part of the support available.</strong>
+        <p>
+          From emotional health to challenges at home, at work and in
+          everyday life, support can start with a conversation.
+        </p>
+      </div>
+
+      <Link
+        to="/resource-center/behavioral-health"
+        className="hr-life-support-button"
+      >
+        Explore Mental, Wellness &amp; Life Support →
+      </Link>
+    </div>
+
+  </div>
+</section>
+
+{/* SECTION 5 — KONNECTMD SOLUTION REVEAL */}
+<section className="hr-solution-reveal">
+  <div className="hr-container">
+
+    <div className="hr-solution-heading">
+      <span className="hr-solution-eyebrow">
+        ONE PRACTICAL HEALTHCARE ACCESS OPTION
+      </span>
+
+      <h2>
+        What If One Membership Could Help With Several of These Needs?
+      </h2>
+
+      <p>
+        That's where KonnectMD comes in — bringing several valuable
+        healthcare-access and support services together in one membership.
+      </p>
+    </div>
+
+    <div className="hr-solution-brand">
+      <span>Konnect<span className="hr-md-red">MD</span></span>
+      <strong>Healthcare Access</strong>
+    </div>
+
+    <div className="hr-solution-grid">
+
+      <div className="hr-solution-benefit">
+        <span className="hr-benefit-number">24/7</span>
+        <h3>Physician Access</h3>
+        <p>
+          Connect with a physician from home, work or while traveling.
+        </p>
+      </div>
+
+      <div className="hr-solution-benefit">
+        <span className="hr-benefit-number">Mental + Life</span>
+        <h3>Support for Real Life</h3>
+        <p>
+          Mental, emotional, family, work, relationship and everyday-life support.
+        </p>
+      </div>
+
+      <div className="hr-solution-benefit">
+        <span className="hr-benefit-number">1,000+</span>
+        <h3>Medications</h3>
+        <p>
+          Access to more than 1,000 medications at no additional cost.*
+        </p>
+      </div>
+
+      <div className="hr-solution-benefit">
+        <span className="hr-benefit-number">Up to 7</span>
+        <h3>Family Members</h3>
+        <p>
+          Give more of your family access to healthcare through one membership.*
+        </p>
+      </div>
+
+    </div>
+
+    <div className="hr-solution-value">
+
+      <div className="hr-solution-price">
+        <span>Healthcare access starting around</span>
+        <strong>Around $2 a day</strong>
+      </div>
+
+      <div className="hr-solution-actions">
+        <Link to="/get-details" className="hr-solution-primary">
+          See How KonnectMD Works
+        </Link>
+
+        <Link to="/plans" className="hr-solution-secondary">
+          Compare Memberships
+        </Link>
+      </div>
+
+    </div>
+
+    <p className="hr-solution-disclaimer">
+      *Benefits, medication availability, family eligibility and services vary
+      by membership. KonnectMD is a healthcare membership and is not health
+      insurance or a replacement for comprehensive major-medical coverage.
+    </p>
+
+  </div>
+</section>
+
+{/* SECTION 6 — FIRST COMMUNITY MISSION */}
+<section className="hr-community-mission">
+  <div className="hr-container">
+
+    <div className="hr-community-mission-grid">
+
+      <div className="hr-community-mission-number">
+        <span>OUR FIRST COMMUNITY MISSION</span>
+        <strong>100</strong>
+        <p>Hampton Roads individuals &amp; families</p>
+      </div>
+
+      <div className="hr-community-mission-content">
+        <span className="hr-community-eyebrow">
+          HELP STARTS WITH ACCESS
+        </span>
+
+        <h2>
+         Let's Help 100 Hampton Roads Individuals & Families Take Their Next Step.
+        </h2>
+
+        <p className="hr-community-lead">
+          The Hampton Roads Healthcare Access Initiative is starting with
+          a simple community goal: help 100 local individuals and families
+          better understand their healthcare-access options and connect
+          them with resources that may help.
+        </p>
+
+        <div className="hr-community-promise">
+          <strong>Helping someone doesn't always mean selling them something.</strong>
+          <p>
+            Sometimes help means finding a resource. Sometimes it means
+            understanding an option. Sometimes it means connecting someone
+            with support they didn't know was available.
+          </p>
+        </div>
+
+      <div className="hr-community-actions">
+  <Link to="/get-details" className="hr-community-button">
+    I Need Help Finding an Option →
+  </Link>
+
+  <a href="#community-partners" className="hr-community-partner-link">
+    I Want to Help My Community →
+  </a>
+</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{/* SECTION 7 — COMMUNITY PARTNERS */}
+<section id="community-partners" className="hr-community-partners">
+  <div className="hr-container">
+
+    <div className="hr-partners-heading">
+      <span className="hr-partners-eyebrow">
+        COMMUNITY PARTNERS
+      </span>
+
+      <h2>
+  Together, We Can Expand Healthcare Access Across Hampton Roads.
+</h2>
+
+      <p>
+        You already serve people in our community. We want to help make
+        practical healthcare information, resources and access options
+        easier for them to find.
+      </p>
+    </div>
+
+    <div className="hr-partner-grid">
+
+      <div className="hr-partner-card">
+        <span>CHURCHES &amp; MINISTRIES</span>
+        <h3>Support the People You Already Serve</h3>
+        <p>
+          Give members and families another place to turn when they need
+          help understanding healthcare-access options and available resources.
+        </p>
+      </div>
+
+      <div className="hr-partner-card">
+        <span>COMMUNITY ORGANIZATIONS</span>
+        <h3>Bring Healthcare Resources Into the Community</h3>
+        <p>
+          Add practical healthcare-access information and resource navigation
+          to community programs, outreach efforts and local events.
+        </p>
+      </div>
+
+      <div className="hr-partner-card">
+        <span>EMPLOYERS &amp; SMALL BUSINESSES</span>
+        <h3>Help Employees Find More Healthcare Options</h3>
+        <p>
+          Explore affordable healthcare-access resources that may help
+          employees and their families, including workers without traditional
+          employer-sponsored coverage.
+        </p>
+      </div>
+
+      <div className="hr-partner-card">
+        <span>VETERANS &amp; MILITARY COMMUNITIES</span>
+        <h3>Connect Military Families With Additional Resources</h3>
+        <p>
+          Help veterans, military families and caregivers discover additional
+          healthcare-access and support resources available to them.
+        </p>
+      </div>
+
+      <div className="hr-partner-card">
+        <span>NONPROFITS &amp; COMMUNITY PROGRAMS</span>
+        <h3>Add Healthcare Access to the Support You Provide</h3>
+        <p>
+          When healthcare questions arise, give the people you serve a
+          practical starting point for finding information and options.
+        </p>
+      </div>
+
+      <div className="hr-partner-card">
+        <span>EVENT &amp; OUTREACH ORGANIZERS</span>
+        <h3>Invite the Initiative Into Your Next Event</h3>
+        <p>
+          Healthcare-access education, resource information and one-on-one
+          conversations can become part of your community outreach.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="hr-partner-invite">
+
+      <div>
+        <span>HOSTING AN EVENT OR SERVING A COMMUNITY?</span>
+
+        <h3>Let's See How We Can Help.</h3>
+
+        <p>
+          Tell us who you serve and what you're trying to accomplish.
+          We'll explore whether the Hampton Roads Healthcare Access Initiative
+          can provide resources, education or healthcare-access information
+          that fits your community.
+        </p>
+      </div>
+
+      <Link to="/contact" className="hr-partner-button">
+        Talk With Us About Your Community →
+      </Link>
+
+    </div>
+
+  </div>
+</section>
+
+{/* SECTION 8 — FINAL ACTION */}
+<section className="hr-final-action">
+  <div className="hr-container">
+
+    <div className="hr-final-heading">
+      <span className="hr-final-eyebrow">
+        TAKE YOUR NEXT STEP
+      </span>
+
+      <h2>Your Next Step Can Start Here.</h2>
+
+      <p>
+        Whether you're looking for help for yourself, exploring healthcare
+        access for your family, or trying to help the people you serve,
+        choose the path that fits you.
+      </p>
+    </div>
+
+    <div className="hr-final-grid">
+
+      <div className="hr-final-card">
+        <span>FOR ME OR MY FAMILY</span>
+
+        <h3>I Need Healthcare Help</h3>
+
+        <p>
+          Start with what's happening in your life and explore resources
+          and healthcare-access options that may help.
+        </p>
+
+     <a href="#find-help" className="hr-final-link">
+  Help Me Find a Starting Point →
+</a>
+      </div>
+
+      <div className="hr-final-card hr-final-card-featured">
+        <span>EXPLORE A MEMBERSHIP OPTION</span>
+
+        <h3>I Want to Understand KonnectMD</h3>
+
+        <p>
+          See how the healthcare membership works, what services are
+          available and which membership may fit your needs.
+        </p>
+
+        <Link to="/plans" className="hr-final-link">
+          Explore KonnectMD Memberships →
+        </Link>
+      </div>
+
+      <div className="hr-final-card">
+        <span>FOR ORGANIZATIONS &amp; COMMUNITIES</span>
+
+        <h3>I Want to Help the People I Serve</h3>
+
+        <p>
+          Let's talk about healthcare-access information, resources or
+          outreach that may fit your organization or community.
+        </p>
+
+        <a href="#community-partners" className="hr-final-link">
+          Explore Community Partnership →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     </main>
   );

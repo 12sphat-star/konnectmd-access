@@ -28,20 +28,23 @@
     Temporary background treatment.
     We'll replace this with the approved human/community hero image.
   */
-  background:
-    radial-gradient(circle at 80% 25%, rgba(96, 165, 250, 0.22), transparent 34%),
-    linear-gradient(115deg, #071426 0%, #0b1f36 55%, #12345a 100%);
+ background-image: url("../assets/hampton-roads-healthcare-initiative-hero.png");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
 }
 
 .hr-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(7, 20, 38, 0.96) 0%,
-    rgba(7, 20, 38, 0.86) 48%,
-    rgba(7, 20, 38, 0.32) 100%
-  );
+background: linear-gradient(
+  90deg,
+  rgba(7, 20, 38, 0.98) 0%,
+  rgba(7, 20, 38, 0.92) 32%,
+  rgba(7, 20, 38, 0.68) 52%,
+  rgba(7, 20, 38, 0.30) 72%,
+  rgba(7, 20, 38, 0.10) 100%
+);
 }
 
 .hr-hero-content {
@@ -155,7 +158,7 @@
 
 
 /* =========================
-   FOUR SIGNALS
+   FOUR REAL-LIFE NEEDS
 ========================= */
 
 .hr-signals {
@@ -172,11 +175,12 @@
 }
 
 .hr-signal {
-  min-height: 118px;
+  min-height: 145px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 22px 28px;
+  flex-direction: row;
+  align-items: center;
+ gap: 0;
+  padding: 26px 24px;
   border-right: 1px solid #e2e8f0;
 }
 
@@ -184,16 +188,34 @@
   border-left: 1px solid #e2e8f0;
 }
 
+.hr-signal-icon {
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
 .hr-signal strong {
+  display: block;
   color: #0b1f36;
-  font-size: clamp(1.3rem, 2vw, 1.75rem);
-  line-height: 1.1;
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+  line-height: 1.12;
 }
 
 .hr-signal span {
-  margin-top: 6px;
+  display: block;
+  margin-top: 7px;
   color: #64748b;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  line-height: 1.4;
 }
 
 
@@ -298,6 +320,775 @@
   font-weight: 800;
 }
 
+/* =========================
+   FEATURED STARTING POINT
+========================= */
+
+.hr-need-card-featured {
+  grid-column: 1 / -1;
+  min-height: auto;
+  align-items: center;
+  background: linear-gradient(110deg, #0b1f36 0%, #12345a 100%);
+  border-color: transparent;
+  padding: 30px 34px;
+}
+
+.hr-need-card-featured .hr-need-icon {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.hr-need-card-featured h3 {
+  color: #ffffff;
+}
+
+.hr-need-card-featured p {
+  color: #cbd5e1;
+}
+
+.hr-need-card-featured .hr-card-link {
+  color: #93c5fd;
+}
+
+.hr-need-card-featured:hover {
+  border-color: transparent;
+  box-shadow: 0 18px 38px rgba(7, 20, 38, 0.18);
+}
+
+/* ==================================================
+   SECTION 4 — MENTAL, WELLNESS & EVERYDAY-LIFE SUPPORT
+================================================== */
+
+.hr-life-support {
+  position: relative;
+  padding: 88px 0;
+  background:
+    radial-gradient(
+      circle at 88% 20%,
+      rgba(96, 165, 250, 0.16),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #071426 0%,
+      #0b1f36 58%,
+      #102b4a 100%
+    );
+  color: #ffffff;
+}
+
+.hr-life-support-heading {
+  max-width: 800px;
+  margin-bottom: 46px;
+}
+
+.hr-life-support .hr-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: #60a5fa;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hr-life-support-heading h2 {
+  max-width: 760px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+}
+
+.hr-life-support-lead {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: #cbd5e1;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.hr-support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.hr-support-group {
+  min-height: 205px;
+  padding: 30px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(5px);
+}
+
+.hr-support-group > span {
+  display: block;
+  margin-bottom: 12px;
+  color: #93c5fd;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.hr-support-group h3 {
+  margin: 0 0 14px;
+  color: #ffffff;
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.hr-support-group p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.hr-life-support-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 34px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.hr-life-support-bottom > div {
+  max-width: 650px;
+}
+
+.hr-life-support-bottom strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.hr-life-support-bottom p {
+  margin: 7px 0 0;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.hr-life-support-button {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 21px;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.hr-life-support-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* ==================================================
+   SECTION 5 — KONNECTMD SOLUTION REVEAL
+================================================== */
+
+.hr-solution-reveal {
+  padding: 92px 0 76px;
+  background: #ffffff;
+  color: #071426;
+}
+
+.hr-solution-heading {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hr-solution-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hr-solution-heading h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.3rem, 4.5vw, 4rem);
+  line-height: 1.03;
+  letter-spacing: -0.04em;
+}
+
+.hr-solution-heading p {
+  max-width: 720px;
+  margin: 20px auto 0;
+  color: #64748b;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.hr-solution-brand {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  margin: 36px 0 30px;
+}
+
+.hr-solution-brand > span {
+  color: #071426;
+  font-size: 1.55rem;
+  font-weight: 900;
+}
+
+.hr-md-red {
+  color: #ef4444;
+}
+
+.hr-solution-brand strong {
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.hr-solution-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  border: 1px solid #dbe4ef;
+  border-radius: 18px;
+  background: #f8fafc;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.07);
+}
+
+.hr-solution-benefit {
+  min-height: 230px;
+  padding: 34px 28px;
+  border-right: 1px solid #dbe4ef;
+}
+
+.hr-solution-benefit:last-child {
+  border-right: 0;
+}
+
+.hr-benefit-number {
+  display: block;
+  margin-bottom: 18px;
+  color: #2563eb;
+  font-size: clamp(1.7rem, 2.4vw, 2.35rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.hr-solution-benefit h3 {
+  margin: 0 0 10px;
+  color: #071426;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.hr-solution-benefit p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.hr-solution-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  margin-top: 28px;
+  padding: 30px 34px;
+  border-radius: 16px;
+  background: #071426;
+}
+
+.hr-solution-price span {
+  display: block;
+  margin-bottom: 3px;
+  color: #93c5fd;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.hr-solution-price strong {
+  display: block;
+  color: #ffffff;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  line-height: 1;
+}
+
+.hr-solution-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hr-solution-primary,
+.hr-solution-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 9px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.hr-solution-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.hr-solution-primary:hover {
+  background: #1d4ed8;
+}
+
+.hr-solution-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #ffffff;
+}
+
+.hr-solution-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hr-solution-disclaimer {
+  max-width: 900px;
+  margin: 20px auto 0;
+  color: #64748b;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+/* ==================================================
+   SECTION 6 — FIRST COMMUNITY MISSION
+================================================== */
+
+.hr-community-mission {
+  padding: 92px 0;
+  background: #f1f5f9;
+  color: #071426;
+}
+
+.hr-community-mission-grid {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.hr-community-mission-number {
+  position: relative;
+  padding: 46px 42px;
+  border-radius: 20px;
+  background: #071426;
+  overflow: hidden;
+  box-shadow: 0 20px 55px rgba(15, 23, 42, 0.12);
+}
+
+.hr-community-mission-number::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  right: -90px;
+  bottom: -100px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.22);
+}
+
+.hr-community-mission-number span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  color: #93c5fd;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.hr-community-mission-number strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 12px 0 5px;
+  color: #ffffff;
+  font-size: clamp(5rem, 9vw, 8rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.hr-community-mission-number p {
+  position: relative;
+  z-index: 1;
+  max-width: 280px;
+  margin: 14px 0 0;
+  color: #dbeafe;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.hr-community-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hr-community-mission-content h2 {
+  max-width: 700px;
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.hr-community-lead {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: #475569;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.hr-community-promise {
+  max-width: 720px;
+  margin-top: 28px;
+  padding: 22px 24px;
+  border-left: 4px solid #2563eb;
+  background: #ffffff;
+}
+
+.hr-community-promise strong {
+  display: block;
+  color: #071426;
+  font-size: 1.05rem;
+}
+
+.hr-community-promise p {
+  margin: 8px 0 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.hr-community-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+  min-height: 48px;
+  padding: 0 21px;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.hr-community-button:hover {
+  background: #1d4ed8;
+}
+
+.hr-community-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.hr-community-actions .hr-community-button {
+  margin-top: 0;
+}
+
+.hr-community-partner-link {
+  color: #2563eb;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.hr-community-partner-link:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+   SECTION 7 — COMMUNITY PARTNERS
+================================================== */
+
+.hr-community-partners {
+  padding: 92px 0;
+  background: #ffffff;
+  color: #071426;
+}
+
+.hr-partners-heading {
+  max-width: 820px;
+  margin-bottom: 46px;
+}
+
+.hr-partners-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hr-partners-heading h2 {
+  max-width: 780px;
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.hr-partners-heading p {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: #64748b;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.hr-partner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.hr-partner-card {
+  min-height: 235px;
+  padding: 30px 28px;
+  border: 1px solid #dbe4ef;
+  border-radius: 16px;
+  background: #f8fafc;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hr-partner-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+}
+
+.hr-partner-card > span {
+  display: block;
+  margin-bottom: 13px;
+  color: #2563eb;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.hr-partner-card h3 {
+  margin: 0 0 12px;
+  color: #071426;
+  font-size: 1.3rem;
+  line-height: 1.22;
+}
+
+.hr-partner-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.hr-partner-invite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 46px;
+  margin-top: 28px;
+  padding: 34px 38px;
+  border-radius: 18px;
+  background: #071426;
+}
+
+.hr-partner-invite > div {
+  max-width: 700px;
+}
+
+.hr-partner-invite span {
+  display: block;
+  margin-bottom: 8px;
+  color: #93c5fd;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.hr-partner-invite h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.65rem;
+}
+
+.hr-partner-invite p {
+  margin: 10px 0 0;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.hr-partner-button {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 22px;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.hr-partner-button:hover {
+  background: #1d4ed8;
+}
+
+/* ==================================================
+   SECTION 8 — FINAL ACTION
+================================================== */
+
+.hr-final-action {
+  padding: 92px 0 96px;
+  background: #f1f5f9;
+  color: #071426;
+}
+
+.hr-final-heading {
+  max-width: 780px;
+  margin: 0 auto 46px;
+  text-align: center;
+}
+
+.hr-final-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hr-final-heading h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.3rem, 4vw, 3.7rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.hr-final-heading p {
+  max-width: 700px;
+  margin: 18px auto 0;
+  color: #64748b;
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.hr-final-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.hr-final-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 285px;
+  padding: 32px 30px;
+  border: 1px solid #dbe4ef;
+  border-radius: 17px;
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.05);
+}
+
+.hr-final-card > span {
+  display: block;
+  margin-bottom: 13px;
+  color: #2563eb;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.hr-final-card h3 {
+  margin: 0 0 12px;
+  color: #071426;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.hr-final-card p {
+  margin: 0 0 24px;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.hr-final-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  color: #2563eb;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.hr-final-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Featured KonnectMD Path */
+
+.hr-final-card-featured {
+  position: relative;
+  border-color: #2563eb;
+  background: #071426;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.13);
+}
+
+.hr-final-card-featured > span {
+  color: #93c5fd;
+}
+
+.hr-final-card-featured h3 {
+  color: #ffffff;
+}
+
+.hr-final-card-featured p {
+  color: #cbd5e1;
+}
+
+.hr-final-card-featured .hr-final-link {
+  color: #60a5fa;
+}
 
 /* =========================
    TABLET
@@ -319,6 +1110,136 @@
   .hr-needs-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .hr-life-support {
+  padding: 62px 0;
+}
+
+.hr-life-support-heading {
+  margin-bottom: 32px;
+}
+
+.hr-support-grid {
+  grid-template-columns: 1fr;
+}
+
+.hr-support-group {
+  min-height: auto;
+  padding: 24px;
+}
+
+.hr-life-support-bottom {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.hr-life-support-button {
+  width: 100%;
+}
+
+.hr-solution-reveal {
+  padding: 64px 0 54px;
+}
+
+.hr-solution-heading {
+  text-align: left;
+}
+
+.hr-solution-heading p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hr-solution-brand {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 28px 0 24px;
+}
+
+.hr-solution-grid {
+  grid-template-columns: 1fr;
+}
+
+.hr-solution-benefit {
+  min-height: auto;
+  padding: 26px 24px;
+  border-right: 0;
+  border-bottom: 1px solid #dbe4ef;
+}
+
+.hr-solution-benefit:last-child {
+  border-bottom: 0;
+}
+
+.hr-solution-value {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 26px 24px;
+}
+
+.hr-solution-actions {
+  width: 100%;
+  flex-direction: column;
+}
+
+.hr-solution-primary,
+.hr-solution-secondary {
+  width: 100%;
+}
+
+.hr-solution-disclaimer {
+  text-align: left;
+}
+
+.hr-community-mission {
+  padding: 64px 0;
+}
+
+.hr-community-mission-grid {
+  grid-template-columns: 1fr;
+  gap: 38px;
+}
+
+.hr-community-mission-number {
+  padding: 34px 28px;
+}
+
+.hr-community-mission-number strong {
+  font-size: 5.5rem;
+}
+
+.hr-community-promise {
+  padding: 20px;
+}
+
+.hr-community-button {
+  width: 100%;
+}
+
+.hr-community-partners {
+  padding: 64px 0;
+}
+
+.hr-partner-grid {
+  grid-template-columns: 1fr;
+}
+
+.hr-partner-card {
+  min-height: auto;
+  padding: 25px 23px;
+}
+
+.hr-partner-invite {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 28px 24px;
+}
+
+.hr-partner-button {
+  width: 100%;
+}
 }
 
 
@@ -419,4 +1340,37 @@
     height: 46px;
     font-size: 1.45rem;
   }
+
+  .hr-community-actions {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.hr-community-partner-link {
+  text-align: center;
+}
+
+.hr-final-action {
+  padding: 64px 0;
+}
+
+.hr-final-heading {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.hr-final-heading p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hr-final-grid {
+  grid-template-columns: 1fr;
+}
+
+.hr-final-card {
+  min-height: auto;
+  padding: 27px 24px;
+}
 }
