@@ -2,9 +2,9 @@ import "../../Styles/VideoSection.css";
 import { Link } from "react-router-dom";
 
 const videoBenefits = [
-  "Learn how the membership works",
-  "See what services and resources are included",
-  "Understand who KonnectMD is designed to help",
+  "See how KonnectMD gives you another healthcare choice",
+  "Discover healthcare services available to you and your family",
+  "Find the membership option that fits your needs",
 ];
 
 export default function VideoSection() {
@@ -12,29 +12,29 @@ export default function VideoSection() {
     <section className="video-section" aria-labelledby="video-section-title">
       <div className="container video-section-shell">
         <div className="video-section-header">
-          <p className="video-section-eyebrow">See How It Works</p>
+          <p className="video-section-eyebrow">A Better Way to Access Care</p>
 
           <h2 id="video-section-title">
-            A Quick Overview of What KonnectMD Offers
+            Your Doctor's Office Is Closed. Now What?
           </h2>
 
           <p>
-            Watch this short overview to understand how KonnectMD can support
-            individuals, families, veterans, entrepreneurs, and businesses.
+            Healthcare needs don't always happen during business hours.
+            See how KonnectMD gives individuals and families another way
+            to access healthcare when they need it.
           </p>
         </div>
 
         <div className="video-section-card">
-          <video
-            controls
-            playsInline
-            preload="metadata"
-            poster="/images/launch-hero.png"
-            className="video-section-player"
-          >
-            <source src="/videos/launch-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <div className="video-section-youtube">
+            <iframe
+             src="https://www.youtube.com/embed/1D-v4gPIH_o"
+              title="Your Doctor's Office Is Closed. Now What? - KonnectMD"
+              className="video-section-player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
         </div>
 
         <div className="video-section-benefits">

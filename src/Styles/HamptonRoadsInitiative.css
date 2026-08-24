@@ -1,0 +1,187 @@
+/* ==================================================
+   HOMEPAGE — HAMPTON ROADS INITIATIVE
+================================================== */
+
+.home-initiative {
+  padding: 92px 0;
+  background: #ffffff;
+  color: #071426;
+}
+
+.home-initiative-grid {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 70px;
+  align-items: center;
+}
+
+
+/* 100 MISSION BLOCK */
+
+.home-initiative-number {
+  position: relative;
+  padding: 44px 40px;
+  border-radius: 18px;
+  background: #071426;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+}
+
+.home-initiative-number::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -85px;
+  bottom: -100px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.24);
+}
+
+.home-initiative-number span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  color: #93c5fd;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.home-initiative-number strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 12px 0 8px;
+  color: #ffffff;
+  font-size: clamp(5rem, 9vw, 8rem);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.06em;
+}
+
+.home-initiative-number p {
+  position: relative;
+  z-index: 1;
+  max-width: 270px;
+  margin: 14px 0 0;
+  color: #dbeafe;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+
+/* CONTENT */
+
+.home-initiative-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.home-initiative-content h2 {
+  max-width: 700px;
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.home-initiative-lead {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: #475569;
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.home-initiative-purpose {
+  max-width: 720px;
+  margin-top: 26px;
+  padding: 20px 22px;
+  border-left: 4px solid #2563eb;
+  background: #f4f7fb;
+}
+
+.home-initiative-purpose strong {
+  display: block;
+  color: #071426;
+  font-size: 1rem;
+}
+
+.home-initiative-purpose p {
+  margin: 7px 0 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.home-initiative-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: 25px;
+  padding: 0 21px;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.home-initiative-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .home-initiative-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .home-initiative-number {
+    max-width: 430px;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .home-initiative {
+    padding: 64px 0;
+  }
+
+  .home-initiative-grid {
+    gap: 32px;
+  }
+
+  .home-initiative-number {
+    padding: 32px 26px;
+  }
+
+  .home-initiative-number strong {
+    font-size: 5rem;
+  }
+
+  .home-initiative-content h2 {
+    font-size: 2.25rem;
+  }
+
+  .home-initiative-lead {
+    font-size: 0.97rem;
+  }
+
+  .home-initiative-button {
+    width: 100%;
+    text-align: center;
+  }
+}

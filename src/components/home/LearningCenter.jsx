@@ -57,11 +57,11 @@ export default function LearningCenter() {
 
           <h2>Learn Before You Decide</h2>
 
-          <p>
-            Explore trusted healthcare resources designed to help individuals,
-            families, veterans, entrepreneurs, and business owners make
-            informed healthcare decisions.
-          </p>
+        <p>
+  Explore practical healthcare information designed to help you
+  understand your options, ask better questions, and make more
+  informed decisions about accessing care.
+</p>
         </div>
 
         <div className="learning-grid">

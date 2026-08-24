@@ -1,8 +1,9 @@
 import Hero from "../components/home/Hero";
+import HealthcareReality from "../components/home/HealthcareReality";
+import HamptonRoadsInitiative from "../components/home/HamptonRoadsInitiative";
+import HomeFindHelp from "../components/home/HomeFindHelp";
 import MemberPortalPreview from "../components/home/MemberPortalPreview";
 import KonnectMDIntro from "../components/home/KonnectMDIntro";
-import WhoWeHelp from "../components/home/WhoWeHelp";
-import KonnectMDFeatures from "../components/home/KonnectMDFeatures";
 import TrustStrip from "../components/home/TrustStrip";
 import HealthcareDashboard from "../components/home/HealthcareDashboard";
 import PrescriptionSavingsCenter from "../components/home/PrescriptionSavingsCenter";
@@ -62,23 +63,27 @@ export default function Home() {
         }}
       />
 
-      <Hero />
-      <TrustStrip />
-      <MemberPortalPreview />
-      <KonnectMDIntro />
-      <WhoWeHelp />
-      <KonnectMDFeatures />
-      <TrustStrip />
-      <HealthcareDashboard />
-      <PrescriptionSavingsCenter />
-      <MembershipFinder />
-      <PlansPreview />
-      <TestimonialsSection />
-      <LearningCenter />
-      <VideoSection />
-      <LatestInsights />
-      <FAQSection />
-      <CTASection />
+<Hero />
+<HealthcareReality />
+<HamptonRoadsInitiative />
+<HomeFindHelp />
+
+<KonnectMDIntro />
+<MemberPortalPreview />
+
+<HealthcareDashboard />
+<PrescriptionSavingsCenter />
+
+<LearningCenter />
+<VideoSection />
+<LatestInsights />
+
+<MembershipFinder />
+<PlansPreview />
+
+<TestimonialsSection />
+<FAQSection />
+<CTASection />
     </>
   );
 }

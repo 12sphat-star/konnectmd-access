@@ -490,7 +490,147 @@ function HamptonRoadsHealthcareAccessPage() {
   </div>
 </section>
 
-{/* SECTION 8 — FINAL ACTION */}
+{/* SECTION 8 — QUESTIONS & ANSWERS */}
+<section className="hr-initiative-faq">
+  <div className="hr-container">
+
+    <div className="hr-faq-heading">
+      <span>QUESTIONS &amp; ANSWERS</span>
+      <h2>Questions About the Initiative?</h2>
+      <p>
+        Start here. The goal of the Hampton Roads Healthcare Access
+        Initiative is to make it easier to understand your options
+        and know where to go next.
+      </p>
+    </div>
+
+    <div className="hr-faq-list">
+
+      <details className="hr-faq-item">
+        <summary>
+          What is the Hampton Roads Healthcare Access Initiative?
+        </summary>
+        <p>
+          The Hampton Roads Healthcare Access Initiative is a local effort
+          focused on helping individuals and families better understand
+          healthcare-access resources and practical options that may help
+          them get care. Our first community mission is to help 100 Hampton
+          Roads individuals and families take a meaningful next step toward
+          better healthcare access.
+        </p>
+      </details>
+
+      <details className="hr-faq-item">
+        <summary>
+          Is the Initiative only for people without health insurance?
+        </summary>
+        <p>
+          No. People with insurance can still struggle with the cost of care,
+          high deductibles, getting timely appointments, prescription costs,
+          mental and emotional support, family needs and other barriers to
+          accessing care. The Initiative is designed to help people explore
+          resources and options based on the challenges they are facing.
+        </p>
+      </details>
+
+      <details className="hr-faq-item">
+        <summary>
+          Is the Hampton Roads Healthcare Access Initiative the same as KonnectMD?
+        </summary>
+        <p>
+          No. The Initiative is the broader community healthcare-access effort.
+          KonnectMD is one practical healthcare membership option that may be
+          introduced when its services fit a person's, family's or employer's
+          needs.
+        </p>
+      </details>
+
+      <details className="hr-faq-item">
+        <summary>
+          What kind of mental, emotional and everyday-life support can I explore?
+        </summary>
+        <p>
+          Support may include areas such as anxiety, depression, stress, grief,
+          trauma, burnout, parenting, relationships, family conflict, work
+          stress, career concerns, financial stress, child care, elder care,
+          legal referrals and other everyday-life challenges. Available
+          services depend on the specific program or membership being used.
+        </p>
+      </details>
+
+      <details className="hr-faq-item">
+        <summary>
+          Can the Initiative help small businesses and their employees?
+        </summary>
+        <p>
+          Yes. Small businesses are an important part of the Initiative.
+          We can help business owners explore practical healthcare-access
+          resources and options for employees and their families, including
+          situations where traditional employer-sponsored healthcare may be
+          unavailable or difficult to afford.
+        </p>
+      </details>
+
+      <details className="hr-faq-item">
+        <summary>
+          I'm a business owner. How can I get information for my employees?
+        </summary>
+        <p>
+          Start by contacting us and telling us about your business, your
+          workforce and the healthcare challenges your employees may be
+          experiencing. We can help you explore available options and determine
+          whether a healthcare-access solution such as KonnectMD may fit your
+          organization.
+        </p>
+        <Link to="/contact" className="hr-faq-link">
+          Talk With Us About Your Business →
+        </Link>
+      </details>
+
+      <details className="hr-faq-item">
+        <summary>
+          Can my family participate?
+        </summary>
+        <p>
+          Yes. The Initiative serves individuals and families. When KonnectMD
+          is an appropriate option, eligible family members may be included
+          depending on the membership selected. Membership benefits and
+          eligibility vary by plan.
+        </p>
+      </details>
+
+      <details className="hr-faq-item">
+        <summary>
+          Is KonnectMD health insurance?
+        </summary>
+        <p>
+          No. KonnectMD is a healthcare membership. It is not health insurance
+          and should not be considered a replacement for comprehensive
+          major-medical insurance coverage.
+        </p>
+      </details>
+
+      <details className="hr-faq-item">
+        <summary>
+          I don't know what kind of help I need. Where should I start?
+        </summary>
+        <p>
+          That's okay. Start with what is happening in your life. You can
+          explore physician access, mental and everyday-life support,
+          prescription resources, family healthcare, employee healthcare
+          and other resources through the Healthcare Access Resource Center.
+        </p>
+        <a href="#find-help" className="hr-faq-link">
+          Help Me Find a Starting Point →
+        </a>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+{/* SECTION 9 — FINAL ACTION */}
 <section className="hr-final-action">
   <div className="hr-container">
 

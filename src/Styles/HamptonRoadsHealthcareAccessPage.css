@@ -970,7 +970,125 @@ background: linear-gradient(
 }
 
 /* ==================================================
-   SECTION 8 — FINAL ACTION
+   SECTION 8 — QUESTIONS & ANSWERS
+================================================== */
+
+.hr-initiative-faq {
+  padding: 92px 0;
+  background: #ffffff;
+  color: #071426;
+}
+
+.hr-faq-heading {
+  max-width: 760px;
+  margin-bottom: 42px;
+}
+
+.hr-faq-heading > span {
+  display: block;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hr-faq-heading h2 {
+  margin: 0;
+  color: #071426;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.hr-faq-heading p {
+  max-width: 680px;
+  margin: 18px 0 0;
+  color: #64748b;
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+
+/* FAQ LIST */
+
+.hr-faq-list {
+  max-width: 920px;
+}
+
+.hr-faq-item {
+  border-top: 1px solid #dbe4ef;
+  background: #ffffff;
+}
+
+.hr-faq-item:last-child {
+  border-bottom: 1px solid #dbe4ef;
+}
+
+.hr-faq-item summary {
+  position: relative;
+  padding: 24px 54px 24px 0;
+  color: #071426;
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.4;
+  cursor: pointer;
+  list-style: none;
+}
+
+.hr-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+
+/* PLUS / MINUS */
+
+.hr-faq-item summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  color: #2563eb;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.hr-faq-item[open] summary::after {
+  content: "−";
+}
+
+
+/* OPEN ANSWER */
+
+.hr-faq-item[open] summary {
+  color: #2563eb;
+}
+
+.hr-faq-item p {
+  max-width: 800px;
+  margin: -4px 0 22px;
+  padding-right: 50px;
+  color: #64748b;
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+
+.hr-faq-link {
+  display: inline-flex;
+  margin: -4px 0 24px;
+  color: #2563eb;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.hr-faq-link:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+   SECTION 9 — FINAL ACTION
 ================================================== */
 
 .hr-final-action {
@@ -1239,6 +1357,39 @@ background: linear-gradient(
 
 .hr-partner-button {
   width: 100%;
+}
+
+/* SECTION 8 — FAQ MOBILE */
+
+.hr-initiative-faq {
+  padding: 64px 0;
+}
+
+.hr-faq-heading {
+  margin-bottom: 30px;
+}
+
+.hr-faq-heading h2 {
+  font-size: 2.25rem;
+}
+
+.hr-faq-item summary {
+  padding: 21px 42px 21px 0;
+  font-size: 1rem;
+}
+
+.hr-faq-item summary::after {
+  right: 2px;
+}
+
+.hr-faq-item p {
+  margin-top: -2px;
+  padding-right: 8px;
+  font-size: 0.94rem;
+}
+
+.hr-faq-link {
+  margin-bottom: 22px;
 }
 }
 

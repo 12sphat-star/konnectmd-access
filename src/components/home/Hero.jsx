@@ -1,39 +1,45 @@
 import "../../Styles/Hero.css";
 import { Link } from "react-router-dom";
 
-const trustPoints = [
-  "24/7 access to licensed physicians",
-  "Prescription savings on thousands of medications",
-  "Behavioral health, counseling, psychology & psychiatry",
-  "One membership can include up to 7 family members",
+const accessChallenges = [
+  "Rising healthcare and out-of-pocket costs",
+  "Changes affecting Marketplace coverage and affordability",
+  "Prescription costs putting pressure on household budgets",
+  "Individuals, families and small businesses looking for practical options",
 ];
 
 export default function Hero() {
   return (
     <section className="hero-v2" aria-labelledby="homepage-hero-title">
       <div className="container hero-v2-grid">
+
         <div className="hero-v2-copy">
           <p className="hero-v2-eyebrow">
             KonnectMD Access | Healthcare Access Resource Center
           </p>
 
           <h1 id="homepage-hero-title" className="hero-v2-title">
-            Healthcare Access
-            <span> That Fits Real Life.</span>
+            Healthcare Is Changing.
+            <span> Knowing Your Options Matters.</span>
           </h1>
 
           <p className="hero-v2-lead">
-            Explore trusted healthcare resources and connect with nationwide
-            healthcare solutions including 24/7 physician access,
-            prescription savings, behavioral health services, wellness
-            programs, and family healthcare—all through KonnectMD.
+            Healthcare costs are rising, coverage is changing, and many
+            individuals, families and small businesses are trying to understand
+            what they can afford and where to turn for help.
+          </p>
+
+          <p className="hero-v2-resource-statement">
+            <strong>KonnectMD Access is here to help.</strong> Explore healthcare
+            resources, understand your options and discover practical solutions
+            for accessing care.
           </p>
 
           <ul
             className="hero-v2-trust-list"
-            aria-label="Membership highlights"
+            aria-label="Healthcare access challenges"
           >
-            {trustPoints.map((point) => (
+            {accessChallenges.map((point) => (
               <li key={point}>
                 <span className="hero-v2-check" aria-hidden="true">
                   ✓
@@ -44,30 +50,34 @@ export default function Hero() {
           </ul>
 
           <div className="hero-v2-actions">
-  <Link to="/get-details" className="btn btn-primary">
-    Find My Healthcare Solution
-  </Link>
+            <a href="#learning-center" className="btn btn-primary">
+              Explore Healthcare Resources
+            </a>
 
-  <a href="#learning-center" className="btn btn-secondary">
-    Explore Resource Centers
-  </a>
-</div>
+            <Link
+              to="/hampton-roads-healthcare-access"
+              className="btn btn-secondary"
+            >
+              Hampton Roads Initiative
+            </Link>
+          </div>
 
-          <Link to="/plans" className="hero-v2-text-link">
-            See how KonnectMD Access works
-            <span aria-hidden="true"> →</span>
-          </Link>
+          <p className="hero-v2-small-note">
+            Start with information. Understand your options. Then decide what
+            makes sense for you.
+          </p>
         </div>
 
         <div className="hero-v2-visual">
           <div className="hero-v2-image-frame">
             <img
               src="/images/hero-healthcare-resource-center.jpg"
-              alt="Families, veterans, healthcare professionals, seniors, and business owners using modern healthcare services"
+              alt="Individuals and families exploring healthcare access resources"
               className="hero-v2-image"
             />
           </div>
         </div>
+
       </div>
     </section>
   );

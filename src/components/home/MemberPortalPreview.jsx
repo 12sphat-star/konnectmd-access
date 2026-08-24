@@ -16,19 +16,18 @@ export default function MemberPortalPreview() {
               MEMBER PORTAL PREVIEW
             </span>
 
-            <h2>
-              Everything Your Membership Includes—
-              <br />
-              In One Secure Dashboard.
-            </h2>
+          <h2>
+  Your Healthcare Services—
+  <br />
+  In One Secure Dashboard.
+</h2>
 
-            <p>
-              Becoming a KonnectMD member is more than receiving access to
-              virtual care. Your secure Member Portal helps bring together
-              physician access, prescription resources, behavioral health,
-              family management, health information, and additional eligible
-              healthcare resources—all from one convenient dashboard.
-            </p>
+          <p>
+  KonnectMD brings the healthcare services included with your membership
+  together through the member portal, making it easier to access physician
+  care, prescription resources, behavioral health support, family services,
+  and other available benefits from one convenient location.
+</p>
 
             <div className="portal-preview-list">
 

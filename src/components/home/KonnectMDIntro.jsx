@@ -1,77 +1,80 @@
 import "../../Styles/KonnectMDIntro.css";
+import { Link } from "react-router-dom";
+
+const benefits = [
+  {
+    number: "24/7",
+    title: "Physician Access",
+    text: "Connect with licensed physicians for many everyday healthcare needs.",
+  },
+  {
+    number: "Mental + Life",
+    title: "Support for Real Life",
+    text: "Mental, emotional, family, work and everyday-life support.",
+  },
+  {
+    number: "1,000+",
+    title: "Medications",
+    text: "Access to more than 1,000 medications at no additional cost.*",
+  },
+  {
+    number: "Up to 7",
+    title: "Family Members",
+    text: "Help more of your family access healthcare through one membership.*",
+  },
+];
 
 export default function KonnectMDIntro() {
   return (
     <section className="konnectmd-intro">
       <div className="container">
 
-        <div className="konnectmd-intro-content">
-
-          <p className="konnectmd-intro-eyebrow">
-            Understanding KonnectMD
-          </p>
+        <div className="konnectmd-intro-heading">
+          <span className="konnectmd-intro-eyebrow">
+            ONE PRACTICAL HEALTHCARE ACCESS OPTION
+          </span>
 
           <h2>
-            What Is KonnectMD?
+            What If One Membership Could Help With Several of These Needs?
           </h2>
 
           <p className="konnectmd-intro-lead">
-            <strong>
-              KonnectMD is a nationwide healthcare membership designed to make
-              healthcare more convenient, accessible, and affordable for
-              individuals, families, entrepreneurs, veterans, and businesses.
-            </strong>
+            Healthcare access can involve more than one challenge.
+            KonnectMD brings several healthcare services and support resources
+            together through one membership.
           </p>
-
-          <p>
-            Depending on the membership selected, members may have access to
-            24/7 virtual physician services, prescription benefits,
-            behavioral health resources, wellness programs, specialist access,
-            and additional healthcare services—all working together to help
-            simplify the way people access everyday healthcare.
-          </p>
-
-          <h3>Why Was KonnectMD Created?</h3>
-
-          <p>
-            Accessing healthcare has become increasingly difficult for many
-            Americans. Long wait times, physician shortages, rising healthcare
-            costs, and busy lifestyles have created challenges for individuals,
-            families, and employers trying to receive timely care.
-          </p>
-
-          <p>
-            KonnectMD was created to help bridge many of these everyday
-            healthcare access gaps by offering convenient healthcare resources
-            that work alongside traditional healthcare—not replace it.
-          </p>
-
-          <h3>Why KonnectMD Access?</h3>
-
-          <p>
-            KonnectMD Access was created to educate, guide, and introduce people
-            to KonnectMD through trusted healthcare education—not high-pressure
-            sales.
-          </p>
-
-          <p>
-            We believe the best healthcare decisions begin with understanding
-            your options. That's why this website provides educational
-            resources, decision guides, membership information, and practical
-            tools designed to help you better understand KonnectMD and today's
-            evolving healthcare landscape.
-          </p>
-
-          <p>
-            Whether you're exploring healthcare options for yourself, your
-            family, or your employees, our goal is simple:
-          </p>
-
-          <blockquote className="konnectmd-mission">
-            Helping you understand KonnectMD before you decide.
-          </blockquote>
-
         </div>
+
+        <div className="konnectmd-intro-brand">
+          Konnect<span>MD</span>
+          <small> Healthcare Access</small>
+        </div>
+
+        <div className="konnectmd-intro-benefits">
+          {benefits.map((benefit) => (
+            <div className="konnectmd-intro-benefit" key={benefit.title}>
+              <strong>{benefit.number}</strong>
+              <h3>{benefit.title}</h3>
+              <p>{benefit.text}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="konnectmd-intro-actions">
+          <Link to="/get-details" className="btn btn-primary">
+            See How KonnectMD Works
+          </Link>
+
+          <Link to="/plans" className="btn btn-secondary">
+            Compare Memberships
+          </Link>
+        </div>
+
+        <p className="konnectmd-intro-disclaimer">
+          *Benefits, medication availability and family eligibility vary by
+          membership. KonnectMD is a healthcare membership and is not health
+          insurance or a replacement for comprehensive major-medical coverage.
+        </p>
 
       </div>
     </section>
