@@ -177,11 +177,6 @@ export default function App() {
         />
 
         <Route
-          path="/resource-center/business-healthcare"
-          element={<SmallBusinessHealthcarePage />}
-        />
-
-        <Route
           path="/business-owners-entrepreneurs-healthcare-hampton-roads"
           element={<BusinessHealthcarePage />}
         />

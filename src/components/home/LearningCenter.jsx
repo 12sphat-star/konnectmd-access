@@ -30,13 +30,13 @@ const resources = [
     link: "/resource-center/family-healthcare",
     category: "Families",
   },
-  {
-    title: "Healthcare for Small Businesses",
-    text:
-      "Compare employer healthcare options, employee access, telehealth, prescriptions, behavioral support, and where KonnectMD may fit.",
-    link: "/resource-center/small-business-healthcare",
-    category: "Business",
-  },
+ {
+  title: "Healthcare for Small Businesses",
+  text:
+    "Compare employer healthcare options, employee access, telehealth, prescriptions, behavioral support, and where KonnectMD may fit.",
+  link: "/resource-center/business-healthcare",
+  category: "Business",
+},
   {
     title: "Veterans Healthcare Resources",
     text:
