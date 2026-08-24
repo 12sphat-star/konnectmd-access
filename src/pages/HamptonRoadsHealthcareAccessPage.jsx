@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/HamptonRoadsHealthcareAccessPage.css";
+import "../Styles/HamptonRoadsHealthcareAccessPage.css";
 
 function HamptonRoadsHealthcareAccessPage() {
   const needs = [
