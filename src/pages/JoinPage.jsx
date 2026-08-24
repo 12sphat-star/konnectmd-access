@@ -134,11 +134,11 @@ export default function JoinPage() {
               padding: "clamp(2rem, 5vw, 4rem)",
             }}
           >
-            <p className="eyebrow">Application Received</p>
+            <p className="eyebrow">Interview Request Received</p>
 
             <h1 className="page-title">
-              Thank You for Your{" "}
-              <span style={{ color: "var(--blue-soft)" }}>Interest.</span>
+              Thank You for Taking the{" "}
+              <span style={{ color: "var(--blue-soft)" }}>Next Step.</span>
             </h1>
 
             <p
@@ -149,8 +149,8 @@ export default function JoinPage() {
                 lineHeight: 1.75,
               }}
             >
-              We've received your Representative Interest Form and will review
-              your information.
+              We've received your Representative Interest Form and interview
+              request. Our team will review your information.
             </p>
 
             <div
@@ -181,9 +181,22 @@ export default function JoinPage() {
                   lineHeight: 1.75,
                 }}
               >
-               We'll review your information. Applicants selected for the next step will be contacted to learn more about the opportunity, including responsibilities, compensation, expectations, and how the representative program works.
+                We'll review your information. Applicants selected to continue
+                will receive an invitation for a brief virtual interview where
+                we'll discuss the representative opportunity, compensation,
+                program costs, expectations, training, and what it takes to get
+                started.
+              </p>
 
-If you decide to move forward, you'll then complete your representative enrollment and be invited to a Representative Orientation to help you get started.
+              <p
+                style={{
+                  color: "var(--muted)",
+                  margin: "1rem 0 0",
+                  lineHeight: 1.75,
+                }}
+              >
+                If we mutually determine the opportunity is a good fit, we'll
+                explain the enrollment, orientation, and training process.
               </p>
             </div>
 
@@ -212,7 +225,6 @@ If you decide to move forward, you'll then complete your representative enrollme
             margin: "0 auto",
           }}
         >
-
           {/* HERO */}
 
           <div style={{ textAlign: "center" }}>
@@ -236,13 +248,13 @@ If you decide to move forward, you'll then complete your representative enrollme
             <p
               className="section-copy"
               style={{
-                maxWidth: "760px",
+                maxWidth: "800px",
                 margin: "1rem auto",
               }}
             >
-              Take a few minutes to learn what KonnectMD is, why this
-              opportunity exists, and what being an Independent Healthcare
-              Representative involves.
+              Help individuals, families, and businesses access practical
+              healthcare solutions while building an independent business of
+              your own.
             </p>
 
             <div
@@ -257,8 +269,8 @@ If you decide to move forward, you'll then complete your representative enrollme
               {[
                 "Remote",
                 "Part-Time or Full-Time",
-                "Independent",
-                "Commission-Based",
+                "No Insurance License Required",
+                "Performance-Based",
               ].map((item) => (
                 <span
                   key={item}
@@ -275,13 +287,26 @@ If you decide to move forward, you'll then complete your representative enrollme
                 </span>
               ))}
             </div>
+
+            <p
+              style={{
+                color: "var(--muted)",
+                maxWidth: "720px",
+                margin: "1.25rem auto 0",
+                lineHeight: 1.7,
+                fontSize: "0.95rem",
+              }}
+            >
+              We are currently selecting independent representatives in
+              markets across the United States.
+            </p>
           </div>
 
           {/* VIDEO */}
 
           <div
             style={{
-              marginTop: "2.25rem",
+              marginTop: "2.5rem",
               textAlign: "center",
             }}
           >
@@ -289,12 +314,26 @@ If you decide to move forward, you'll then complete your representative enrollme
 
             <h2
               style={{
-                fontSize: "clamp(1.5rem, 4vw, 2rem)",
-                marginBottom: "1.25rem",
+                fontSize: "clamp(1.5rem, 4vw, 2.1rem)",
+                marginBottom: "0.75rem",
               }}
             >
-              Meet KonnectMD
+              Before We Talk, We Want You to Know Who We Are.
             </h2>
+
+            <p
+              style={{
+                color: "var(--muted)",
+                maxWidth: "760px",
+                margin: "0 auto 1.5rem",
+                lineHeight: 1.7,
+              }}
+            >
+              You applied for the Independent Healthcare Representative
+              opportunity. Before requesting an interview, take one minute to
+              learn who KonnectMD is, why healthcare access matters, and what
+              you could be representing.
+            </p>
 
             <div
               style={{
@@ -310,7 +349,7 @@ If you decide to move forward, you'll then complete your representative enrollme
               }}
             >
               <iframe
-                src="https://www.youtube.com/embed/NMoZpv_rnU4"
+                src="https://www.youtube.com/embed/1D-v4gPIH_o"
                 title="Discover KonnectMD"
                 style={{
                   position: "absolute",
@@ -323,13 +362,27 @@ If you decide to move forward, you'll then complete your representative enrollme
                 allowFullScreen
               />
             </div>
+
+            <p
+              style={{
+                color: "var(--muted)",
+                maxWidth: "760px",
+                margin: "1.25rem auto 0",
+                lineHeight: 1.7,
+              }}
+            >
+              This is more than a position to fill. We're looking for people
+              who understand the mission, believe in helping others access
+              healthcare, and are willing to build an independent business
+              around that purpose.
+            </p>
           </div>
 
-          {/* WHY NOW */}
+          {/* WHAT YOU REPRESENT */}
 
           <div
             style={{
-              marginTop: "2.5rem",
+              marginTop: "2.75rem",
               padding: "clamp(1.5rem, 4vw, 2.25rem)",
               background: "rgba(45,127,249,.08)",
               border: "1px solid rgba(45,127,249,.25)",
@@ -337,7 +390,7 @@ If you decide to move forward, you'll then complete your representative enrollme
               textAlign: "center",
             }}
           >
-            <p className="eyebrow">Why Now?</p>
+            <p className="eyebrow">What You Would Represent</p>
 
             <h2
               style={{
@@ -345,7 +398,79 @@ If you decide to move forward, you'll then complete your representative enrollme
                 marginTop: "0.25rem",
               }}
             >
-              Healthcare Is Changing. The Need Is Growing.
+              Healthcare Access Designed for Real Life
+            </h2>
+
+            <p
+              style={{
+                color: "var(--muted)",
+                maxWidth: "780px",
+                margin: "1rem auto 1.5rem",
+                lineHeight: 1.75,
+              }}
+            >
+              KonnectMD brings healthcare-access and savings services together
+              through membership options designed to help individuals,
+              families, and businesses access everyday healthcare resources.
+            </p>
+
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns:
+                  "repeat(auto-fit, minmax(190px, 1fr))",
+                gap: "0.75rem",
+              }}
+            >
+              {[
+                "24/7 Virtual Care",
+                "Prescription Benefits",
+                "Mental & Wellness Support",
+                "Individual, Family & Business Solutions",
+              ].map((item) => (
+                <div
+                  key={item}
+                  style={{
+                    padding: "1rem",
+                    borderRadius: "12px",
+                    background: "rgba(255,255,255,.04)",
+                    border: "1px solid rgba(96,165,250,.2)",
+                    fontWeight: 600,
+                  }}
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <p
+              style={{
+                color: "var(--muted)",
+                fontSize: "0.85rem",
+                margin: "1.25rem auto 0",
+              }}
+            >
+              KonnectMD is a healthcare access and savings membership and is
+              not health insurance.
+            </p>
+          </div>
+
+          {/* WHY NOW */}
+
+          <div
+            style={{
+              marginTop: "2.75rem",
+              textAlign: "center",
+            }}
+          >
+            <p className="eyebrow">Why It Matters</p>
+
+            <h2
+              style={{
+                fontSize: "clamp(1.5rem, 4vw, 2.1rem)",
+              }}
+            >
+              Healthcare Is Changing. The Need for Access Is Growing.
             </h2>
 
             <p
@@ -356,9 +481,9 @@ If you decide to move forward, you'll then complete your representative enrollme
                 lineHeight: 1.75,
               }}
             >
-              Across America, families, workers, and small businesses are
-              facing increasing uncertainty about the cost of healthcare and
-              access to everyday care.
+              Families, workers, self-employed professionals, and businesses
+              are looking for practical ways to access everyday healthcare and
+              manage healthcare costs.
             </p>
 
             <p
@@ -369,30 +494,104 @@ If you decide to move forward, you'll then complete your representative enrollme
                 lineHeight: 1.75,
               }}
             >
-              As more people search for affordable healthcare solutions, there
-              is a growing need for people who can educate their communities
-              about available options.
+              KonnectMD representatives help people understand the services
+              available to them and determine whether a membership may fit
+              their needs.
             </p>
 
             <h3
               style={{
-                color: "var(--text)",
+                color: "var(--blue-soft)",
                 marginTop: "1.4rem",
-                marginBottom: "0.75rem",
               }}
             >
               That's Where You Come In.
             </h3>
+          </div>
 
-            <strong
+          {/* WHO YOU CAN HELP */}
+
+          <div style={{ marginTop: "2.75rem" }}>
+            <div style={{ textAlign: "center" }}>
+              <p className="eyebrow">Your Market</p>
+
+              <h2
+                style={{
+                  fontSize: "clamp(1.5rem, 4vw, 2.1rem)",
+                }}
+              >
+                Who Could You Help?
+              </h2>
+
+              <p
+                style={{
+                  color: "var(--muted)",
+                  maxWidth: "720px",
+                  margin: "0.75rem auto 0",
+                  lineHeight: 1.7,
+                }}
+              >
+                Representatives are not limited to one type of customer or one
+                way of building their business.
+              </p>
+            </div>
+
+            <div
               style={{
-                display: "block",
-                color: "var(--blue-soft)",
-                fontSize: "1.05rem",
+                display: "grid",
+                gridTemplateColumns:
+                  "repeat(auto-fit, minmax(210px, 1fr))",
+                gap: "1rem",
+                marginTop: "1.5rem",
               }}
             >
-              The need is real. The market is large. And the timing matters.
-            </strong>
+              {[
+                {
+                  title: "Individuals & Families",
+                  text: "People looking for practical access to everyday healthcare services.",
+                },
+                {
+                  title: "Self-Employed & Gig Workers",
+                  text: "People who may not have access to traditional employer-sponsored benefits.",
+                },
+                {
+                  title: "Businesses & Employers",
+                  text: "Organizations looking for affordable healthcare-access options for employees.",
+                },
+                {
+                  title: "Community Relationships",
+                  text: "Organizations and networks where better healthcare access can make a difference.",
+                },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="feature-card premium-card"
+                  style={{ textAlign: "left" }}
+                >
+                  <div className="feature-top-line"></div>
+
+                  <h3
+                    style={{
+                      fontSize: "1.05rem",
+                      marginTop: 0,
+                      marginBottom: "0.4rem",
+                    }}
+                  >
+                    {item.title}
+                  </h3>
+
+                  <p
+                    style={{
+                      margin: 0,
+                      fontSize: "0.9rem",
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    {item.text}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* ROLE */}
@@ -430,7 +629,7 @@ If you decide to move forward, you'll then complete your representative enrollme
                 },
                 {
                   title: "Follow Up",
-                  text: "Answer questions and help interested people take the next step.",
+                  text: "Answer appropriate questions and help interested people take the next step.",
                 },
                 {
                   title: "Build",
@@ -466,26 +665,52 @@ If you decide to move forward, you'll then complete your representative enrollme
                 </div>
               ))}
             </div>
+
+            <p
+              style={{
+                color: "var(--muted)",
+                maxWidth: "780px",
+                margin: "1.25rem auto 0",
+                textAlign: "center",
+                lineHeight: 1.7,
+              }}
+            >
+              Representatives are not healthcare providers. Your role is to
+              educate, connect, follow up, and help interested people take the
+              appropriate next step.
+            </p>
           </div>
 
-          {/* EARNINGS */}
+          {/* OPPORTUNITY */}
 
           <div
             style={{
-              marginTop: "2.5rem",
+              marginTop: "2.75rem",
               textAlign: "center",
             }}
           >
-            <p className="eyebrow">The Opportunity</p>
+            <p className="eyebrow">The Business Opportunity</p>
 
             <h2
               style={{
                 fontSize: "clamp(1.5rem, 4vw, 2.1rem)",
-                marginBottom: "1rem",
+                marginBottom: "0.75rem",
               }}
             >
-              How You Can Earn
+              Build Around Your Goals and Your Schedule
             </h2>
+
+            <p
+              style={{
+                color: "var(--muted)",
+                maxWidth: "760px",
+                margin: "0 auto 1.5rem",
+                lineHeight: 1.7,
+              }}
+            >
+              Representatives can build part-time or full-time and may earn
+              through multiple performance-based compensation opportunities.
+            </p>
 
             <div
               style={{
@@ -525,8 +750,8 @@ If you decide to move forward, you'll then complete your representative enrollme
               }}
             >
               Training and ongoing support are provided to help you learn the
-              services, explain the benefits, approach prospects, and build your
-              business.
+              services, communicate the benefits, approach prospects, follow
+              up, and begin building your business.
             </p>
 
             <div
@@ -556,20 +781,129 @@ If you decide to move forward, you'll then complete your representative enrollme
                   lineHeight: 1.7,
                 }}
               >
-                This is an independent, performance-based opportunity. It is
-                not an hourly or salaried position, and income is not
-                guaranteed. Individual results depend on activity, sales,
-                follow-up, and performance. Complete compensation details are
-                reviewed during the Representative Opportunity Overview.
+                This is an independent, commission-based opportunity. It is not
+                an hourly or salaried position, and income is not guaranteed.
+                Individual results depend on activity, enrollments, follow-up,
+                qualifications, and performance. Complete compensation details
+                and program costs are discussed during the interview process.
               </p>
             </div>
           </div>
+
+          {/* TRAINING & SUPPORT */}
+
+<div
+  style={{
+    marginTop: "2.75rem",
+    padding: "clamp(1.5rem, 4vw, 2.25rem)",
+    background: "rgba(45,127,249,.08)",
+    border: "1px solid rgba(45,127,249,.25)",
+    borderRadius: "18px",
+  }}
+>
+  <div style={{ textAlign: "center" }}>
+    <p className="eyebrow">Training & Support</p>
+
+    <h2
+      style={{
+        fontSize: "clamp(1.5rem, 4vw, 2.1rem)",
+        marginBottom: "0.75rem",
+      }}
+    >
+      You Won't Be Expected to Figure This Out Alone.
+    </h2>
+
+    <p
+      style={{
+        color: "var(--muted)",
+        maxWidth: "760px",
+        margin: "0 auto",
+        lineHeight: 1.7,
+      }}
+    >
+      New representatives are introduced to the KonnectMD system through
+      orientation, training, and ongoing support designed to help you
+      understand the services, communicate the value, and begin building
+      your business.
+    </p>
+  </div>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(210px, 1fr))",
+      gap: "1rem",
+      marginTop: "1.75rem",
+    }}
+  >
+    {[
+      {
+        title: "Representative Orientation",
+        text: "Start with an introduction to the company, services, expectations, tools, and the fundamentals of getting your business started.",
+      },
+      {
+        title: "Weekly Training",
+        text: "Participate in ongoing weekly training designed to strengthen product knowledge, communication, prospecting, follow-up, and business-building skills.",
+      },
+      {
+        title: "Tools & Resources",
+        text: "Access presentations, educational materials, marketing resources, and systems designed to support your conversations with individuals and businesses.",
+      },
+      {
+        title: "Ongoing Support",
+        text: "Get continued guidance and support as you learn, begin having conversations, develop prospects, and grow your business.",
+      },
+    ].map((item) => (
+      <div
+        key={item.title}
+        className="feature-card premium-card"
+        style={{ textAlign: "left" }}
+      >
+        <div className="feature-top-line"></div>
+
+        <h3
+          style={{
+            fontSize: "1.05rem",
+            marginTop: 0,
+            marginBottom: "0.4rem",
+          }}
+        >
+          {item.title}
+        </h3>
+
+        <p
+          style={{
+            margin: 0,
+            fontSize: "0.9rem",
+            lineHeight: 1.6,
+          }}
+        >
+          {item.text}
+        </p>
+      </div>
+    ))}
+  </div>
+
+  <p
+    style={{
+      color: "var(--blue-soft)",
+      fontWeight: 600,
+      textAlign: "center",
+      maxWidth: "760px",
+      margin: "1.5rem auto 0",
+      lineHeight: 1.7,
+    }}
+  >
+    You bring the commitment. We'll help provide the training, resources,
+    and support to help you get started.
+  </p>
+</div>
 
           {/* FIT */}
 
           <div
             style={{
-              marginTop: "2.5rem",
+              marginTop: "2.75rem",
               padding: "1.75rem",
               textAlign: "center",
               background: "rgba(255,255,255,.03)",
@@ -577,7 +911,7 @@ If you decide to move forward, you'll then complete your representative enrollme
               borderRadius: "18px",
             }}
           >
-            <p className="eyebrow">Could This Be You?</p>
+            <p className="eyebrow">Who We're Looking For</p>
 
             <h2
               style={{
@@ -585,38 +919,62 @@ If you decide to move forward, you'll then complete your representative enrollme
                 marginBottom: "1rem",
               }}
             >
-              You Don't Need Healthcare Experience
+              You Don't Have to Be a Healthcare Expert.
             </h2>
 
             <p
               style={{
-                color: "var(--text)",
-                fontWeight: 600,
+                color: "var(--muted)",
+                maxWidth: "720px",
+                margin: "0 auto 1.25rem",
                 lineHeight: 1.7,
               }}
             >
-              No healthcare experience required. • No insurance license
-              required to get started.
+              We're looking for people who communicate well, build
+              relationships, take initiative, follow up, are willing to learn,
+              and want to help others.
             </p>
 
-            <p
+            <div
               style={{
-                color: "var(--muted)",
-                lineHeight: 1.7,
+                display: "flex",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                gap: "0.6rem",
               }}
             >
-              We're looking for people who can communicate, follow up, learn,
-              take initiative, and are willing to build relationships.
-            </p>
+              {[
+                "Communicators",
+                "Relationship Builders",
+                "Self-Starters",
+                "Coachable",
+                "Consistent",
+                "Service-Minded",
+              ].map((item) => (
+                <span
+                  key={item}
+                  style={{
+                    padding: "0.55rem 0.85rem",
+                    borderRadius: "999px",
+                    border: "1px solid rgba(96,165,250,.25)",
+                    color: "var(--text)",
+                    fontSize: "0.9rem",
+                  }}
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
 
             <p
               style={{
                 color: "var(--blue-soft)",
                 fontWeight: 600,
-                marginBottom: 0,
+                margin: "1.25rem auto 0",
               }}
             >
-              Training and ongoing support are provided.
+              No healthcare experience required. No insurance license required
+              to get started. Training and ongoing support are provided.
             </p>
           </div>
 
@@ -638,26 +996,38 @@ If you decide to move forward, you'll then complete your representative enrollme
                   marginBottom: "0.5rem",
                 }}
               >
-                Still Interested?
+                Ready to Take the Next Step?
               </h2>
 
               <p
                 style={{
                   color: "var(--muted)",
-                  maxWidth: "680px",
-                  margin: "0 auto 2rem",
+                  maxWidth: "700px",
+                  margin: "0 auto 0.5rem",
                   lineHeight: 1.7,
                 }}
               >
-                Complete this short Representative Interest Form. Selected
-                applicants will be invited to the next virtual Representative
-                Opportunity Overview.
+                If what you've learned aligns with what you're looking for,
+                complete the short Representative Interest Form below to
+                request an interview.
+              </p>
+
+              <p
+                style={{
+                  color: "var(--muted)",
+                  maxWidth: "700px",
+                  margin: "0 auto 2rem",
+                  lineHeight: 1.7,
+                  fontSize: "0.92rem",
+                }}
+              >
+                We review each submission and invite selected applicants to a
+                brief virtual interview.
               </p>
             </div>
 
             <form className="basic-form" onSubmit={handleSubmit}>
               <div className="form-grid">
-
                 <div>
                   <label htmlFor="firstName">First Name *</label>
                   <input
@@ -883,15 +1253,17 @@ If you decide to move forward, you'll then complete your representative enrollme
                     Yes — I understand and want to continue
                   </option>
                   <option value="No">
-                    No — I am looking for guaranteed hourly or salaried employment
+                    No — I am looking for guaranteed hourly or salaried
+                    employment
                   </option>
                 </select>
               </div>
 
               <div style={{ marginTop: "1.25rem" }}>
                 <label htmlFor="attendOverview">
-                  If selected, are you willing to attend a virtual
-                  Representative Opportunity Overview and Compensation? *
+                  If selected, are you willing to attend a brief virtual
+                  interview to discuss the representative opportunity,
+                  compensation, program costs, expectations, and next steps? *
                 </label>
 
                 <select
@@ -915,8 +1287,9 @@ If you decide to move forward, you'll then complete your representative enrollme
                   lineHeight: 1.6,
                 }}
               >
-                Submission expresses interest in an independent representative
-                opportunity and does not guarantee acceptance or income.
+                Submission requests consideration for an independent
+                representative opportunity and does not guarantee an interview,
+                acceptance, or income.
               </p>
 
               <div
@@ -933,7 +1306,7 @@ If you decide to move forward, you'll then complete your representative enrollme
                 >
                   {status.loading
                     ? "Submitting..."
-                    : "Submit My Interest"}
+                    : "Request My Interview"}
                 </button>
               </div>
 
