@@ -630,69 +630,77 @@ function HamptonRoadsHealthcareAccessPage() {
   </div>
 </section>
 
-{/* SECTION 9 — FINAL ACTION */}
+{/* SECTION 9 — CHOOSE YOUR PATH */}
 <section className="hr-final-action">
   <div className="hr-container">
 
     <div className="hr-final-heading">
       <span className="hr-final-eyebrow">
-        TAKE YOUR NEXT STEP
+        YOUR NEXT STEP CAN START HERE
       </span>
 
-      <h2>Your Next Step Can Start Here.</h2>
+      <h2>Find the Path That Fits You.</h2>
 
       <p>
-        Whether you're looking for help for yourself, exploring healthcare
-        access for your family, or trying to help the people you serve,
-        choose the path that fits you.
+        Whether you're looking for healthcare access for yourself and your
+        family, exploring options for your business, or looking for resources
+        for the people your organization serves, start with the path that
+        fits you.
       </p>
     </div>
 
     <div className="hr-final-grid">
 
+      {/* INDIVIDUALS & FAMILIES */}
       <div className="hr-final-card">
-        <span>FOR ME OR MY FAMILY</span>
+        <span>01 — INDIVIDUALS &amp; FAMILIES</span>
 
-        <h3>I Need Healthcare Help</h3>
-
-        <p>
-          Start with what's happening in your life and explore resources
-          and healthcare-access options that may help.
-        </p>
-
-     <a href="#find-help" className="hr-final-link">
-  Help Me Find a Starting Point →
-</a>
-      </div>
-
-      <div className="hr-final-card hr-final-card-featured">
-        <span>EXPLORE A MEMBERSHIP OPTION</span>
-
-        <h3>I Want to Understand KonnectMD</h3>
+        <h3>Healthcare Access for Me &amp; My Family</h3>
 
         <p>
-          See how the healthcare membership works, what services are
-          available and which membership may fit your needs.
+          Explore healthcare access, savings and support designed around
+          the everyday needs of individuals and families.
         </p>
 
-        <Link to="/plans" className="hr-final-link">
-          Explore KonnectMD Memberships →
+        <Link to="/family" className="hr-final-link">
+          Explore Family Options →
         </Link>
       </div>
 
-      <div className="hr-final-card">
-        <span>FOR ORGANIZATIONS &amp; COMMUNITIES</span>
+      {/* BUSINESS OWNERS */}
+      <div className="hr-final-card hr-final-card-featured">
+        <span>02 — BUSINESS OWNERS &amp; SELF-EMPLOYED</span>
 
-        <h3>I Want to Help the People I Serve</h3>
+        <h3>Healthcare Access for My Business</h3>
 
         <p>
-          Let's talk about healthcare-access information, resources or
-          outreach that may fit your organization or community.
+          Explore practical healthcare access for business owners,
+          employees, independent teams and their families.
         </p>
 
-        <a href="#community-partners" className="hr-final-link">
-          Explore Community Partnership →
-        </a>
+        <Link
+          to="/resource-center/business-healthcare"
+          className="hr-final-link"
+        >
+          Explore Business Options →
+        </Link>
+      </div>
+
+      {/* ORGANIZATIONS */}
+      <div className="hr-final-card">
+        <span>03 — CHURCHES, NONPROFITS &amp; ORGANIZATIONS</span>
+
+        <h3>Resources for the People We Serve</h3>
+
+        <p>
+          Explore healthcare access and real-life support resources for
+          members, families, employees, volunteers and the communities
+          you serve.
+        </p>
+
+        <Link to="/organizations" className="hr-final-link">
+          Explore Organization Options →
+        </Link>
       </div>
 
     </div>

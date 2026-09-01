@@ -101,6 +101,8 @@ a {
   box-shadow: 0 10px 25px rgba(59,130,246,0.28);
 }
 
+
+
 .brand {
   font-size: 1.5rem;
   font-weight: 900;
@@ -1171,12 +1173,148 @@ a {
     align-items: flex-start;
   }
 
-  .nav-links {
+   .nav-links {
     width: 100%;
     gap: 0.75rem;
     flex-wrap: wrap;
   }
-   }
+
+  .mobile-hide {
+    display: none !important;
+  }
+
+}
+
+
+ /* =========================================================
+   FINAL HEALTHCARE FOR DROPDOWN
+========================================================= */
+
+.nav-dropdown {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.nav-dropdown-button {
+  appearance: none;
+  border: none !important;
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-family: inherit;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-dropdown-button:hover {
+  color: #60a5fa !important;
+}
+
+.nav-dropdown-arrow {
+  font-size: 0.65rem !important;
+  color: #60a5fa !important;
+}
+
+.healthcare-dropdown {
+  position: absolute !important;
+
+  top: 38px !important;
+  left: 50% !important;
+
+  transform: translateX(-50%) !important;
+
+  width: 330px !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+
+  padding: 8px !important;
+
+  background: #071426 !important;
+
+  border: 1px solid rgba(96, 165, 250, 0.28) !important;
+  border-radius: 14px !important;
+
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5) !important;
+
+  z-index: 99999 !important;
+}
+
+.nav-links .healthcare-dropdown a {
+  display: block !important;
+
+  width: 100% !important;
+  box-sizing: border-box !important;
+
+  padding: 14px 15px !important;
+  margin: 0 !important;
+
+  color: #ffffff !important;
+  background: transparent !important;
+
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+
+  text-align: left !important;
+  text-decoration: none !important;
+
+  white-space: normal !important;
+
+  border-radius: 8px !important;
+}
+
+.nav-links .healthcare-dropdown a:hover {
+  background: rgba(96, 165, 250, 0.15) !important;
+  color: #60a5fa !important;
+}
+
+/* =========================================================
+   MOBILE MENU LABEL
+========================================================= */
+
+.mobile-menu-label {
+  margin-top: 10px;
+  padding: 10px 0 4px;
+
+  color: #60a5fa;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: none;
+  }
+
+}
+  
 @media (max-width: 768px) {
   .mobile-hide {
     display: none !important;
@@ -3195,5 +3333,232 @@ a {
     border-radius:22px;
     box-shadow:0 20px 45px rgba(15,23,42,.15);
 }
+/* =========================================================
+   HEALTHCARE FOR MENU ITEMS
+========================================================= */
 
+.healthcare-menu-item {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 
+  padding: 15px 16px !important;
+  margin: 0 !important;
+
+  color: #ffffff !important;
+  background: transparent !important;
+
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+
+  text-decoration: none !important;
+  text-align: left !important;
+  white-space: normal !important;
+
+  border-radius: 9px !important;
+}
+
+.healthcare-menu-item:hover {
+  background: rgba(96, 165, 250, 0.14) !important;
+  color: #60a5fa !important;
+}
+
+/* =========================================================
+   MOBILE NAVBAR
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: auto;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+  }
+
+}
+
+/* =========================================================
+   HEALTHCARE FOR DESKTOP DROPDOWN
+========================================================= */
+
+@media (min-width: 901px) {
+
+  .nav-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-dropdown-button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown-button:hover {
+    color: #60a5fa;
+  }
+
+  .nav-dropdown-arrow {
+    font-size: 0.65rem;
+    color: #60a5fa;
+  }
+
+  .healthcare-dropdown {
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 330px;
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    background: #071426;
+    border: 1px solid rgba(96, 165, 250, 0.28);
+    border-radius: 14px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+
+    z-index: 99999;
+  }
+
+  .nav-links .healthcare-dropdown a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px 15px;
+    margin: 0;
+
+    color: #ffffff;
+    background: transparent;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+    text-align: left;
+    text-decoration: none;
+    white-space: normal;
+
+    border-radius: 8px;
+  }
+
+  .nav-links .healthcare-dropdown a:hover {
+    background: rgba(96, 165, 250, 0.15);
+    color: #60a5fa;
+  }
+}
+
+/* =========================================================
+   MOBILE MENU - FINAL POSITIONING
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+  }
+
+  .navbar .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 12px 18px 18px;
+
+    background: #071426;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(96, 165, 250, 0.22);
+
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.45);
+
+    z-index: 10001;
+  }
+
+  .navbar .mobile-menu a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 11px 6px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .navbar .mobile-menu-label {
+    padding: 13px 6px 5px;
+
+    color: #60a5fa;
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .navbar .mobile-cta {
+    margin-top: 10px;
+
+    padding: 12px 16px !important;
+
+    background: #2d7ff9;
+
+    border-radius: 999px !important;
+    border-bottom: none !important;
+
+    text-align: center;
+    color: #ffffff !important;
+  }
+}

@@ -15,6 +15,10 @@ import HamptonRoadsHealthcareAccessPage from "./pages/HamptonRoadsHealthcareAcce
 import MembershipFinder from "./components/home/MembershipFinder";
 
 import MemberExperiencePage from "./pages/MemberExperiencePage";
+import FamilyHealthcarePage from "./pages/FamilyHealthcarePage";
+import OrganizationHealthcarePage from "./pages/OrganizationHealthcarePage";
+import VeteransHealthcareFunnel from "./pages/VeteransHealthcareFunnel";
+
 
 
 import NorfolkPage from "./pages/NorfolkPage";
@@ -52,6 +56,7 @@ import EntrepreneurHealthcareResourceCenter from "./pages/EntrepreneurHealthcare
 
 import TelehealthIndustryPage from "./pages/TelehealthIndustryPage";
 import HealthcareAlternativesPage from "./pages/HealthcareAlternativesPage";
+
 
 import LaunchPage from "./pages/LaunchPage";
 import NorfolkTelehealthPage from "./pages/NorfolkTelehealthPage";
@@ -98,7 +103,8 @@ export default function App() {
 
         {/* NEW LAUNCH PAGE */}
         <Route path="/launch" element={<LaunchPage />} />
-        <Route path="/veterans-healthcare-access" element={<LaunchPage />} />
+       <Route path="/veterans-healthcare-access"element={<VeteransHealthcareFunnel />}/>
+
         <Route path="/insights/veteran-mental-health-support-hampton-roads"element={<VeteranMentalHealthSupportPage />}
 />
         {/* Locations */}
@@ -176,10 +182,20 @@ export default function App() {
           element={<PrescriptionSavingsPage />}
         />
 
-        <Route
-          path="/business-owners-entrepreneurs-healthcare-hampton-roads"
-          element={<BusinessHealthcarePage />}
-        />
+    <Route
+  path="/business-owners-entrepreneurs-healthcare-hampton-roads"
+  element={<BusinessHealthcarePage />}
+/>
+
+<Route
+  path="/family"
+  element={<FamilyHealthcarePage />}
+/>
+
+<Route
+  path="/organizations"
+  element={<OrganizationHealthcarePage />}
+/>
 
         {/* Detail Pages */}
         <Route
