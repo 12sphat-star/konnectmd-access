@@ -141,7 +141,7 @@ export default function Footer() {
         {/* FOOTER BOTTOM */}
         <div className="footer-bottom">
           <div className="footer-bottom-left">
-            <p>2026 12 Stone Agency. All rights reserved.</p>
+            <p>© 2026 KonnectMD Access. All rights reserved.</p>
           </div>
 
           <div className="footer-bottom-right">
