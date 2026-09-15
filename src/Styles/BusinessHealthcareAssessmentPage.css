@@ -1,0 +1,812 @@
+/* =========================================================
+   BUSINESS HEALTHCARE READINESS ASSESSMENT
+========================================================= */
+
+.business-assessment-page {
+  min-height: 100vh;
+  background: #f4f9fc;
+  color: #17324d;
+}
+
+.business-assessment-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.business-assessment-intro {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0 100px;
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(126, 215, 236, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #0b223b 0%, #153e6a 58%, #0f6fb5 100%);
+}
+
+.business-assessment-intro::after {
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  right: -180px;
+  bottom: -230px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.business-assessment-intro-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  gap: 64px;
+  align-items: center;
+}
+
+.business-assessment-kicker {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #7ed7ec;
+}
+
+.business-assessment-intro-content h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2.8rem, 5.5vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+}
+
+.business-assessment-intro-content h1 span {
+  display: block;
+  color: #7ed7ec;
+}
+
+.business-assessment-lead {
+  max-width: 700px;
+  margin: 26px 0 0;
+  font-size: 1.12rem;
+  line-height: 1.72;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.business-assessment-promise {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 34px 0;
+}
+
+.business-assessment-promise > div {
+  padding: 18px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(8px);
+}
+
+.business-assessment-promise strong,
+.business-assessment-promise span {
+  display: block;
+}
+
+.business-assessment-promise strong {
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 0.96rem;
+}
+
+.business-assessment-promise span {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.8rem;
+}
+
+.business-assessment-start {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0f6fb5;
+  font: inherit;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+}
+
+.business-assessment-start:hover {
+  transform: translateY(-2px);
+}
+
+.business-assessment-note {
+  margin: 15px 0 0;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* INTRO PANEL */
+
+.business-assessment-intro-panel {
+  padding: 34px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.2);
+}
+
+.business-assessment-panel-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #0f6fb5;
+}
+
+.business-assessment-intro-panel h2 {
+  margin: 0 0 26px;
+  font-size: 1.8rem;
+  color: #153e6a;
+}
+
+.business-assessment-check-list {
+  display: grid;
+  gap: 0;
+}
+
+.business-assessment-check-list > div {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  padding: 17px 0;
+  border-bottom: 1px solid #e5edf3;
+}
+
+.business-assessment-check-list > div:last-child {
+  border-bottom: 0;
+}
+
+.business-assessment-check-list > div > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #e5f3fa;
+  color: #0f6fb5;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.business-assessment-check-list p {
+  margin: 0;
+  color: #687889;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.business-assessment-check-list strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #17324d;
+  font-size: 0.98rem;
+}
+
+/* =========================================================
+   QUESTION EXPERIENCE
+========================================================= */
+
+.business-assessment-question-section {
+  min-height: 100vh;
+  padding: 58px 0 90px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(126, 215, 236, 0.14),
+      transparent 30%
+    ),
+    #f4f9fc;
+}
+
+.business-assessment-question-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-end;
+  margin-bottom: 22px;
+}
+
+.business-assessment-question-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0f6fb5;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.business-assessment-question-header h1 {
+  margin: 0;
+  color: #153e6a;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.business-assessment-question-count {
+  text-align: right;
+}
+
+.business-assessment-question-count strong {
+  display: block;
+  color: #153e6a;
+  font-size: 1.7rem;
+}
+
+.business-assessment-question-count strong span {
+  color: #91a0ae;
+  font-size: 1rem;
+}
+
+.business-assessment-question-count small {
+  color: #81909e;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.business-assessment-progress-track {
+  width: 100%;
+  height: 7px;
+  margin-bottom: 38px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #dce8f1;
+}
+
+.business-assessment-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #0f6fb5, #55c7e5);
+  transition: width 0.3s ease;
+}
+
+/* QUESTION CARD */
+
+.business-assessment-question-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 46px;
+  border: 1px solid #dce8f1;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 48px rgba(21, 62, 106, 0.1);
+}
+
+.business-assessment-question-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.business-assessment-question-meta span,
+.business-assessment-question-meta small {
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.business-assessment-question-meta span {
+  color: #0f6fb5;
+}
+
+.business-assessment-question-meta small {
+  color: #92a0ad;
+}
+
+.business-assessment-question-card h2 {
+  max-width: 760px;
+  margin: 0;
+  color: #17324d;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.business-assessment-helper {
+  max-width: 720px;
+  margin: 16px 0 30px;
+  color: #6a7887;
+  line-height: 1.65;
+}
+
+.business-assessment-answer-list {
+  display: grid;
+  gap: 11px;
+}
+
+.business-assessment-answer {
+  display: grid;
+  grid-template-columns: 42px 1fr 24px;
+  gap: 14px;
+  align-items: center;
+  width: 100%;
+  padding: 15px 17px;
+  border: 1px solid #dce8f1;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #263f57;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.business-assessment-answer:hover {
+  transform: translateY(-1px);
+  border-color: #7ed7ec;
+  background: #f7fcfe;
+  box-shadow: 0 8px 20px rgba(21, 62, 106, 0.07);
+}
+
+.business-assessment-answer.selected {
+  border-color: #0f6fb5;
+  background: #eef8fc;
+}
+
+.business-assessment-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #e8f4fa;
+  color: #0f6fb5;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.business-assessment-arrow {
+  color: #0f6fb5;
+  font-weight: 900;
+  text-align: right;
+}
+
+.business-assessment-back {
+  margin-top: 26px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #718090;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.business-assessment-results {
+  min-height: 100vh;
+  padding: 80px 0 100px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(126, 215, 236, 0.17),
+      transparent 32%
+    ),
+    linear-gradient(135deg, #0b223b 0%, #153e6a 100%);
+}
+
+.business-assessment-results-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 54px;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 30px 75px rgba(0, 0, 0, 0.24);
+}
+
+.business-assessment-complete-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin: 5px 0 22px;
+  border-radius: 50%;
+  background: #e5f3fa;
+  color: #0f6fb5;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.business-assessment-result-label {
+  margin: 0 0 8px;
+  color: #0f6fb5;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.business-assessment-results-card h1 {
+  max-width: 720px;
+  margin: 0;
+  color: #153e6a;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.business-assessment-status {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 26px 0 0;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #e8f4fa;
+}
+
+.business-assessment-status span {
+  color: #738391;
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.business-assessment-status strong {
+  margin-top: 3px;
+  color: #0f6fb5;
+  font-size: 1.1rem;
+}
+
+.business-assessment-result-message {
+  max-width: 760px;
+  margin: 26px 0 32px;
+  color: #617081;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.business-assessment-result-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.business-assessment-result-grid > div {
+  padding: 18px;
+  border: 1px solid #dce8f1;
+  border-radius: 12px;
+  background: #f8fbfd;
+}
+
+.business-assessment-result-grid span {
+  display: block;
+  margin-bottom: 7px;
+  color: #7b8996;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.business-assessment-result-grid strong {
+  color: #17324d;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.business-assessment-next {
+  padding: 32px;
+  border-radius: 18px;
+  background: #153e6a;
+}
+
+.business-assessment-next > span {
+  display: block;
+  margin-bottom: 8px;
+  color: #7ed7ec;
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.business-assessment-next h2 {
+  max-width: 650px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.08;
+}
+
+.business-assessment-next p {
+  max-width: 690px;
+  margin: 16px 0 24px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
+}
+
+.business-assessment-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 12px 20px;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #0f6fb5;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.business-assessment-secondary-link {
+  display: block;
+  width: fit-content;
+  margin-top: 18px;
+  color: #a9e4f2;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.business-assessment-restart {
+  margin-top: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #718090;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .business-assessment-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .business-assessment-intro-panel {
+    max-width: 650px;
+  }
+
+  .business-assessment-result-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-assessment-container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .business-assessment-intro {
+    padding: 60px 0 70px;
+  }
+
+  .business-assessment-intro-content h1 {
+    font-size: clamp(2.5rem, 12vw, 3.7rem);
+  }
+
+  .business-assessment-lead {
+    font-size: 1rem;
+  }
+
+  .business-assessment-promise {
+    grid-template-columns: 1fr;
+  }
+
+  .business-assessment-intro-panel {
+    padding: 26px 22px;
+  }
+
+  .business-assessment-question-section {
+    padding: 38px 0 60px;
+  }
+
+  .business-assessment-question-header {
+    align-items: flex-start;
+  }
+
+  .business-assessment-question-header h1 {
+    font-size: 1.65rem;
+  }
+
+  .business-assessment-question-count strong {
+    font-size: 1.35rem;
+  }
+
+  .business-assessment-question-card {
+    padding: 28px 20px;
+    border-radius: 17px;
+  }
+
+  .business-assessment-question-card h2 {
+    font-size: 1.85rem;
+  }
+
+  .business-assessment-question-meta {
+    align-items: flex-start;
+  }
+
+  .business-assessment-answer {
+    grid-template-columns: 38px 1fr 18px;
+    padding: 14px 12px;
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .business-assessment-results {
+    padding: 50px 0 70px;
+  }
+
+  .business-assessment-results-card {
+    padding: 32px 22px;
+    border-radius: 18px;
+  }
+
+  .business-assessment-next {
+    padding: 26px 20px;
+  }
+
+  .business-assessment-primary-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* =========================================================
+   ASSESSMENT LEAD CAPTURE
+========================================================= */
+
+.business-assessment-capture-form {
+  margin-top: 34px;
+}
+
+.business-assessment-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.business-assessment-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.business-assessment-field label {
+  color: #17324d;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+}
+
+.business-assessment-field input {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 14px;
+  border: 1px solid #d3e1eb;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #17324d;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.business-assessment-field input:focus {
+  border-color: #0f6fb5;
+  box-shadow: 0 0 0 3px rgba(15, 111, 181, 0.1);
+}
+
+.business-assessment-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 54px;
+  margin-top: 24px;
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #0f6fb5;
+  color: #ffffff;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.business-assessment-submit-button:hover {
+  background: #0b5f9c;
+  transform: translateY(-1px);
+}
+
+.business-assessment-submit-button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+  transform: none;
+}
+
+.business-assessment-submit-error {
+  margin: 18px 0 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fff1f1;
+  color: #a52a2a;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.business-assessment-privacy {
+  max-width: 620px;
+  margin: 14px auto 0;
+  color: #7b8996;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Buttons on results screen are now actual buttons */
+
+button.business-assessment-primary-button,
+button.business-assessment-secondary-link {
+  border: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button.business-assessment-secondary-link {
+  padding: 0;
+  background: transparent;
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .business-assessment-form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .business-assessment-submit-button {
+    min-height: 56px;
+  }
+}

@@ -57,6 +57,7 @@ import EntrepreneurHealthcareResourceCenter from "./pages/EntrepreneurHealthcare
 import TelehealthIndustryPage from "./pages/TelehealthIndustryPage";
 import HealthcareAlternativesPage from "./pages/HealthcareAlternativesPage";
 import HealthcareAssessmentPage from "./pages/HealthcareAssessmentPage";
+import BusinessHealthcareAssessmentPage from "./pages/BusinessHealthcareAssessmentPage";
 
 
 import LaunchPage from "./pages/LaunchPage";
@@ -96,6 +97,11 @@ export default function App() {
 <Route
   path="/healthcare-assessment"
   element={<HealthcareAssessmentPage />}
+/>
+
+<Route
+  path="/business-healthcare-assessment"
+  element={<BusinessHealthcareAssessmentPage />}
 />
 
         {/* Main Pages */}
