@@ -16,6 +16,7 @@ import MembershipFinder from "./components/home/MembershipFinder";
 
 import MemberExperiencePage from "./pages/MemberExperiencePage";
 import FamilyHealthcarePage from "./pages/FamilyHealthcarePage";
+import SeniorHealthcarePage from "./pages/SeniorHealthcarePage";
 import OrganizationHealthcarePage from "./pages/OrganizationHealthcarePage";
 import VeteransHealthcareFunnel from "./pages/VeteransHealthcareFunnel";
 
@@ -203,7 +204,10 @@ export default function App() {
   path="/family"
   element={<FamilyHealthcarePage />}
 />
-
+<Route
+  path="/resource-center/senior-healthcare"
+  element={<SeniorHealthcarePage />}
+/>
 <Route
   path="/organizations"
   element={<OrganizationHealthcarePage />}
