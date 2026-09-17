@@ -707,3 +707,72 @@
     margin-bottom: 34px;
   }
 }
+
+/* Prescription Finder */
+.senior-rx-card {
+  position: relative;
+}
+
+.senior-rx-prompt {
+  margin-top: 16px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.senior-rx-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 11px 18px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #17315e;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.senior-rx-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* Senior Hero Action Buttons */
+.senior-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.senior-hero-actions .senior-btn {
+  margin-top: 0;
+}
+
+.senior-btn-rx {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(147, 197, 253, 0.7);
+  box-shadow: none;
+}
+
+.senior-btn-rx:hover {
+  background: rgba(96, 165, 250, 0.12);
+  border-color: #93c5fd;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .senior-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .senior-hero-actions .senior-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

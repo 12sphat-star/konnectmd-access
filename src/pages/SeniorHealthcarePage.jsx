@@ -99,13 +99,25 @@ const handleSubmit = async (event) => {
                 <span>Dental &amp; Vision Savings</span>
               </div>
 
-              <a
-                href="#senior-needs-form"
-                className="senior-btn senior-btn-primary"
-              >
-                Explore Your Options
-                <span aria-hidden="true">→</span>
-              </a>
+            <div className="senior-hero-actions">
+  <a
+    href="#senior-needs-form"
+    className="senior-btn senior-btn-primary"
+  >
+    Explore Your Options
+    <span aria-hidden="true">→</span>
+  </a>
+
+  <a
+    href="https://konnectmdmedfinder.online/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="senior-btn senior-btn-rx"
+  >
+    Check My Medication
+    <span aria-hidden="true">→</span>
+  </a>
+</div>
             </div>
 
             <div
@@ -226,15 +238,7 @@ const handleSubmit = async (event) => {
                 </p>
               </article>
 
-              <article className="senior-benefit-card">
-                <span>RX</span>
-                <h3>Prescription Savings</h3>
-                <p>
-                  Access prescription savings, including eligible
-                  medications available at $0 cost through the
-                  membership program.
-                </p>
-              </article>
+             
 
               <article className="senior-benefit-card">
                 <span>LIFE</span>
