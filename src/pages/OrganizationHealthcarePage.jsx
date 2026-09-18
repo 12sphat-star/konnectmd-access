@@ -2,6 +2,8 @@ import { useState } from "react";
 import SEO from "../components/SEO";
 import "../Styles/OrganizationHealthcarePage.css";
 
+
+
 export default function OrganizationHealthcarePage() {
   const [formData, setFormData] = useState({
     organizationName: "",
@@ -71,54 +73,65 @@ export default function OrganizationHealthcarePage() {
       />
 
       {/* HERO */}
-      <section className="organization-hero">
-        <div className="container">
-          <p className="organization-kicker">
-            CHURCHES • NONPROFITS • COMMUNITY ORGANIZATIONS
-          </p>
+<section className="organization-hero">
+  <div className="container">
+    <div className="organization-hero-copy">
+      <p className="organization-kicker">
+        CHURCHES • NONPROFITS • COMMUNITY ORGANIZATIONS
+      </p>
 
-          <h1>
-            YOU'RE ALREADY
-            <br />
-            HELPING PEOPLE.
-          </h1>
+      <h1>
+        YOU'RE ALREADY
+        <br />
+        HELPING PEOPLE.
+      </h1>
 
-          <p className="organization-hero-question">
-            What if <strong>healthcare access</strong> could become part of
-            how you do it?
-          </p>
+      <p className="organization-hero-question">
+        What if <strong>healthcare access</strong> could become part of
+        how you do it?
+      </p>
 
-          <div className="organization-realities">
-            <p>
-              A member needs a doctor but doesn't want another expensive
-              urgent-care visit.
-            </p>
+      <div className="organization-realities">
+        <p>
+          A member needs a doctor but doesn't want another expensive
+          urgent-care visit.
+        </p>
 
-            <p>
-              A family is struggling with prescription costs.
-            </p>
+        <p>
+          A family is struggling with prescription costs.
+        </p>
 
-            <p>
-              Someone you're serving is dealing with stress, family problems
-              or another real-life challenge.
-            </p>
+        <p>
+          Someone you're serving is dealing with stress, family problems
+          or another real-life challenge.
+        </p>
 
-            <p>
-              Your organization is looking for better ways to fund its mission.
-            </p>
-          </div>
+        <p>
+          Your organization is looking for better ways to fund its mission.
+        </p>
+      </div>
 
-          <div className="organization-interrupt">
-  <span>ANOTHER RESOURCE.</span>
-  <strong>FOR THE PEOPLE YOU SERVE.</strong>
-</div>
+      <div className="organization-interrupt">
+        <span>ANOTHER RESOURCE.</span>
+        <strong>FOR THE PEOPLE YOU SERVE.</strong>
+      </div>
 
-          <a href="#organization-options" className="organization-primary-cta">
-            Show Me What's Possible
-          </a>
-        </div>
-      </section>
+      <a
+        href="#organization-options"
+        className="organization-primary-cta"
+      >
+        Show Me What's Possible
+      </a>
+    </div>
 
+    <div className="organization-hero-image">
+      <img
+        src={organizationsHero}
+        alt="Church and community leaders serving people in their community"
+      />
+    </div>
+  </div>
+</section>
       {/* TWO DOORS */}
       <section
         className="organization-options-section"

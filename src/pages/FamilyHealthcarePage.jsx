@@ -277,6 +277,27 @@ const handleSubmit = async (event) => {
 
     </div>
 
+    {/* MEDICATION FINDER CTA */}
+<div className="family-medication-finder">
+  <div className="family-medication-finder-copy">
+    <p>TAKING A PRESCRIPTION RIGHT NOW?</p>
+
+    <h3>
+      Don&apos;t just read about prescription savings.
+      <strong> Check your medication.</strong>
+    </h3>
+  </div>
+
+  <a
+    href="https://konnectmdmedfinder.online/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="family-medication-finder-btn"
+  >
+    Check My Medication →
+  </a>
+</div>
+
     {/* 24/7 DOCTOR ACCESS ANCHOR */}
     <div className="family-life-doctor">
       <span>24/7</span>

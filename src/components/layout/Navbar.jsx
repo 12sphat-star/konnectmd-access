@@ -40,7 +40,7 @@ export default function Navbar() {
               aria-expanded={healthcareOpen}
               aria-haspopup="true"
             >
-              Healthcare For
+              Who We Help
               <span className="nav-dropdown-arrow">
                 {healthcareOpen ? "▲" : "▼"}
               </span>
@@ -52,6 +52,13 @@ export default function Navbar() {
                 <Link to="/family" onClick={closeMenus}>
                   Individuals &amp; Families
                 </Link>
+
+                <Link
+  to="/resource-center/senior-healthcare"
+  onClick={() => setMenuOpen(false)}
+>
+  Seniors
+</Link>
 
                 <Link
                   to="/resource-center/business-healthcare"
@@ -129,7 +136,7 @@ export default function Navbar() {
           </Link>
 
           <div className="mobile-menu-label">
-            Healthcare For
+            Who We Help
           </div>
 
           <Link to="/family" onClick={closeMenus}>
