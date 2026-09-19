@@ -55,7 +55,14 @@ export default function Navbar() {
 
                 <Link
   to="/resource-center/senior-healthcare"
-  onClick={() => setMenuOpen(false)}
+  onClick={closeMenus}
+>
+  Seniors
+</Link>
+
+     <Link
+  to="/resource-center/senior-healthcare"
+  onClick={closeMenus}
 >
   Seniors
 </Link>
@@ -107,7 +114,18 @@ export default function Navbar() {
           </Link>
 
         </nav>
-
+{/* MOBILE WHO WE HELP */}
+<button
+  type="button"
+  className="mobile-who-we-help"
+  onClick={() => {
+    setOpen(true);
+    setHealthcareOpen(false);
+  }}
+>
+  Who We Help
+  <span>▼</span>
+</button>
         {/* MOBILE HAMBURGER */}
         <button
           type="button"

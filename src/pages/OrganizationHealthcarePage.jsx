@@ -125,13 +125,14 @@ export default function OrganizationHealthcarePage() {
     </div>
 
     <div className="organization-hero-image">
-      <img
-        src={organizationsHero}
-        alt="Church and community leaders serving people in their community"
-      />
+     <img
+  src="/images/konnectmd-organizations-community-hero.png"
+  alt="Church and community leaders serving people in their community"
+/>
     </div>
   </div>
 </section>
+
       {/* TWO DOORS */}
       <section
         className="organization-options-section"
