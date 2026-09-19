@@ -231,31 +231,29 @@ export default function JoinPage() {
             <p className="eyebrow">
               Independent Healthcare Representative
             </p>
+<h1
+  style={{
+    maxWidth: "900px",
+    margin: "0 auto",
+  }}
+>
+  Looking for a Flexible Way to{" "}
+  <span style={{ color: "var(--blue-soft)" }}>
+    Earn Extra Income?
+  </span>
+</h1>
 
-            <h1
-              className="page-title"
-              style={{
-                maxWidth: "900px",
-                margin: "0 auto",
-              }}
-            >
-              You Applied. Let's See If This Opportunity Is{" "}
-              <span style={{ color: "var(--blue-soft)" }}>
-                Right for You.
-              </span>
-            </h1>
-
-            <p
-              className="section-copy"
-              style={{
-                maxWidth: "800px",
-                margin: "1rem auto",
-              }}
-            >
-              Help individuals, families, and businesses access practical
-              healthcare solutions while building an independent business of
-              your own.
-            </p>
+<p
+  className="section-copy"
+  style={{
+    maxWidth: "800px",
+    margin: "1rem auto",
+  }}
+>
+  Help individuals, families, and businesses discover practical
+  healthcare access solutions while building an independent business
+  on your schedule.
+</p>
 
             <div
               style={{
