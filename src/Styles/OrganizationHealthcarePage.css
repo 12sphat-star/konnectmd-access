@@ -420,6 +420,20 @@ gap: 42px;
     padding-left: 18px;
     font-size: 1.05rem;
   }
+
+  .organization-hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 18px;
+}
+
+.organization-hero .container {
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
   }
 
   /* =========================================================
