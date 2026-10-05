@@ -60,13 +60,6 @@ export default function Navbar() {
   Seniors
 </Link>
 
-     <Link
-  to="/resource-center/senior-healthcare"
-  onClick={closeMenus}
->
-  Seniors
-</Link>
-
                 <Link
                   to="/resource-center/business-healthcare"
                   onClick={closeMenus}
@@ -97,13 +90,17 @@ export default function Navbar() {
             Locations
           </Link>
 
-          <Link to="/resource-center" onClick={closeMenus}>
-            Resources
-          </Link>
+         <Link to="/resource-center" onClick={closeMenus}>
+  Resources
+</Link>
 
-          <Link to="/join-the-team" onClick={closeMenus}>
-            Join the Team
-          </Link>
+<Link to="/insights" onClick={closeMenus}>
+  Insights
+</Link>
+
+<Link to="/join-the-team" onClick={closeMenus}>
+  Join the Team
+</Link>
 
           <Link
             to="/book-call"
@@ -183,13 +180,17 @@ export default function Navbar() {
             Locations
           </Link>
 
-          <Link to="/resource-center" onClick={closeMenus}>
-            Resources
-          </Link>
+        <Link to="/resource-center" onClick={closeMenus}>
+  Resources
+</Link>
 
-          <Link to="/join-the-team" onClick={closeMenus}>
-            Join the Team
-          </Link>
+<Link to="/insights" onClick={closeMenus}>
+  Insights
+</Link>
+
+<Link to="/join-the-team" onClick={closeMenus}>
+  Join the Team
+</Link>
 
           <Link
             to="/book-call"
