@@ -19,7 +19,7 @@ import FamilyHealthcarePage from "./pages/FamilyHealthcarePage";
 import SeniorHealthcarePage from "./pages/SeniorHealthcarePage";
 import OrganizationHealthcarePage from "./pages/OrganizationHealthcarePage";
 import VeteransHealthcareFunnel from "./pages/VeteransHealthcareFunnel";
-
+import VirginiaMedicaidChangesPage from "./pages/VirginiaMedicaidChangesPage";
 
 
 import NorfolkPage from "./pages/NorfolkPage";
@@ -145,6 +145,10 @@ export default function App() {
 <Route
   path="/insights/telehealth-for-veterans-hampton-roads"
   element={<TelehealthForVeteransPage />}
+/>
+<Route
+  path="/insights/virginia-medicaid-changes-2027"
+  element={<VirginiaMedicaidChangesPage />}
 />
 <Route
   path="/resource-center/telehealth"
